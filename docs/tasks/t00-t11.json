@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "source": "docs/history/V0.36-P0-original.md",
+  "track": "R: root-system",
+  "baseline": "R46 verified",
+  "tasks": [
+    {
+      "id": "T00",
+      "priority": "P0",
+      "title": "基线冻结",
+      "sourceAction": "备份 V0.35、提取 151 实例清单、ROOTS+编码+坐标快照、现有 localStorage 样本和关键页面截图",
+      "sourceDependencies": "无",
+      "dependencies": [],
+      "sourceExitCriterion": "可恢复基线；自动比对脚本",
+      "implementationState": "frozen baseline checks recorded; full new-release regression pending",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T01",
+      "priority": "P0",
+      "title": "参考图清点",
+      "sourceAction": "锁定原图 hash，测量 25 键裁框，逐一圈出所有可辨视觉形态、备注不确定点",
+      "sourceDependencies": "T00",
+      "dependencies": [
+        "T00"
+      ],
+      "sourceExitCriterion": "`reference-manifest`：25/25 已枚举，每项有证据和类别候选",
+      "implementationState": "round46 source quarantine; 0/25 keys certified; missing count unknown",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T02",
+      "priority": "P0",
+      "title": "语义与 ID 设计",
+      "sourceAction": "明确 root/variant/annotation/supplement/related；分配稳定 instanceId 和 assetId，建立旧索引映射",
+      "sourceDependencies": "T00、T01",
+      "dependencies": [
+        "T00",
+        "T01"
+      ],
+      "sourceExitCriterion": "Schema 校验通过，当前实例 ID 唯一，不与数组下标耦合",
+      "implementationState": "156 stable-ID drafts; no production integration",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T03",
+      "priority": "P0",
+      "title": "SVG 坐标内核",
+      "sourceAction": "统一 100×100 viewBox；定义以 inkBBox 为基础的几何矩形、锚点、光学偏移和标签独立保留区",
+      "sourceDependencies": "T02",
+      "dependencies": [
+        "T02"
+      ],
+      "sourceExitCriterion": "增删任意一个实例不影响其他几何；三视图同配置",
+      "implementationState": "isolated SVG/viewBox exploration; production coordinate core not integrated",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T04",
+      "priority": "P0",
+      "title": "存储与旧版迁移",
+      "sourceAction": "localStorage 改为 schemaVersion + instanceId；迁移 V0.35 索引坐标与复核记录；冲突隔离、回滚",
+      "sourceDependencies": "T02、T03",
+      "dependencies": [
+        "T02",
+        "T03"
+      ],
+      "sourceExitCriterion": "旧版本有效覆盖不丢失、错配为 0；有备份与重入保护",
+      "implementationState": "isolated Node/FakeStore migration; real shared-origin QA blocked",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T05",
+      "priority": "P0",
+      "title": "完整性补图",
+      "sourceAction": "以 M 为先行试点，随后 Q、I、K、L、O、N、B、V 和其余键；新增独立 Path/实例",
+      "sourceDependencies": "T01～T04",
+      "dependencies": [
+        "T01",
+        "T02",
+        "T03",
+        "T04"
+      ],
+      "sourceExitCriterion": "25/25 键全部形态建立映射，已确认遗漏数 0",
+      "implementationState": "not integrated; all-key shape inventory incomplete",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T06",
+      "priority": "P1",
+      "title": "轮廓一致性",
+      "sourceAction": "检查字体整字与原图偏旁差异、复合构形、笔画粗细、圆圈/补码框；必要时自绘",
+      "sourceDependencies": "T05",
+      "dependencies": [
+        "T05"
+      ],
+      "sourceExitCriterion": "目标资产 Path 真实存在；可辨形态 100% 有逐笔复核记录",
+      "implementationState": "not integrated; contour certification missing",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T07",
+      "priority": "P1",
+      "title": "位置与碰撞",
+      "sourceAction": "主字根→微变体→标记的局部对齐；真实 inkBBox + stroke/标记边界检测；焦点布局不挤压",
+      "sourceDependencies": "T03、T06",
+      "dependencies": [
+        "T03",
+        "T06"
+      ],
+      "sourceExitCriterion": "25 键默认态与焦点态无未批准碰撞或越界，位置误差按规则验收",
+      "implementationState": "not integrated; real inkBBox and collision acceptance missing",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T08",
+      "priority": "P1",
+      "title": "校准工作台闭环",
+      "sourceAction": "支持原图新形态登记、分类、双视图/叠加、五维审批、签名过期提示、差异导出",
+      "sourceDependencies": "T01～T07",
+      "dependencies": [
+        "T01",
+        "T02",
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07"
+      ],
+      "sourceExitCriterion": "可从“发现缺字”到“发布并复验”全流程闭环；签名变更自动失效",
+      "implementationState": "isolated review workbench; production calibration lifecycle not integrated",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T09",
+      "priority": "P1",
+      "title": "学习视图与输入回归",
+      "sourceAction": "完整、迷你、单键复用坐标；引导/进阶/盲打不泄露；实体/触屏/系统键盘回归",
+      "sourceDependencies": "T03～T08",
+      "dependencies": [
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08"
+      ],
+      "sourceExitCriterion": "旧学习编码规则与 176 字测试样本一致；无新增交互回归",
+      "implementationState": "not integrated; frozen 176-code baseline remains",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T10",
+      "priority": "P1",
+      "title": "视觉和设备验收",
+      "sourceAction": "25 键逐项审图、桌面/手机横竖屏、缩放与 DPR、Android/iOS 真机待人工检查",
+      "sourceDependencies": "T05～T09",
+      "dependencies": [
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09"
+      ],
+      "sourceExitCriterion": "自动验收报告 + 未解决事项 + 真机检查单",
+      "implementationState": "not integrated; physical mobile/reader QA pending",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    },
+    {
+      "id": "T11",
+      "priority": "P1",
+      "title": "发布冻结",
+      "sourceAction": "更新统计、版权/来源、版本；移除中间调试依赖，生成单 HTML 与审计报告",
+      "sourceDependencies": "T10",
+      "dependencies": [
+        "T10"
+      ],
+      "sourceExitCriterion": "`index.html` 离线可运行，冻结可追溯 V0.36 版本",
+      "implementationState": "not integrated; no V0.36 release candidate",
+      "accepted": false,
+      "acceptanceEvidence": [],
+      "statusDate": "2026-10-22",
+      "source": "V0.36-P0 historical plan (archived), not a completed implementation"
+    }
+  ]
+}
