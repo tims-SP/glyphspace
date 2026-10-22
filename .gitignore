@@ -1,0 +1,12 @@
+# Editor and system files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Temporary artifacts
+*.tmp
+*.log
+node_modules/
