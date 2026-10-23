@@ -17,6 +17,7 @@ f5f5687552b6592872b3d0ea98a1c69b9424eda78d585bfdbcb1a5d952cf6b72  docs/06-roadma
 540ed140a0b6525dadab07cae48450ca3ff07d4271b7edd80f087a67df387fe5  docs/12-test-matrix.md
 96259a50ebc4e4c3d655dd1ea2502b6af6a191ce1cf66d167eb7a7212c0bf605  docs/13-asset-provenance.md
 14fd8678254b4ca58eb15e5999f9df810edfb5497f8d80ffff24119d979bbfc7  docs/14-ui-change-control.md
+b5c01d59f945f806e3a7f6e86b4d736f3b6ddb1562ac1dd4cb15dbd3a1443d2b  docs/evidence/v036-round62-t03-safe-optical-gate.md
 ad43fd4e6e1818db6e6bf340b3ec15bf8915151df2bbee4ded0ffb5b5a9a8d82  docs/history/README.md
 e7605c1ea19bf2c4abf48f7239327fe653a12fbe0bb498a31723fe3e12a60756  docs/history/V0.35-root-audit-original.md
 db30390baceff7e2570e3bdef08317f2f57be89bbd4c86e6723658757d68d79b  docs/history/V0.36-P0-original.md
