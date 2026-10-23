@@ -119,3 +119,7 @@
 ## ADR-R79 · T04多修订UID几何事务只允许FakeStore（2026-10-24）
 
 **状态：隔离原型决定，不批准生产使用。** 第76轮事务仅能提交固定迁移计划；第79轮增加候选UID几何修订的不可变版本链、预览SHA及可信迁移计划/几何/注册表三重来源上下文，支持回滚、恢复和模拟多标签冲突。实现**显式拒绝浏览器存储对象**，只接受FakeStore和SimulatedExclusiveLocks，避免测试误触用户真实存储。该模拟锁不是Web Locks；SHA不是授权签名；T01、T02、T03正式依赖尚未满足。下一阶段须在独立授权profile验证真实共享原点事务，且不得迁移真实用户存储。证据：`docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
+
+## ADR-R80 · T04模拟多标签页几何合并只允许不同候选UID（2026-10-24）
+
+**状态：隔离设计实验，未获生产授权。** 基于第79轮不可变候选UID日志，允许共同祖先明确、来源上下文一致的不同UID几何编辑三方合并；同UID分歧、祖先不在当前链、无效UID/坐标或并发HEAD变化必须失败关闭。保留151候选UID和5关联隔离，不把候选升级为正式永久ID。仅FakeStore/SimulatedExclusiveLocks，绝不对真实用户localStorage尝试；真实Web Locks和多标签页存储事件须在独立授权profile验证。证据：`docs/evidence/v036-round80-t04-disjoint-uid-three-way-rebase.md`。
