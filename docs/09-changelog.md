@@ -100,3 +100,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 - 继承第75轮1101/1101文件SHA；新增151候选UID+5关联的合成预览两阶段提交，模拟独占锁、日志恢复、回滚、篡改与多模拟tab冲突。新增Node **70/70**、继承 **9/9组**QA通过。
 - 第76轮累计ZIP **1111文件**，SHA256 `036d42a90875b30dfc475fbbd4feaccdc2b4a775f6ecf05486f58365db66b76d`；两次独立解压各1111/1111并复跑新旧QA、QA后SHA一致。ZIP不在GitHub，详见 `docs/evidence/v036-round76-t04-isolated-journal.md`。
 - 临时127.0.0.1 Chromium profile导航超时、未获得DOM；真实Web Locks/localStorage事务 **blocked/not-run**。真机/读屏not-run；T01 **0/25**、永久ID正式分配0、原始T00–T11 **0/12 Accepted**，生产入口与用户存储未改。
+
+## 2026-10-24 · 第77轮 Root T03 100×100锚点与光学校正隔离内核
+
+新增来源字节SHA绑定的151实例草案几何内核、五种ink锚点、独立光学偏移、预览撤销及签名导入导出；增加T07草案矩形碰撞前置检查（默认0对，合成移动可检出）。新增179/179 QA、继承10/10组QA；父1111/1111继承，累计ZIP1122文件，两种独立解压各1122/1122并复跑QA后SHA一致。非正式生产集成/原图认证；真同源/真机/读屏not-run，T01 0/25、T00–T11 0/12 Accepted。证据：`docs/evidence/v036-round77-t03-anchor-optical-preview.md`。
