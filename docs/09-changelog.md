@@ -90,3 +90,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第74轮 Root T01/T05 25键跨框连通风险审计
 
 在2008冻结JPEG、25键原生PNG和151历史裁框字节/像素校验基础上，新增409组候选对的4阈值8邻接审阅：25组风险（K/E两组同框、23组跨框连通，16持续、9敏感）。这是低清来源的风险定位，不认证任何形态、不推断缺根数。新增34/34 QA、继承7组QA，父1077/1077逐文件SHA继承，累计1088文件双重独立解压及QA后SHA一致；真实同源blocked、真机/读屏not-run，0/25键、0/12 Accepted。证据：`docs/evidence/v036-round74-all25-component-ambiguity.md`。
+
+## 2026-10-24 · 第75轮 Root T04 隔离旧坐标→候选UID迁移预检
+
+新增156旧记录到151候选UID+5关联隔离的只读、来源绑定桥接；合成3条调位全部保留（含1条关联调位隔离），V0.33/V0.15旧profile通过；拒绝未登记坐标漂移。新增48/48 QA，继承八组QA；父1088/1088逐文件继承、累计ZIP1101文件Python/system unzip两次独立解压及QA后SHA均一致。真实同源探针超时，事务blocked/not-run；未接触用户存储。证据：`docs/evidence/v036-round75-t04-readonly-uid-migration-preflight.md`。正式T00–T11仍0/12 Accepted。
