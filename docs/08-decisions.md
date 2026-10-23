@@ -115,3 +115,7 @@
 ## ADR-R77 · T03锚点与光学校正仅在隔离预览试验（2026-10-24）
 
 **暂定决定**：对第63轮来源SHA绑定的151个SVG草案，允许在独立内存预览层以100×100坐标、inkBBox、五种显式ink锚点及ox/oy光学位移计算新transform；支持撤销、签名导出/导入、非法值与越界失败关闭。预览不写localStorage、不修改来源资产、正式SVG、旧176编码和冻结HTML。旧版所有实例仍采用ink-center+零光学偏移；新锚点选项只是API能力，不表示参考图原本具有这些锚点。矩形碰撞仅作T07前置审阅，不等同真实stroke/标签/圈注/焦点态完整验收。**原始T03、T07均未Accepted**，永久ID、逐笔来源认证及生产集成尚待依赖完成。证据：`docs/evidence/v036-round77-t03-anchor-optical-preview.md`。
+
+## ADR-R79 · T04多修订UID几何事务只允许FakeStore（2026-10-24）
+
+**状态：隔离原型决定，不批准生产使用。** 第76轮事务仅能提交固定迁移计划；第79轮增加候选UID几何修订的不可变版本链、预览SHA及可信迁移计划/几何/注册表三重来源上下文，支持回滚、恢复和模拟多标签冲突。实现**显式拒绝浏览器存储对象**，只接受FakeStore和SimulatedExclusiveLocks，避免测试误触用户真实存储。该模拟锁不是Web Locks；SHA不是授权签名；T01、T02、T03正式依赖尚未满足。下一阶段须在独立授权profile验证真实共享原点事务，且不得迁移真实用户存储。证据：`docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
