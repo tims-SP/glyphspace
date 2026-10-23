@@ -43,3 +43,7 @@
 ## 第67轮 T02→T03只读桥接（2026-10-23）
 
 第44/45/46轮156条历史证据与第63轮151条几何草案建立逐实例只读交叉账本；五条关联不渲染。新发现H:6/H:7缺历史Path哈希，草案SVG不得自动转为正式来源绑定。K/E/B/V旧阻断维持。两次独立解压各1006/1006，新增27/27与继承26组QA通过。详见 `docs/evidence/v036-round67-t02-t03-crosswalk.md`。原始T02/T03仍未集成/未验收，T00–T11 0/12 Accepted。
+
+## 第68轮 H:6/H:7 提取部件来源核验（T02→T03）
+
+冻结HTML的`EXTRACTED_COMPONENT_D`为H:6/H:7提供了可重算的历史Path字节与来源元数据，分别对应一条轮廓和三条描边；第33/50/63/67轮来源SHA/草案资产哈希一致。**不改变**第67轮历史`fontGlyphPathHashV035=null`的事实，也不将路径来源等同原图逐笔认证、正式永久ID或已核验分发许可。第68轮ZIP 1016文件，SHA256 `d077e82ea340675759862d156f9bb937c8bbd1833cb49717b9ce71749e877d05`，两种独立解压及新旧QA通过；T02/T03未正式集成，0/12 Accepted。见 `docs/evidence/v036-round68-h-extracted-component-provenance.md`。
