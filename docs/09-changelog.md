@@ -110,3 +110,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 - 在隔离模块中将151候选UID绑定第77轮100×100 inkBBox/锚点/光学校正内核；外部API拒绝旧索引和草案ID，导入失败保持原预览不变。未认证形态不升级。
 - 新增50/50测试、继承11组旧QA；第77轮父包1122/1122 SHA继承；累计1131文件，ZIP SHA256 `48fe5a2b6cda30d1ef72ce09454a9ddd78ab55dfdf1d0360f6ccd669cc6e55c9`；两次独立解压与新旧QA通过。
 - T00–T11 0/12 Accepted；T01 0/25；真实同源、真机、读屏not-run。生产HTML及用户存储未动。
+
+## 2026-10-24 · 第79轮 Root T04 候选UID几何隔离修订日志
+
+第75轮151候选UID+5关联的旧坐标迁移计划与第78轮几何预览首次通过可逆版本日志连接；新增仅FakeStore可用的两阶段提交、模拟并发/故障恢复、版本回滚、上下文SHA和非法UID/认证拒绝。新增38/38 Node QA、继承12/12组QA；父1131/1131逐文件继承，累计1141文件ZIP SHA256 `7da4350b7f2e9fc69500038c8b7e7045450fea31aa60457cc8af77ad94eabddc`，双独立解压与QA后SHA通过。真实同源blocked/not-run、真机/读屏not-run；原始T00–T11仍0/12 Accepted。详见 `docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
