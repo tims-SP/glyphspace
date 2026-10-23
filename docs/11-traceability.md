@@ -93,3 +93,7 @@
 ## 第79轮 T04 旧坐标—候选UID几何修订隔离日志（2026-10-24）
 
 第75轮旧156条（151候选UID+5关联隔离）迁移预检、第76轮事务协议与第78轮UID几何预览现由独立FakeStore版本日志贯通；支持多修订、幂等、回滚、模拟并发及崩溃恢复，来源摘要和几何合法性失败关闭。新QA38/38，旧12/12组；父1131/1131继承，累计1141文件、ZIP SHA256 `7da4350b7f2e9fc69500038c8b7e7045450fea31aa60457cc8af77ad94eabddc`，两次独立解压与复跑均通过。证据：`docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。**仅Node合成存储，非真实共享原点；T04未Accepted**。T01 0/25、正式永久ID 0、T00–T11 0/12 Accepted；真机/读屏not-run，冻结生产入口未改。
+
+## 第80轮 Root T04 模拟多标签页UID三方合并（2026-10-24）
+
+基于第79轮候选UID几何版本日志，新增共同祖先三方合并：M/K/V不同候选UID的并发调位可保留彼此编辑；同UID分歧、未知祖先、篡改负载失败关闭。仅FakeStore和模拟独占锁；新QA24/24、旧13/13组；父1141/1141继承，累计ZIP1151文件、SHA256 `26285567c81a302cd9dcb9b96bb57a39a8a57110bf98d948a1ff7a8412142185`，双独立解压/QA后SHA一致。证据：`docs/evidence/v036-round80-t04-disjoint-uid-three-way-rebase.md`。真实Web Locks/localStorage事务仍blocked/not-run，正式T04未验收；T01 0/25、T02正式ID 0、T00–T11 0/12 Accepted；真机/读屏not-run。
