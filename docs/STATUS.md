@@ -143,3 +143,9 @@
 - 真实读取第77轮累计ZIP（1122文件，SHA256 `314c5dd3033923f20a959a8df8e555e95460d975284f2df72e59528ecb357e2b`），逐文件1122/1122继承；新增独立T02/T03隔离模块：外部几何接口只使用151个不透明候选UID，不再允许旧槽位/历史草案instanceId作为可编辑身份；25键几何、inkBBox、锚点及光学校正绑定第63轮字节SHA与第73轮注册表SHA。**仍非正式永久ID、来源认证或生产集成**。
 - 新增50/50 Node QA，继承第77轮11组QA通过；累计第78轮ZIP 1131文件，SHA256 `48fe5a2b6cda30d1ef72ce09454a9ddd78ab55dfdf1d0360f6ccd669cc6e55c9`；Python zipfile和系统unzip各1131/1131独立恢复、两份均重跑12组新旧QA、QA后SHA无变化。ZIP本体不在GitHub。
 - T01 0/25，正式永久ID 0，T00–T11 0/12 Accepted。缺第10–12、35轮ZIP与第12轮20 SVG，高清原图及许可未补；真实同源存储、真机、读屏本轮not-run。冻结V0.35、176编码、正式SVG及用户存储未动。证据：`docs/evidence/v036-round78-candidate-uid-geometry-bridge.md`。
+
+## 第79轮 Root T04 候选UID几何修订隔离事务（2026-10-24；非正式验收）
+
+- 将第75轮156条旧坐标映射（151候选UID+5关联隔离）、第76轮事务思想及第78轮UID几何桥接接入可逆多修订日志。FakeStore/模拟锁**专用**，不提供真实localStorage写入适配器；支持模拟两阶段提交、恢复、回滚、并发冲突与来源篡改拒绝。新QA **38/38**，继承 **12/12组**QA通过。
+- 第78轮父ZIP **1131/1131**逐文件SHA继承；第79轮累计ZIP **1141文件**，SHA256 `7da4350b7f2e9fc69500038c8b7e7045450fea31aa60457cc8af77ad94eabddc`。Python zipfile与系统unzip两次独立解压各1141/1141、QA后SHA均一致。ZIP本体不在GitHub；见 `docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
+- 真实共享原点事务仍**blocked/not-run**，真机/读屏not-run；T01 0/25、正式永久ID 0、T00–T11 **0/12 Accepted**。第10–12、35轮完整ZIP及第12轮20SVG缺失，冻结入口、176编码和用户存储未修改。
