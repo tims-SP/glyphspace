@@ -94,3 +94,9 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第75轮 Root T04 隔离旧坐标→候选UID迁移预检
 
 新增156旧记录到151候选UID+5关联隔离的只读、来源绑定桥接；合成3条调位全部保留（含1条关联调位隔离），V0.33/V0.15旧profile通过；拒绝未登记坐标漂移。新增48/48 QA，继承八组QA；父1088/1088逐文件继承、累计ZIP1101文件Python/system unzip两次独立解压及QA后SHA均一致。真实同源探针超时，事务blocked/not-run；未接触用户存储。证据：`docs/evidence/v036-round75-t04-readonly-uid-migration-preflight.md`。正式T00–T11仍0/12 Accepted。
+
+## 2026-10-24 · 第76轮 Root T04 隔离事务与恢复预演（2026-10-24，非正式验收）
+
+- 继承第75轮1101/1101文件SHA；新增151候选UID+5关联的合成预览两阶段提交，模拟独占锁、日志恢复、回滚、篡改与多模拟tab冲突。新增Node **70/70**、继承 **9/9组**QA通过。
+- 第76轮累计ZIP **1111文件**，SHA256 `036d42a90875b30dfc475fbbd4feaccdc2b4a775f6ecf05486f58365db66b76d`；两次独立解压各1111/1111并复跑新旧QA、QA后SHA一致。ZIP不在GitHub，详见 `docs/evidence/v036-round76-t04-isolated-journal.md`。
+- 临时127.0.0.1 Chromium profile导航超时、未获得DOM；真实Web Locks/localStorage事务 **blocked/not-run**。真机/读屏not-run；T01 **0/25**、永久ID正式分配0、原始T00–T11 **0/12 Accepted**，生产入口与用户存储未改。
