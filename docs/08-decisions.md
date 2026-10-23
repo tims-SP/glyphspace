@@ -111,3 +111,7 @@
 - 第76轮仅在注入的FakeStore和单进程SimulatedExclusiveLocks中执行70/70测试；该锁不能代替真实浏览器多标签页Web Locks，且T01/T02/T03前提尚未正式Accepted。
 - 生产启用前必须取得独立授权profile的同源事务、真实跨标签锁、quota/崩溃/存储事件与恢复证据；禁止直接迁移用户现有存储。
 - 证据：`docs/evidence/v036-round76-t04-isolated-journal.md`；可回滚方案：不触碰冻结入口，仅丢弃隔离事务预览数据。
+
+## ADR-R77 · T03锚点与光学校正仅在隔离预览试验（2026-10-24）
+
+**暂定决定**：对第63轮来源SHA绑定的151个SVG草案，允许在独立内存预览层以100×100坐标、inkBBox、五种显式ink锚点及ox/oy光学位移计算新transform；支持撤销、签名导出/导入、非法值与越界失败关闭。预览不写localStorage、不修改来源资产、正式SVG、旧176编码和冻结HTML。旧版所有实例仍采用ink-center+零光学偏移；新锚点选项只是API能力，不表示参考图原本具有这些锚点。矩形碰撞仅作T07前置审阅，不等同真实stroke/标签/圈注/焦点态完整验收。**原始T03、T07均未Accepted**，永久ID、逐笔来源认证及生产集成尚待依赖完成。证据：`docs/evidence/v036-round77-t03-anchor-optical-preview.md`。
