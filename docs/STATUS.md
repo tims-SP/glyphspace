@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第78轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第80轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -149,3 +149,9 @@
 - 将第75轮156条旧坐标映射（151候选UID+5关联隔离）、第76轮事务思想及第78轮UID几何桥接接入可逆多修订日志。FakeStore/模拟锁**专用**，不提供真实localStorage写入适配器；支持模拟两阶段提交、恢复、回滚、并发冲突与来源篡改拒绝。新QA **38/38**，继承 **12/12组**QA通过。
 - 第78轮父ZIP **1131/1131**逐文件SHA继承；第79轮累计ZIP **1141文件**，SHA256 `7da4350b7f2e9fc69500038c8b7e7045450fea31aa60457cc8af77ad94eabddc`。Python zipfile与系统unzip两次独立解压各1141/1141、QA后SHA均一致。ZIP本体不在GitHub；见 `docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
 - 真实共享原点事务仍**blocked/not-run**，真机/读屏not-run；T01 0/25、正式永久ID 0、T00–T11 **0/12 Accepted**。第10–12、35轮完整ZIP及第12轮20SVG缺失，冻结入口、176编码和用户存储未修改。
+
+## 第80轮 Root T04 隔离候选UID三方合并（2026-10-24，非验收）
+
+- 基于第79轮不可变候选UID几何日志，增加共同祖先三方合并：不同UID过期编辑可安全合并，同UID分歧、未知祖先失败关闭；仅FakeStore/SimulatedExclusiveLocks，不是真实浏览器迁移。
+- 第79轮父ZIP1141/1141逐文件SHA继承；第80轮累计ZIP1151文件，SHA256 `26285567c81a302cd9dcb9b96bb57a39a8a57110bf98d948a1ff7a8412142185`；新增Node 24/24及旧13/13组QA通过；Python/system unzip双独立恢复各1151/1151及QA后SHA一致。
+- **原始T00–T11仍0/12 Accepted；T01仍0/25，正式永久ID0，真实缺根数未知。** 真同源存储blocked/not-run、真机/读屏not-run。历史第10–12、35轮ZIP及第12轮20SVG缺失；生产入口、原图、176编码和用户存储未修改。证据：`docs/evidence/v036-round80-t04-disjoint-uid-three-way-rebase.md`。
