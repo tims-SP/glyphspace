@@ -45,10 +45,10 @@
         "T01"
       ],
       "sourceExitCriterion": "Schema 校验通过，当前实例 ID 唯一，不与数组下标耦合",
-      "implementationState": "156 stable-ID drafts; no production integration",
+      "implementationState": "round72 isolated runtime identity/provenance gate; 156 draft rows, 0 permanent IDs, not integrated",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-22",
+      "statusDate": "2026-10-23",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
@@ -61,10 +61,10 @@
         "T02"
       ],
       "sourceExitCriterion": "增删任意一个实例不影响其他几何；三视图同配置",
-      "implementationState": "isolated SVG/viewBox exploration; production coordinate core not integrated",
+      "implementationState": "round72 isolated source-bound 151 SVG three-view runtime; Chromium 77/77, not production integrated",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-22",
+      "statusDate": "2026-10-23",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
