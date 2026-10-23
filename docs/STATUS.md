@@ -75,3 +75,9 @@
 - 原始T02/T03：第44轮156草案、第45轮扩展证据、第46轮来源阻断及第63轮151几何数据实现只读交叉账本。151旧可视+5关联分别保留，**H:6/H:7缺历史Path哈希绑定**，不得将第63轮草案SVG自动视为正式来源资产。
 - 第67轮累计ZIP 1006文件，SHA256 `693eea7737e0ae55d819de842214433682e959d6068b6cba5c95deab87b0bafd`；父第66轮996/996逐文件SHA继承一致；Python zipfile及系统unzip两次解压各1006/1006，新增27/27及继承25/25+1/1 QA均通过。ZIP不在GitHub。
 - T01正式认证0/25、永久ID正式分配0、T00–T11 Accepted仍0/12；真机/读屏/真实同源存储not-run。详见 `docs/evidence/v036-round67-t02-t03-crosswalk.md`。
+
+## 第68轮 H键提取部件Path来源纠偏（2026-10-23，非正式验收）
+
+- 原始T02→T03：H:6「具头」与H:7「皮头」虽然历史`fontGlyphPathHashV035=null`，但冻结HTML另有`EXTRACTED_COMPONENT_D`来源。第68轮将其与第33/50/63/67轮的Path SHA及草案资产哈希逐项比对，两项均一致；保留历史普通字体Path字段未绑定，不将提取部件来源等同2008原图身份认证。
+- 第68轮累计ZIP 1016文件，SHA256 `d077e82ea340675759862d156f9bb937c8bbd1833cb49717b9ce71749e877d05`，继承第67轮1006/1006；Python zipfile与系统unzip两次独立解压各1016/1016，新增16/16、上轮27/27及历史25/25+1/1组QA通过。ZIP本体不在GitHub。
+- 许可仍待独立核验；25键原图正式认证0/25，T00–T11仍0/12 Accepted；真实同源存储/真机/读屏not-run。详见 `docs/evidence/v036-round68-h-extracted-component-provenance.md`。
