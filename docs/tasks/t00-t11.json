@@ -61,10 +61,10 @@
         "T02"
       ],
       "sourceExitCriterion": "增删任意一个实例不影响其他几何；三视图同配置",
-      "implementationState": "round72 isolated source-bound 151 SVG three-view runtime; Chromium 77/77, not production integrated",
+      "implementationState": "round77 isolated source-pinned 151-instance 100x100 anchor/optical preview, 179/179 QA; production not integrated",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-23",
+      "statusDate": "2026-10-24",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
@@ -130,10 +130,10 @@
         "T06"
       ],
       "sourceExitCriterion": "25 键默认态与焦点态无未批准碰撞或越界，位置误差按规则验收",
-      "implementationState": "not integrated; real inkBBox and collision acceptance missing",
+      "implementationState": "round77 draft inkBBox rectangle collision preflight only; labels/stroke certification/focus states not integrated",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-22",
+      "statusDate": "2026-10-24",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
