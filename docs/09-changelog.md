@@ -118,3 +118,9 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第80轮 Root T04 隔离候选UID三方合并
 
 第79轮日志上的过期模拟标签页编辑现在可按共同祖先进行三方合并：不同UID保留彼此修改，同UID分歧/未知祖先拒绝。新增24/24 Node QA，继承13/13组旧QA；父1141/1141 SHA继承，累计1151文件ZIP SHA256 `26285567c81a302cd9dcb9b96bb57a39a8a57110bf98d948a1ff7a8412142185`，双独立解压及QA后SHA一致。仅FakeStore模拟，不代表真实同源存储、原图或正式T04验收；T00–T11仍0/12 Accepted。证据：`docs/evidence/v036-round80-t04-disjoint-uid-three-way-rebase.md`。
+
+## 第81轮 Root T01 全25键候选来源位置归并（2026-10-24；非正式验收）
+
+- 基于第80轮父ZIP 1151/1151文件SHA继承，重新核验原始JPEG 151个旧可视裁框与M键8个暂存候选，共159观察记录、153个不同来源裁框位置。M有4个与旧槽完全同框、4个未绑定旧槽；E:1/E:8与K:2/K:3各同框冲突保持阻断。36条旧未绑定与25对跨框风险保持待审。
+- 新增25键原生像素审阅清单与M/K/E/B/J/R/X/V重点审阅图；新QA 400/400，继承14/14组旧QA；第81轮累计ZIP1164文件，SHA256 `211e8e0f3c4d5c5808cfaa87969dfa7cbf9d9dd5872a7a6cfad6c77966f0b6f9`，Python zipfile/system unzip双重独立恢复各1164/1164，解压后新旧QA及文件SHA一致。ZIP不在GitHub。
+- **153是候选裁框位置数，不是字根数量或认证形态数。** T01正式0/25、T00–T11仍0/12 Accepted，真实缺根数未知；同源高清原图/许可、第10–12与35轮历史包、第12轮20SVG仍缺；真同源存储blocked/not-run，真机/读屏not-run。冻结入口、176编码、正式SVG及用户存储未动。证据：`docs/evidence/v036-round81-t01-25key-source-location-inventory.md`。
