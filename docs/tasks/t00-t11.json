@@ -78,7 +78,7 @@
         "T03"
       ],
       "sourceExitCriterion": "旧版本有效覆盖不丢失、错配为 0；有备份与重入保护",
-      "implementationState": "round75 read-only Node preflight: 156 legacy coordinates -> 151 candidate UIDs + 5 quarantined related; 48/48 QA; real-origin blocked/not-run; not integrated",
+      "implementationState": "round76 isolated synthetic journaled candidate-UID preview: 151+5, 70/70 new QA and 9/9 inherited groups; real-origin blocked/not-run; not integrated",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
