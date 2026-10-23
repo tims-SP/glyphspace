@@ -114,3 +114,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第79轮 Root T04 候选UID几何隔离修订日志
 
 第75轮151候选UID+5关联的旧坐标迁移计划与第78轮几何预览首次通过可逆版本日志连接；新增仅FakeStore可用的两阶段提交、模拟并发/故障恢复、版本回滚、上下文SHA和非法UID/认证拒绝。新增38/38 Node QA、继承12/12组QA；父1131/1131逐文件继承，累计1141文件ZIP SHA256 `7da4350b7f2e9fc69500038c8b7e7045450fea31aa60457cc8af77ad94eabddc`，双独立解压与QA后SHA通过。真实同源blocked/not-run、真机/读屏not-run；原始T00–T11仍0/12 Accepted。详见 `docs/evidence/v036-round79-t04-uid-geometry-revision-journal.md`。
+
+## 2026-10-24 · 第80轮 Root T04 隔离候选UID三方合并
+
+第79轮日志上的过期模拟标签页编辑现在可按共同祖先进行三方合并：不同UID保留彼此修改，同UID分歧/未知祖先拒绝。新增24/24 Node QA，继承13/13组旧QA；父1141/1141 SHA继承，累计1151文件ZIP SHA256 `26285567c81a302cd9dcb9b96bb57a39a8a57110bf98d948a1ff7a8412142185`，双独立解压及QA后SHA一致。仅FakeStore模拟，不代表真实同源存储、原图或正式T04验收；T00–T11仍0/12 Accepted。证据：`docs/evidence/v036-round80-t04-disjoint-uid-three-way-rebase.md`。
