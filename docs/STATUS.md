@@ -137,3 +137,9 @@
 - 第63轮151草案几何经原始JSON SHA锁定，新增五种ink锚点、ox/oy光学校正、单实例移动/撤销、预览SHA导入导出及草案矩形碰撞预检；151/151旧几何与transform反推一致，默认草案墨迹矩形碰撞0对。**不是正式SVG内核集成、逐笔原图或T07完整碰撞验收**。
 - 第76轮父ZIP1111/1111逐文件继承，第77轮累计ZIP1122文件SHA256 `314c5dd3033923f20a959a8df8e555e95460d975284f2df72e59528ecb357e2b`；Python zipfile及系统unzip两次独立解压各1122/1122，新增Node 179/179、旧10/10组QA在两次恢复环境均通过，QA后SHA一致。ZIP不在GitHub，见 `docs/evidence/v036-round77-t03-anchor-optical-preview.md`。
 - T01仍0/25、永久ID正式分配0、原始T00–T11仍0/12 Accepted；真同源存储本轮not-run（此前管理员阻断），真机/读屏not-run，生产入口与用户存储未动。
+
+## 第78轮 T02/T03 候选UID—100×100几何运行时桥接（2026-10-24；非正式验收）
+
+- 真实读取第77轮累计ZIP（1122文件，SHA256 `314c5dd3033923f20a959a8df8e555e95460d975284f2df72e59528ecb357e2b`），逐文件1122/1122继承；新增独立T02/T03隔离模块：外部几何接口只使用151个不透明候选UID，不再允许旧槽位/历史草案instanceId作为可编辑身份；25键几何、inkBBox、锚点及光学校正绑定第63轮字节SHA与第73轮注册表SHA。**仍非正式永久ID、来源认证或生产集成**。
+- 新增50/50 Node QA，继承第77轮11组QA通过；累计第78轮ZIP 1131文件，SHA256 `48fe5a2b6cda30d1ef72ce09454a9ddd78ab55dfdf1d0360f6ccd669cc6e55c9`；Python zipfile和系统unzip各1131/1131独立恢复、两份均重跑12组新旧QA、QA后SHA无变化。ZIP本体不在GitHub。
+- T01 0/25，正式永久ID 0，T00–T11 0/12 Accepted。缺第10–12、35轮ZIP与第12轮20 SVG，高清原图及许可未补；真实同源存储、真机、读屏本轮not-run。冻结V0.35、176编码、正式SVG及用户存储未动。证据：`docs/evidence/v036-round78-candidate-uid-geometry-bridge.md`。
