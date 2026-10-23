@@ -81,3 +81,10 @@
 - 原始T02→T03：H:6「具头」与H:7「皮头」虽然历史`fontGlyphPathHashV035=null`，但冻结HTML另有`EXTRACTED_COMPONENT_D`来源。第68轮将其与第33/50/63/67轮的Path SHA及草案资产哈希逐项比对，两项均一致；保留历史普通字体Path字段未绑定，不将提取部件来源等同2008原图身份认证。
 - 第68轮累计ZIP 1016文件，SHA256 `d077e82ea340675759862d156f9bb937c8bbd1833cb49717b9ce71749e877d05`，继承第67轮1006/1006；Python zipfile与系统unzip两次独立解压各1016/1016，新增16/16、上轮27/27及历史25/25+1/1组QA通过。ZIP本体不在GitHub。
 - 许可仍待独立核验；25键原图正式认证0/25，T00–T11仍0/12 Accepted；真实同源存储/真机/读屏not-run。详见 `docs/evidence/v036-round68-h-extracted-component-provenance.md`。
+
+## 第69轮 36条旧未匹配来源像素核验（2026-10-23，非验收）
+
+- 原始T01→T02：36条历史提议裁框从2008原始JPEG字节重算RGB SHA256并与对应键位PNG逐像素比对，36/36一致；但第45轮36条 `sourceCropBox` / `candidateCropRGBSHA256` 均为null，历史裁框**不可升级为正式来源绑定**。
+- 第43轮旧分类26待核+8否定+2命名空间冲突；第46轮有效门禁为25仅审阅+8否定阻断+2命名空间阻断+1共享来源阻断（K:3与K:2共享来源）。
+- 第69轮累计ZIP1030文件，SHA256 `3459c84bb6eb6c2cdf19c01fcf1a96fe8ac80fee33127ffaf86dddf35cc65d4f`，父第68轮1016/1016继承，两次独立解压各1030/1030，解压后新19/19、旧16/16+27/27+43/43 QA通过；ZIP本体不在GitHub。
+- T01正式认证0/25、缺根数未知、T02永久ID正式分配0、原始T00–T11仍0/12 Accepted；真机/读屏/真实同源存储not-run。详见 `docs/evidence/v036-round69-unmatched36-pixel-provenance.md`。
