@@ -9,6 +9,12 @@
 - V0.35冻结SVG、176条原编码、真实用户`localStorage`从未获授权修改；文档修复不修改上述资源。
 
 
+## 第66轮独立进展（非发布、非正式验收）
+
+- 原始**T03**：修复第64轮浏览器适配器未绑定第63轮来源门禁的问题。现在挂载前校验151旧可视实例完整草案模型SHA256，深拷贝并冻结，拒绝路径、stroke、几何、变换、键位成员与旧槽位的意外漂移；不认证原图或永久ID。
+- 第66轮累计ZIP **996文件**，SHA256 `29735c2ce105e93c0ad843ff3d894c81329f0808810865d35454e055f8fc3690`；父第65轮981/981逐文件SHA继承一致，Python zipfile与系统unzip两次独立解压各996/996并复跑新旧QA。新Chromium about:blank 43/43，旧QA25/25组通过。ZIP本体不在GitHub，详见 `docs/evidence/v036-round66-t03-source-bound-renderer.md`。
+- T04一次性profile+127.0.0.1同源导航被管理员策略阻断（blocked），真实Web Locks/localStorage事务**not-run**；真机/读屏**not-run**。原始T00–T11仍**0/12 Accepted**，T01**0/25**，真实缺根数未知。
+
 ## 第65轮独立累计进展（非发布、非正式验收）
 
 - 第65轮ZIP：`字间_V0.36_第六十五轮隔离累计恢复包_继承第64轮_历史缺口未补齐.zip`，**981文件**，SHA256 `f9a61e9cad2022e48e943bead7766c8645ef9c31b69810728f385ede9d27f6c4`；第64轮970/970继承SHA一致，Python zipfile和系统unzip两次独立解压各981/981并复跑新旧QA通过。**GitHub不包含ZIP原始字节**，证据详情见 `docs/evidence/v036-round65-t03-browser-stroke-geometry.md`。
