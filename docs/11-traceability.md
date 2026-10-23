@@ -71,3 +71,7 @@
 ## 第74轮 T01/T05 全25键跨框连通风险核验（非正式验收）
 
 151旧可视槽位（5关联排除）在25键内形成409个候选配对；基于原始JPEG/PNG字节SHA与裁框RGB SHA，四档8邻接扫描标记25对（2完全同框、23不相交但共享暗色分量），16持续、9阈值敏感。仅供人工审阅，不解除K/E/B/V来源阻断，不代表M键8新候选已认证。新增34/34 QA与7组旧QA通过，第73轮1077/1077继承，第74轮1088/1088双重独立解压及QA后SHA一致。证据：`docs/evidence/v036-round74-all25-component-ambiguity.md`；正式0/25键、0/12 Accepted，真实同源blocked、真机/读屏not-run。
+
+## 第75轮 Root T04 只读迁移预检（非验收）
+
+旧156条索引坐标经来源SHA与旧身份交叉验证，映射为151个候选UID和5条仅关联隔离记录；合成三条调位3/3无损，其中M:4关联调位单独保留，不提升为正式字根。额外v16_v033/v15_XQU_only合成profile通过；未登记调位漂移被拒绝。新增48/48 Node QA、继承八组QA，父1088/1088继承，第75轮累计1101/1101两次独立解压与QA后SHA通过。证据：`docs/evidence/v036-round75-t04-readonly-uid-migration-preflight.md`。**这不是真实浏览器迁移**：隔离HTTP/Chromium原点探针超时，Web Locks/localStorage事务blocked/not-run；T01 0/25、T02正式ID 0、T04未Accepted，原始T00–T11仍0/12 Accepted。
