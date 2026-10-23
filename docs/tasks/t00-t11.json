@@ -78,7 +78,7 @@
         "T03"
       ],
       "sourceExitCriterion": "旧版本有效覆盖不丢失、错配为 0；有备份与重入保护",
-      "implementationState": "round76 isolated synthetic journaled candidate-UID preview: 151+5, 70/70 new QA and 9/9 inherited groups; real-origin blocked/not-run; not integrated",
+      "implementationState": "round79 isolated FakeStore-only multi-revision UID geometry journal with R75 151+5 migration plan, 38/38 new QA + 12 inherited groups; real-origin blocked/not-run; production not integrated",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
