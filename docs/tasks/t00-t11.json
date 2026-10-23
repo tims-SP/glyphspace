@@ -28,10 +28,10 @@
         "T00"
       ],
       "sourceExitCriterion": "`reference-manifest`：25/25 已枚举，每项有证据和类别候选",
-      "implementationState": "round46 source quarantine; 0/25 keys certified; missing count unknown",
+      "implementationState": "round81 25-key source-location review manifest: 159 observations/153 distinct candidate crop locations; 4 M exact legacy aliases + 4 M unbound proposals; no shape certification; 0/25",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-22",
+      "statusDate": "2026-10-24",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
