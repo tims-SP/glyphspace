@@ -81,3 +81,7 @@
 - 继承第75轮1101/1101文件SHA；新增151候选UID+5关联的合成预览两阶段提交，模拟独占锁、日志恢复、回滚、篡改与多模拟tab冲突。新增Node **70/70**、继承 **9/9组**QA通过。
 - 第76轮累计ZIP **1111文件**，SHA256 `036d42a90875b30dfc475fbbd4feaccdc2b4a775f6ecf05486f58365db66b76d`；两次独立解压各1111/1111并复跑新旧QA、QA后SHA一致。ZIP不在GitHub，详见 `docs/evidence/v036-round76-t04-isolated-journal.md`。
 - 临时127.0.0.1 Chromium profile导航超时、未获得DOM；真实Web Locks/localStorage事务 **blocked/not-run**。真机/读屏not-run；T01 **0/25**、永久ID正式分配0、原始T00–T11 **0/12 Accepted**，生产入口与用户存储未改。
+
+## 第77轮 Root T03/T07前置隔离几何（2026-10-24，非正式验收）
+
+第63轮151草案SVG来源字节SHA门禁下，新增100×100 inkBBox锚点（5种）、ox/oy光学校正、撤销、不可变来源绑定的预览导出导入与同键草案矩形碰撞检查；原transform几何151/151一致。新增179/179 Node QA及旧10/10组QA通过，父1111/1111继承，第77轮1122文件累计ZIP双解压各1122/1122、QA后SHA一致。仅T03隔离代码和T07前置检查，未认证参考图、标签碰撞、永久ID或生产集成；T00–T11仍0/12 Accepted，T01 0/25，真同源/真机/读屏not-run。证据：`docs/evidence/v036-round77-t03-anchor-optical-preview.md`。
