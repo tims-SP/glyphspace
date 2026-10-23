@@ -119,3 +119,9 @@
 - 从第73轮1077文件累计ZIP逐项继承SHA，核验2008 JPEG与25键PNG原始字节、151个历史候选裁框像素；同键409组配对发现25组需审阅风险（2同框K/E、23跨不相交裁框共享暗色连通分量；16四档持续、9阈值敏感）。**这是审阅线索，不能作为笔画身份认证或根数量统计**。
 - 新QA34/34、继承第67–73轮7组QA通过；累计ZIP1088文件，SHA256 `ea5572a037424c333f5d18c02286535a34ed6f69e34320e952f265308240fd7e`，Python zipfile与系统unzip两次独立解压均1088/1088，QA后SHA一致。外部ZIP不在GitHub。详见 `docs/evidence/v036-round74-all25-component-ambiguity.md`。
 - T01仍0/25正式认证、真实缺根未知；M新候选07/08风险未解决，K/E/B/V门禁不解除，T00–T11仍0/12 Accepted。同源导航blocked、真实存储not-run，真机/读屏not-run；历史缺第10–12、35轮ZIP及第12轮20SVG，冻结入口/176编码/用户存储未动。
+
+## 第75轮 Root T04 旧坐标→候选UID只读迁移预检（2026-10-24；非验收）
+
+- 以第74轮累计ZIP为父（1088/1088 SHA继承），新增第19–21轮旧156索引坐标负载与第73轮151个候选UID的**只读**桥接；5个仅关联记录独立隔离保留。合成3条调位**3/3**无损，其中1条关联调位未被错误提升；另测V0.33/V0.15旧profile。检测未登记调位的静默漂移。
+- 新Node QA **48/48**、含旧QA **9/9组**；累计ZIP **1101文件** SHA256 `f809b54708efa819a1b9e0092a9e48b3458eefb596be0b86e53af24c88228607`；Python zipfile与系统unzip各1101/1101、两次QA后SHA一致。ZIP本体不在GitHub，见 `docs/evidence/v036-round75-t04-readonly-uid-migration-preflight.md`。
+- 真实127.0.0.1隔离Chromium profile原点探针**超时**，Web Locks/localStorage真实事务**blocked/not-run**；真机/读屏not-run，用户原有存储未动。T01 **0/25**、正式永久ID **0**、原始T00–T11仍 **0/12 Accepted**。第10–12、35轮历史ZIP及第12轮20SVG仍缺失；冻结生产入口/176编码未修改。
