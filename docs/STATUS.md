@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第89轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第91轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -210,3 +210,9 @@
 - 原始JPEG/R81清单/R88 ROI三份固定SHA交叉验证E键9个历史可视槽。E:1/E:8共享失效框[452,223,16,23]，368像素仅5个RGB均值<160；E顶部微形/圈注上下文ROI与失效框分别交叠240/66像素，**不能自动重绑**。E:7继续blocked_invalidated，语义未认证。
 - 新增只读空间排除门禁及82/82新QA；继承8组历史QA，父第89轮1253/1253继承；累计ZIP1270文件SHA256 `7e694c91b8f424390314ea7e92c3c7819536a14551290cc7ad95fba8aa1d52f2`，Python/system unzip双独立解压1270/1270、两份环境各9组QA及QA后SHA通过。ZIP本体不在GitHub；详见 [R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)。
 - T01正式0/25、永久ID正式0、原始T00–T11 **0/12 Accepted**；完整历史QA not-run，真同源存储 blocked/not-run，真机/读屏not-run。历史第10–12、35轮ZIP及第12轮20SVG缺失，合法同源高清原图仍缺。冻结V0.35、176编码、正式SVG及用户存储未修改。
+
+## 第91轮 Root T03 · 候选UID几何驱动真实三视图SVG DOM（2026-10-24；非验收）
+
+- R64/66来源绑定三视图与R77/78候选UID几何在隔离Chromium SVG DOM贯通：151 UID/25键、100×100、inkBBox、五锚点/光学位移，full/mini/single transform同步、非法编辑原子回滚。5关联及4个M影子观察不渲染。
+- 新Chromium about:blank真实DOM **27/27**，继承R77/R78/R83–R90 **10组**QA；父1270/1270 SHA继承，累计ZIP **1283文件** SHA256 `b15be0b2c893ae448b7a80b59939098029c7c89ae3e149744690f1a6669367c3`，Python zipfile与系统unzip双独立解压及恢复后QA/逐文件SHA一致。ZIP不在GitHub，见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
+- **原始T03生产内核仍未正式集成/Accepted**；T01 0/25、T02正式永久ID0、T00–T11 0/12 Accepted。真实同源存储blocked/not-run，真机/读屏not-run，历史第10–12/35轮ZIP及第12轮20SVG缺失；冻结入口/176编码/用户存储未动。
