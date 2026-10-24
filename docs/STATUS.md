@@ -1,6 +1,12 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第101轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第103轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+
+## 第103轮 · Root T03 SVG祖先绘制完整性（非正式验收）
+
+- 真实Chromium复现R94祖先CSS可隐藏字根而attest误放行：父级opacity=0使截图10522像素改变，SVG getBBox不变；九类祖先opacity/filter/clip/mask/transform攻击R94均误放行，R103隔离门禁全部拒绝。新增Chromium 26/26。
+- 父R102 **1397/1397**成员SHA继承；R103累计ZIP **1410成员** SHA256 `bdd1f42c847c01bc98b278294b7a6074550e293c9e4b977f601dc4fe75ef8874`，Python/unzip双恢复各1410/1410、QA后SHA再一致。每份8组定向新旧QA共612项通过；合并执行曾超时，unzip恢复环境分项重跑通过，完整历史QA仍not-run。
+- T03仍**未生产集成**；T01正式认证0/25、正式永久ID0、T00–T11 **0/12 Accepted**。同源存储blocked/not-run，真机/读屏not-run，历史ZIP/高清原图缺口未补；冻结正式入口与用户存储未动。见[第103轮证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
 
 ## 第102轮 · T01/T02/T05 M键原生像素交叠拓扑（非正式验收）
 
