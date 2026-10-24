@@ -148,4 +148,4 @@ R63 Path与R73候选UID经R78来源校验，将内存几何/五锚点/ox/oy编�
 
 ## 第92轮 T03 · DOM成员与资产来源门禁（非正式验收）
 
-R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R92隔离Chromium中先复现3个漏洞，再加25键逐项成员/顺序、149资产Path/描边及三视图transform一致性验证，修复撤销/导入的内存事务。新27/27、R91旧27/27、继承10组；父1283/1283 SHA继承，第92轮1296成员双解压/QA后SHA一致。详见 [R92证据](./evidence/v036-round92-t03-dom-provenance-attestation.md)。正式T03生产集成、来源逐笔认证、真同源存储、真机及读屏仍未验收；T00–T11 0/12 Accepted。
+R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R92隔离Chromium中先复现3个漏洞，再加25键逐项成员/顺序、149资产Path/描边及三视图transform一致性验证，修复撤销/导入的内存事务及键帽真实click/Enter/Space绕过包装层的问题。新29/29、R91旧27/27、继承10组；父1283/1283 SHA继承，第92轮1296成员双解压/QA后SHA一致。详见 [R92证据](./evidence/v036-round92-t03-dom-provenance-attestation.md)。正式T03生产集成、来源逐笔认证、真同源存储、真机及读屏仍未验收；T00–T11 0/12 Accepted。
