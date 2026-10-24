@@ -150,3 +150,8 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第87轮 Root T01/T02/T05 隔离来源影子桥接
 
 将151旧候选UID、M键4旧UID别名/4未绑定影子UID、25键来源清单与R86未批准裁框证据接入固定SHA只读模块，增加纯内存笔记的防冒充导入/导出。影子候选**不生成SVG、不分配正式永久ID、不可渲染**。新增38/38 Node+12/12 RGB QA，16组继承QA；父1223/1223继承，新累计ZIP1236文件 SHA256 `c50653e2bb980a289fb0287d7edb05f99d30f3f671112ec86cb39880e366e89f`，两次独立解压及恢复后18组QA/文件SHA均通过。真实同源blocked、真机/读屏not-run；正式T01 0/25、T00–T11 0/12 Accepted。见 [R87](./evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md)。
+
+## 2026-10-24 · 第88轮（原始T01/T05，隔离证据）
+
+- 新增K/E六ROI原生JPEG来源位置与像素SHA/Pillow-OpenCV交叉核验；保留K/E同框阻断，K:4右下可见形态语义对应待审，不修改正式字形。
+- 新QA78/78，19组继承与新增QA；父1236/1236，累计ZIP1243文件、SHA256 `76690664e16bd08d77bbbc4dda1699df20d1178d51b9ae5ed011ee1d402b5d9a`，双解压和QA后SHA通过。外部ZIP不在GitHub；T00–T11仍0/12 Accepted。
