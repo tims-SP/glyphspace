@@ -129,3 +129,7 @@
 ## 第87轮 Root T01/T02/T05 · M来源影子身份到非可渲染候选的隔离桥接（2026-10-24）
 
 以第73/81/84/86轮SHA锁定证据，交叉校验151旧候选UID、5关联隔离、M键4旧UID别名+4未绑定影子UID；4影子均保持source_pending、不可渲染且不具有正式Path/inkBBox/永久ID。R86 vis-02扩框仍仅是未批准证据。新38/38+12/12、继承16组，父1223/1223、累计1236文件双解压各1236/1236与恢复后QA/文件SHA一致。详见 [R87](./evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md)。**不满足T01正式认证、T02永久ID、T03正式内核或T05补图完成；T00–T11 0/12 Accepted。** 真同源blocked、真机/读屏not-run，历史缺口未补。
+
+## 第88轮 T01/T05 K/E冲突来源分区证据（非验收）
+
+2008 JPEG及R81来源清单固定SHA下，K/E 6个独立人工定位ROI经Pillow/OpenCV原生RGB交叉验证；K:2/K:3同框及E:1/E:8失效同框不解除，K:4语义对应风险单列。新增78/78 QA，继承+新增19组；第87轮1236/1236继承、第88轮1243文件ZIP双独立解压各1243/1243，QA后SHA一致。证据：[R88](./evidence/v036-round88-ke-source-roi-collision-review.md)。T01正式0/25，T02永久ID正式0，T05未完成，T00–T11 0/12 Accepted；真同源、真机、读屏not-run。
