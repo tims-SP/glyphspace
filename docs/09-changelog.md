@@ -207,3 +207,9 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 
 - Root T03/T07：新增Chromium独立SVG Path→Canvas alpha像素读取，对151候选UID在4×/8×两档栅格化核对草案inkBBox（302/302），H:7 stroke与3个主动篡改负例通过；不作来源认证。
 - 父R98 1359/1359继承；R99累计ZIP1366文件 SHA256 `7fe43e62975b1e1b339f46674d452c519a3ad6b6d130e448e8c2f670d12f4fea`；双恢复/新旧定向QA通过。正式0/12 Accepted，冻结入口未动。
+
+## 2026-10-25 · 第100轮 T00/T01/T05 归档链与M来源复验（非验收）
+
+- 独立核验第90–99轮10份实际ZIP的SHA、成员和9次相邻继承；M键8个原生JPEG来源ROI与8个PNG字节及RGB复算一致，4个无旧槽仍不认证。
+- R99父1366/1366继承，R100累计1373文件ZIP SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`；Python/unzip双恢复及各15组新旧定向QA通过，QA后成员SHA1373/1373。完整历史QA未执行。
+- 历史缺口未补、同源真实事务blocked、真机/读屏not-run；T00–T11 0/12 Accepted。见[证据](./evidence/v036-round100-archive-chain-m-provenance.md)。
