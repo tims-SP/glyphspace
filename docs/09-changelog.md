@@ -189,3 +189,7 @@ R92文档级SVG fragment ID冲突漏洞经Chromium真实绘制包围盒复现，
 
 - 新增4个原生JPEG K物理ROI与5旧槽分离的可复验审计；K:3没有独立来源ROI，K:2/K:3继续双阻断；K:4冻结「〢」来源差异及圈注语义未解决。隔离仲裁拒绝借框、非法认证/许可/ID提升；不产生正式SVG或永久ID。
 - 新QA36/36、R81/R86–R94十组定向旧QA通过；父1319/1319 SHA继承，累计ZIP1331文件SHA256 `7deea5a9de203a1cefee6f52ca988f7d26c5588b6b0316a68fab42c2b1dd6db0`，Python/unzip双独立恢复各1331/1331且QA后SHA一致。完整历史QA not-run；真实同源浏览器导航blocked，真机/读屏not-run。证据：[R95](./evidence/v036-round95-k-physical-source-identity-arbitration.md)。T00–T11仍0/12 Accepted。
+
+## 2026-10-24 · 第96轮（隔离来源账本，非发布）
+
+Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚定的独立物理观察ID；新增旧槽裁框交叠交叉账本，保留B:7/V:4阻断。新增35/35 QA、旧11组、双独立恢复1340/1340；不认证字根、不改冻结入口。详见[证据](./evidence/v036-round96-seven-microform-source-crosswalk.md)。
