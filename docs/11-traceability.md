@@ -121,3 +121,7 @@
 ## 第85轮 T01/T05 · M键边界来源审计（非验收）
 
 8个M裁框中6个存在跨框暗像素诊断标记，vis-02右、vis-04左优先人工复框；不证明裁框错误或独立字根。父1203/1203继承，新1214文件双解压及定向新旧QA通过，完整继承QA尝试超时。T01正式0/25、T05未正式补图、T00–T11仍0/12 Accepted。证据：`docs/evidence/v036-round85-m-native-border-context.md`。
+
+## 第86轮 Root T01/T05 · M vis-02原生裁框候选修复（2026-10-24）
+
+第85轮1214/1214父成员SHA继承；原生JPEG可视核验发现M vis-02旧框右侧截断可见竖笔，建立向右5像素列的**未批准**候选框及来源哈希，vis-04左侧归属不明继续隔离。新增20/20 QA，5组定向旧QA双恢复通过；累计ZIP1223文件、SHA256 `af6260dbda45957892d844d5af1a2f2a3d494547b1b89f82c774971d2cd3a84a`，Python/unzip双独立恢复与QA后SHA一致。全历史QA not-run，真同源blocked/not-run、真机/读屏not-run。**T01 0/25、T05未正式补图、T00–T11 0/12 Accepted**。证据：[R86](./evidence/v036-round86-m-vis02-unapproved-crop-handoff.md)。
