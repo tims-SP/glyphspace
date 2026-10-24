@@ -179,3 +179,8 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第93轮（Root T03，隔离非验收）
 
 R92文档级SVG fragment ID冲突漏洞经Chromium真实绘制包围盒复现，R93加入全document唯一ID/规范defs解析和base[href]门禁。新12/12、R92 29/29、R91 27/27及继承10组定向QA通过；父1296/1296继承、累计1308文件双恢复与QA后SHA一致。证据：[R93](./evidence/v036-round93-t03-document-fragment-identity.md)。正式T03仍未集成，T00–T11 0/12 Accepted。
+
+## 2026-10-24 · 第94轮（Root T03，隔离SVG实际绘制来源门禁）
+
+- 复现R93实际Chromium `<defs><g transform=scale(2)>` 使getBBox宽82→164仍通过attest，以及CSS Path opacity=0未被察觉；新增节点属性/身份、computed paint/transform检查。
+- 新18/18、R91 27/27、R92 29/29、R93 12/12、继承10组QA通过；父1308/1308继承、累计1319文件ZIP SHA256 `2dcbc8880ab8adde82a8693c5c05f163d81c1476763a10d57d925d4a296df4fc`，双恢复和QA后SHA一致。ZIP本体不在GitHub。证据：[R94](./evidence/v036-round94-t03-computed-svg-paint-integrity.md)。正式T03未集成、T00–T11仍0/12 Accepted。
