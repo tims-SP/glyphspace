@@ -171,4 +171,4 @@
 ## 2026-10-24 · 第92轮隔离DOM来源完整性决策（Root T03）
 
 - 不再以SVG `<use>`总数与全局UID集合代替键内成员/顺序和Path来源验证。隔离编辑前必须检查25键full/mini与当前single视图、资产href、原始Path/描边、viewBox与transform；异常失败关闭。
-- 导入/撤销先构建并验证下一状态，再更新DOM与内存overlay；单键切换前核验旧DOM，切换后恢复overlay。仅内存草案，**不**提升永久ID、来源认证或正式生产集成。参见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
+- 导入/撤销先构建并验证下一状态，再更新DOM与内存overlay；单键切换前核验旧DOM，切换后恢复overlay；键帽真实click/Enter/Space在捕获阶段路由到同一校验选择器，避免旧监听器绕过。仅内存草案，**不**提升永久ID、来源认证或正式生产集成。参见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
