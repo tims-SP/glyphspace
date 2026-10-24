@@ -28,7 +28,7 @@
         "T00"
       ],
       "sourceExitCriterion": "`reference-manifest`：25/25 已枚举，每项有证据和类别候选",
-      "implementationState": "round81 25-key source-location review manifest: 159 observations/153 distinct candidate crop locations; 4 M exact legacy aliases + 4 M unbound proposals; no shape certification; 0/25",
+      "implementationState": "round82 isolated native JPEG pixel review workstation and source-bound draft validator; 159 observations/25 keys; Chromium about:blank 18/18, Python 24/24, inherited 15 QA groups; 0/25 certified; file:// blocked; no formal integration",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
