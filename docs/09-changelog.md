@@ -235,3 +235,8 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 - 真实Chromium五类CSS伪元素遮挡让R103祖先样式门禁误放行；R104增加`::before`/`::after`绘制签名，五类均拒绝，新增25/25 QA。
 - 父R103 1410/1410 SHA继承，R104累计1425文件SHA256 `3840ac7eaeea34c66d3c251dd8906117d92de2f5536b34256d26b6afad275289`；9组637项定向QA通过，Python/unzip四次分段独立恢复及QA后SHA各1425/1425一致；完整历史QA not-run。
 - 独立profile同源导航仍被管理员阻断，Web Locks/localStorage blocked/not-run，真机/读屏not-run。T00–T11 0/12 Accepted；冻结HTML、2008 JPEG、176编码和用户存储未动。[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
+
+## 2026-10-25 · 第105轮 Root T03/T07 隔离事务性碰撞门禁（非验收）
+
+- R104真实Chromium允许同键候选inkBBox重叠且attest仍放行；R105新增提交前全键草案矩形碰撞检查，151个候选UID逐一主动负例拒绝，批量编辑/签名导入无部分写入。新增Chromium 170/170，继承R104 25、R103 26、R77 179、R99 302定向QA。
+- 父R104 1425/1425 SHA继承，R105累计1433文件SHA256 `2ffa0ecc3b72bee3ef7d2a24d76431f3619c29b5734ed7dbf513388b0b7d876a`，Python/unzip双恢复与QA前后1433/1433 SHA一致；完整历史QA not-run。T03/T07均未正式集成，T00–T11仍0/12 Accepted。冻结生产入口及用户存储不变。[证据](./evidence/v036-round105-t03-t07-transactional-collision.md)。
