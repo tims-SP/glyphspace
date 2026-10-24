@@ -103,3 +103,7 @@
 - 基于第80轮父ZIP 1151/1151文件SHA继承，重新核验原始JPEG 151个旧可视裁框与M键8个暂存候选，共159观察记录、153个不同来源裁框位置。M有4个与旧槽完全同框、4个未绑定旧槽；E:1/E:8与K:2/K:3各同框冲突保持阻断。36条旧未绑定与25对跨框风险保持待审。
 - 新增25键原生像素审阅清单与M/K/E/B/J/R/X/V重点审阅图；新QA 400/400，继承14/14组旧QA；第81轮累计ZIP1164文件，SHA256 `211e8e0f3c4d5c5808cfaa87969dfa7cbf9d9dd5872a7a6cfad6c77966f0b6f9`，Python zipfile/system unzip双重独立恢复各1164/1164，解压后新旧QA及文件SHA一致。ZIP不在GitHub。
 - **153是候选裁框位置数，不是字根数量或认证形态数。** T01正式0/25、T00–T11仍0/12 Accepted，真实缺根数未知；同源高清原图/许可、第10–12与35轮历史包、第12轮20SVG仍缺；真同源存储blocked/not-run，真机/读屏not-run。冻结入口、176编码、正式SVG及用户存储未动。证据：`docs/evidence/v036-round81-t01-25key-source-location-inventory.md`。
+
+## 第82轮 Root T01 原生JPEG审阅草案导出与来源失败关闭（2026-10-24；非验收）
+
+第81轮159条观察及25键位置清单已接入只读单HTML原生JPEG像素工作台；可在原始1536×1086像素上记录ROI和分类草案并导出JSON。独立验证器对JPEG字节SHA、清单SHA、裁框RGB哈希、ROI边界和身份字段失败关闭；不允许草案冒充正式认证。新Chromium about:blank 18/18、新Python负例24/24、继承15组QA通过；父1164/1164 SHA继承，第82轮1181文件双重独立解压及QA后SHA一致，ZIP SHA256 `c1755737b727e6616538a0ade8eaf562fc4c76708aa9331ecf5fcd8a4d369796`。直接`file://`导航blocked；真同源存储、真机/读屏not-run。原始T01 0/25，永久ID正式0，T00–T11 0/12 Accepted。证据：`docs/evidence/v036-round82-t01-native-pixel-review-workstation.md`。
