@@ -142,3 +142,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第85轮 Root T01/T05 M键裁框边界审计
 
 新增8个M候选的原生JPEG跨框暗像素坐标与4px上下文RGB签封；6/8有诊断标记，不自动扩框/分根/认证。新增45/45及定向继承R84/R83/R82/R81 QA通过，完整继承QA尝试超时。父1203/1203继承，新ZIP1214文件SHA256 `d1bcd4fe6ba44a8efcf6680c6028604380b7875cdcbb3ba950a4134db18628f5`，双独立恢复及QA后SHA一致。T01 0/25、T00–T11 0/12 Accepted。见 `docs/evidence/v036-round85-m-native-border-context.md`。
+
+## 2026-10-24 · 第86轮 Root T01/T05（非验收）
+
+原始2008 JPEG M vis-02旧框右侧截断可见竖笔，新增向右5原生像素列的**未批准**来源裁框提案与哈希门禁；vis-04左侧像素归属不明，保留原框。新增20/20 QA，继承5组定向旧QA；父1214/1214继承、累计ZIP1223文件、SHA256 `af6260dbda45957892d844d5af1a2f2a3d494547b1b89f82c774971d2cd3a84a`，双独立解压各1223/1223及QA后SHA一致。未修改冻结HTML、176编码、正式SVG/裁框/UID/用户存储；全量历史QA本轮not-run，T01 0/25、T00–T11 0/12 Accepted。证据：`docs/evidence/v036-round86-m-vis02-unapproved-crop-handoff.md`。
