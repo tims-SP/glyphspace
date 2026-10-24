@@ -180,3 +180,7 @@
 ## ADR-R94 · SVG声明属性与真实Computed Paint必须同时验证（2026-10-24）
 
 **状态：仅隔离Root T03技术门禁。** SVG `<path d>`、`<use transform>`及fragment ID的属性验证不能保证最终绘制不受父g transform、CSS opacity/fill/transform影响。R94采用可信原始节点、额外属性拒绝、computed paint签名和实际computed matrix校验；编辑前失败关闭。初始CSS仍是隔离环境信任前提，不宣称防范恶意预加载样式，也不以此替代原图逐笔认证、正式永久ID、生产集成或设备验收。见 [R94](./evidence/v036-round94-t03-computed-svg-paint-integrity.md)。
+
+## ADR-R95 · 物理来源观察不等于独立字根身份（2026-10-24）
+
+**状态：隔离T01/T02审阅门禁，非生产批准。** K键4个原始JPEG物理位置必须与5个V0.35历史槽分开建模：同一裁框不能同时为K:2/K:3提供两个已确认独立身份，K:3缺独立ROI时必须保持无绑定；圈注不得直接计入正式根数，K:4冻结Path与可见原图轮廓冲突不得自动重命名。所有审阅候选只保留`review_only`且不可写正式SVG/永久ID。回滚仅删除R95隔离代码/审阅资料，生产入口及用户存储不变。证据：[R95](./evidence/v036-round95-k-physical-source-identity-arbitration.md)。
