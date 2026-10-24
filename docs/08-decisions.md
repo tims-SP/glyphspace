@@ -218,3 +218,7 @@
 ## ADR-R103 · SVG绘制来源验证必须包含祖先样式链（2026-10-25）
 
 **状态：隔离技术门禁，不是生产批准。** 真实Chromium证明仅检查SVG本身computed style不足以验证实际可见性：父级opacity/filter/clip-path/mask/transform可隐藏或位移字根且getBBox不变。决定在T03隔离预览增加key-cell→key-row→view→layout→body→html的样式与结构基线，编辑前fail-closed。替代方案“只校验SVG内部样式和getBBox”被实际负例否定。局限：不等于全像素安全证明或正式来源认证；待T02/T03正式集成、真实设备与合法同源参考图复核。回滚仅删除R103隔离目录，不改冻结生产入口或用户存储。[证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
+
+## ADR-R104 · 隔离SVG可见性门禁增加祖先伪元素签名（2026-10-25）
+
+**状态：隔离技术修复，非生产批准。** R103仅校验祖先普通computed style，真实Chromium证明CSS `::before`/`::after`可覆盖字根且SVG getBBox不变；五类攻击均被R103错误放行。决定在T03隔离预览为SVG祖先链增加两个伪元素的绘制/层叠签名，变化时在草案编辑前失败关闭。替代方案“普通computed style与BBox足以证明绘制”被真实像素负例否定。局限：不代表任意DOM遮挡/动画安全证明或正式来源认证；仍待T02/T03正式集成及设备QA。回滚只删除R104隔离目录，冻结生产入口/176编码/用户存储不变。[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
