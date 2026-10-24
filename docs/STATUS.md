@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第80轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第82轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -161,3 +161,9 @@
 - 基于第80轮父ZIP 1151/1151文件SHA继承，重新核验原始JPEG 151个旧可视裁框与M键8个暂存候选，共159观察记录、153个不同来源裁框位置。M有4个与旧槽完全同框、4个未绑定旧槽；E:1/E:8与K:2/K:3各同框冲突保持阻断。36条旧未绑定与25对跨框风险保持待审。
 - 新增25键原生像素审阅清单与M/K/E/B/J/R/X/V重点审阅图；新QA 400/400，继承14/14组旧QA；第81轮累计ZIP1164文件，SHA256 `211e8e0f3c4d5c5808cfaa87969dfa7cbf9d9dd5872a7a6cfad6c77966f0b6f9`，Python zipfile/system unzip双重独立恢复各1164/1164，解压后新旧QA及文件SHA一致。ZIP不在GitHub。
 - **153是候选裁框位置数，不是字根数量或认证形态数。** T01正式0/25、T00–T11仍0/12 Accepted，真实缺根数未知；同源高清原图/许可、第10–12与35轮历史包、第12轮20SVG仍缺；真同源存储blocked/not-run，真机/读屏not-run。冻结入口、176编码、正式SVG及用户存储未动。证据：`docs/evidence/v036-round81-t01-25key-source-location-inventory.md`。
+
+## 第82轮 Root T01 原生像素逐形态审阅草案（2026-10-24；非正式验收）
+
+- 基于第81轮159观察/25键/153候选裁框，新增隔离单HTML原生JPEG像素工作台、ROI标注与审阅草案JSON导出；新增独立来源/裁框/ROI/永久ID伪造拒绝校验器。**工作台草案不是正式字根认证**。
+- 父第81轮ZIP1164/1164逐文件SHA继承；第82轮累计ZIP**1181文件**，SHA256 `c1755737b727e6616538a0ade8eaf562fc4c76708aa9331ecf5fcd8a4d369796`；Python zipfile与系统unzip双独立解压各1181/1181、QA后SHA一致；新Chromium about:blank **18/18**、新Python **24/24**、继承15组旧QA通过。ZIP本体不在GitHub。
+- `file://`真实导航本轮实际返回`ERR_BLOCKED_BY_ADMINISTRATOR`，记blocked；真实同源Web Locks/localStorage、真机/读屏not-run。**原始T00–T11仍0/12 Accepted，T01正式0/25，真实缺根数未知**；无合法高清原图、历史第10–12/35轮完整ZIP及第12轮20SVG。冻结入口/176编码/正式SVG/用户存储未动。见 `docs/evidence/v036-round82-t01-native-pixel-review-workstation.md`。
