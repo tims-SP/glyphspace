@@ -191,3 +191,7 @@ R100父1373/1373逐文件SHA继承，R101累计ZIP1385文件 SHA256 `e40cae7e593
 ## 第102轮 T01/T02/T05 M键扩框交叠像素证据（2026-10-25）
 
 对R101三组交叠独立读取原始JPEG：M03/04仅几何交叠（五阈值暗像素0），M05/06、M07/08含暗像素候选且后者连通性阈值敏感；不认定共享笔画，不解除来源阻断。新增52/52、继承R101 58/58、R84 124/124、R86 20/20、R100局部、R99 Chromium302/302通过。父1385/1385继承，R102累计1397文件双恢复与QA后SHA全一致。历史十包链因R90缺失blocked，正式认证T01 0/25、原始任务0/12 Accepted。见[证据](./evidence/v036-round102-m-native-overlap-topology.md)。
+
+## 第103轮 Root T03 SVG祖先绘制完整性隔离修复（2026-10-25）
+
+R94 computed SVG style校验未覆盖key-cell、key-row、view、layout、body等祖先绘制属性，真实Chromium复现opacity:0后实际像素改变而getBBox不变、R94 attest仍通过。R103隔离门禁新增祖先绘制链快照，9类攻击拒绝，新增26/26；父R102 1397/1397 SHA继承、R103 1410文件双独立恢复与各8组定向QA（612项）通过，QA后SHA一致。**T03未生产集成，原始T00–T11仍0/12 Accepted**；T01 0/25、T02正式ID 0、真实同源存储/真机/读屏未验收。详见 [R103证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
