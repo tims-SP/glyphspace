@@ -165,3 +165,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 
 - 逐项复核E键9个旧可视槽，固定2008 JPEG/R81/R88来源SHA，E:1/E:8同框失效与E:7圈注语义阻断保持；新增邻接ROI交叠证据，不自动修正历史框。
 - 新QA82/82、继承8组；父1253/1253继承，累计ZIP1270文件 SHA256 `7e694c91b8f424390314ea7e92c3c7819536a14551290cc7ad95fba8aa1d52f2`；Python/unzip两次独立解压及QA后1270/1270 SHA通过。完整历史QA未运行。详见 [R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)；原始T00–T11仍0/12 Accepted。
+
+## 2026-10-24 · 第91轮 原始T03候选UID几何与三视图SVG DOM隔离贯通
+
+第64/66轮三视图Path渲染与第77/78轮UID锚点/光学校正合并为真实Chromium SVG DOM编辑；100×100来源SHA门禁，三视图同UID transform同步和原子回滚。新QA27/27、旧十组定向QA，父1270/1270继承、1283文件ZIP双解压复验。仅隔离技术证据，T03未Accepted、真同源/真机/读屏未运行。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
