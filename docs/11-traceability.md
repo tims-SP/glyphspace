@@ -149,3 +149,9 @@ R63 Path与R73候选UID经R78来源校验，将内存几何/五锚点/ox/oy编�
 ## 第92轮 T03 · DOM成员与资产来源门禁（非正式验收）
 
 R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R92隔离Chromium中先复现3个漏洞，再加25键逐项成员/顺序、149资产Path/描边及三视图transform一致性验证，修复撤销/导入的内存事务及键帽真实click/Enter/Space绕过包装层的问题。新29/29、R91旧27/27、继承10组；父1283/1283 SHA继承，第92轮1296成员双解压/QA后SHA一致。详见 [R92证据](./evidence/v036-round92-t03-dom-provenance-attestation.md)。正式T03生产集成、来源逐笔认证、真同源存储、真机及读屏仍未验收；T00–T11 0/12 Accepted。
+
+## 第93轮 Root T03 · SVG片段ID全局来源门禁（2026-10-24；非验收）
+
+- Chromium实际复现R92漏洞：在可信defs之前注入同名fragment ID，`<use>.getBBox()`绘制几何被替换，但R92 attest仍通过。R93在整个document检查149规范ID唯一性、`getElementById`指向规范defs节点，并拒绝额外base[href]；非法DOM修改在编辑/切键前失败关闭。
+- 新Chromium12/12、R92回归29/29、R91回归27/27、继承10组定向QA通过。第92轮1296/1296逐文件继承，第93轮累计1308文件，SHA256 `ea618a9dffc1e03f5aad5affa63de7a13f1e5d0da75e4059ef5a7b31b8e57480`；Python zipfile/system unzip双独立恢复各1308/1308，恢复后QA/文件SHA一致。ZIP本体不在GitHub，见 [R93证据](./evidence/v036-round93-t03-document-fragment-identity.md)。
+- 仍非正式T03生产集成；T01 0/25、T02正式ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run，冻结入口/用户存储未动。
