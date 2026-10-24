@@ -204,3 +204,9 @@
 - 冻结`〢`字体Path为两条竖形，2008原图右下构形的可见底部需逐笔确认；K:4历史绝对框为`[1127,462,24,22]`，不是R88审阅上下文`[1125,460,29,26]`。R88框四边扩展左2/上2/右3/下2，新增226原生像素，已分别SHA封存。**来源差异不能自动判定字根身份。**
 - 父第88轮1243/1243继承；新QA51/51、旧第81/83–88轮7组，新旧共8组；第89轮累计ZIP **1253文件**、SHA256 `c9700baf3730fbe1eee234bd5af8cf2e6f10434698b3b0507dd7dd12f3cbb2f0`，Python/system unzip双独立解压各1253/1253、恢复后各8组QA及QA后SHA通过。ZIP不在GitHub。见 [R89](./evidence/v036-round89-k4-frozen-path-native-source-crosscheck.md)。
 - **T01正式0/25、T02正式永久ID0、T05未正式补图、T00–T11 0/12 Accepted**；真实缺根数未知；历史缺包、高清许可未解；真实同源/真机/读屏本轮not-run。冻结入口/176编码/正式SVG/用户存储未动。
+
+## 第90轮 Root T01/T02/T05 · E键失效来源空间排除（2026-10-24，非正式验收）
+
+- 原始JPEG/R81清单/R88 ROI三份固定SHA交叉验证E键9个历史可视槽。E:1/E:8共享失效框[452,223,16,23]，368像素仅5个RGB均值<160；E顶部微形/圈注上下文ROI与失效框分别交叠240/66像素，**不能自动重绑**。E:7继续blocked_invalidated，语义未认证。
+- 新增只读空间排除门禁及82/82新QA；继承8组历史QA，父第89轮1253/1253继承；累计ZIP1270文件SHA256 `7e694c91b8f424390314ea7e92c3c7819536a14551290cc7ad95fba8aa1d52f2`，Python/system unzip双独立解压1270/1270、两份环境各9组QA及QA后SHA通过。ZIP本体不在GitHub；详见 [R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)。
+- T01正式0/25、永久ID正式0、原始T00–T11 **0/12 Accepted**；完整历史QA not-run，真同源存储 blocked/not-run，真机/读屏not-run。历史第10–12、35轮ZIP及第12轮20SVG缺失，合法同源高清原图仍缺。冻结V0.35、176编码、正式SVG及用户存储未修改。
