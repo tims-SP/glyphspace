@@ -146,3 +146,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第86轮 Root T01/T05（非验收）
 
 原始2008 JPEG M vis-02旧框右侧截断可见竖笔，新增向右5原生像素列的**未批准**来源裁框提案与哈希门禁；vis-04左侧像素归属不明，保留原框。新增20/20 QA，继承5组定向旧QA；父1214/1214继承、累计ZIP1223文件、SHA256 `af6260dbda45957892d844d5af1a2f2a3d494547b1b89f82c774971d2cd3a84a`，双独立解压各1223/1223及QA后SHA一致。未修改冻结HTML、176编码、正式SVG/裁框/UID/用户存储；全量历史QA本轮not-run，T01 0/25、T00–T11 0/12 Accepted。证据：`docs/evidence/v036-round86-m-vis02-unapproved-crop-handoff.md`。
+
+## 2026-10-24 · 第87轮 Root T01/T02/T05 隔离来源影子桥接
+
+将151旧候选UID、M键4旧UID别名/4未绑定影子UID、25键来源清单与R86未批准裁框证据接入固定SHA只读模块，增加纯内存笔记的防冒充导入/导出。影子候选**不生成SVG、不分配正式永久ID、不可渲染**。新增38/38 Node+12/12 RGB QA，16组继承QA；父1223/1223继承，新累计ZIP1236文件 SHA256 `c50653e2bb980a289fb0287d7edb05f99d30f3f671112ec86cb39880e366e89f`，两次独立解压及恢复后18组QA/文件SHA均通过。真实同源blocked、真机/读屏not-run；正式T01 0/25、T00–T11 0/12 Accepted。见 [R87](./evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md)。
