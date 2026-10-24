@@ -211,5 +211,5 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 ## 2026-10-25 · 第100轮 T00/T01/T05 归档链与M来源复验（非验收）
 
 - 独立核验第90–99轮10份实际ZIP的SHA、成员和9次相邻继承；M键8个原生JPEG来源ROI与8个PNG字节及RGB复算一致，4个无旧槽仍不认证。
-- R99父1366/1366继承，R100累计1373文件ZIP SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`；Python/unzip双恢复及各15组新旧定向QA通过，QA后成员SHA1373/1373。完整历史QA未执行。
+- R99父1366/1366继承，R100累计1373文件ZIP SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`；Python/unzip双恢复各执行R100、R99新增2组及R98继承14组定向QA通过，QA后成员SHA1373/1373。完整历史QA未执行。
 - 历史缺口未补、同源真实事务blocked、真机/读屏not-run；T00–T11 0/12 Accepted。见[证据](./evidence/v036-round100-archive-chain-m-provenance.md)。
