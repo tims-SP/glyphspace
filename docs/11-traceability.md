@@ -137,3 +137,7 @@
 ## 第89轮 T01/T02/T05 K:4异源Path与ROI坐标纠偏（非验收）
 
 历史K:4来源绝对框`[1127,462,24,22]`与R88上下文ROI`[1125,460,29,26]`严格区分，四边额外226原生像素各自SHA封存；冻结V0.35 `〢` Path两竖形与右下来源轮廓差异保留为逐笔待审，不产生正式身份。父1243/1243继承、累计1253文件双解压各1253/1253及各8组QA通过；证据：[R89](./evidence/v036-round89-k4-frozen-path-native-source-crosscheck.md)。T01 0/25、正式永久ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run。
+
+## 第90轮 Root T01/T02/T05 · E来源空间排除（非正式验收）
+
+2008原生JPEG/R81/R88固定SHA下，对E键9个旧槽逐项复核；E:1/E:8共用失效来源框（368像素，5个RGB均值<160，仅描述性），R88上排微形与圈注上下文分别相交240/66像素，不可自动重绑；E:7继续blocked_invalidated。新增82/82 QA，父1253/1253继承，第90轮1270文件ZIP双独立恢复及各9组新旧QA/QA后SHA通过。见 [R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)。**0/25来源认证、0正式永久ID、0/12 Accepted**；同源存储blocked，真机/读屏not-run。
