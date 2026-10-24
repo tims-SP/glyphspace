@@ -171,3 +171,7 @@ B/J/R/X/V五键7个历史未映射微形ROI已绑定原生JPEG像素SHA与独立
 ## 第97轮 Root T07 · 变换后SVG矩形碰撞与stroke边界（非验收）
 
 第94轮隔离HTML真实Chromium DOM的`<use>.getBBox()`不含自身transform，直接使用会把全25键同键409/409对误判为相交；新增CTM变换后BBox审计，完整/mini各151及M单键4实例、每视口824对，两个视口均0个变换后矩形相交。H:7 stroke必须用来源绑定inkBBox单列，不能以Chromium未描边的getBBox认证实际墨迹。R97新旧13组QA在两份独立恢复环境通过；父1340/1340 SHA继承，累计1348文件ZIP SHA256 `bb744069860dd24c51e5fe08a6c81e63ff7b94768c3fae822533a7e8cb08d0d5`双解压1348/1348及QA后SHA一致。见[第97轮证据](./evidence/v036-round97-t07-transformed-svg-bbox-preflight.md)。**T07仍未正式Accepted**，真实笔画/标签/圈注/真机/读屏/同源存储未验收；T00–T11仍0/12 Accepted。
+
+## 第98轮 Root T07 · 屏幕空间stroke/键头/跨键碰撞预检（2026-10-25；非验收）
+
+第97轮1348/1348逐文件SHA继承；R98使用Chromium `getScreenCTM()`把草案inkBBox投影至CSS像素坐标，扩展检查跨键、键头、SVG裁切、键格外溢与H:7描边包络。8视口×DPR1/2/3=24个模拟上下文，7344实例、19776同键及523968跨键配对，隔离草案矩形重叠/越界0；3类主动DOM篡改均被检测。320px完整/mini键格约24.7 CSS px，触控目标风险待真实UI/设备审查。14组新旧QA在两份独立解压环境均通过；累计ZIP1359文件，SHA256 `1e1aeeac3c0dd321f5e2f22d26eb00e133ef6f6ecc7087c46dc3e231155da7ed`，ZIP不在GitHub。见[R98证据](./evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md)。**T07尚未正式集成/认证，T01 0/25、T00–T11 0/12 Accepted**；真同源/真机/读屏未验收，历史缺口未补。
