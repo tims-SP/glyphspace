@@ -125,3 +125,7 @@
 ## 第86轮 Root T01/T05 · M vis-02原生裁框候选修复（2026-10-24）
 
 第85轮1214/1214父成员SHA继承；原生JPEG可视核验发现M vis-02旧框右侧截断可见竖笔，建立向右5像素列的**未批准**候选框及来源哈希，vis-04左侧归属不明继续隔离。新增20/20 QA，5组定向旧QA双恢复通过；累计ZIP1223文件、SHA256 `af6260dbda45957892d844d5af1a2f2a3d494547b1b89f82c774971d2cd3a84a`，Python/unzip双独立恢复与QA后SHA一致。全历史QA not-run，真同源blocked/not-run、真机/读屏not-run。**T01 0/25、T05未正式补图、T00–T11 0/12 Accepted**。证据：[R86](./evidence/v036-round86-m-vis02-unapproved-crop-handoff.md)。
+
+## 第87轮 Root T01/T02/T05 · M来源影子身份到非可渲染候选的隔离桥接（2026-10-24）
+
+以第73/81/84/86轮SHA锁定证据，交叉校验151旧候选UID、5关联隔离、M键4旧UID别名+4未绑定影子UID；4影子均保持source_pending、不可渲染且不具有正式Path/inkBBox/永久ID。R86 vis-02扩框仍仅是未批准证据。新38/38+12/12、继承16组，父1223/1223、累计1236文件双解压各1236/1236与恢复后QA/文件SHA一致。详见 [R87](./evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md)。**不满足T01正式认证、T02永久ID、T03正式内核或T05补图完成；T00–T11 0/12 Accepted。** 真同源blocked、真机/读屏not-run，历史缺口未补。
