@@ -107,3 +107,7 @@
 ## 第82轮 Root T01 原生JPEG审阅草案导出与来源失败关闭（2026-10-24；非验收）
 
 第81轮159条观察及25键位置清单已接入只读单HTML原生JPEG像素工作台；可在原始1536×1086像素上记录ROI和分类草案并导出JSON。独立验证器对JPEG字节SHA、清单SHA、裁框RGB哈希、ROI边界和身份字段失败关闭；不允许草案冒充正式认证。新Chromium about:blank 18/18、新Python负例24/24、继承15组QA通过；父1164/1164 SHA继承，第82轮1181文件双重独立解压及QA后SHA一致，ZIP SHA256 `c1755737b727e6616538a0ade8eaf562fc4c76708aa9331ecf5fcd8a4d369796`。直接`file://`导航blocked；真同源存储、真机/读屏not-run。原始T01 0/25，永久ID正式0，T00–T11 0/12 Accepted。证据：`docs/evidence/v036-round82-t01-native-pixel-review-workstation.md`。
+
+## 第83轮 Root T01 → T05来源草案可信边界（2026-10-24，非验收）
+
+发现第82轮可选来源清单路径存在自洽伪造草案绕过；第83轮隔离门禁固定R81清单/JPEG两份字节SHA，重算159裁框RGB并给ROI附原生像素SHA，Pillow/OpenCV各159/159匹配，353/353新QA和17组继承QA通过。父1181/1181继承、累计1193文件ZIP双恢复及QA后SHA一致。2017年CC BY-SA图仅为独立次级来源元数据，未取得原始二进制，不能用于2008同源逐笔认证。T01 0/25、T02正式永久ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run。证据：`docs/evidence/v036-round83-t01-pinned-source-and-roi-pixel-seal.md`。
