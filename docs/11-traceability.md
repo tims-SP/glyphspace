@@ -195,3 +195,7 @@ R100父1373/1373逐文件SHA继承，R101累计ZIP1385文件 SHA256 `e40cae7e593
 ## 第103轮 Root T03 SVG祖先绘制完整性隔离修复（2026-10-25）
 
 R94 computed SVG style校验未覆盖key-cell、key-row、view、layout、body等祖先绘制属性，真实Chromium复现opacity:0后实际像素改变而getBBox不变、R94 attest仍通过。R103隔离门禁新增祖先绘制链快照，9类攻击拒绝，新增26/26；父R102 1397/1397 SHA继承、R103 1410文件双独立恢复与各8组定向QA（612项）通过，QA后SHA一致。**T03未生产集成，原始T00–T11仍0/12 Accepted**；T01 0/25、T02正式ID 0、真实同源存储/真机/读屏未验收。详见 [R103证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
+
+## 第104轮 Root T03 伪元素遮挡缺陷（2026-10-25；非验收）
+
+R103祖先普通computed style无法发现CSS `::before`/`::after`遮挡；真实Chromium五类攻击改变截图像素但`getBBox`不变、R103仍attest通过。R104隔离门禁增加祖先伪元素绘制/层叠签名，新增25/25；父1410/1410继承，R104累计1425文件SHA256 `3840ac7eaeea34c66d3c251dd8906117d92de2f5536b34256d26b6afad275289`，Python/unzip四次分段独立恢复，QA前后各1425/1425 SHA一致，9组637项定向QA通过。完整历史QA not-run；真实同源存储blocked/not-run，真机/读屏not-run。**T03未生产集成，T01 0/25、T02正式ID0、T00–T11 0/12 Accepted**。[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
