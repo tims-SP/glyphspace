@@ -223,3 +223,9 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 
 - 三组未批准扩框交叠经原生JPEG五阈值审计：M03/04 26像素交叠无暗像素；M05/06 72像素交叠有暗像素候选；M07/08 34像素交叠暗连通性对阈值敏感。均未认证字根/笔画归属/永久ID。
 - 新增52/52及继承5组定向QA通过；父R101 1385/1385继承，R102累计1397文件SHA256 `1e5972251f3386e91d709e1869a36009f8aead732eaa4e22bfb93d9f21b094a5`，Python/unzip双恢复各1397/1397 SHA一致，QA后再次全一致。R90缺失阻断十包链复跑；T00–T11仍0/12 Accepted。见[证据](./evidence/v036-round102-m-native-overlap-topology.md)。
+
+## 2026-10-25 · 第103轮 Root T03 祖先绘制完整性（非验收）
+
+- 真实Chromium证明R94 SVG自身computed style门禁忽略父级opacity/filter/clip-path/mask/transform，导致实际墨迹可消失/位移而attest误通过。R103隔离HTML新增父节点绘制与结构基线校验；九种攻击负例全部由R94错误放行、R103拒绝，新26/26。
+- 父R102 1397/1397逐成员SHA继承，R103累计1410成员ZIP SHA256 `bdd1f42c847c01bc98b278294b7a6074550e293c9e4b977f601dc4fe75ef8874`；Python/unzip双恢复及各8组定向QA（612项）通过，QA后各1410/1410 SHA一致。合并式双恢复运行第二阶段超时，改分项执行并留痕；完整历史全量QA未执行。
+- 正式T03仍未生产集成，来源/永久ID/真同源存储/真机/读屏未验收，T00–T11 0/12 Accepted。冻结V0.35 HTML、2008原图、176编码、正式SVG和用户存储未动。[证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
