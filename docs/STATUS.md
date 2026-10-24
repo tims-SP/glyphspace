@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第95轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第96轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -238,3 +238,9 @@
 - 基于原始2008 JPEG/R46/R88/R89固定SHA，K键4个不同原生像素**物理观察位置**与5条旧槽分开建账；K:1仅关联，K:2/K:3仍共享左下历史框双阻断，K:3**未发现独立来源ROI**，K:4冻结「〢」与右下来源形态仍待逐笔复核；右上圈注未分类。4个位置**不是4个认证字根**。
 - 新增隔离来源身份仲裁，拒绝K:3借用K:2框、圈注自动升级、伪造来源/许可/永久ID。Pillow/OpenCV原生RGB交叉核验，新QA **36/36**，R81/R86–R94十组旧QA均通过；父R94 **1319/1319** SHA继承，累计ZIP **1331文件** SHA256 `7deea5a9de203a1cefee6f52ca988f7d26c5588b6b0316a68fab42c2b1dd6db0`，Python zipfile/system unzip双独立恢复、两环境各11组QA及QA后1331/1331 SHA通过。完整历史全量QA未运行；ZIP本体不在GitHub。详见 [R95证据](./evidence/v036-round95-k-physical-source-identity-arbitration.md)。
 - 真实临时127.0.0.1 Chromium原点仍被 `ERR_BLOCKED_BY_ADMINISTRATOR` 阻断，Web Locks/localStorage事务blocked/not-run；真机/读屏not-run。缺第10–12/35轮ZIP及第12轮20 SVG，同源高清原图和许可仍缺。**T01 0/25、正式永久ID 0、T00–T11 0/12 Accepted**；冻结入口/176编码/用户存储未动。
+
+## 第96轮七微形原生来源观察（2026-10-24，非验收）
+
+- 原始T01/T02前置、关联T05：以第41轮七项未映射清单、第46轮阻断账本和2008原始JPEG，建立B/J/R/X/V五键**7个独立物理来源观察ID**，逐项原生RGB与历史ROI一致；B vis-02↔B:7、V vis-06/07↔V:4存在来源框交叠但原命名空间阻断不解除，R vis-02与X vis-03不与旧槽框相交但不能据此宣称新增字根。正式ID 0、T01 0/25、缺根数未知。
+- 父第95轮1331/1331 SHA继承；第96轮隔离累计ZIP **1340文件** SHA256 `d1e609c29a3852e724a6192ef2795c993a85cdc21a2cddfb9a11163a05a7be0c`；两种独立解压各1340/1340并各跑12组新旧QA、QA后SHA一致。新增35/35，旧11组；完整历史全量QA未执行。GitHub不包含ZIP字节。
+- 原始T00–T11仍**0/12 Accepted**，真实同源存储、真机、读屏本轮not-run；冻结入口/176编码/正式SVG/用户存储未动。缺第10–12、35轮ZIP及第12轮20SVG；高清同源合法原图和许可未获得。证据：`docs/evidence/v036-round96-seven-microform-source-crosswalk.md`。
