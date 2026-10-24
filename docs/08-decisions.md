@@ -184,3 +184,7 @@
 ## ADR-R95 · 物理来源观察不等于独立字根身份（2026-10-24）
 
 **状态：隔离T01/T02审阅门禁，非生产批准。** K键4个原始JPEG物理位置必须与5个V0.35历史槽分开建模：同一裁框不能同时为K:2/K:3提供两个已确认独立身份，K:3缺独立ROI时必须保持无绑定；圈注不得直接计入正式根数，K:4冻结Path与可见原图轮廓冲突不得自动重命名。所有审阅候选只保留`review_only`且不可写正式SVG/永久ID。回滚仅删除R95隔离代码/审阅资料，生产入口及用户存储不变。证据：[R95](./evidence/v036-round95-k-physical-source-identity-arbitration.md)。
+
+## 2026-10-24 · 第96轮来源观察身份与正式字根身份严格分离
+
+决定：B/J/R/X/V七个历史未映射微形先采用源图SHA+原生ROI绑定的**物理观察ID**进行追踪，不以旧槽/标签或框交叠推断root、variant、annotation，也不创建正式referenceShapeId、assetId或永久instanceId。B:7/V:4命名空间阻断必须保留；无旧槽交集也不能自动认定新增字根。来源与测试证据见[第96轮](./evidence/v036-round96-seven-microform-source-crosswalk.md)。
