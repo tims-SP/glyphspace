@@ -167,3 +167,7 @@ R93允许在可信defs的g上添加transform，使真实Chromium SVG `<use>.getB
 ## 第96轮 Root T01/T02 七微形物理来源观察（非验收）
 
 B/J/R/X/V五键7个历史未映射微形ROI已绑定原生JPEG像素SHA与独立**审阅观察ID**，但无正式referenceShapeId/assetId/instanceId；B:7/V:4命名空间阻断维持，重叠旧槽不代表身份同一。父第95轮1331/1331继承，第96轮1340文件双恢复各12组新旧QA通过；详见[第96轮证据](./evidence/v036-round96-seven-microform-source-crosswalk.md)。T01 0/25、T02正式ID 0、T05未补齐、T00–T11 0/12 Accepted；真实同源/真机/读屏not-run。
+
+## 第97轮 Root T07 · 变换后SVG矩形碰撞与stroke边界（非验收）
+
+第94轮隔离HTML真实Chromium DOM的`<use>.getBBox()`不含自身transform，直接使用会把全25键同键409/409对误判为相交；新增CTM变换后BBox审计，完整/mini各151及M单键4实例、每视口824对，两个视口均0个变换后矩形相交。H:7 stroke必须用来源绑定inkBBox单列，不能以Chromium未描边的getBBox认证实际墨迹。R97新旧13组QA在两份独立恢复环境通过；父1340/1340 SHA继承，累计1348文件ZIP SHA256 `bb744069860dd24c51e5fe08a6c81e63ff7b94768c3fae822533a7e8cb08d0d5`双解压1348/1348及QA后SHA一致。见[第97轮证据](./evidence/v036-round97-t07-transformed-svg-bbox-preflight.md)。**T07仍未正式Accepted**，真实笔画/标签/圈注/真机/读屏/同源存储未验收；T00–T11仍0/12 Accepted。
