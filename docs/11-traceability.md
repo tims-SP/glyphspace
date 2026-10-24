@@ -111,3 +111,9 @@
 ## 第83轮 Root T01 → T05来源草案可信边界（2026-10-24，非验收）
 
 发现第82轮可选来源清单路径存在自洽伪造草案绕过；第83轮隔离门禁固定R81清单/JPEG两份字节SHA，重算159裁框RGB并给ROI附原生像素SHA，Pillow/OpenCV各159/159匹配，353/353新QA和17组继承QA通过。父1181/1181继承、累计1193文件ZIP双恢复及QA后SHA一致。2017年CC BY-SA图仅为独立次级来源元数据，未取得原始二进制，不能用于2008同源逐笔认证。T01 0/25、T02正式永久ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run。证据：`docs/evidence/v036-round83-t01-pinned-source-and-roi-pixel-seal.md`。
+
+## 第84轮 Root T01/T02/T05 · M键4个未绑定来源观察的隔离身份（2026-10-24，非正式验收）
+
+- 真实读取第83轮1193文件累计ZIP，1193/1193逐文件SHA继承；第55轮M键8观察、第81轮来源清单和第73轮151候选UID交叉绑定。M vis-01/02/03/05四个同框观察复用旧UID，vis-04/06/07/08四个未绑定观察获得独立**影子候选UID**，不是4个正式新增字根或正式永久ID；151旧候选UID及5关联项不变。
+- 新124/124正负例及第83轮353/353与此前17组QA重新通过；累计ZIP1203文件 SHA256 `9e95931ab39c37261aee085ee66d9e1c9cf763dca3248ce46b7d175736af0956`，Python zipfile和系统unzip双独立解压各1203/1203、QA后SHA一致。ZIP本体不在GitHub，见 `docs/evidence/v036-round84-m-unbound-shadow-candidate-ids.md`。
+- 原始T00–T11仍**0/12 Accepted**、T01 **0/25正式认证**、T02正式永久ID **0**，真实缺根数未知。第10–12、35轮ZIP与第12轮20SVG仍缺；同源高清原图未获。独立127.0.0.1 Chromium同源导航`ERR_BLOCKED_BY_ADMINISTRATOR`，真实Web Locks/localStorage **blocked/not-run**；真机/读屏not-run。冻结HTML/176编码/正式SVG/用户存储未动。

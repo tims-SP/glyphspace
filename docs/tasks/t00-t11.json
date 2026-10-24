@@ -28,7 +28,7 @@
         "T00"
       ],
       "sourceExitCriterion": "`reference-manifest`：25/25 已枚举，每项有证据和类别候选",
-      "implementationState": "round82 isolated native JPEG pixel review workstation and source-bound draft validator; 159 observations/25 keys; Chromium about:blank 18/18, Python 24/24, inherited 15 QA groups; 0/25 certified; file:// blocked; no formal integration",
+      "implementationState": "round82 isolated native JPEG pixel review workstation and source-bound draft validator; 159 observations/25 keys; Chromium about:blank 18/18, Python 24/24, inherited 15 QA groups; 0/25 certified; file:// blocked; no formal integration; R84 M 4 exact legacy UID aliases + 4 isolated unbound observation shadow UUIDv4 (NOT permanent IDs or certified roots)",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
@@ -45,7 +45,7 @@
         "T01"
       ],
       "sourceExitCriterion": "Schema 校验通过，当前实例 ID 唯一，不与数组下标耦合",
-      "implementationState": "round78 isolated 151 opaque candidate UIDs bound to T03 geometry; 0 permanent IDs, not production integrated",
+      "implementationState": "round78 isolated 151 opaque candidate UIDs bound to T03 geometry; 0 permanent IDs, not production integrated; R84 M 4 exact legacy UID aliases + 4 isolated unbound observation shadow UUIDv4 (NOT permanent IDs or certified roots)",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
@@ -97,10 +97,10 @@
         "T04"
       ],
       "sourceExitCriterion": "25/25 键全部形态建立映射，已确认遗漏数 0",
-      "implementationState": "not integrated; all-key shape inventory incomplete",
+      "implementationState": "not integrated; all-key shape inventory incomplete; R84 M 4 exact legacy UID aliases + 4 isolated unbound observation shadow UUIDv4 (NOT permanent IDs or certified roots)",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-22",
+      "statusDate": "2026-10-24",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
