@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第91轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第93轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -220,3 +220,9 @@
 ## 第92轮 Root T03 SVG DOM来源完整性门禁（2026-10-24；非验收）
 
 真实Chromium复现R91可接受伪造`<use href>`、跨键替换UID及篡改`<defs>` Path的问题；R92独立隔离模块改为全25键成员/资产/变换/Path逐项核验，并修复导入/撤销预检提交及真实click/Enter/Space键帽事件绕过包装层的问题。新29/29、旧R91 Chromium27/27、旧10组QA通过；父1283/1283继承，累计ZIP1296成员，SHA256 `cc737571ca35ee6f9b8adda7172954021868a8f3ee6019540fac70b1dad80953`，两次独立解压及QA后SHA均1296/1296。仅about:blank，不是生产内核验收。证据：[R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。T01 0/25、正式永久ID 0、原始T00–T11 0/12 Accepted；真实同源/真机/读屏仍blocked/not-run。
+
+## 第93轮 Root T03 · SVG片段ID全局来源门禁（2026-10-24；非验收）
+
+- Chromium实际复现R92漏洞：在可信defs之前注入同名fragment ID，`<use>.getBBox()`绘制几何被替换，但R92 attest仍通过。R93在整个document检查149规范ID唯一性、`getElementById`指向规范defs节点，并拒绝额外base[href]；非法DOM修改在编辑/切键前失败关闭。
+- 新Chromium12/12、R92回归29/29、R91回归27/27、继承10组定向QA通过。第92轮1296/1296逐文件继承，第93轮累计1308文件，SHA256 `ea618a9dffc1e03f5aad5affa63de7a13f1e5d0da75e4059ef5a7b31b8e57480`；Python zipfile/system unzip双独立恢复各1308/1308，恢复后QA/文件SHA一致。ZIP本体不在GitHub，见 [R93证据](./evidence/v036-round93-t03-document-fragment-identity.md)。
+- 仍非正式T03生产集成；T01 0/25、T02正式ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run，冻结入口/用户存储未动。
