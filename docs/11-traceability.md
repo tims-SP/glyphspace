@@ -199,3 +199,7 @@ R94 computed SVG style校验未覆盖key-cell、key-row、view、layout、body�
 ## 第104轮 Root T03 伪元素遮挡缺陷（2026-10-25；非验收）
 
 R103祖先普通computed style无法发现CSS `::before`/`::after`遮挡；真实Chromium五类攻击改变截图像素但`getBBox`不变、R103仍attest通过。R104隔离门禁增加祖先伪元素绘制/层叠签名，新增25/25；父1410/1410继承，R104累计1425文件SHA256 `3840ac7eaeea34c66d3c251dd8906117d92de2f5536b34256d26b6afad275289`，Python/unzip四次分段独立恢复，QA前后各1425/1425 SHA一致，9组637项定向QA通过。完整历史QA not-run；真实同源存储blocked/not-run，真机/读屏not-run。**T03未生产集成，T01 0/25、T02正式ID0、T00–T11 0/12 Accepted**。[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
+
+## 第105轮 Root T03/T07 事务性碰撞预检（2026-10-25，非验收）
+
+真实Chromium复现R104允许同键候选墨迹包络重叠而attest仍通过；R105在DOM/overlay提交前执行25键151候选UID、409对完整事务碰撞检查，151/151主动碰撞拒绝且状态无部分写入，新增170/170 Chromium QA。父R104 1425/1425 SHA继承，R105累计ZIP 1433成员SHA256 `2ffa0ecc3b72bee3ef7d2a24d76431f3619c29b5734ed7dbf513388b0b7d876a`，Python/unzip双恢复及各5组定向新旧QA（702项）、QA后SHA均通过。**只是隔离草案矩形门禁，不是原图逐笔、描边/标签/圈注或正式T07验收；T03/T07未生产集成，T01 0/25，T02正式ID0，T00–T11 0/12 Accepted。** [证据](./evidence/v036-round105-t03-t07-transactional-collision.md)。
