@@ -180,3 +180,9 @@
 - 真实读取第83轮1193文件累计ZIP，1193/1193逐文件SHA继承；第55轮M键8观察、第81轮来源清单和第73轮151候选UID交叉绑定。M vis-01/02/03/05四个同框观察复用旧UID，vis-04/06/07/08四个未绑定观察获得独立**影子候选UID**，不是4个正式新增字根或正式永久ID；151旧候选UID及5关联项不变。
 - 新124/124正负例及第83轮353/353与此前17组QA重新通过；累计ZIP1203文件 SHA256 `9e95931ab39c37261aee085ee66d9e1c9cf763dca3248ce46b7d175736af0956`，Python zipfile和系统unzip双独立解压各1203/1203、QA后SHA一致。ZIP本体不在GitHub，见 `docs/evidence/v036-round84-m-unbound-shadow-candidate-ids.md`。
 - 原始T00–T11仍**0/12 Accepted**、T01 **0/25正式认证**、T02正式永久ID **0**，真实缺根数未知。第10–12、35轮ZIP与第12轮20SVG仍缺；同源高清原图未获。独立127.0.0.1 Chromium同源导航`ERR_BLOCKED_BY_ADMINISTRATOR`，真实Web Locks/localStorage **blocked/not-run**；真机/读屏not-run。冻结HTML/176编码/正式SVG/用户存储未动。
+
+## 第85轮 Root T01/T05 · M键裁框原生边界（2026-10-24，非验收）
+
+- 8个M候选裁框新增原始JPEG内外相邻像素诊断，6/8出现跨框暗像素；vis-02右和vis-04左优先复框，不能自动判定缺根、笔画或SVG。原始裁框/候选UID不变。
+- 父第84轮1203/1203 SHA继承；第85轮1214文件ZIP SHA256 `d1bcd4fe6ba44a8efcf6680c6028604380b7875cdcbb3ba950a4134db18628f5`，双独立解压各1214/1214，恢复后定向QA和SHA通过。新45/45，旧R84 124/124、R83 353/353、R82静态24/24、R81 400/400通过；完整继承QA尝试超时，不计pass。
+- T01 0/25、正式永久ID0、T00–T11 0/12 Accepted；真实同源存储blocked/not-run，真机/读屏not-run，历史10–12/35轮ZIP与第12轮20SVG及同源高清图仍缺。冻结入口、176编码、正式SVG和用户存储不变。证据：`docs/evidence/v036-round85-m-native-border-context.md`。
