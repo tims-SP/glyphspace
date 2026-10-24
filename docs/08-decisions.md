@@ -188,3 +188,7 @@
 ## 2026-10-24 · 第96轮来源观察身份与正式字根身份严格分离
 
 决定：B/J/R/X/V七个历史未映射微形先采用源图SHA+原生ROI绑定的**物理观察ID**进行追踪，不以旧槽/标签或框交叠推断root、variant、annotation，也不创建正式referenceShapeId、assetId或永久instanceId。B:7/V:4命名空间阻断必须保留；无旧槽交集也不能自动认定新增字根。来源与测试证据见[第96轮](./evidence/v036-round96-seven-microform-source-crosswalk.md)。
+
+## 2026-10-24 · 第97轮 T07几何测量边界（非验收）
+
+隔离SVG碰撞必须将`<use>.getBBox()`经`svg.getCTM().inverse().multiply(use.getCTM())`变换到同一个100×100键内坐标，禁止直接拿未变换BBox做碰撞或宣称全键无重叠；含stroke的H:7单列来源inkBBox包络，不能把fill bbox当painted ink bbox。几何预检与真实原图逐笔/标签/真机验收严格分离。冻结生产入口不变，T07不升级。
