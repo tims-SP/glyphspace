@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-24**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第96轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第96轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
 ## 当前唯一可信发布入口
 
@@ -250,3 +250,7 @@
 - 发现Chromium `<use>.getBBox()`未应用use自身transform：直接以其做碰撞会让完整/mini各409/409对误报。新增独立CTM四角映射到100×100键内坐标的几何对照；1440×900与390×844两个about:blank视口，各306/306实例几何、824/824配对，转换后0矩形相交；H:7 stroke使用既有inkBBox保守预检，不等于真实墨迹碰撞认证。
 - 父第96轮1340/1340逐项SHA继承；第97轮累计ZIP**1348文件** SHA256 `bb744069860dd24c51e5fe08a6c81e63ff7b94768c3fae822533a7e8cb08d0d5`，Python zipfile与系统unzip双独立解压各1348/1348，两套恢复环境各13/13组新旧QA通过，QA后SHA一致。ZIP不在GitHub。见[第97轮证据](./evidence/v036-round97-t07-transformed-svg-bbox-preflight.md)。
 - T07仍未正式验收；T03未生产集成；T01正式0/25、永久ID0、原始T00–T11仍**0/12 Accepted**。真实同源存储导航管理员阻断，真机/读屏not-run；缺历史第10–12/35轮ZIP及第12轮20SVG、合法同源高清原图。冻结入口/176编码/正式SVG/用户存储未动。
+
+## 第98轮 Root T07 · 屏幕空间stroke/键头/跨键碰撞预检（2026-10-25；非验收）
+
+第97轮1348/1348逐文件SHA继承；R98使用Chromium `getScreenCTM()`把草案inkBBox投影至CSS像素坐标，扩展检查跨键、键头、SVG裁切、键格外溢与H:7描边包络。8视口×DPR1/2/3=24个模拟上下文，7344实例、19776同键及523968跨键配对，隔离草案矩形重叠/越界0；3类主动DOM篡改均被检测。320px完整/mini键格约24.7 CSS px，触控目标风险待真实UI/设备审查。14组新旧QA在两份独立解压环境均通过；累计ZIP1359文件，SHA256 `1e1aeeac3c0dd321f5e2f22d26eb00e133ef6f6ecc7087c46dc3e231155da7ed`，ZIP不在GitHub。见[R98证据](./evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md)。**T07尚未正式集成/认证，T01 0/25、T00–T11 0/12 Accepted**；真同源/真机/读屏未验收，历史缺口未补。
