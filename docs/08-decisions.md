@@ -214,3 +214,7 @@
 ## ADR-R102 · 区分矩形交叠与真实墨迹归属（2026-10-25）
 
 **状态：隔离证据门禁，非来源/生产批准。** R101三组M键复框交叠不得一律表述为共享笔画：R102对原生JPEG像素复核发现M03/04为框交叠且测试阈值下无暗像素，M05/06与M07/08存在暗像素候选，其中M07/08的8邻接连通性对阈值敏感。采用“几何交叠/暗像素候选/正式逐笔归属”三级证据，禁止用阈值、连通域或最近邻放大自动认定字根、解锁身份或生成SVG。回滚只删R102隔离文件，不触碰冻结HTML/176编码/用户存储。[证据](./evidence/v036-round102-m-native-overlap-topology.md)。
+
+## ADR-R103 · SVG绘制来源验证必须包含祖先样式链（2026-10-25）
+
+**状态：隔离技术门禁，不是生产批准。** 真实Chromium证明仅检查SVG本身computed style不足以验证实际可见性：父级opacity/filter/clip-path/mask/transform可隐藏或位移字根且getBBox不变。决定在T03隔离预览增加key-cell→key-row→view→layout→body→html的样式与结构基线，编辑前fail-closed。替代方案“只校验SVG内部样式和getBBox”被实际负例否定。局限：不等于全像素安全证明或正式来源认证；待T02/T03正式集成、真实设备与合法同源参考图复核。回滚仅删除R103隔离目录，不改冻结生产入口或用户存储。[证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
