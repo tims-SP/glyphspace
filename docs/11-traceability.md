@@ -155,3 +155,7 @@ R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R9
 - Chromium实际复现R92漏洞：在可信defs之前注入同名fragment ID，`<use>.getBBox()`绘制几何被替换，但R92 attest仍通过。R93在整个document检查149规范ID唯一性、`getElementById`指向规范defs节点，并拒绝额外base[href]；非法DOM修改在编辑/切键前失败关闭。
 - 新Chromium12/12、R92回归29/29、R91回归27/27、继承10组定向QA通过。第92轮1296/1296逐文件继承，第93轮累计1308文件，SHA256 `ea618a9dffc1e03f5aad5affa63de7a13f1e5d0da75e4059ef5a7b31b8e57480`；Python zipfile/system unzip双独立恢复各1308/1308，恢复后QA/文件SHA一致。ZIP本体不在GitHub，见 [R93证据](./evidence/v036-round93-t03-document-fragment-identity.md)。
 - 仍非正式T03生产集成；T01 0/25、T02正式ID 0、T00–T11 0/12 Accepted；真同源/真机/读屏not-run，冻结入口/用户存储未动。
+
+## 第94轮 Root T03 · SVG实际绘制与声明几何的一致性门禁（非验收）
+
+R93允许在可信defs的g上添加transform，使真实Chromium SVG `<use>.getBBox()` 宽82→164却仍attest通过；CSS覆盖Path透明度也可绕过旧门禁。R94以严格SVG属性集合、规范节点身份、computed style和computed transform对照修复。新Chromium 18/18、R91 27/27、R92 29/29、R93 12/12、定向继承10组；第93轮1308/1308继承，第94轮1319成员ZIP SHA256 `2dcbc8880ab8adde82a8693c5c05f163d81c1476763a10d57d925d4a296df4fc`，两次独立解压各1319/1319并复跑QA、后SHA一致。仍仅about:blank隔离，不是逐笔认证、正式T03生产集成或T10真机/读屏验收。见 [R94证据](./evidence/v036-round94-t03-computed-svg-paint-integrity.md)。原始T00–T11 0/12 Accepted。
