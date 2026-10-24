@@ -213,3 +213,8 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 - 独立核验第90–99轮10份实际ZIP的SHA、成员和9次相邻继承；M键8个原生JPEG来源ROI与8个PNG字节及RGB复算一致，4个无旧槽仍不认证。
 - R99父1366/1366继承，R100累计1373文件ZIP SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`；Python/unzip双恢复各执行R100、R99新增2组及R98继承14组定向QA通过，QA后成员SHA1373/1373。完整历史QA未执行。
 - 历史缺口未补、同源真实事务blocked、真机/读屏not-run；T00–T11 0/12 Accepted。见[证据](./evidence/v036-round100-archive-chain-m-provenance.md)。
+
+## 2026-10-25 · 第101轮 T01/T02/T05 M键原生像素归属（非验收）
+
+- 8个M原生ROI、6px上下文SHA及R84旧/影子UID交叉绑定；6个未批准复框定位3组来源交叠，全部保持blocked审阅，不产生正式根/Path/ID。新增58/58，继承124/124、20/20、R99 Chromium302/302。
+- R100父1373/1373 SHA继承，R101 ZIP1385文件 SHA256 `e40cae7e5932df6c2784bd977d1c511a5d7a4609e7002b509f10b72ef3795cd2`，Python/unzip双恢复及新旧QA通过；当前R90 ZIP缺失，R100十包外部链本轮复跑blocked。原始任务0/12 Accepted，正式入口与用户存储未动。[证据](./evidence/v036-round101-m-native-source-ownership.md)。
