@@ -229,3 +229,9 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 - 真实Chromium证明R94 SVG自身computed style门禁忽略父级opacity/filter/clip-path/mask/transform，导致实际墨迹可消失/位移而attest误通过。R103隔离HTML新增父节点绘制与结构基线校验；九种攻击负例全部由R94错误放行、R103拒绝，新26/26。
 - 父R102 1397/1397逐成员SHA继承，R103累计1410成员ZIP SHA256 `bdd1f42c847c01bc98b278294b7a6074550e293c9e4b977f601dc4fe75ef8874`；Python/unzip双恢复及各8组定向QA（612项）通过，QA后各1410/1410 SHA一致。合并式双恢复运行第二阶段超时，改分项执行并留痕；完整历史全量QA未执行。
 - 正式T03仍未生产集成，来源/永久ID/真同源存储/真机/读屏未验收，T00–T11 0/12 Accepted。冻结V0.35 HTML、2008原图、176编码、正式SVG和用户存储未动。[证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
+
+## 2026-10-25 · 第104轮 Root T03 伪元素遮挡隔离修复（非验收）
+
+- 真实Chromium五类CSS伪元素遮挡让R103祖先样式门禁误放行；R104增加`::before`/`::after`绘制签名，五类均拒绝，新增25/25 QA。
+- 父R103 1410/1410 SHA继承，R104累计1425文件SHA256 `3840ac7eaeea34c66d3c251dd8906117d92de2f5536b34256d26b6afad275289`；9组637项定向QA通过，Python/unzip四次分段独立恢复及QA后SHA各1425/1425一致；完整历史QA not-run。
+- 独立profile同源导航仍被管理员阻断，Web Locks/localStorage blocked/not-run，真机/读屏not-run。T00–T11 0/12 Accepted；冻结HTML、2008 JPEG、176编码和用户存储未动。[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
