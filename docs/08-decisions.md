@@ -176,3 +176,7 @@
 ## ADR-R93 · SVG片段ID必须以整个文档的实际解析结果为准（2026-10-24）
 
 **状态：隔离T03技术门禁，非正式批准。** 仅检查可信defs内Path、use的href文本与成员计数不足以证明实际绘制来源：SVG fragment引用在ownerDocument解析，先出现的同名ID可劫持真实Chromium绘制。R93在提交几何或切键前检查149个规范ID全document唯一性、getElementById身份与base[href]缺失；失败不修改内存草案。冻结正式入口不变，回滚仅移除R93隔离模块。证据：[R93](./evidence/v036-round93-t03-document-fragment-identity.md)。
+
+## ADR-R94 · SVG声明属性与真实Computed Paint必须同时验证（2026-10-24）
+
+**状态：仅隔离Root T03技术门禁。** SVG `<path d>`、`<use transform>`及fragment ID的属性验证不能保证最终绘制不受父g transform、CSS opacity/fill/transform影响。R94采用可信原始节点、额外属性拒绝、computed paint签名和实际computed matrix校验；编辑前失败关闭。初始CSS仍是隔离环境信任前提，不宣称防范恶意预加载样式，也不以此替代原图逐笔认证、正式永久ID、生产集成或设备验收。见 [R94](./evidence/v036-round94-t03-computed-svg-paint-integrity.md)。
