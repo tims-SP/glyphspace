@@ -169,3 +169,9 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第91轮 原始T03候选UID几何与三视图SVG DOM隔离贯通
 
 第64/66轮三视图Path渲染与第77/78轮UID锚点/光学校正合并为真实Chromium SVG DOM编辑；100×100来源SHA门禁，三视图同UID transform同步和原子回滚。新QA27/27、旧十组定向QA，父1270/1270继承、1283文件ZIP双解压复验。仅隔离技术证据，T03未Accepted、真同源/真机/读屏未运行。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
+
+## 2026-10-24 · 第92轮（Root T03；隔离非验收）
+
+- Chromium实证R91允许伪造SVG href、跨键UID替换和Path修改仍通过全局数量门禁；R92新增严格逐键/资产/Path/transform审计及原子内存导入/撤销。
+- 新27/27 Chromium、旧R91 27/27、旧10组QA通过；父1283/1283继承、累计1296成员两种解压和QA后SHA一致。ZIP不在GitHub。详见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
+- 原始T00–T11仍0/12 Accepted；冻结正式入口/旧编码/用户存储不变。
