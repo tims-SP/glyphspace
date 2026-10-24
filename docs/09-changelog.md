@@ -201,3 +201,9 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 ## 2026-10-25 · 第98轮 Root T07屏幕坐标碰撞检查（非验收）
 
 新增真实Chromium CSS屏幕坐标的跨键、字母键头、SVG/键格边界与H:7草案stroke包络检查；24个模拟视口/DPR上下文，3类篡改负例。父R97 1348/1348继承、R98累计1359/1359双恢复及各14组定向QA通过。320px隔离完整键盘键格仅约24.7 CSS像素，标记触控风险。正式T07/源图/真机/读屏/同源存储仍未验收。见[R98证据](./evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md)。
+
+
+## 2026-10-25 · V0.36 第99轮（隔离证据，未发布）
+
+- Root T03/T07：新增Chromium独立SVG Path→Canvas alpha像素读取，对151候选UID在4×/8×两档栅格化核对草案inkBBox（302/302），H:7 stroke与3个主动篡改负例通过；不作来源认证。
+- 父R98 1359/1359继承；R99累计ZIP1366文件 SHA256 `7fe43e62975b1e1b339f46674d452c519a3ad6b6d130e448e8c2f670d12f4fea`；双恢复/新旧定向QA通过。正式0/12 Accepted，冻结入口未动。
