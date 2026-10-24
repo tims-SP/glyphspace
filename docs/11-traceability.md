@@ -145,3 +145,7 @@
 ## 第91轮 Root T03 隔离UID→SVG三视图DOM集成（非验收）
 
 R63 Path与R73候选UID经R78来源校验，将内存几何/五锚点/ox/oy编辑实际同步到Chromium full/mini/single SVG `<use>`。新DOM QA27/27、继承十组，父1270/1270 SHA继承、累计1283文件ZIP双解压及恢复后QA/逐文件SHA一致。仅 `about:blank`，不是正式T03生产集成或T09学习引擎全回归。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。T00–T11仍0/12 Accepted。
+
+## 第92轮 T03 · DOM成员与资产来源门禁（非正式验收）
+
+R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R92隔离Chromium中先复现3个漏洞，再加25键逐项成员/顺序、149资产Path/描边及三视图transform一致性验证，修复撤销/导入的内存事务。新27/27、R91旧27/27、继承10组；父1283/1283 SHA继承，第92轮1296成员双解压/QA后SHA一致。详见 [R92证据](./evidence/v036-round92-t03-dom-provenance-attestation.md)。正式T03生产集成、来源逐笔认证、真同源存储、真机及读屏仍未验收；T00–T11 0/12 Accepted。
