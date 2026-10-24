@@ -1,6 +1,12 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第103轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第104轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+
+## 第104轮 · Root T03 祖先伪元素遮挡门禁（非正式验收）
+
+- 真实Chromium五类CSS `::before`/`::after`遮挡使R103错误放行、真实截图像素变化而SVG `getBBox()`不变；R104隔离HTML新增祖先伪元素绘制/层叠签名并拒绝，新增Chromium **25/25**。
+- 父R103 **1410/1410**逐文件SHA继承；R104累计ZIP **1425文件** SHA256 `3840ac7eaeea34c66d3c251dd8906117d92de2f5536b34256d26b6afad275289`。9组新旧定向QA **637项**；Python/unzip各分两段独立恢复，共四次QA前后**1425/1425** SHA一致。首次整批执行超时未计通过；完整历史QA not-run。
+- 独立临时profile访问127.0.0.1仍`ERR_BLOCKED_BY_ADMINISTRATOR`，真实Web Locks/localStorage blocked/not-run；真机/读屏not-run。T03未生产集成、T01 **0/25**、T02正式永久ID **0**、原始T00–T11 **0/12 Accepted**；历史第10–12/35轮ZIP和第12轮20SVG仍缺，冻结入口/2008 JPEG/176编码/用户存储未动。见[证据](./evidence/v036-round104-t03-pseudo-element-occlusion.md)。
 
 ## 第103轮 · Root T03 SVG祖先绘制完整性（非正式验收）
 
