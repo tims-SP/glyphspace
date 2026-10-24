@@ -194,3 +194,7 @@
 ## 第87轮 Root T01/T02/T05 · M键非可渲染影子来源桥接（2026-10-24；非正式验收）
 
 第86轮父ZIP1223/1223 SHA继承，新增隔离模块将第73轮151候选UID、第81轮25键来源、第84轮M键4别名+4影子UID及第86轮未批准vis-02裁框提案按固定原始SHA绑定。4影子观察**无SVG Path、inkBBox、正式assetId/instanceId或可发布几何**，不能当作4个新根；vis-02旧框保持不变。新增Node38/38、原生RGB12/12，继承16组QA；累计ZIP1236文件 SHA256 `c50653e2bb980a289fb0287d7edb05f99d30f3f671112ec86cb39880e366e89f`，Python/system unzip双恢复各1236/1236，恢复后各18组QA与文件SHA通过。ZIP仅在外部交付，不在GitHub。第10–12、35轮历史ZIP/第12轮20SVG仍缺；真实同源导航管理员阻断，Web Locks/localStorage blocked/not-run，真机/读屏not-run。**T01 0/25、正式永久ID 0、T05未补完、T00–T11 0/12 Accepted**。冻结HTML、176编码、正式SVG及用户存储不变。证据：`docs/evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md`。
+
+## 第88轮 Root T01/T05 K/E原生像素冲突审阅（2026-10-24，非正式验收）
+
+第87轮1236/1236父文件SHA继承；从2008 JPEG原始字节为K/E共享来源问题登记6个独立ROI证据框，Pillow/OpenCV RGB交叉一致。K:2/K:3、E:1/E:8共享来源阻断不解除；K:4历史标签与可见右下构形对应仍待分类，圈内区域不得自动算字根。新增78/78 QA、共19组新旧QA；累计ZIP1243文件SHA256 `76690664e16bd08d77bbbc4dda1699df20d1178d51b9ae5ed011ee1d402b5d9a`，Python/system unzip双独立恢复各1243/1243、QA后SHA不变。外部ZIP不在GitHub。**T01 0/25、正式永久ID 0、T05未补完、T00–T11 0/12 Accepted**；真同源/真机/读屏本轮not-run，历史缺口与许可问题未解除。证据：[R88](./evidence/v036-round88-ke-source-roi-collision-review.md)。
