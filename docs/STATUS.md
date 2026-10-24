@@ -216,3 +216,7 @@
 - R64/66来源绑定三视图与R77/78候选UID几何在隔离Chromium SVG DOM贯通：151 UID/25键、100×100、inkBBox、五锚点/光学位移，full/mini/single transform同步、非法编辑原子回滚。5关联及4个M影子观察不渲染。
 - 新Chromium about:blank真实DOM **27/27**，继承R77/R78/R83–R90 **10组**QA；父1270/1270 SHA继承，累计ZIP **1283文件** SHA256 `b15be0b2c893ae448b7a80b59939098029c7c89ae3e149744690f1a6669367c3`，Python zipfile与系统unzip双独立解压及恢复后QA/逐文件SHA一致。ZIP不在GitHub，见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
 - **原始T03生产内核仍未正式集成/Accepted**；T01 0/25、T02正式永久ID0、T00–T11 0/12 Accepted。真实同源存储blocked/not-run，真机/读屏not-run，历史第10–12/35轮ZIP及第12轮20SVG缺失；冻结入口/176编码/用户存储未动。
+
+## 第92轮 Root T03 SVG DOM来源完整性门禁（2026-10-24；非验收）
+
+真实Chromium复现R91可接受伪造`<use href>`、跨键替换UID及篡改`<defs>` Path的问题；R92独立隔离模块改为全25键成员/资产/变换/Path逐项核验，并修复导入/撤销预检提交。新27/27、旧R91 Chromium27/27、旧10组QA通过；父1283/1283继承，累计ZIP1296成员，SHA256 `9bc741610e45c740e149110ed2fe208dd5a269e6961a7e810108a16d5c391dfa`，两次独立解压及QA后SHA均1296/1296。仅about:blank，不是生产内核验收。证据：[R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。T01 0/25、正式永久ID 0、原始T00–T11 0/12 Accepted；真实同源/真机/读屏仍blocked/not-run。
