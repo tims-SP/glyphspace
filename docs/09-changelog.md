@@ -128,3 +128,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 ## 2026-10-24 · 第82轮 Root T01 原生像素证据草案工具
 
 新增25键/159观察原始JPEG像素定位、ROI标注、非正式审阅JSON导出及独立失败关闭验证器；不发布源图到GitHub，不更改生产资产或用户存储。新增Chromium about:blank 18/18、Python负例24/24、继承15组旧QA；父1164/1164继承，累计ZIP1181文件、SHA256 `c1755737b727e6616538a0ade8eaf562fc4c76708aa9331ecf5fcd8a4d369796`，Python/system unzip双恢复QA及SHA通过。`file://`被管理员策略阻断；T01仍0/25，原始T00–T11仍0/12 Accepted。见 `docs/evidence/v036-round82-t01-native-pixel-review-workstation.md`。
+
+## 2026-10-24 · 第83轮 Root T01来源清单固定与ROI像素签封
+
+复现第82轮隔离审阅草案可选清单伪造绕过，新增严格原始JPEG与R81清单SHA固定、159条原生RGB裁框复算、ROI原生像素签封与许可/认证冒充拒绝；Pillow/OpenCV各159/159一致，353/353新增QA、17组旧QA通过。父1181/1181继承，累计ZIP1193文件、SHA256 `d28dec3bc9118b334f0ffdcf724ad307c265b08b2756f3a421bb57d7d3366aa6`，双独立解压及QA后SHA通过。独立CC BY-SA 2017图只发现元数据，未获得原件，不能替代2008同源高清。T01仍0/25，T00–T11仍0/12 Accepted；同源存储/真机/读屏not-run。证据：`docs/evidence/v036-round83-t01-pinned-source-and-roi-pixel-seal.md`。
