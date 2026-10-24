@@ -61,7 +61,7 @@
         "T02"
       ],
       "sourceExitCriterion": "增删任意一个实例不影响其他几何；三视图同配置",
-      "implementationState": "round78 isolated UID-only 100x100 inkBBox/anchor/optical adapter, 50/50 QA; production not integrated",
+      "implementationState": "round78 isolated UID-only 100x100 inkBBox/anchor/optical adapter, 50/50 QA; production not integrated; R91 isolated R78 UID/inkBBox/anchor/optical -> actual Chromium SVG DOM full/mini/single transform sync; 27/27 about:blank browser QA + 10 targeted inherited groups; parent1270/1270, ZIP1283 dual-extraction; NOT production integrated/certified",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-24",
