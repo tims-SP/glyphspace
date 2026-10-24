@@ -190,3 +190,7 @@
 ## 第86轮 T01/T05 · M vis-02裁框候选修复（2026-10-24，非正式验收）
 
 原始2008 JPEG可视核验表明M vis-02（旧槽M:1）原裁框右侧截断可见竖笔；新增**未批准的证据框提案**[1045,585,26,23]，在原[1045,585,21,23]基础上右延5原生像素列，未改任何正式裁框/UID/SVG。vis-04左侧两点归属仍不明，不自动扩框。新增20/20 QA、旧第81–85轮5组定向QA在两次恢复环境通过；**全量历史QA本轮not-run**。第85轮父ZIP1214/1214继承；第86轮累计ZIP1223文件SHA256 `af6260dbda45957892d844d5af1a2f2a3d494547b1b89f82c774971d2cd3a84a`，Python/system unzip双恢复各1223/1223、QA后SHA一致。ZIP不在GitHub，见 [R86证据](./evidence/v036-round86-m-vis02-unapproved-crop-handoff.md)。T01正式0/25、T02正式永久ID0、T00–T11仍0/12 Accepted；真同源blocked/not-run、真机/读屏not-run，历史ZIP与高清同源原图缺口未解决。
+
+## 第87轮 Root T01/T02/T05 · M键非可渲染影子来源桥接（2026-10-24；非正式验收）
+
+第86轮父ZIP1223/1223 SHA继承，新增隔离模块将第73轮151候选UID、第81轮25键来源、第84轮M键4别名+4影子UID及第86轮未批准vis-02裁框提案按固定原始SHA绑定。4影子观察**无SVG Path、inkBBox、正式assetId/instanceId或可发布几何**，不能当作4个新根；vis-02旧框保持不变。新增Node38/38、原生RGB12/12，继承16组QA；累计ZIP1236文件 SHA256 `c50653e2bb980a289fb0287d7edb05f99d30f3f671112ec86cb39880e366e89f`，Python/system unzip双恢复各1236/1236，恢复后各18组QA与文件SHA通过。ZIP仅在外部交付，不在GitHub。第10–12、35轮历史ZIP/第12轮20SVG仍缺；真实同源导航管理员阻断，Web Locks/localStorage blocked/not-run，真机/读屏not-run。**T01 0/25、正式永久ID 0、T05未补完、T00–T11 0/12 Accepted**。冻结HTML、176编码、正式SVG及用户存储不变。证据：`docs/evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md`。
