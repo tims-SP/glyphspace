@@ -163,3 +163,7 @@
 ## R90 · 失效来源框不能被相邻ROI自动重绑（2026-10-24）
 
 **状态：强制审阅门禁，非正式字根认证。** E:1/E:8引用同一个失效框，尽管E上排微形与圈注上下文ROI与其部分交叠，也不能按像素亮度或空间邻近直接分配新referenceShapeId/assetId/永久instanceId。E:7仍需先区分圈注、变体与正式字根。三份来源SHA与两种解码器仅证明像素一致，不证明语义；恢复/回滚仅需移除隔离R90文件，生产入口与用户存储保持不变。证据：[R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)。
+
+## ADR-R91 · 候选UID三视图DOM只能作为隔离技术集成（2026-10-24）
+
+**状态：隔离试验，非生产批准。** R63来源锁定Path、R73候选UID与R78校验桥接可用于内存模型，在真实Chromium SVG DOM同步full/mini/single的100×100墨迹几何、五锚点/光学位移。编辑仅以候选UID寻址；非法导入、越界和认证字段提升失败关闭。候选UID、SHA、浏览器渲染不证明2008原图逐笔身份、永久ID或正式集成。不得访问用户存储；正式T03/T09依赖T01/T02/T05/T06。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
