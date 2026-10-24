@@ -151,3 +151,7 @@
 ## ADR-R87 · M未绑定观察必须先建立不可渲染的来源影子层（2026-10-24）
 
 **隔离预集成，非正式补图或生产批准。** 4个与旧槽同框的M观察仅复用旧候选UID，另4个未绑定观察使用第84轮影子UID，必须保持`source_pending`、`svgPath/inkBBox/assetId/instanceId=null`、`renderable=false`。第86轮vis-02候选扩框只能作为未批准证据输出，不能覆盖旧裁框。导入笔记不允许增添批准字段、SVG、永久ID或替换来源SHA。只有合法同源逐笔复核、正式分类、资产与独立验收后才能进入T03/T05生产链。此桥接只读原始JPEG/账本，绝不访问用户localStorage。见 [R87](./evidence/v036-round87-m-source-shadow-nonrenderable-bridge.md)。
+
+## R88 · K/E争议区域来源证据与语义身份严格分离（2026-10-24）
+
+决策：可以将2008 JPEG原生像素中K/E的不同位置登记为未批准ROI证据，固定JPEG/R81清单字节SHA，并由Pillow/OpenCV交叉核验；但不据此生成永久referenceShapeId、SVG Path、根数量或解锁K:2/K:3与E:1/E:8来源阻断。K:4标签与右下可见构形对应需逐笔人工审阅。证据：[R88](./evidence/v036-round88-ke-source-roi-collision-review.md)。
