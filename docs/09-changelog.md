@@ -175,3 +175,7 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 - Chromium实证R91允许伪造SVG href、跨键UID替换和Path修改仍通过全局数量门禁；R92新增严格逐键/资产/Path/transform审计及原子内存导入/撤销，真实click/Enter/Space统一经过包装层。
 - 新29/29 Chromium、旧R91 27/27、旧10组QA通过；父1283/1283继承、累计1296成员两种解压和QA后SHA一致。ZIP不在GitHub。详见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
 - 原始T00–T11仍0/12 Accepted；冻结正式入口/旧编码/用户存储不变。
+
+## 2026-10-24 · 第93轮（Root T03，隔离非验收）
+
+R92文档级SVG fragment ID冲突漏洞经Chromium真实绘制包围盒复现，R93加入全document唯一ID/规范defs解析和base[href]门禁。新12/12、R92 29/29、R91 27/27及继承10组定向QA通过；父1296/1296继承、累计1308文件双恢复与QA后SHA一致。证据：[R93](./evidence/v036-round93-t03-document-fragment-identity.md)。正式T03仍未集成，T00–T11 0/12 Accepted。
