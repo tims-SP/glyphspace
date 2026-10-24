@@ -167,3 +167,8 @@
 ## ADR-R91 · 候选UID三视图DOM只能作为隔离技术集成（2026-10-24）
 
 **状态：隔离试验，非生产批准。** R63来源锁定Path、R73候选UID与R78校验桥接可用于内存模型，在真实Chromium SVG DOM同步full/mini/single的100×100墨迹几何、五锚点/光学位移。编辑仅以候选UID寻址；非法导入、越界和认证字段提升失败关闭。候选UID、SHA、浏览器渲染不证明2008原图逐笔身份、永久ID或正式集成。不得访问用户存储；正式T03/T09依赖T01/T02/T05/T06。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。
+
+## 2026-10-24 · 第92轮隔离DOM来源完整性决策（Root T03）
+
+- 不再以SVG `<use>`总数与全局UID集合代替键内成员/顺序和Path来源验证。隔离编辑前必须检查25键full/mini与当前single视图、资产href、原始Path/描边、viewBox与transform；异常失败关闭。
+- 导入/撤销先构建并验证下一状态，再更新DOM与内存overlay；单键切换前核验旧DOM，切换后恢复overlay。仅内存草案，**不**提升永久ID、来源认证或正式生产集成。参见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
