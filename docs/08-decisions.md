@@ -155,3 +155,7 @@
 ## R88 · K/E争议区域来源证据与语义身份严格分离（2026-10-24）
 
 决策：可以将2008 JPEG原生像素中K/E的不同位置登记为未批准ROI证据，固定JPEG/R81清单字节SHA，并由Pillow/OpenCV交叉核验；但不据此生成永久referenceShapeId、SVG Path、根数量或解锁K:2/K:3与E:1/E:8来源阻断。K:4标签与右下可见构形对应需逐笔人工审阅。证据：[R88](./evidence/v036-round88-ke-source-roi-collision-review.md)。
+
+## R89 · 历史字形Path与原图ROI的身份差异不可自动合并（2026-10-24）
+
+决策：K:4的冻结`〢` Path和R88下方右侧原图ROI必须分别保留来源、坐标与字节SHA。历史裁框`[1127,462,24,22]`、上下文`[1125,460,29,26]`及四边226新增像素只构成逐笔审阅证据，不能自动重命名、替换Path、颁发永久ID或解除K/E阻断。见 [R89](./evidence/v036-round89-k4-frozen-path-native-source-crosscheck.md)。

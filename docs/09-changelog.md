@@ -155,3 +155,8 @@ Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真�
 
 - 新增K/E六ROI原生JPEG来源位置与像素SHA/Pillow-OpenCV交叉核验；保留K/E同框阻断，K:4右下可见形态语义对应待审，不修改正式字形。
 - 新QA78/78，19组继承与新增QA；父1236/1236，累计ZIP1243文件、SHA256 `76690664e16bd08d77bbbc4dda1699df20d1178d51b9ae5ed011ee1d402b5d9a`，双解压和QA后SHA通过。外部ZIP不在GitHub；T00–T11仍0/12 Accepted。
+
+## 2026-10-24 · 第89轮（原始T01/T02/T05，隔离来源纠偏）
+
+- 交叉比对冻结K:4 `〢` Path与2008 JPEG右下来源构形；纠正R88 ROI不等于K:4历史框的坐标误认，四边新增226原生像素签封，保持来源认证阻断。
+- 新QA51/51、继承7组；父1243/1243，累计ZIP1253文件 SHA256 `c9700baf3730fbe1eee234bd5af8cf2e6f10434698b3b0507dd7dd12f3cbb2f0`，双独立解压/恢复后8组QA与SHA通过。证据：[R89](./evidence/v036-round89-k4-frozen-path-native-source-crosscheck.md)；T00–T11仍0/12 Accepted。
