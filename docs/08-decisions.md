@@ -172,3 +172,7 @@
 
 - 不再以SVG `<use>`总数与全局UID集合代替键内成员/顺序和Path来源验证。隔离编辑前必须检查25键full/mini与当前single视图、资产href、原始Path/描边、viewBox与transform；异常失败关闭。
 - 导入/撤销先构建并验证下一状态，再更新DOM与内存overlay；单键切换前核验旧DOM，切换后恢复overlay；键帽真实click/Enter/Space在捕获阶段路由到同一校验选择器，避免旧监听器绕过。仅内存草案，**不**提升永久ID、来源认证或正式生产集成。参见 [R92](./evidence/v036-round92-t03-dom-provenance-attestation.md)。
+
+## ADR-R93 · SVG片段ID必须以整个文档的实际解析结果为准（2026-10-24）
+
+**状态：隔离T03技术门禁，非正式批准。** 仅检查可信defs内Path、use的href文本与成员计数不足以证明实际绘制来源：SVG fragment引用在ownerDocument解析，先出现的同名ID可劫持真实Chromium绘制。R93在提交几何或切键前检查149个规范ID全document唯一性、getElementById身份与base[href]缺失；失败不修改内存草案。冻结正式入口不变，回滚仅移除R93隔离模块。证据：[R93](./evidence/v036-round93-t03-document-fragment-identity.md)。
