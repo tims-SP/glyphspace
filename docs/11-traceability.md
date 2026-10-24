@@ -183,3 +183,7 @@ B/J/R/X/V五键7个历史未映射微形ROI已绑定原生JPEG像素SHA与独立
 ## 第100轮 T00/T01/T05 归档链及M来源审计（非正式验收）
 
 工作区第90–99轮10份真实ZIP逐个SHA/成员核验，第90→99轮9次父文件继承一致；R99 1366/1366继承后R100累计1373文件、SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`，双独立恢复各1373/1373且QA后SHA一致。M键8个候选ROI原始JPEG裁框、PNG原始字节与RGB重算均8/8一致，4个仍无旧槽、无正式Path/assetId；**正式新增字根0**。缺第10–12、35轮ZIP和第12轮20SVG；原始T00–T11仍0/12 Accepted，T01 0/25、缺根数未知。真实同源存储blocked/not-run，真机/读屏not-run。证据：[R100](./evidence/v036-round100-archive-chain-m-provenance.md)。
+
+## 第101轮 T01/T02/T05 M键候选扩框像素归属（非正式验收）
+
+R100父1373/1373逐文件SHA继承，R101累计ZIP1385文件 SHA256 `e40cae7e5932df6c2784bd977d1c511a5d7a4609e7002b509f10b72ef3795cd2`；Python zipfile/system unzip两次独立恢复及各自新旧QA通过。2008 JPEG/R55/R84来源绑定的8个M观察，6个未批准复框备选揭示3组交叠像素归属（M03/M04 2×13、M05/M06 4×18、M07/M08 2×17），保留未决不提升任何正式字根、Path或永久ID。新增58/58、旧R84 124/124、R86 20/20、R99 Chromium 302/302双恢复重跑通过。当前环境缺R90 ZIP，R100外部十包链本轮复跑blocked。T01 0/25、缺根未知、T00–T11 0/12 Accepted；同源存储/真机/读屏未验收。详见[证据](./evidence/v036-round101-m-native-source-ownership.md)。
