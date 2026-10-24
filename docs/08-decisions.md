@@ -192,3 +192,7 @@
 ## 2026-10-24 · 第97轮 T07几何测量边界（非验收）
 
 隔离SVG碰撞必须将`<use>.getBBox()`经`svg.getCTM().inverse().multiply(use.getCTM())`变换到同一个100×100键内坐标，禁止直接拿未变换BBox做碰撞或宣称全键无重叠；含stroke的H:7单列来源inkBBox包络，不能把fill bbox当painted ink bbox。几何预检与真实原图逐笔/标签/真机验收严格分离。冻结生产入口不变，T07不升级。
+
+## ADR-R98 · T07碰撞需要同一CSS屏幕坐标空间（2026-10-25）
+
+**状态：隔离技术证据，非生产批准。** 同键100×100矩形零相交不能推导跨键、键头文字或描边的实际碰撞；必须用真实DOM的`getScreenCTM()`把可信草案inkBBox统一投影到CSS屏幕坐标，逐项检查键格/SVG边界及跨键关系，并以篡改负例验证检查器会失败。H:7描边草案包络不等于逐像素描边认证；模拟DPR不等于真机。R98发现320px隔离完整键盘键格约24.7 CSS像素，触控风险保留；T07/T10不提升。见[R98证据](./evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md)。
