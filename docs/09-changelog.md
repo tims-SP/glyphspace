@@ -218,3 +218,8 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 
 - 8个M原生ROI、6px上下文SHA及R84旧/影子UID交叉绑定；6个未批准复框定位3组来源交叠，全部保持blocked审阅，不产生正式根/Path/ID。新增58/58，继承124/124、20/20、R99 Chromium302/302。
 - R100父1373/1373 SHA继承，R101 ZIP1385文件 SHA256 `e40cae7e5932df6c2784bd977d1c511a5d7a4609e7002b509f10b72ef3795cd2`，Python/unzip双恢复及新旧QA通过；当前R90 ZIP缺失，R100十包外部链本轮复跑blocked。原始任务0/12 Accepted，正式入口与用户存储未动。[证据](./evidence/v036-round101-m-native-source-ownership.md)。
+
+## 2026-10-25 · 第102轮 T01/T02/T05 M键原生交叠拓扑（非验收）
+
+- 三组未批准扩框交叠经原生JPEG五阈值审计：M03/04 26像素交叠无暗像素；M05/06 72像素交叠有暗像素候选；M07/08 34像素交叠暗连通性对阈值敏感。均未认证字根/笔画归属/永久ID。
+- 新增52/52及继承5组定向QA通过；父R101 1385/1385继承，R102累计1397文件SHA256 `1e5972251f3386e91d709e1869a36009f8aead732eaa4e22bfb93d9f21b094a5`，Python/unzip双恢复各1397/1397 SHA一致，QA后再次全一致。R90缺失阻断十包链复跑；T00–T11仍0/12 Accepted。见[证据](./evidence/v036-round102-m-native-overlap-topology.md)。
