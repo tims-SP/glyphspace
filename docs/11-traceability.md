@@ -175,3 +175,7 @@ B/J/R/X/V五键7个历史未映射微形ROI已绑定原生JPEG像素SHA与独立
 ## 第98轮 Root T07 · 屏幕空间stroke/键头/跨键碰撞预检（2026-10-25；非验收）
 
 第97轮1348/1348逐文件SHA继承；R98使用Chromium `getScreenCTM()`把草案inkBBox投影至CSS像素坐标，扩展检查跨键、键头、SVG裁切、键格外溢与H:7描边包络。8视口×DPR1/2/3=24个模拟上下文，7344实例、19776同键及523968跨键配对，隔离草案矩形重叠/越界0；3类主动DOM篡改均被检测。320px完整/mini键格约24.7 CSS px，触控目标风险待真实UI/设备审查。14组新旧QA在两份独立解压环境均通过；累计ZIP1359文件，SHA256 `1e1aeeac3c0dd321f5e2f22d26eb00e133ef6f6ecc7087c46dc3e231155da7ed`，ZIP不在GitHub。见[R98证据](./evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md)。**T07尚未正式集成/认证，T01 0/25、T00–T11 0/12 Accepted**；真同源/真机/读屏未验收，历史缺口未补。
+
+## 第99轮 T03/T07 独立草案SVG像素绘制复验（非正式验收）
+
+151候选UID × 400×400及800×800 = 302/302 Chromium alpha实际渲染非空且草案包络误差不超过一栅格像素；H:7真实stroke纳入，三种主动像素篡改3/3检出。父R98 1359/1359继承，R99 ZIP 1366文件 SHA256 `7fe43e62975b1e1b339f46674d452c519a3ad6b6d130e448e8c2f670d12f4fea`，双独立解压及14组定向旧QA通过。仅验证草案Path渲染，不认证2008来源形态、标签圈注或生产集成；原始任务0/12 Accepted。详见[第99轮证据](./evidence/v036-round99-t03-t07-raster-alpha-ink-envelope.md)。
