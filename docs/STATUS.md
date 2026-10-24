@@ -260,3 +260,10 @@
 - 从R98累计ZIP **1359/1359** SHA逐项继承；对151候选UID在Chromium about:blank中独立构造SVG并读取Canvas alpha像素，在400×400及800×800两档各151个实际绘制实例，合计**302/302**非空且草案inkBBox包络误差不超过1栅格像素；H:7描边包含在内。3个主动篡改（描边加粗、路径消失、几何位移）均检出。R98继承14组定向QA重跑通过。
 - R99累计ZIP **1366文件** SHA256 `7fe43e62975b1e1b339f46674d452c519a3ad6b6d130e448e8c2f670d12f4fea`，Python zipfile/system unzip各1366/1366、恢复后新旧QA及逐文件SHA一致；外部ZIP不在GitHub。证据：[R99](./evidence/v036-round99-t03-t07-raster-alpha-ink-envelope.md)。
 - **仅草案SVG渲染证据**，不等于原图逐笔、正式墨迹/圈注/标签碰撞或生产集成。T01 0/25、正式永久ID0、T00–T11 **0/12 Accepted**；真同源存储/真机/读屏未验收，缺历史第10–12/35轮与第12轮20SVG，同源高清合法原图/许可未获得。冻结入口、176编码、正式SVG及用户存储未动。
+
+## 第100轮独立归档链与M键来源复验（2026-10-25；非验收）
+
+- T00：工作区真实存在的第90–99轮十份累计ZIP逐包SHA/文件数/成员SHA复验；第90→99轮9次相邻继承完整一致。**不证明第90轮以前的历史连续完整**。
+- T01/T05：M键8个来源ROI独立从2008 JPEG重算RGB SHA、原始PNG SHA和解码像素均8/8一致；其中4个无旧槽，只是审阅候选，**正式新增字根0、T01 0/25、真实缺根数未知**。
+- 第10–12、35轮目录及第12轮20SVG在R99累计包中仍缺。第100轮父R99 1366/1366继承；累计ZIP **1373文件** SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`，Python/unzip两套独立恢复各1373/1373及新旧定向QA、QA后SHA通过。ZIP不在GitHub。证据见[第100轮](./evidence/v036-round100-archive-chain-m-provenance.md)。
+- 真实独立profile本轮127.0.0.1/localhost/file://导航均管理员阻断；Web Locks/localStorage事务blocked/not-run。完整历史QA、真机、读屏not-run；**原始T00–T11仍0/12 Accepted**，生产入口/176编码/用户存储未动。
