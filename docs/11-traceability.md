@@ -159,3 +159,7 @@ R91的全局UID数量检查不能防止SVG href、跨键UID或Path被篡改；R9
 ## 第94轮 Root T03 · SVG实际绘制与声明几何的一致性门禁（非验收）
 
 R93允许在可信defs的g上添加transform，使真实Chromium SVG `<use>.getBBox()` 宽82→164却仍attest通过；CSS覆盖Path透明度也可绕过旧门禁。R94以严格SVG属性集合、规范节点身份、computed style和computed transform对照修复。新Chromium 18/18、R91 27/27、R92 29/29、R93 12/12、定向继承10组；第93轮1308/1308继承，第94轮1319成员ZIP SHA256 `2dcbc8880ab8adde82a8693c5c05f163d81c1476763a10d57d925d4a296df4fc`，两次独立解压各1319/1319并复跑QA、后SHA一致。仍仅about:blank隔离，不是逐笔认证、正式T03生产集成或T10真机/读屏验收。见 [R94证据](./evidence/v036-round94-t03-computed-svg-paint-integrity.md)。原始T00–T11 0/12 Accepted。
+
+## 第95轮 Root T01/T02（关联T05）· K键物理来源与旧槽身份分离（非验收）
+
+2008原生JPEG四个K物理ROI独立SHA封存、Pillow/OpenCV交叉验证；5旧槽分账，K:1仅关联，K:2/K:3共享裁框继续阻断，K:3没有独立来源ROI，K:4「〢」与右下原图可见轮廓需逐笔复核，右上圈注未分类。新增仅审阅来源身份仲裁（禁止借框/升级/伪造许可）。新36/36及R81/R86–R94十组定向旧QA；第94轮1319/1319继承，第95轮ZIP1331文件SHA256 `7deea5a9de203a1cefee6f52ca988f7d26c5588b6b0316a68fab42c2b1dd6db0`，双解压与两次QA后SHA均1331/1331。详见 [R95证据](./evidence/v036-round95-k-physical-source-identity-arbitration.md)。**0/25正式来源认证、0正式永久ID、0/12 Accepted**；真同源存储blocked，真机/读屏not-run，缺档与高清原图许可未补齐。
