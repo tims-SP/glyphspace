@@ -193,3 +193,7 @@ R92文档级SVG fragment ID冲突漏洞经Chromium真实绘制包围盒复现，
 ## 2026-10-24 · 第96轮（隔离来源账本，非发布）
 
 Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚定的独立物理观察ID；新增旧槽裁框交叠交叉账本，保留B:7/V:4阻断。新增35/35 QA、旧11组、双独立恢复1340/1340；不认证字根、不改冻结入口。详见[证据](./evidence/v036-round96-seven-microform-source-crosswalk.md)。
+
+## 2026-10-24 · 第97轮隔离T07 CTM碰撞预检
+
+真实Chromium确认直接`use.getBBox()`产生同键409/409对假碰撞，独立修正为CTM映射；两视口各306实例、824对，转换后0矩形相交，H:7描边单列。父1340/1340继承，累计1348文件ZIP SHA256 `bb744069860dd24c51e5fe08a6c81e63ff7b94768c3fae822533a7e8cb08d0d5`，双独立恢复各13组新旧QA及文件SHA通过。非生产/非来源认证，正式T00–T11仍0/12 Accepted。见[证据](./evidence/v036-round97-t07-transformed-svg-bbox-preflight.md)。
