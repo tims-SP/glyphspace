@@ -130,10 +130,10 @@
         "T06"
       ],
       "sourceExitCriterion": "25 键默认态与焦点态无未批准碰撞或越界，位置误差按规则验收",
-      "implementationState": "round77 draft inkBBox rectangle collision preflight only; labels/stroke certification/focus states not integrated; R97 isolated Chromium T07 transform-aware SVG <use> bbox preflight: naive getBBox yields 409/409 false overlaps per full/mini, CTM local mapping compares 306 uses and 824 pairs per viewport at 1440x900 and 390x844 with 0 draft rectangle overlaps; H:7 stroke uses existing inkBBox (NOT painted stroke certification); 13 targeted new/old suites in both restored copies, parent1340/1340, cumulative1348/1348; NOT production-integrated or formally accepted.",
+      "implementationState": "round77 draft inkBBox rectangle collision preflight only; labels/stroke certification/focus states not integrated; R97 isolated Chromium T07 transform-aware SVG <use> bbox preflight: naive getBBox yields 409/409 false overlaps per full/mini, CTM local mapping compares 306 uses and 824 pairs per viewport at 1440x900 and 390x844 with 0 draft rectangle overlaps; H:7 stroke uses existing inkBBox (NOT painted stroke certification); 13 targeted new/old suites in both restored copies, parent1340/1340, cumulative1348/1348; NOT production-integrated or formally accepted. R98 isolated Chromium CSS-screen-space inkBBox/stroke-envelope/header/cross-key collision preflight: 24 emulated viewport/DPR contexts, 7344 instances, 19776 same-key and 523968 cross-key pairs; 3 negative tamper cases; 14 targeted QA suites in both independently restored 1359-member archives. 320px key cells ~24.7 CSS px usability risk; no production integration, original shape certification, real-device or same-origin acceptance.",
       "accepted": false,
       "acceptanceEvidence": [],
-      "statusDate": "2026-10-24",
+      "statusDate": "2026-10-25",
       "source": "V0.36-P0 historical plan (archived), not a completed implementation"
     },
     {
