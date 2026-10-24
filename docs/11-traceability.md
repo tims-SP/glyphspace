@@ -179,3 +179,7 @@ B/J/R/X/V五键7个历史未映射微形ROI已绑定原生JPEG像素SHA与独立
 ## 第99轮 T03/T07 独立草案SVG像素绘制复验（非正式验收）
 
 151候选UID × 400×400及800×800 = 302/302 Chromium alpha实际渲染非空且草案包络误差不超过一栅格像素；H:7真实stroke纳入，三种主动像素篡改3/3检出。父R98 1359/1359继承，R99 ZIP 1366文件 SHA256 `7fe43e62975b1e1b339f46674d452c519a3ad6b6d130e448e8c2f670d12f4fea`，双独立解压及14组定向旧QA通过。仅验证草案Path渲染，不认证2008来源形态、标签圈注或生产集成；原始任务0/12 Accepted。详见[第99轮证据](./evidence/v036-round99-t03-t07-raster-alpha-ink-envelope.md)。
+
+## 第100轮 T00/T01/T05 归档链及M来源审计（非正式验收）
+
+工作区第90–99轮10份真实ZIP逐个SHA/成员核验，第90→99轮9次父文件继承一致；R99 1366/1366继承后R100累计1373文件、SHA256 `f90595913cb0469809897a0dab9c20a84628fff2b61e032d2506b5e691cc559c`，双独立恢复各1373/1373且QA后SHA一致。M键8个候选ROI原始JPEG裁框、PNG原始字节与RGB重算均8/8一致，4个仍无旧槽、无正式Path/assetId；**正式新增字根0**。缺第10–12、35轮ZIP和第12轮20SVG；原始T00–T11仍0/12 Accepted，T01 0/25、缺根数未知。真实同源存储blocked/not-run，真机/读屏not-run。证据：[R100](./evidence/v036-round100-archive-chain-m-provenance.md)。
