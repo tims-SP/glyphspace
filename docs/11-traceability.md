@@ -141,3 +141,7 @@
 ## 第90轮 Root T01/T02/T05 · E来源空间排除（非正式验收）
 
 2008原生JPEG/R81/R88固定SHA下，对E键9个旧槽逐项复核；E:1/E:8共用失效来源框（368像素，5个RGB均值<160，仅描述性），R88上排微形与圈注上下文分别相交240/66像素，不可自动重绑；E:7继续blocked_invalidated。新增82/82 QA，父1253/1253继承，第90轮1270文件ZIP双独立恢复及各9组新旧QA/QA后SHA通过。见 [R90](./evidence/v036-round90-e-invalid-source-spatial-exclusion.md)。**0/25来源认证、0正式永久ID、0/12 Accepted**；同源存储blocked，真机/读屏not-run。
+
+## 第91轮 Root T03 隔离UID→SVG三视图DOM集成（非验收）
+
+R63 Path与R73候选UID经R78来源校验，将内存几何/五锚点/ox/oy编辑实际同步到Chromium full/mini/single SVG `<use>`。新DOM QA27/27、继承十组，父1270/1270 SHA继承、累计1283文件ZIP双解压及恢复后QA/逐文件SHA一致。仅 `about:blank`，不是正式T03生产集成或T09学习引擎全回归。见 [R91证据](./evidence/v036-round91-t03-live-uid-three-view-dom.md)。T00–T11仍0/12 Accepted。
