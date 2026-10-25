@@ -207,3 +207,7 @@ R103祖先普通computed style无法发现CSS `::before`/`::after`遮挡；真�
 ## 第106轮 Root T00/T09冻结176编码行为基准（2026-10-25；非正式验收）
 
 R105父1433/1433逐文件SHA继承；冻结V0.35 HTML只在测试时内存注入选题钩子，真实Chromium about:blank逐字对照176训练条目，在引导/进阶/盲打528案例中执行输入状态机，新增3143/3143 QA。继承R105 170、R104 25、R103 26、R77 179、R99 302定向QA通过。R106累计ZIP1439文件 SHA256 `55e96b14b2a969e33b7e6b9e39fa132d0836062bbbb4d3fe9104d044d2de26c0`；Python/unzip两份独立恢复各重跑新3143+旧179+170并在QA后1439/1439成员SHA一致。此项只补充T00旧行为可复用回归证据，**不是T09正式新三视图集成**；原始T00–T11仍0/12 Accepted，T01 0/25、T02正式ID0；同源存储blocked/not-run，真机/读屏not-run，历史缺口不变。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
+
+## 第107轮 Root T04 真实原点预检路径（非正式验收）
+
+新增可复现的独立loopback HTTP原点双标签Web Locks/localStorage事务脚本，覆盖提交、并发冲突、崩溃恢复、回滚和记录篡改；本地Chromium被管理员策略阻断，真实事务**blocked/not-run**。独立GitHub Actions烟测workflow已提交，运行结果待核验。新静态26/26、旧R77 179/179、R105 170/170；R106完整旧QA本轮超时未计通过。R106父1439/1439继承，R107累计1449成员双独立解压与QA后SHA一致；完整历史QA not-run。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。T04未真实迁移验收，T00–T11仍0/12 Accepted。
