@@ -230,3 +230,7 @@
 ## ADR-R106 · 用冻结旧引擎的真实浏览器行为作为新版本回归预言机（2026-10-25）
 
 **状态：隔离QA决策，不是生产或来源认证。** 原有176编码静态快照无法单独证明输入状态机的行为不变；决定在一次性Chromium about:blank上下文加载冻结V0.35 HTML，仅于内存插入测试钩子，逐条驱动引导/进阶/盲打三模式并检验错误键、Backspace、短码空格、四码跳转及盲打遮蔽。R106实测3143/3143通过。替代方案“只比较JSON编码或模拟DOM”不足以覆盖旧运行时行为。局限：不是新V0.36正式集成、真实同源存储或设备读屏；未来仍需与正式候选逐字双版本对照。回滚仅移除R106隔离QA与证据，冻结HTML及用户存储不变。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
+
+## 2026-10-25 · R107：T04真实原点测试只在临时隔离域执行
+
+原始T04要求真实Web Locks/localStorage迁移回归，但此前本地管理员策略阻断loopback导航。新增GitHub Actions独立Ubuntu/Chromium临时loopback原点烟测，以验证环境能力；不使用正式GlyphSpace域名、用户profile或生产键，不把CI烟测等同V0.35迁移验收。完整隔离事务脚本随外部R107 ZIP保留，未授权环境仍标blocked/not-run。此决定不改变T04依赖T02/T03及原始验收门槛。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
