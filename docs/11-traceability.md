@@ -1,5 +1,9 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第112轮补充：Root T01/T02 原图坐标系显式转换（2026-10-25；非正式验收）
+
+R46旧槽原始框属于key-local坐标，而R81清单是native-JPEG坐标；R112读取25键referenceRect分别变换并核验原生JPEG RGB，151旧可视与R73候选UID、36旧未匹配与R69、M八观察与R84、七微形与R96、K四物理观察与R95均一致。新增36项失败关闭测试，两种独立解压各310项定向新旧QA通过；父1488/1488继承、R112累计1498/1498 SHA及QA后复验通过。K/E/B/V/M冲突未解除，正式来源认证0/25、永久ID0、T00–T11 0/12 Accepted；不等于T05补图。[证据](./evidence/v036-round112-t01-t02-native-coordinate-frame-identity.md)。
+
 ## 第111轮补充：Root T04/T02 局部v16来源无损隔离（2026-10-25；非正式验收）
 
 R110严格完整25键准入无法保留V0.35真实接受的局部v16坐标配置；R111在只读候选门禁中显式区分sourceKeys/absentKeys，不为缺失键生成用户编辑，保留源SHA并拒绝重复键/未知键/非法数值。真实Chromium about:blank内存存储四组局部案例与旧页行为一致，新增60/60；旧定向QA五组405项通过。父1477/1477继承，新ZIP1488成员双独立解压及QA后SHA一致；正式永久ID0、T01 0/25、T04真实用户迁移not-run、原始0/12 Accepted。详见[证据](./evidence/v036-round111-t04-partial-v16-readonly-preservation.md)。
