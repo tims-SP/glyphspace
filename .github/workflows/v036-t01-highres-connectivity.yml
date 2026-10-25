@@ -1,0 +1,55 @@
+name: V0.36 T01 R116 M highres ink connectivity (no image artifact)
+on:
+  push:
+    paths:
+      - '.github/workflows/v036-t01-highres-connectivity.yml'
+      - 'scripts/v036_t01_source_topology.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  highres-connectivity:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify third-party source bytes and measure M topology
+        shell: bash
+        run: |
+          python3 -m pip install --quiet pillow
+          PYTHONPATH=scripts python3 - <<'PY'
+          import hashlib,io,json,urllib.parse,urllib.request,zipfile
+          from PIL import Image
+          from v036_t01_source_topology import audit,components,THRESHOLDS
+          def sha(b):return hashlib.sha256(b).hexdigest()
+          # Independent small synthetic tests of 8-connectivity and threshold behavior.
+          test=Image.new('L',(10,10),255);p=test.load();p[2,2]=0;p[3,3]=0
+          assert len(components(test,(0,0,10,10),160))==1
+          p[9,9]=170
+          assert len(components(test,(0,0,10,10),160))==1
+          assert len(components(test,(0,0,10,10),176))==2
+          name='第三代五笔字型（新世纪版）简体字根键位图高清版(官方).zip'
+          url='https://raw.githubusercontent.com/06wb/06wb.github.io/master/Tutorials/'+urllib.parse.quote(name)
+          req=urllib.request.Request(url,headers={'User-Agent':'glyphspace-v036-r116-source-topology'})
+          with urllib.request.urlopen(req,timeout=60) as r:blob=r.read(2000000)
+          assert len(blob)==996823
+          assert sha(blob)=='fb7a9984a84be12a71d71dc86088b8859762ca97cb9a3db173b4a8adaf0b9707'
+          with zipfile.ZipFile(io.BytesIO(blob)) as z:
+            assert z.namelist()==['zgjwt_jt_3508x2480.jpg']
+            info=z.infolist()[0]
+            assert info.file_size==1348865 and info.compress_type==zipfile.ZIP_DEFLATED
+            raw=z.read(info)
+          assert sha(raw)=='47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e'
+          im=Image.open(io.BytesIO(raw)).convert('RGB')
+          assert im.size==(3508,2480)
+          result=audit(im)
+          assert len(result['edge'])==5 and len(result['pairs'])==15
+          assert result['sourceCertified'] is False and result['approvedPermanentIDs']==0
+          assert all(r['extensionInk']==r['extensionConnectedToOld']+r['extensionUnconnected'] for r in result['edge'])
+          print('R116_SOURCE_ZIP_SHA='+sha(blob))
+          print('R116_SOURCE_JPEG_SHA='+sha(raw))
+          print('R116_SUMMARY='+json.dumps({'status':'pass','dimensions':list(im.size),'thresholds':list(THRESHOLDS),'edgeCases':5,'pairCases':15,'sourceLicense':'not-established','approvedCrop':False,'certifiedKeys':0,'approvedPermanentIDs':0},sort_keys=True))
+          for r in result['edge']:print('R116_EDGE='+json.dumps(r,sort_keys=True))
+          for r in result['pairs']:print('R116_PAIR='+json.dumps(r,sort_keys=True))
+          # The JPEG and ZIP remain in memory only, never checked into the repo.
+          PY
