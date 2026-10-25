@@ -1,0 +1,45 @@
+name: V0.36 T01 R115 highres ROI pixel triage (metadata only)
+on:
+  push:
+    paths:
+      - '.github/workflows/v036-t01-highres-roi-triage.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  highres-roi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Read verified source bytes, inspect M/K/E ROIs, publish no images
+        shell: bash
+        run: |
+          python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          import hashlib,io,json,urllib.parse,urllib.request,zipfile
+          from PIL import Image
+          name='第三代五笔字型（新世纪版）简体字根键位图高清版(官方).zip'
+          url='https://raw.githubusercontent.com/06wb/06wb.github.io/master/Tutorials/'+urllib.parse.quote(name)
+          req=urllib.request.Request(url,headers={'User-Agent':'glyphspace-v036-r115-source-triage'})
+          with urllib.request.urlopen(req,timeout=50) as r:blob=r.read(2000000)
+          sha=lambda b:hashlib.sha256(b).hexdigest()
+          assert len(blob)==996823 and sha(blob)=='fb7a9984a84be12a71d71dc86088b8859762ca97cb9a3db173b4a8adaf0b9707'
+          with zipfile.ZipFile(io.BytesIO(blob)) as z:
+           assert z.namelist()==['zgjwt_jt_3508x2480.jpg']
+           raw=z.read(z.namelist()[0])
+          assert len(raw)==1348865 and sha(raw)=='47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e'
+          im=Image.open(io.BytesIO(raw)).convert('RGB')
+          assert im.size==(3508,2480)
+          boxes={'E:0':(401,219,19,31),'E:1':(452,223,16,23),'E:2':(402,289,20,25),'E:3':(428,257,20,27),'E:4':(450,257,14,26),'E:5':(468,257,17,24),'E:6':(454,296,10,14),'E:7':(468,216,23,30),'E:8':(452,223,16,23),'K:0':(1066,403,23,26),'K:2':(1066,461,21,24),'K:3':(1066,461,21,24),'K:4':(1127,462,24,22),'M-vis-01':(992,585,24,24),'M-vis-02':(1045,585,21,23),'M-vis-03':(993,615,21,25),'M-vis-04':(1017,623,14,13),'M-vis-05':(993,645,18,22),'M-vis-06':(1012,652,12,15),'M-vis-07':(1027,653,12,14),'M-vis-08':(1040,653,12,15)}
+          def measure(rect):
+           x,y,w,h=rect
+           b=(round(x*3508/1536),round(y*2480/1086),round((x+w)*3508/1536),round((y+h)*2480/1086))
+           roi=im.crop(b);p=list(roi.convert('L').getdata());W,H=roi.size
+           return {'box':b,'darkLt160':sum(v<160 for v in p),'darkRight2':sum(p[yy*W+xx]<160 for yy in range(H) for xx in range(max(0,W-2),W)),'rgbSHA256':sha(roi.tobytes())}
+          rows={k:measure(v) for k,v in boxes.items()}
+          assert rows['E:1']['rgbSHA256']==rows['E:8']['rgbSHA256']
+          assert rows['K:2']['rgbSHA256']==rows['K:3']['rgbSHA256']
+          extra=measure((1066,585,5,23))
+          print('R115_SUMMARY='+json.dumps({'result':'pass','rois':len(rows),'sourceZipSHA':sha(blob),'sourceJpegSHA':sha(raw),'mVis02Right5NativePixels':extra,'sameBox':['E:1=E:8','K:2=K:3'],'registration':'dimension-ratio only, not stroke certification','sourceLicense':'not-established','certifiedKeys':0,'permanentIDs':0,'accepted':False},ensure_ascii=False))
+          for key in sorted(rows):print('R115_ROI='+json.dumps({'id':key,**rows[key]},ensure_ascii=False))
+          PY
