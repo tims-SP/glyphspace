@@ -203,3 +203,7 @@ R103祖先普通computed style无法发现CSS `::before`/`::after`遮挡；真�
 ## 第105轮 Root T03/T07 事务性碰撞预检（2026-10-25，非验收）
 
 真实Chromium复现R104允许同键候选墨迹包络重叠而attest仍通过；R105在DOM/overlay提交前执行25键151候选UID、409对完整事务碰撞检查，151/151主动碰撞拒绝且状态无部分写入，新增170/170 Chromium QA。父R104 1425/1425 SHA继承，R105累计ZIP 1433成员SHA256 `2ffa0ecc3b72bee3ef7d2a24d76431f3619c29b5734ed7dbf513388b0b7d876a`，Python/unzip双恢复及各5组定向新旧QA（702项）、QA后SHA均通过。**只是隔离草案矩形门禁，不是原图逐笔、描边/标签/圈注或正式T07验收；T03/T07未生产集成，T01 0/25，T02正式ID0，T00–T11 0/12 Accepted。** [证据](./evidence/v036-round105-t03-t07-transactional-collision.md)。
+
+## 第106轮 Root T00/T09冻结176编码行为基准（2026-10-25；非正式验收）
+
+R105父1433/1433逐文件SHA继承；冻结V0.35 HTML只在测试时内存注入选题钩子，真实Chromium about:blank逐字对照176训练条目，在引导/进阶/盲打528案例中执行输入状态机，新增3143/3143 QA。继承R105 170、R104 25、R103 26、R77 179、R99 302定向QA通过。R106累计ZIP1439文件 SHA256 `55e96b14b2a969e33b7e6b9e39fa132d0836062bbbb4d3fe9104d044d2de26c0`；Python/unzip两份独立恢复各重跑新3143+旧179+170并在QA后1439/1439成员SHA一致。此项只补充T00旧行为可复用回归证据，**不是T09正式新三视图集成**；原始T00–T11仍0/12 Accepted，T01 0/25、T02正式ID0；同源存储blocked/not-run，真机/读屏not-run，历史缺口不变。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
