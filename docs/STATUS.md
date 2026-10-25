@@ -2,6 +2,12 @@
 
 > **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第106轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
+## 第108轮 · Root T04 隔离回滚原子性修复（非正式验收）
+
+- 发现R107回滚在验证前驱记录前就修改head的原子性缺陷；R108改为先核验前驱SHA/schema再写head。Node VM合成存储/锁复现旧缺陷并验证修复 **10/10**；继承R107静态26/26、R77 Node179/179、R105 Chromium about:blank170/170。R106完整浏览器QA尝试超时未计pass。
+- 父R107 ZIP **1449/1449**逐文件SHA继承；R108 ZIP **1459文件** SHA256 `51ee682e0df8ee4cde134b9a2b085be96959e6ed3435bd7c7e094bd02bfcbec5`；Python/unzip双独立恢复各1459/1459，定向QA重跑、QA后SHA均一致。ZIP仍仅外部交付。
+- 临时127.0.0.1真实浏览器仍`ERR_BLOCKED_BY_ADMINISTRATOR`，T04真实同源事务**blocked/not-run**；新增仓库独立CI回归脚本与工作流，**远端结果待独立确认**。未触碰正式入口/用户存储；T01 0/25、T02正式ID0、T00–T11 **0/12 Accepted**。见[第108轮证据](./evidence/v036-round108-t04-rollback-atomicity.md)。
+
 ## 第107轮 · Root T04 独立真实原点预检路径（非正式验收）
 
 - 新增一次性loopback原点、独立Chromium profile双标签的Web Locks/localStorage事务测试脚本（随外部R107 ZIP交付）及[GitHub Actions真实原点烟测](../.github/workflows/v036-t04-disposable-origin.yml)。本地临时127.0.0.1仍被`ERR_BLOCKED_BY_ADMINISTRATOR`阻断，真实事务**blocked/not-run**；远端运行结果尚未独立确认。
