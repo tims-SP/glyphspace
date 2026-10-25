@@ -234,3 +234,7 @@
 ## 2026-10-25 · R107：T04真实原点测试只在临时隔离域执行
 
 原始T04要求真实Web Locks/localStorage迁移回归，但此前本地管理员策略阻断loopback导航。新增GitHub Actions独立Ubuntu/Chromium临时loopback原点烟测，以验证环境能力；不使用正式GlyphSpace域名、用户profile或生产键，不把CI烟测等同V0.35迁移验收。完整隔离事务脚本随外部R107 ZIP保留，未授权环境仍标blocked/not-run。此决定不改变T04依赖T02/T03及原始验收门槛。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
+
+## ADR-R108 · 回滚必须在更新head前验证完整前驱链入口（2026-10-25）
+
+**状态：隔离T04协议缺陷修复，非正式生产批准。** R107真实原点预检脚本的rollback先改head再读前驱；前驱缺失或损坏时会抛错但破坏最后可读修订。决定在持有Web Lock时，先校验当前修订及前驱记录的SHA256、schema和合法值，再允许变更head。替代方案“先写后读，异常时再补偿”被否定，因为异常可发生在损坏数据或崩溃期间。Node VM合成存储/锁10/10复现旧缺陷并验证修复；真实同源仍被管理员阻断，GitHub CI待独立确认。局限：不代表旧用户数据迁移、生产存储可逆性或正式T04验收。回滚仅删除R108隔离资产及CI预检脚本，冻结HTML和用户存储不动。[证据](./evidence/v036-round108-t04-rollback-atomicity.md)。
