@@ -1,0 +1,72 @@
+name: V0.36 T01 R119 real cross-source ORB registration (nonimage seed)
+on:
+  push:
+    paths:
+      - '.github/workflows/v036-t01-r119-orb-registration.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-registration:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Fetch pinned highres bytes and register to nonimage lowres ORB features
+        shell: bash
+        env:
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python3 -m pip install --quiet numpy opencv-python-headless pillow
+          python3 - <<'PY'
+          import base64,hashlib,io,json,urllib.parse,urllib.request,zipfile,zlib
+          import numpy as np,cv2
+          from PIL import Image
+          seed="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"
+          packed=base64.b64decode(seed,validate=True)
+          assert hashlib.sha256(packed).hexdigest()=="b523bd28b4460193da3d62af5dc131c443df232202ae1be7476c8dc1bd23a1e2"
+          raw=zlib.decompress(packed)
+          assert hashlib.sha256(raw).hexdigest()=="d8eddf97a7d33def7422d4bda841d5ab738a137381d475d55996497babb88b4c"
+          assert len(raw)==133*40
+          xy=np.frombuffer(raw[:133*8],dtype="<f4").reshape(133,2)
+          descriptors=np.frombuffer(raw[133*8:],dtype=np.uint8).reshape(133,32)
+          assert np.isfinite(xy).all() and (xy[:,0]>=0).all() and (xy[:,0]<1536).all() and (xy[:,1]>=0).all() and (xy[:,1]<1086).all()
+          name="第三代五笔字型（新世纪版）简体字根键位图高清版(官方).zip"
+          url="https://raw.githubusercontent.com/06wb/06wb.github.io/master/Tutorials/"+urllib.parse.quote(name)
+          with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"glyphspace-r119-source-registration"}),timeout=60) as resp: blob=resp.read(2000000)
+          assert len(blob)==996823 and hashlib.sha256(blob).hexdigest()=="fb7a9984a84be12a71d71dc86088b8859762ca97cb9a3db173b4a8adaf0b9707"
+          with zipfile.ZipFile(io.BytesIO(blob)) as z:
+            assert z.namelist()==["zgjwt_jt_3508x2480.jpg"]
+            info=z.infolist()[0]
+            assert info.file_size==1348865 and info.compress_type==zipfile.ZIP_DEFLATED
+            jpeg=z.read(info)
+          assert hashlib.sha256(jpeg).hexdigest()=="47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e"
+          image=Image.open(io.BytesIO(jpeg)).convert("L")
+          assert image.size==(3508,2480)
+          scaled=cv2.resize(np.asarray(image),(1536,1086),interpolation=cv2.INTER_AREA)
+          orb=cv2.ORB_create(nfeatures=4000,scaleFactor=1.2,nlevels=8,edgeThreshold=19,fastThreshold=9)
+          kp,hd=orb.detectAndCompute(scaled,None)
+          assert hd is not None
+          matches=cv2.BFMatcher(cv2.NORM_HAMMING).knnMatch(descriptors,hd,k=2)
+          good=[m for m,n in matches if m.distance<.78*n.distance and m.distance<=64]
+          print("R119_RATIO_MATCHES="+str(len(good)))
+          assert len(good)>=22, "weak cross-source matches"
+          src=np.float32([xy[m.queryIdx] for m in good]);dst=np.float32([kp[m.trainIdx].pt for m in good])
+          mat,mask=cv2.estimateAffine2D(src,dst,method=cv2.RANSAC,ransacReprojThreshold=3,maxIters=9000,confidence=.999,refineIters=50)
+          assert mat is not None and mask is not None
+          keep=mask.ravel().astype(bool);pts=src[keep];target=dst[keep]
+          res=np.linalg.norm(pts@mat[:,:2].T+mat[:,2]-target,axis=1)
+          bins={(min(4,int(x/1536*5)),min(4,int(y/1086*5))) for x,y in pts}
+          assert len(pts)>=22 and len(pts)/len(good)>=.35
+          assert len(bins)>=8 and np.median(res)<=2 and np.percentile(res,95)<=5
+          assert np.linalg.norm(mat[:,:2]-np.eye(2))<.2 and max(abs(mat[0,2]),abs(mat[1,2]))<70
+          native=np.diag([3508/1536,2480/1086])@mat
+          boxes={"M-vis-02":(1045,585,21,23),"M-vis-07":(1027,653,12,14),"M-vis-08":(1040,653,12,15),"K:2/K:3":(1066,461,21,24),"E:1/E:8":(452,223,16,23)}
+          def project(box):
+            x,y,w,h=box
+            pts=np.array([[x,y],[x+w,y],[x+w,y+h],[x,y+h]],dtype=float)
+            out=pts@native[:,:2].T+native[:,2]
+            return [round(float(out[:,0].min()),3),round(float(out[:,1].min()),3),round(float(out[:,0].max()),3),round(float(out[:,1].max()),3)]
+          report={"status":"pass","source2008SHA256":"df5eb1a8678eea5ae27b3bfbc6bcef17af8b8ef558696834214dcdffa86dcd49","highresSHA256":hashlib.sha256(jpeg).hexdigest(),"sourceFeatureCount":133,"candidateFeatures":len(kp),"ratioMatches":len(good),"ransacInliers":int(keep.sum()),"spatialBins":len(bins),"medianResidualLowPixels":round(float(np.median(res)),4),"p95ResidualLowPixels":round(float(np.percentile(res,95)),4),"affineLowToNativeHighres":native.round(7).tolist(),"riskBoxesHighresNative":{k:project(v) for k,v in boxes.items()},"license":"unconfirmed","certifiedKeys":0,"approvedCrop":False,"permanentIDs":0,"formalAccepted":False}
+          print("R119_CROSS_SOURCE="+json.dumps(report,sort_keys=True,separators=(",",":")))
+          # The two JPEGs are never written to disk or uploaded; only numerical evidence is emitted.
+          PY
