@@ -1,5 +1,9 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第111轮补充：Root T04/T02 局部v16来源无损隔离（2026-10-25；非正式验收）
+
+R110严格完整25键准入无法保留V0.35真实接受的局部v16坐标配置；R111在只读候选门禁中显式区分sourceKeys/absentKeys，不为缺失键生成用户编辑，保留源SHA并拒绝重复键/未知键/非法数值。真实Chromium about:blank内存存储四组局部案例与旧页行为一致，新增60/60；旧定向QA五组405项通过。父1477/1477继承，新ZIP1488成员双独立解压及QA后SHA一致；正式永久ID0、T01 0/25、T04真实用户迁移not-run、原始0/12 Accepted。详见[证据](./evidence/v036-round111-t04-partial-v16-readonly-preservation.md)。
+
 ## 第110轮补充：Root T04/T02 冻结旧页浏览器快照准入（2026-10-25；非正式验收）
 
 真实Chromium about:blank执行原始V0.35 HTML，内存localStorage合成输入复现部分v16被接受、坏v16阻断v15回退两项兼容风险；新增严格只读完整快照准入与151候选UID+5关联隔离影子映射。30/30新QA、16+10+179+170项旧QA在Python/unzip两份独立恢复中通过，父1468/1468继承、新累计1477/1477、QA后成员SHA不变。真实同源用户迁移**not-run**，T01 0/25、T02正式ID0、全部0/12 Accepted。见[证据](./evidence/v036-round110-t04-v035-browser-storage-shadow.md)。
