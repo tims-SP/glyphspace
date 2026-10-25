@@ -12,7 +12,7 @@
       "sourceDependencies": "无",
       "dependencies": [],
       "sourceExitCriterion": "可恢复基线；自动比对脚本",
-      "implementationState": "frozen baseline checks recorded; full new-release regression pending; R100 independently checked 10 available R90-R99 ZIPs, 9 adjacent SHA inheritance transitions, and M 8 native JPEG/PNG ROIs (4 unbound), no formal certification",
+      "implementationState": "frozen baseline checks recorded; full new-release regression pending; R100 independently checked 10 available R90-R99 ZIPs, 9 adjacent SHA inheritance transitions, and M 8 native JPEG/PNG ROIs (4 unbound), no formal certification; R106 frozen V0.35 176-code Chromium behavioral oracle: 176 training rows compared, 528 guided/advanced/blind exercise cases, 3143/3143 assertions passed; R105 1433/1433 inherited, R106 1439 dual-restored and new/old targeted QA; NOT new-release full regression or accepted",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-25",
@@ -173,7 +173,7 @@
         "T08"
       ],
       "sourceExitCriterion": "旧学习编码规则与 176 字测试样本一致；无新增交互回归",
-      "implementationState": "not integrated; frozen 176-code baseline remains",
+      "implementationState": "not integrated; frozen 176-code baseline remains; R106 ONLY frozen V0.35 behavior oracle (176 rows, 3 modes, 3143/3143 browser checks) for future V0.36 comparison; no new-version three-view integration or T09 acceptance",
       "accepted": false,
       "acceptanceEvidence": [],
       "statusDate": "2026-10-22",
