@@ -240,3 +240,9 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 
 - R104真实Chromium允许同键候选inkBBox重叠且attest仍放行；R105新增提交前全键草案矩形碰撞检查，151个候选UID逐一主动负例拒绝，批量编辑/签名导入无部分写入。新增Chromium 170/170，继承R104 25、R103 26、R77 179、R99 302定向QA。
 - 父R104 1425/1425 SHA继承，R105累计1433文件SHA256 `2ffa0ecc3b72bee3ef7d2a24d76431f3619c29b5734ed7dbf513388b0b7d876a`，Python/unzip双恢复与QA前后1433/1433 SHA一致；完整历史QA not-run。T03/T07均未正式集成，T00–T11仍0/12 Accepted。冻结生产入口及用户存储不变。[证据](./evidence/v036-round105-t03-t07-transactional-collision.md)。
+
+## 2026-10-25 · 第106轮 Root T00旧学习行为基准（非验收）
+
+- 冻结V0.35真实Chromium about:blank测试（仅测试内存插桩）逐字核验176编码、三模式528行为案例及错误输入/重试/短码确认/四码跳转/盲打遮蔽，新增3143/3143 QA通过；继承R105/R104/R103/R77/R99定向QA通过。
+- R105父1433/1433继承，R106累计1439文件SHA256 `55e96b14b2a969e33b7e6b9e39fa132d0836062bbbb4d3fe9104d044d2de26c0`；Python/unzip双独立恢复各执行新3143+旧179+170项QA并在QA后1439/1439 SHA一致。完整历史QA not-run。
+- 不改冻结正式入口/176编码/用户存储；T00/T09仍未正式Accepted，原始T00–T11仍0/12 Accepted；真同源存储blocked/not-run、真机/读屏not-run、同源高清原图许可及缺档未解决。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
