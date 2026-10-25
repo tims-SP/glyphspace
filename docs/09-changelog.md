@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第109轮（Root T04，非正式验收）
+
+独立核验R108 GitHub Actions真实临时原点11/11，R109扩展Web Locks/localStorage的pending/record/head三阶段崩溃恢复并在Ubuntu Chromium双标签真实原点23/23通过（run 40156644345）。R108父1459/1459继承，R109 ZIP1468文件双独立恢复，恢复后新16+旧385项定向QA各通过；R108 ZIP内1458成员中间QA记录与外部最终1459记录的差异单列审计。**不是旧用户V0.35迁移或正式T04验收**，T00–T11仍0/12；冻结入口、原图、176编码及用户存储未动。[证据](./evidence/v036-round109-t04-real-origin-crash-recovery.md)。
+
 ## 2026-10-25 · 第108轮（Root T04，非正式验收）
 
 R107隔离存储rollback在验证前驱前修改head，前驱损坏时会污染最后可读修订。R108先核验前驱SHA/schema再更新head，Node VM旧缺陷复现与修复10/10；继承R107静态26/26、R77 Node179/179、R105 Chromium170/170。父1449/1449 SHA继承，新累计ZIP1459文件，双独立解压及定向QA后1459/1459一致；真实同源依然管理员阻断、远端CI待核验。冻结入口未动，T00–T11 0/12 Accepted。见[证据](./evidence/v036-round108-t04-rollback-atomicity.md)。

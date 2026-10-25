@@ -1,6 +1,13 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第106轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+> **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第109轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
+
+## 第109轮 · Root T04 真实隔离原点三阶段崩溃恢复（非正式验收）
+
+- 独立核验GitHub Actions [R108先行真实原点运行](https://github.com/tims-SP/glyphspace/actions/runs/40153502403)：Ubuntu Chromium临时127.0.0.1双标签、真实Web Locks/localStorage，**11/11**通过。此前本地管理员阻断的事实仍然成立，不能把CI结果冒称本地通过。
+- 修改`scripts/qa_v036_t04_disposable_origin.py`新增三阶段pending/record/head崩溃恢复、pending写入及回滚阻断、恢复后回滚。 [R109真实原点运行](https://github.com/tims-SP/glyphspace/actions/runs/40156644345)（提交`053bb786`）实际日志 **23/23 PASS**，工件ID12584890814、ZIP SHA256 `f8673646e124dbf9b17420696865cd977e8d75cb1d3b6355c30ff0a576f5ae18`。**仅隔离协议真实浏览器预检，非旧用户迁移。**
+- R108父ZIP SHA256 `51ee682e0df8ee4cde134b9a2b085be96959e6ed3435bd7c7e094bd02bfcbec5`，**1459/1459**父成员继承；R109累计ZIP **1468文件**，SHA256 `d07f18b0d49bba080a896de22041a90077b8a22dbd4bd61a90c28fbe8f7ef3dc`；Python/unzip独立恢复各1468/1468，恢复后新16+旧10+26+179+170项QA分别通过，QA后SHA仍1468/1468。
+- 新发现R108 ZIP内双恢复QA JSON是**1458文件的临时快照**，与外部最终1459文件复验记录不同；本轮保留旧文件原字节并明确差异，绝不把中间日志作为最终ZIP证明。正式T01 0/25、永久ID0、T04真实V0.35迁移not-run、T00–T11 **0/12 Accepted**；同源高清图、历史缺口、真机及读屏未解决。见[第109轮证据](./evidence/v036-round109-t04-real-origin-crash-recovery.md)。
 
 ## 第108轮 · Root T04 隔离回滚原子性修复（非正式验收）
 
