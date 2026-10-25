@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第112轮（Root T01/T02，关联T05；非正式验收）
+
+新增键位局部坐标→2008 JPEG原生坐标的25键显式来源门禁，修正R46/R81直接比框会误报151条冲突的坐标系差异；151旧可视、36旧未匹配、M8、七微形7、K物理4逐项对齐。新36+旧274=310项定向QA在Python/unzip双独立恢复通过；父1488/1488继承，新累计1498文件SHA256 `3ff5b88ee12fc2cc849bee8c01955feac90f3cefee38e75e1c763903a435fb7f`，QA后SHA一致。只是来源账本一致性，不是原图逐笔认证，T01 0/25、正式永久ID0、T00–T11 0/12 Accepted。[证据](./evidence/v036-round112-t01-t02-native-coordinate-frame-identity.md)。
+
 ## 2026-10-25 · 第111轮（Root T04/T02，非正式验收）
 
 修正R110只接受完整25键快照而可能拒绝合法局部v16用户调位的问题；隔离只读门禁保留来源键存在位图，仅映射实际编辑，不自动补齐来源或正式ID。冻结V0.35真实Chromium about:blank内存存储新增60/60 QA，旧30+16+10+179+170定向QA通过。父1477/1477 SHA继承，新ZIP1488文件SHA256 `163fc6c599817b2d28e2fd8d6ac64b457630b55b5ac045196f7676151f16f924`，Python/unzip双独立恢复及QA后1488/1488一致。真实用户迁移/真机/读屏not-run，0/12 Accepted。[证据](./evidence/v036-round111-t04-partial-v16-readonly-preservation.md)。
