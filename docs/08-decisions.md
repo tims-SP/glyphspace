@@ -4,6 +4,10 @@
 
 > 本文件记录**已确认决策/待评估提案/风险例外**。尚未批准的提案不能自动变成下一轮实施前提。变更决策须写明日期、理由、替代方案、影响和回滚路径。
 
+## ADR-R113 · 旧槽候选UID映射必须绑定不可变来源（2026-10-25）
+
+**状态：隔离只读门禁决策，非正式永久ID/生产迁移批准。** R111仅核对151/5数量及publishAllowed=false会放行跨旧槽交换candidateUid；调用者伪造默认坐标还可导致合法用户调位漏记。R113拒绝信任调用者传入的计划与默认坐标：冻结HTML、2008 JPEG、R46/R73/R75、Chromium实取默认坐标均按字节SHA固定，并按旧槽逐项核对UID、键位、sourceGate和来源绑定。备选“只核对数量/不透明UUID格式”被否定，因为不保证身份语义。此策略只约束外部影子数据，不创建正式referenceShapeId/assetId/instanceId，也不访问用户真实存储。回滚为删除R113隔离验证器；不更改冻结生产入口。[证据](./evidence/v036-round113-t02-source-bound-uid-shadow.md)。
+
 ## 第112轮来源坐标系决策补充（2026-10-25，约束性实施细节；非正式字形审批）
 
 - **决定**：在T01/T02审计中强制区分`key-local bbox`与`native-JPEG bbox`；每键独立从原始reference manifest读取`referenceRect`进行坐标转换，不允许凭QWERTY行位置假定相同偏移。
