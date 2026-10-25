@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第113轮（Root T02/T04；非正式验收）
+
+修复R111隔离旧槽影子UID映射未核对来源账本、默认坐标信任调用者的两处真实风险；Q:0/K:2 UID错绑与Q:0编辑丢失在旧函数复现，新SHA绑定门禁均拒绝。新增34/34，继承R111/R112/R84/R95/R69/R96共310项，两套独立恢复各344/344。R112父1498/1498继承，R113累计1509文件SHA256 `acdd2f820af7e7b2dc45b371edb9856a1e02d9dd26acff56f93ab0ece43dc8e2`，Python/unzip双恢复及QA后SHA一致。首次QA改写历史pyc后验SHA失败，重新从ZIP恢复并禁写pyc后通过；正式身份/迁移/真机/读屏仍未验收，原始0/12 Accepted。[证据](./evidence/v036-round113-t02-source-bound-uid-shadow.md)。
+
 ## 2026-10-25 · 第112轮（Root T01/T02，关联T05；非正式验收）
 
 新增键位局部坐标→2008 JPEG原生坐标的25键显式来源门禁，修正R46/R81直接比框会误报151条冲突的坐标系差异；151旧可视、36旧未匹配、M8、七微形7、K物理4逐项对齐。新36+旧274=310项定向QA在Python/unzip双独立恢复通过；父1488/1488继承，新累计1498文件SHA256 `3ff5b88ee12fc2cc849bee8c01955feac90f3cefee38e75e1c763903a435fb7f`，QA后SHA一致。只是来源账本一致性，不是原图逐笔认证，T01 0/25、正式永久ID0、T00–T11 0/12 Accepted。[证据](./evidence/v036-round112-t01-t02-native-coordinate-frame-identity.md)。
