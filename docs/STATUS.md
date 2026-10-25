@@ -2,6 +2,12 @@
 
 > **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第106轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
+## 第107轮 · Root T04 独立真实原点预检路径（非正式验收）
+
+- 新增一次性loopback原点、独立Chromium profile双标签的Web Locks/localStorage事务测试脚本（随外部R107 ZIP交付）及[GitHub Actions真实原点烟测](../.github/workflows/v036-t04-disposable-origin.yml)。本地临时127.0.0.1仍被`ERR_BLOCKED_BY_ADMINISTRATOR`阻断，真实事务**blocked/not-run**；远端运行结果尚未独立确认。
+- R107静态安全QA **26/26**，旧R77 Node **179/179**、R105 Chromium about:blank **170/170**；R106完整浏览器QA本轮尝试超时，未计pass。父R106 **1439/1439**成员SHA继承；新R107 ZIP **1449文件** SHA256 `3b5c30e922a9f58de189aa817f9369e768e4fed81dc9fedbe34b93a8ad43df5b`；Python/unzip两次独立恢复各1449/1449，QA后SHA一致。
+- 仅是T04真实原点测试路径和隔离协议前置，不是旧用户迁移、正式集成或Accepted。T01 0/25、T02正式永久ID0、T00–T11 **0/12 Accepted**；冻结入口/176编码/用户存储未动。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
+
 ## 第106轮 · Root T00 冻结176编码的Chromium行为回归（非正式验收）
 
 - 真实Chromium `about:blank`加载冻结V0.35 HTML，**仅在内存插入测试钩子**；176条旧训练数据逐字交叉比对，引导/进阶/盲打三模式528个实际浏览器案例，错误输入、Backspace、正确编码、短码空格确认、四码自动跳转及盲打遮蔽，新增 **3143/3143** QA通过。
