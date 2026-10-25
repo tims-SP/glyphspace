@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第107轮（Root T04，非正式验收）
+
+新增隔离临时原点双标签Web Locks/localStorage QA脚本与GitHub Actions烟测；本地原点被管理员策略阻断，远端CI尚未确认。静态26/26、旧179/179与170/170，R106完整回归本轮超时未计通过。R106父1439/1439继承，R107累计1449文件双独立恢复。冻结生产入口不动，原始T00–T11 0/12 Accepted。见[证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
+
 ## 2026-10-23 · 第65轮 T03 隔离浏览器描边墨迹门禁（非正式验收）
 
 Chromium SVG `getBBox` 漏计描边，H:07草案宽高各低估6.44；新增真实DOM描边/三视图核验。父ZIP970/970继承，累计ZIP981文件，两次独立解压981/981并复跑QA。T00–T11仍0/12 Accepted，T01 0/25，正式入口不变。详情见 `docs/evidence/v036-round65-t03-browser-stroke-geometry.md`。
