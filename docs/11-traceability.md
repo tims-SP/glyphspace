@@ -211,3 +211,7 @@ R105父1433/1433逐文件SHA继承；冻结V0.35 HTML只在测试时内存注入
 ## 第107轮 Root T04 真实原点预检路径（非正式验收）
 
 新增可复现的独立loopback HTTP原点双标签Web Locks/localStorage事务脚本，覆盖提交、并发冲突、崩溃恢复、回滚和记录篡改；本地Chromium被管理员策略阻断，真实事务**blocked/not-run**。独立GitHub Actions烟测workflow已提交，运行结果待核验。新静态26/26、旧R77 179/179、R105 170/170；R106完整旧QA本轮超时未计通过。R106父1439/1439继承，R107累计1449成员双独立解压与QA后SHA一致；完整历史QA not-run。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。T04未真实迁移验收，T00–T11仍0/12 Accepted。
+
+## 第108轮 · Root T04 隔离回滚前驱验证（非正式验收）
+
+R107的隔离`rollback()`先变更head再读前驱，前驱缺失/篡改会破坏最后可读指针；R108在Web Lock内先校验前驱record SHA256/schema再更新head。Node VM合成存储/锁旧缺陷复现+新修复10/10；R107静态26/26、R77 Node179/179、R105 Chromium about:blank170/170在两份独立恢复中通过。父R107 1449/1449逐项继承，R108累计ZIP1459文件、SHA256 `51ee682e0df8ee4cde134b9a2b085be96959e6ed3435bd7c7e094bd02bfcbec5`，Python/unzip两次独立恢复及QA后SHA一致。真实临时loopback仍被管理员策略阻断，远端CI结果待独立核验；R106完整回归本轮超时不计pass。**不是生产迁移**，T04未Accepted、T01 0/25、全部0/12 Accepted。详见[证据](./evidence/v036-round108-t04-rollback-atomicity.md)。
