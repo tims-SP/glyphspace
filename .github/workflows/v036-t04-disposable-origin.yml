@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/v036-t04-disposable-origin.yml'
+      - 'scripts/qa_v036_t04_disposable_origin.py'
 
 permissions:
   contents: read
@@ -19,41 +20,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Install isolated browser dependencies
+      - name: Install isolated Chromium dependencies
         run: |
           python -m pip install playwright==1.55.0
           python -m playwright install --with-deps chromium
-      - name: Two-tab Web Locks and localStorage smoke test on disposable loopback origin
-        run: |
-          python - <<'PY'
-          import http.server, socketserver, tempfile, threading, pathlib
-          from playwright.sync_api import sync_playwright
-          with tempfile.TemporaryDirectory(prefix='glyphspace-r107-') as tmp:
-              pathlib.Path(tmp, 'index.html').write_text('<!doctype html><title>disposable T04</title>')
-              class H(http.server.SimpleHTTPRequestHandler):
-                  def __init__(self, *a, **kw): super().__init__(*a, directory=tmp, **kw)
-                  def log_message(self, *a): pass
-              with socketserver.TCPServer(('127.0.0.1', 0), H) as srv:
-                  threading.Thread(target=srv.serve_forever, daemon=True).start()
-                  origin=f'http://127.0.0.1:{srv.server_address[1]}'
-                  with sync_playwright() as p:
-                      browser=p.chromium.launch(headless=True)
-                      ctx=browser.new_context()
-                      a,b=ctx.new_page(),ctx.new_page()
-                      for page in (a,b): page.goto(origin+'/index.html',wait_until='domcontentloaded')
-                      assert a.evaluate('location.origin')==origin
-                      assert b.evaluate('location.origin')==origin
-                      assert a.evaluate('typeof navigator.locks.request')=='function'
-                      a.evaluate("localStorage.setItem('__glyphspace_r107_ephemeral__head','v1')")
-                      assert b.evaluate("localStorage.getItem('__glyphspace_r107_ephemeral__head')")=='v1'
-                      a.evaluate("() => {window.release=null;navigator.locks.request('__glyphspace_r107_ephemeral__lock',()=>new Promise(r=>{window.release=r}))}")
-                      a.wait_for_function('typeof window.release === "function"')
-                      b.evaluate("() => {window.acquired=false;navigator.locks.request('__glyphspace_r107_ephemeral__lock',()=>{window.acquired=true})}")
-                      assert b.evaluate('window.acquired') is False
-                      a.evaluate('window.release()')
-                      b.wait_for_function('window.acquired === true')
-                      assert b.evaluate('window.acquired') is True
-                      ctx.close();browser.close()
-                  srv.shutdown()
-          print('T04 real-origin smoke: PASS (disposable origin only; not production migration)')
-          PY
+      - name: Real Web Locks, localStorage, and fail-closed rollback on disposable origin
+        run: python scripts/qa_v036_t04_disposable_origin.py
+      - name: Preserve disposable-origin QA result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v036-t04-disposable-origin-results
+          path: t04_disposable_origin_results.json
+          if-no-files-found: warn
+          retention-days: 14
