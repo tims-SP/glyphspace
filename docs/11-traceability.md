@@ -1,5 +1,9 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第110轮补充：Root T04/T02 冻结旧页浏览器快照准入（2026-10-25；非正式验收）
+
+真实Chromium about:blank执行原始V0.35 HTML，内存localStorage合成输入复现部分v16被接受、坏v16阻断v15回退两项兼容风险；新增严格只读完整快照准入与151候选UID+5关联隔离影子映射。30/30新QA、16+10+179+170项旧QA在Python/unzip两份独立恢复中通过，父1468/1468继承、新累计1477/1477、QA后成员SHA不变。真实同源用户迁移**not-run**，T01 0/25、T02正式ID0、全部0/12 Accepted。见[证据](./evidence/v036-round110-t04-v035-browser-storage-shadow.md)。
+
 ## 第109轮补充：Root T04 真实原点预检（2026-10-25；非正式验收）
 
 独立核验R108 CI 11/11（run 40153502403），并新增pending/record/head三阶段崩溃与恢复的真实Chromium双标签CI 23/23（run 40156644345，commit 053bb786）。此处真实原点仅为GitHub Actions临时127.0.0.1，不是本地profile或V0.35用户迁移；旧用户迁移仍not-run。R108父1459/1459逐项SHA继承，R109累计1468文件，Python/unzip两次独立恢复各1468/1468，恢复后新16+旧385项QA通过。R108 ZIP内1458成员QA为中间快照，外部最终复验才对应1459；不篡改旧档案。正式T04仍未Accepted，T00–T11 0/12；见[证据](./evidence/v036-round109-t04-real-origin-crash-recovery.md)。

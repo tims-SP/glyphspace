@@ -2,6 +2,12 @@
 
 > **核对日期：2026-10-25**。仓库正式网页仍是V0.35冻结版本；GitHub保留第46轮基线，并登记已独立复验的第109轮隔离累计ZIP（ZIP本体不在GitHub）。这不是已发布的V0.36版本。
 
+## 第110轮 · Root T04/T02 冻结旧页浏览器快照准入（非正式验收）
+
+- 真实Chromium `about:blank` 运行未修改的V0.35 HTML，**仅内存替身localStorage**，发现旧版接受部分v16坐标快照、损坏v16阻断有效v15回退两个兼容风险；新增完整25键/156槽只读准入门禁、旧槽→候选UID影子桥接，30/30 QA通过。三处合成用户调位3/3保留，M:4关联隔离，K:2来源阻断不解除；**不是正式迁移**。
+- R109父ZIP1468/1468逐文件SHA继承；R110累计1477文件、ZIP SHA256 `8b83bd4abf3807bcf862e748bf1b0928bd759d88d66a24e2d90e94b12186d561`。Python/unzip独立恢复各1477/1477，恢复后R110新30+旧16+10+179+170项定向QA通过，QA后两套成员SHA各1477/1477。完整历史全量QA/R106本轮not-run。
+- 本地真实同源迁移、真机、读屏not-run；T01 0/25、正式永久ID0、T00–T11 **0/12 Accepted**，冻结入口/原图/176编码/用户存储未动。详见[第110轮证据](./evidence/v036-round110-t04-v035-browser-storage-shadow.md)。
+
 ## 第109轮 · Root T04 真实隔离原点三阶段崩溃恢复（非正式验收）
 
 - 独立核验GitHub Actions [R108先行真实原点运行](https://github.com/tims-SP/glyphspace/actions/runs/40153502403)：Ubuntu Chromium临时127.0.0.1双标签、真实Web Locks/localStorage，**11/11**通过。此前本地管理员阻断的事实仍然成立，不能把CI结果冒称本地通过。

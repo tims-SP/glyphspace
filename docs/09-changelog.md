@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第110轮（Root T04/T02，非正式验收）
+
+在真实Chromium about:blank中执行冻结V0.35 HTML及内存存储合成快照，发现并复现旧页局部v16 JSON被接受、损坏v16阻断有效v15回退的兼容风险；新增25键/156槽严格只读准入、3处合成调位→候选UID影子映射（M:4关联隔离）。新30/30与旧16+10+179+170项定向QA在双独立恢复均通过。R109父1468/1468 SHA继承，R110 ZIP1477文件，SHA256 `8b83bd4abf3807bcf862e748bf1b0928bd759d88d66a24e2d90e94b12186d561`；QA后两套1477/1477一致。非真实同源迁移，冻结入口/用户存储不变，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round110-t04-v035-browser-storage-shadow.md)。
+
 ## 2026-10-25 · 第109轮（Root T04，非正式验收）
 
 独立核验R108 GitHub Actions真实临时原点11/11，R109扩展Web Locks/localStorage的pending/record/head三阶段崩溃恢复并在Ubuntu Chromium双标签真实原点23/23通过（run 40156644345）。R108父1459/1459继承，R109 ZIP1468文件双独立恢复，恢复后新16+旧385项定向QA各通过；R108 ZIP内1458成员中间QA记录与外部最终1459记录的差异单列审计。**不是旧用户V0.35迁移或正式T04验收**，T00–T11仍0/12；冻结入口、原图、176编码及用户存储未动。[证据](./evidence/v036-round109-t04-real-origin-crash-recovery.md)。
