@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## 2026-10-25 · 第108轮（Root T04，非正式验收）
+
+R107隔离存储rollback在验证前驱前修改head，前驱损坏时会污染最后可读修订。R108先核验前驱SHA/schema再更新head，Node VM旧缺陷复现与修复10/10；继承R107静态26/26、R77 Node179/179、R105 Chromium170/170。父1449/1449 SHA继承，新累计ZIP1459文件，双独立解压及定向QA后1459/1459一致；真实同源依然管理员阻断、远端CI待核验。冻结入口未动，T00–T11 0/12 Accepted。见[证据](./evidence/v036-round108-t04-rollback-atomicity.md)。
+
 ## 2026-10-25 · 第107轮（Root T04，非正式验收）
 
 新增隔离临时原点双标签Web Locks/localStorage QA脚本与GitHub Actions烟测；本地原点被管理员策略阻断，远端CI尚未确认。静态26/26、旧179/179与170/170，R106完整回归本轮超时未计通过。R106父1439/1439继承，R107累计1449文件双独立恢复。冻结生产入口不动，原始T00–T11 0/12 Accepted。见[证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
