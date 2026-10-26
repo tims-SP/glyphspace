@@ -1,5 +1,10 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+## R150 T04新增证据边界（非正式验收）
+
+R149真实授权Chromium 33/33旧同源、27/27严格v16来源已独立下载artifact复验；R150新增只读旧槽别名影子计划与25/25 Node QA、1628/1628继承定向QA及1892/1892双独立恢复。R150本地真实同源blocked、远端pending。影子别名不是正式永久ID；真实用户数据未读取/写入，V0.35→V0.36生产迁移及回滚未验收；T00–T11仍0/12 Accepted。
+
+
 ## R149 T04新增证据边界（非正式验收）
 
 R149将R148严格重复JSON键只读门禁接入授权临时127.0.0.1真实Chromium双标签WebCrypto/Web Locks/localStorage QA，远端运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)待确认；本地同源blocked。旧定向1628/1628与双独立1881文件SHA恢复通过，不替代真实用户旧配置迁移、稳定正式ID、可回滚生产流程及T04 Accepted。T00–T11仍0/12 Accepted。
