@@ -1,5 +1,9 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## R149 原始T04追踪（隔离，非验收）
+
+R149 Root T04：R148 5944字节严格旧v16只读门禁SHA一致接入GitHub Actions授权127.0.0.1双标签真实Chromium回归；远端运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)尚待最终结论，不得计pass。本地ERR_BLOCKED_BY_ADMINISTRATOR=blocked，继承R142–R148 1628/1628定向QA通过；父R148 1875/1875逐文件SHA继承，R149累计1881文件ZIP SHA `a8f88dfbf54380e848c6610525d3272e9aeda69745f07247c707fe5635256259`，Python/unzip独立恢复各1881/1881 SHA和1628/1628 QA，完整历史QA not-run。正式T00–T11 0/12 Accepted，T01 0/25、永久ID0、T04生产迁移未验收；冻结入口/编码/用户存储未动。[证据](./evidence/v036-round149-t04-strict-real-origin-shadow-preflight.md)
+
 ## R148 原始T04追踪（2026-10-27，隔离非验收）
 
 R148 Root T04（关联T00/T02）实际复现R147旧v16来源JSON重复G键被JSON.parse静默覆盖、即使raw SHA匹配仍被接纳；隔离增加重复对象键（含转义等价键）失败关闭扫描、冻结25键156槽默认值SHA、部分键/原始raw/来源签名门禁。父R147 ZIP1865/1865逐文件SHA继承；新R148累计1875文件，ZIP SHA `9b9c58ecd97cc1f68960ff4c70086148f197d1ec30704b9d4c8d0d6e490d35fa`，Python zipfile/unzip两套独立恢复各1875/1875 SHA及1628/1628定向QA（旧1590、新Node29、Chromium about:blank仅解析9）。本地真实同源仍管理员blocked；R148远端真实同源not-run、真机/读屏0、完整历史QA not-run。缺R10–12/R35和R12 20SVG、高清许可/逐笔；T00–T11 0/12 Accepted，T01 0/25、正式永久ID0、T04生产迁移未完成，冻结入口/176编码/用户存储未改。 [证据](./evidence/v036-round148-t04-strict-legacy-v16-source-duplicate-key-gate.md)
