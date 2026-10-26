@@ -1,5 +1,9 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+## R149 T04新增证据边界（非正式验收）
+
+R149将R148严格重复JSON键只读门禁接入授权临时127.0.0.1真实Chromium双标签WebCrypto/Web Locks/localStorage QA，远端运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)待确认；本地同源blocked。旧定向1628/1628与双独立1881文件SHA恢复通过，不替代真实用户旧配置迁移、稳定正式ID、可回滚生产流程及T04 Accepted。T00–T11仍0/12 Accepted。
+
 > 状态：**规则与证据边界已修订，项目未通过正式验收**。权威任务名称取自[历史原始WBS](./history/V0.36-P0-original.md)，不是隔离UI原型中的同名旧标签。详细输入和视口组合见 [12测试矩阵](./12-test-matrix.md)。
 
 ## 验收状态（不可跳级）
