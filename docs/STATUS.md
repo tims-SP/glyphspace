@@ -1,5 +1,9 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+## 第147轮 · Root T04 合成旧v16部分存储真实同源影子预检（非验收）
+
+R147 Root T04（关联T00/T02）新增冻结V0.35 v16局部坐标来源只读影子测试：从SHA锁定HTML提取25键156旧坐标，在GitHub Actions授权临时127.0.0.1原点双标签读取G/K/X三键、22缺席键与3条模拟编辑，保留原始raw及无关sentinel，来源SHA变化拒绝；真实Chromium 33/33（run 40365890296）通过。容器本地真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR；新Node WebCrypto/FakeStore 14/14、R142–R146继承1576/1576；父R146 ZIP 1855/1855逐文件SHA继承，新R147累计1865文件，Python/unzip双独立恢复各1590/1590本地定向QA与1865/1865 SHA前后不变。ZIP SHA bebcacaafadb23734dc11bb76ac095af21c744fa7b2c2e6fbec65c54c8153f70。真实用户存储未触碰；该CI仅合成数据预检，生产V0.35→V0.36迁移、正式永久ID、T03集成均未验收；历史R10–12/R35 ZIP和R12 20SVG仍缺，高清合法许可/逐笔/真机/读屏/完整历史QA未完成；T00–T11 0/12 Accepted、T01 0/25。 [证据](./evidence/v036-round147-t04-real-origin-v16-partial-shadow.md)
+
 ## 第146轮 · Root T02 来源—候选UID交叉核验（隔离、非验收）
 
 R146 Root T02（关联T01/T04/T05）只读交叉核验R73/R75的151个草案UID与R145的170条原生物理来源观察：151旧可视槽各一草案UID；M同框别名4、M未绑定影子4、K4及B/J/R/V/X微形7，共15条未绑定物理观察（不是已确认缺根）；36旧未匹配属于151旧槽子集；5条related关联不生成独立UID。重算170/170原生RGB SHA；新201/201，继承R142–R145共1375/1375，每套1576/1576；父R145 1847/1847 SHA继承，新ZIP 1855文件，Python zipfile与unzip两套独立恢复各1855/1855 SHA且QA后不变。ZIP SHA e01168b3a786903568a8d6173d544f967affd2beb4f71304275d2790764287eb。R10–12/R35及R12 20SVG仍缺，合法同源高清许可/逐笔/真实同源/真机/读屏/历史全量QA未通过；T00–T11仍0/12 Accepted、T01 0/25、正式永久ID0；冻结入口/2008 JPEG/176编码/正式SVG/用户存储未动。 [证据](./evidence/v036-round146-t02-170-source-151-draft-uid-crosswalk.md)
