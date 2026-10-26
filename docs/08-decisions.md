@@ -1,5 +1,10 @@
 # 08 · 设计决策记录（ADR索引）
 
+## ADR-R139 · 提交后DOM仍须持续失效监测（2026-10-26）
+
+R138原子提交无法保证宿主后续不改写SVG/ID；R139决定隔离渲染器提供粘性失效的MutationObserver监测与显式同步assertIntact，不自动恢复，不作为防恶意JS沙箱。新24/24与继承120/120在两套恢复均通过；Root T03仍未生产集成、正式永久ID与来源认证仍0。回滚删除R139隔离目录，不修改冻结V0.35。[证据](./evidence/v036-round139-t03-postcommit-dom-integrity-watch.md)
+
+
 ## ADR-R138 · SVG命名空间必须与实际宿主DOM一起验证并原子提交（2026-10-26）
 
 **Root T03隔离，未正式验收。** R133/R137的临时XML文档局部ID唯一不保证与宿主页面ID不冲突。Chromium实测预置`gs134-1-def-1`可令R137错误绘制100×100外来符号。R138决定只公开受控`mountInto`：固定草案SHA验证、宿主ID查重、无异步间隙同步挂载、提交后查重并失败回滚。碰撞拒绝，正常453 SVG/453唯一symbol ID，双恢复各120/120定向QA。此为隔离技术门禁，非恶意脚本沙箱、原图逐笔认证、正式永久ID或生产发布批准。回滚删除R138隔离目录，不修改V0.35。[证据](./evidence/v036-round138-t03-host-dom-symbol-id-commit-gate.md)

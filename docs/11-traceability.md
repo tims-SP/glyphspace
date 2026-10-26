@@ -1,5 +1,10 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第139轮 · Root T03 挂载后DOM完整性证据（隔离）
+
+- R139 Root T03：R138仅在提交前后查重，后续宿主脚本仍可修改symbol/Path或搬移已挂载节点。本轮隔离新增私有R138包装的`GlyphSpaceR139.mountWatched`、MutationObserver和同步`assertIntact`/`dispose`；临时属性改写、外部同名ID插入再移除、SVG几何改写、节点搬移均被失效检测，普通无冲突DOM变更仍可保留。Chromium 144 `about:blank`新24/24、R132–R138旧120/120定向QA；父R138 1784/1784逐项SHA继承，R139累计1793文件ZIP SHA `344f5adfbb307de298a27e19d8dcfb890fe0bd839800f22ee507c1904c24db72`，Python/unzip双独立恢复各144/144 QA及QA后1793/1793 SHA一致。非恶意脚本沙箱、非生产集成、非来源认证；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T05未完成，R10–12/R35及R12 20 SVG缺失；真同源迁移blocked，真机/读屏/完整历史QA not-run；冻结入口、176编码、用户存储不变。 [证据](./evidence/v036-round139-t03-postcommit-dom-integrity-watch.md)
+
+
 ## 第138轮 · Root T03 宿主DOM symbol ID碰撞原子挂载守卫（隔离、非验收）
 
 - R138在Chromium 144真实复现R137宿主DOM预置同名symbol导致错误字形：两个`gs134-1-def-1`，字根BBox被替换为100×100。新增私有受控`mountInto`，提交前宿主ID冲突检测、同步DOM提交、提交后复核及失败回滚；预置冲突拒绝且0半挂载，正常151字根×3视图453 SVG/453唯一symbol ID。新22/22+继承R132–R137 98/98；父R137 1776/1776逐文件SHA继承，R138累计1784文件ZIP SHA `e2df22e36096a664a9fa592f15a9b0f3e2b8c1fa6f7679279e898afc498dc3ee`，Python/unzip两套独立恢复各120/120 QA、QA后1784/1784 SHA一致。仅隔离技术修复，不能防御挂载后外部脚本改DOM，未来源认证/生产集成；T00–T11仍0/12 Accepted、T01 0/25、正式ID0、T05未完成；历史R10–12/R35与20SVG仍缺，真同源/真机/读屏/历史全量QA未通过；冻结入口/176编码/用户存储不变。[证据](./evidence/v036-round138-t03-host-dom-symbol-id-commit-gate.md)
