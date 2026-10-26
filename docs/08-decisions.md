@@ -1,5 +1,10 @@
 # 08 · 设计决策记录（ADR索引）
 
+## ADR-R150 · 旧v16槽位别名与正式身份必须分层
+
+决定：在T01/T02来源与正式永久ID未获批准前，T04只允许建立SHA绑定、递归不可变的旧版来源槽位别名影子计划，不提供apply/commit/write；保留部分键缺席状态，禁止把旧键索引或草案UID当作正式instanceId。R149授权Chromium 33/33+27/27已独立复核，R150 Node25/25、继承1628/1628、双独立1892/1892 SHA通过；R150真实同源远端pending，本地blocked。正式T04生产迁移未验收，T00–T11 0/12 Accepted。参见[第150轮证据](./evidence/v036-round150-t04-immutable-legacy-alias-shadow-plan.md)。
+
+
 ## R149 · T04真实同源严格来源门禁的证据边界
 
 决策：只在GitHub Actions授权临时127.0.0.1原点、隔离profile和合成G/K/X局部旧v16来源上验证R148字节一致的严格只读解析器。Web Locks跨标签锁争用和localStorage事件的通过只证明浏览器预检，不允许映射为生产V0.35→V0.36迁移、来源字根认证、永久ID批准或真实用户数据操作；CI pending不计通过。保留R10–12/R35及R12 20SVG历史缺口，原始T00–T11编号不变。
