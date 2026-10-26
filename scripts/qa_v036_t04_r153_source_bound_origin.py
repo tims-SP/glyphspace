@@ -40,7 +40,7 @@ def main():
                             page.goto(origin+'/index.html',wait_until='domcontentloaded',timeout=15000)
                             page.add_script_tag(path=str(ROOT/'scripts/v036_r148_strict_shadow.js'))
                             page.add_script_tag(path=str(ROOT/'scripts/v036_r150_alias_plan.js'))
-                            page.add_script_tag(path=str(ROOT/'scripts/v036_r153_issued_plan.js'))
+                            page.add_script_tag(path=str(ROOT/'scripts/v036_r152_source_bound_plan.js'))
                         check('real-same-origin',a.evaluate('location.origin')==b.evaluate('location.origin')==origin)
                         check('real-locks-crypto-store',a.evaluate('!!navigator.locks&&!!crypto.subtle&&!!localStorage'))
                         b.evaluate("()=>{window.r153events=[];addEventListener('storage',e=>{if(e.key==='wubi06-root-coordinate-overrides-v16-svg')r153events.push(e.newValue)})}")
