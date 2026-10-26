@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R152原始T04（隔离、非验收）：R151 WeakMap只能验证当前realm计划签发，不能验证注入reader与原始存储raw相符。R152实际复现R151接受伪SHA、伪编辑、漏键和转义重复JSON键，新增独立raw SHA/坐标/键/编辑校验及只读reader facade。Node新27/27、继承1688/1688；R151父1902/1902 SHA，R152累计1910文件ZIP SHA `2ed630217d3b85a20d18eba07d636d31fe93885212d50eb0a2861ea8a19b62e4`，Python/unzip两次独立恢复各1910/1910 SHA及1715/1715定向QA。R152真实同源not-run，完整历史QA not-run；原始T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T04正式迁移未完成；缺R10–12/R35和R12 20SVG，高清许可/逐笔/真机/读屏未完成。** [证据](./evidence/v036-round152-t04-independent-raw-source-binding.md)。
+
+
 **R151 Root T04（非验收）：**累计 ZIP SHA `f7770b71a7f0aa52eaff20c4afee5481624e6ac7796c4eabf9b5a139d82a78aa`；父1892/1892继承、双独立恢复各1902/1902 SHA及1688/1688定向QA（完整历史全量not-run）。R150 影子计划可被调用者重新计算 SHA 后伪造，R151 采用私有 WeakMap 仅允许同 realm 原始签发对象通过 verifyPlan；Node 35/35、继承 1653/1653；本地真实同源 blocked，R151 远端真实同源 CI 40402103656 22/22 pass，仍非正式迁移。生产迁移/永久 ID 未通过，T00–T11 仍 0/12 Accepted。详见 [证据](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
 
 

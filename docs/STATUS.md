@@ -1,5 +1,9 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+## 第152轮 · Root T04 独立raw来源绑定（隔离、非验收）
+R152原始T04（隔离、非验收）：R151 WeakMap只能验证当前realm计划签发，不能验证注入reader与原始存储raw相符。R152实际复现R151接受伪SHA、伪编辑、漏键和转义重复JSON键，新增独立raw SHA/坐标/键/编辑校验及只读reader facade。Node新27/27、继承1688/1688；R151父1902/1902 SHA，R152累计1910文件ZIP SHA `2ed630217d3b85a20d18eba07d636d31fe93885212d50eb0a2861ea8a19b62e4`，Python/unzip两次独立恢复各1910/1910 SHA及1715/1715定向QA。R152真实同源not-run，完整历史QA not-run；原始T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T04正式迁移未完成；缺R10–12/R35和R12 20SVG，高清许可/逐笔/真机/读屏未完成。 [证据](./evidence/v036-round152-t04-independent-raw-source-binding.md)。
+
+
 R151 累计 ZIP：**1902 文件**，SHA256 `f7770b71a7f0aa52eaff20c4afee5481624e6ac7796c4eabf9b5a139d82a78aa`；父 R150 **1892/1892 SHA** 继承；Python zipfile 与系统 unzip 双独立解压，各 **1902/1902 SHA**、**1688/1688 定向 QA**，QA 后 SHA 均不变。完整历史全量 QA 仍 not-run。
 
 ## 第151轮 · Root T04 已签发对象校验（隔离、非正式验收）

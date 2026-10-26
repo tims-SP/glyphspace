@@ -18,3 +18,8 @@ jobs:
           python-version: '3.11'
       - name: Validate frozen HTML, source WBS, key matrix, SHA256 and links
         run: python3 scripts/verify_repo.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: R152 isolated T04 raw source binding regression (not formal acceptance)
+        run: node scripts/qa_v036_t04_r152_source_bound.mjs
