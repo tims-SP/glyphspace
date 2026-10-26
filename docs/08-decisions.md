@@ -1,5 +1,9 @@
 # 08 · 设计决策记录（ADR索引）
 
+## ADR-R135 · SHA验证后的字形数据必须深冻结，stroke需真实paint验收（2026-10-26）
+
+**Root T03隔离，未生产集成。** R134已验证manifest嵌套路径仍可篡改；R135新增深冻结受控入口，阻断strokeWidth和ox后置修改，H:7三视图9组paint边界与解析式stroke-inclusive inkBBox在量化容差内一致。旧R134 API仍可绕过；不批准来源逐笔、永久ID、T03正式集成或T11发布。[证据](./evidence/v036-round135-t03-immutable-manifest-and-h7-stroke-paint.md)。
+
 ## ADR-R134 · 三视图共享SHA绑定几何，挂载正确性不等于来源认证（2026-10-26）
 
 **状态：Root T03隔离技术验证，非正式验收。** R125解析式墨迹与光学矩阵是唯一草案几何，R132/R133保证符号依赖闭包与命名空间，full/mini/focus共用instanceId和100×100坐标。about:blank无WebCrypto时用纯JS SHA-256核验manifest字节；453实例真实挂载、450个fill-only几何通过，H:7 stroke仍需paint验证。SHA、几何和三视图挂载不批准原图、永久ID、正式T03集成或T11发布。回滚删除R134隔离文件。[证据](./evidence/v036-round134-t03-sha-bound-three-view-mount.md)。
