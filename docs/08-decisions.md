@@ -1,5 +1,9 @@
 # 08 · 设计决策记录（ADR索引）
 
+## R149 · T04真实同源严格来源门禁的证据边界
+
+决策：只在GitHub Actions授权临时127.0.0.1原点、隔离profile和合成G/K/X局部旧v16来源上验证R148字节一致的严格只读解析器。Web Locks跨标签锁争用和localStorage事件的通过只证明浏览器预检，不允许映射为生产V0.35→V0.36迁移、来源字根认证、永久ID批准或真实用户数据操作；CI pending不计通过。保留R10–12/R35及R12 20SVG历史缺口，原始T00–T11编号不变。
+
 ## ADR-R148 · 来源raw SHA不等于JSON键唯一性（2026-10-27）
 
 旧v16存储采用JSON对象，重复对象键被JSON.parse静默覆盖，即使原始字节SHA匹配也不能保证没有历史值丢失。决定在隔离只读来源预检中先检查原始JSON对象键唯一性（含转义等价键），再依据冻结25键156槽默认值SHA判断用户显式编辑；保留合法空白格式及缺席键。正式永久ID未批准前不得进行生产迁移。R148 Root T04（关联T00/T02）实际复现R147旧v16来源JSON重复G键被JSON.parse静默覆盖、即使raw SHA匹配仍被接纳；隔离增加重复对象键（含转义等价键）失败关闭扫描、冻结25键156槽默认值SHA、部分键/原始raw/来源签名门禁。父R147 ZIP1865/1865逐文件SHA继承；新R148累计1875文件，ZIP SHA `9b9c58ecd97cc1f68960ff4c70086148f197d1ec30704b9d4c8d0d6e490d35fa`，Python zipfile/unzip两套独立恢复各1875/1875 SHA及1628/1628定向QA（旧1590、新Node29、Chromium about:blank仅解析9）。本地真实同源仍管理员blocked；R148远端真实同源not-run、真机/读屏0、完整历史QA not-run。缺R10–12/R35和R12 20SVG、高清许可/逐笔；T00–T11 0/12 Accepted，T01 0/25、正式永久ID0、T04生产迁移未完成，冻结入口/176编码/用户存储未改。 [证据](./evidence/v036-round148-t04-strict-legacy-v16-source-duplicate-key-gate.md)
