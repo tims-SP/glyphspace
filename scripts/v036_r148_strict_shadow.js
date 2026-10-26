@@ -20,6 +20,9 @@
     if (!cryptoAPI || !cryptoAPI.subtle || typeof cryptoAPI.subtle.digest !== 'function') throw Error('crypto_unavailable');
     return hex(await cryptoAPI.subtle.digest('SHA-256', new TextEncoder().encode(s)));
   }
+  // JSON.parse alone silently keeps the last of duplicate keys. This scanner
+  // rejects all duplicate object keys, including escaped equivalents ("G"/"\u0047").
+  // JSON.parse runs first for grammar validation. Depth is capped to fail closed.
   function rejectDuplicateObjectKeys(raw) {
     let i = 0;
     const ws = () => { while (i < raw.length && /[\x20\t\n\r]/.test(raw[i])) i++; };
