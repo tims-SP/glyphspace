@@ -13,6 +13,8 @@ on:
       - 'scripts/qa_v036_t04_r150_alias_origin.py'
       - 'scripts/v036_r151_issued_plan.js'
       - 'scripts/qa_v036_t04_r151_issued_origin.py'
+      - 'scripts/v036_r152_source_bound_plan.js'
+      - 'scripts/qa_v036_t04_r153_source_bound_origin.py'
 
 permissions:
   contents: read
@@ -38,6 +40,8 @@ jobs:
         run: python scripts/qa_v036_t04_r150_alias_origin.py
       - name: R151 issuer-bound plan on disposable real origin
         run: python scripts/qa_v036_t04_r151_issued_origin.py
+      - name: R153 independent raw source binding on disposable real origin
+        run: python scripts/qa_v036_t04_r153_source_bound_origin.py
       - name: Preserve disposable-origin QA result
         if: always()
         uses: actions/upload-artifact@v4
@@ -48,5 +52,6 @@ jobs:
             t04_r149_strict_origin_results.json
             t04_r150_alias_origin_results.json
             t04_r151_issued_origin_results.json
+            t04_r153_source_bound_origin_results.json
           if-no-files-found: warn
           retention-days: 14
