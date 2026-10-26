@@ -1,5 +1,10 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## R150 原始T04追踪（隔离，非验收）
+
+R149授权Chromium严格来源27/27及旧同源33/33真实CI已复核artifact；R150新增严格v16来源→旧槽别名影子计划，SHA绑定、不可变、缺席键保留、拒绝正式ID提前绑定；Node25/25、继承1628/1628，父1881/1881 SHA继承，新1892文件累计ZIP SHA `51396c322a4a4ac7bd47b3aefb3b8bdcf8c7797b72dc353c1b9763f4a0d31d09`，Python/unzip各1892/1892 SHA及1653/1653 QA。R150本地同源blocked、远端CI pending；完整历史QA not-run。正式T00–T11仍0/12 Accepted，T04生产迁移未完成，缺历史原件和许可/逐笔/真机/读屏。[证据](./evidence/v036-round150-t04-immutable-legacy-alias-shadow-plan.md)
+
+
 ## R149 原始T04追踪（隔离，非验收）
 
 R149 Root T04：R148 5944字节严格旧v16只读门禁SHA一致接入GitHub Actions授权127.0.0.1双标签真实Chromium回归；远端运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)尚待最终结论，不得计pass。本地ERR_BLOCKED_BY_ADMINISTRATOR=blocked，继承R142–R148 1628/1628定向QA通过；父R148 1875/1875逐文件SHA继承，R149累计1881文件ZIP SHA `a8f88dfbf54380e848c6610525d3272e9aeda69745f07247c707fe5635256259`，Python/unzip独立恢复各1881/1881 SHA和1628/1628 QA，完整历史QA not-run。正式T00–T11 0/12 Accepted，T01 0/25、永久ID0、T04生产迁移未验收；冻结入口/编码/用户存储未动。[证据](./evidence/v036-round149-t04-strict-real-origin-shadow-preflight.md)
