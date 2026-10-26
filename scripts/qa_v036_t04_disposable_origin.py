@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Disposable-origin T04 browser regression. Never touches user data or production URL."""
 import http.server
+import copy
+import hashlib
+import re
 import json
 import pathlib
 import socketserver
@@ -79,6 +82,31 @@ INSTALL = r"""async ns => {
   return true;
 }"""
 
+
+# R147: only a synthetic v16 source on this disposable origin; no production migration.
+LEGACY_SHADOW = r'''async ({origin,defaults,expectedSHA}) => {
+  if(location.origin!==origin || location.hostname!=='127.0.0.1' || !navigator.locks || !crypto.subtle)throw Error('unsafe_origin');
+  return navigator.locks.request('__glyphspace_r147_shadow_read__',{mode:'shared'},async()=>{
+    const key='wubi06-root-coordinate-overrides-v16-svg',raw=localStorage.getItem(key);
+    if(raw===null||raw.length>200000)throw Error('missing_source');
+    let data;try{data=JSON.parse(raw)}catch{throw Error('invalid_json')}
+    if(!data||typeof data!=='object'||Array.isArray(data)||!Object.keys(data).length)throw Error('invalid_source');
+    const edits=[];
+    for(const [k,points] of Object.entries(data)){
+      if(!Object.prototype.hasOwnProperty.call(defaults,k)||!Array.isArray(points)||points.length!==defaults[k].length)throw Error('bad_key_or_length');
+      for(let i=0;i<points.length;i++){
+        const p=points[i];
+        if(!Array.isArray(p)||p.length!==3||p.some(x=>typeof x!=='number'||!Number.isFinite(x))||p[0]<0||p[0]>90||p[1]<12||p[1]>88||p[2]<9||p[2]>29)throw Error('bad_point');
+        if(JSON.stringify(p)!==JSON.stringify(defaults[k][i]))edits.push(k+':'+i);
+      }
+    }
+    const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(raw));
+    const hash=[...new Uint8Array(bytes)].map(x=>x.toString(16).padStart(2,'0')).join('');
+    if(hash!==expectedSHA||localStorage.getItem(key)!==raw)throw Error('source_changed');
+    return {hash,keys:Object.keys(data).sort(),absent:Object.keys(defaults).filter(k=>!(k in data)),edits:edits.sort(),writes:0,permanentIds:0};
+  });
+}'''
+
 class Handler(http.server.SimpleHTTPRequestHandler):
     def log_message(self, *args): pass
 
@@ -145,6 +173,33 @@ def run():
                     a.evaluate('window.release()')
                     b.wait_for_function('window.acquired === true')
                     check('real-web-lock-release',b.evaluate('window.acquired') is True)
+
+                    # R147 actual frozen V0.35 coordinate schema, synthetic partial legacy data.
+                    frozen=pathlib.Path(__file__).resolve().parents[1].joinpath('index.html').read_bytes()
+                    check('r147-frozen-v035-source-sha',hashlib.sha256(frozen).hexdigest()=='fd7b9bdada44ab2d7452d71f99e77cfd7a7fe82eb9b29e3f0b41ab32fb758ddc')
+                    defaults=json.loads(re.search(rb'const ROOT_COORDS=(\\{[^\\n]+\\});',frozen).group(1))
+                    check('r147-frozen-25keys-156slots',len(defaults)==25 and sum(map(len,defaults.values()))==156)
+                    fixture={k:copy.deepcopy(defaults[k]) for k in ('G','K','X')}
+                    fixture['G'][0][0]+=1;fixture['K'][2][1]+=1;fixture['X'][0][2]+=1
+                    raw=json.dumps(fixture,separators=(',',':'))
+                    source_key='wubi06-root-coordinate-overrides-v16-svg'
+                    a.evaluate('({key,raw})=>{localStorage.setItem("outside-r147-sentinel","preserve");localStorage.setItem(key,raw)}',{'key':source_key,'raw':raw})
+                    args={'origin':origin,'defaults':defaults,'expectedSHA':hashlib.sha256(raw.encode()).hexdigest()}
+                    keys_before=a.evaluate('Object.keys(localStorage).sort()')
+                    first_shadow=a.evaluate(LEGACY_SHADOW,args)
+                    second_shadow=b.evaluate(LEGACY_SHADOW,args)
+                    check('r147-real-two-tab-shadow-equal',first_shadow==second_shadow)
+                    check('r147-partial-keys-absent22',first_shadow['keys']==['G','K','X'] and len(first_shadow['absent'])==22)
+                    check('r147-three-user-edits-only',first_shadow['edits']==['G:0','K:2','X:0'])
+                    check('r147-source-sha-bound',first_shadow['hash']==args['expectedSHA'])
+                    check('r147-no-user-or-production-writes',first_shadow['writes']==0 and first_shadow['permanentIds']==0 and a.evaluate('Object.keys(localStorage).sort()')==keys_before and a.evaluate('k=>localStorage.getItem(k)',source_key)==raw)
+                    check('r147-unrelated-sentinel-preserved',a.evaluate('localStorage.getItem("outside-r147-sentinel")')=='preserve')
+                    tampered=copy.deepcopy(fixture);tampered['G'][0][0]+=1
+                    a.evaluate('({key,raw})=>localStorage.setItem(key,raw)',{'key':source_key,'raw':json.dumps(tampered,separators=(',',':'))})
+                    rejected=a.evaluate('async arg=>{try{await ('+LEGACY_SHADOW+')(arg);return false}catch(e){return String(e).includes("source_changed")}}',args)
+                    check('r147-changed-legacy-source-rejected',rejected)
+                    a.evaluate('({key,raw})=>localStorage.setItem(key,raw)',{'key':source_key,'raw':raw})
+                    check('r147-synthetic-legacy-source-restored',a.evaluate('k=>localStorage.getItem(k)',source_key)==raw)
                 finally:
                     context.close();browser.close();server.shutdown()
     return {'taskId':'T04','environment':'GitHub Actions Ubuntu Chromium, disposable 127.0.0.1 origin, two tabs','passed':len(results),'checks':results,'result':'pass','formalAcceptance':False,'userStorageTouched':False,'sourceCertification':'not-run'}
