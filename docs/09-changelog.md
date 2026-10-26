@@ -1,5 +1,10 @@
 # 09 · 历史演化与变更记录
 
+## V0.36 R150（隔离）
+
+- Root T04：R149远端同源真实Chromium 33/33+27/27复核；新增冻结来源绑定的旧槽别名影子计划、无生产写入和正式ID绑定，Node25/25+继承1628/1628；父R149 1881/1881 SHA继承，新1892累计ZIP `51396c322a4a4ac7bd47b3aefb3b8bdcf8c7797b72dc353c1b9763f4a0d31d09`，双独立恢复各1653/1653 QA与1892/1892 SHA。R150本地同源blocked、远端pending；T00–T11仍0/12 Accepted，冻结生产入口不动。
+
+
 ## V0.36 R149（隔离）
 
 - Root T04：把R148严格旧v16重复键门禁原始5944字节接入授权真实Chromium临时原点双标签WebCrypto/Web Locks/localStorage回归；CI run 40384582893结果待确认。本地同源blocked，旧定向1628/1628。父R148 1875/1875 SHA继承，新累计1881文件，Python/unzip两套独立恢复各1881/1881 SHA及1628/1628 QA；T00–T11仍0/12 Accepted，冻结生产入口不动。
