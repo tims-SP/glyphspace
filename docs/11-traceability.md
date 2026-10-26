@@ -1,5 +1,9 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第137轮 · Root T03 固定审阅草案SHA，拒绝调用者自签摘要（隔离、非验收）
+
+- R137实际复现R136可被调用者通过修改Path/fill并重新计算SHA绕过字节来源约束；新增私有`GlyphSpaceR137.mountPinned(raw,view,ids)`，内置R134冻结派生草案SHA `89c6bbaac319f4f59d81c18ea5d0cbbb42899558c7ba7cf65fc81107de020f8a`，拒绝自签变更。151条冻结Path原始来源哈希逐项一致；Chromium 453个SVG、453唯一symbol ID。新21/21与继承77/77定向QA，R136父1768/1768 SHA继承；R137累计1776文件ZIP SHA `edfe5508884a5b50a2145f89f9ea47b5651a7333e3eb01cf04bf71df1bb0ecfb`，Python/unzip两套独立恢复各98/98 QA、1776/1776 SHA一致。未生产集成、未认证2008原图；T00–T11 0/12 Accepted、T01 0/25、正式永久ID0、T05未完成；R10–12/R35及R12的20 SVG仍缺，真同源/真机/读屏/完整历史QA未通过；冻结入口/176编码/用户存储未动。[证据](./evidence/v036-round137-t03-pinned-manifest-digest.md)
+
 ## 第136轮 · Root T03私有SHA验证渲染入口（隔离，非验收）
 
 - R136 Root T03私有SHA验证渲染入口：将R132–R135源代码封入词法私有对象，只公开R136 mountVerified(raw,sha,view,ids)，旧R134可变manifest绕过入口不再公开，若已有旧全局API则失败关闭；Chromium about:blank 151字根×3视图=453 SVG、453唯一symbol ID；新20/20、继承R132 21+R133 12+R134 10+R135 14=57/57，Python/unzip两套独立恢复各77/77、1768/1768 SHA一致；父R135 1760/1760逐文件继承，R136 ZIP SHA a60486ed2af060f774450669d6c81e3ad99edab089a46f62b33d9144470d3806。仅隔离技术证据，未生产集成、未来源认证，T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T05未完成；缺R10–12/R35及20 SVG，高清许可/真实同源迁移/真机/读屏/完整历史QA未解；冻结HTML、176编码、用户存储不变。 [证据](./evidence/v036-round136-t03-private-verified-renderer.md)
