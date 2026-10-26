@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R153 Root T04（隔离、非验收）：** 将R152独立raw来源绑定接入授权临时127.0.0.1双标签Chromium测试；本地ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端首跑40417492203因引用错误失败，已修复并启动40417922284（最终结果待复核）；继承定向1715/1715，父R152 1910/1910 SHA，新累计ZIP1918文件SHA `106319af615d7a5afb4c122306d649435137d7c502e1a084c7de45137c5b378d`，Python/unzip两套恢复各1918/1918 SHA、1715/1715 QA。完整历史全量QA not-run，T00–T11 0/12 Accepted，T01 0/25、正式ID0、正式迁移未完成；缺R10–12/R35及20SVG，许可/逐笔/真机/读屏未完成。 [证据](./evidence/v036-round153-t04-real-origin-raw-source-binding.md)。
+
 ## 第152轮 · Root T04 独立raw来源绑定（隔离、非验收）
 R152原始T04（隔离、非验收）：R151 WeakMap只能验证当前realm计划签发，不能验证注入reader与原始存储raw相符。R152实际复现R151接受伪SHA、伪编辑、漏键和转义重复JSON键，新增独立raw SHA/坐标/键/编辑校验及只读reader facade。Node新27/27、继承1688/1688；R151父1902/1902 SHA，R152累计1910文件ZIP SHA `2ed630217d3b85a20d18eba07d636d31fe93885212d50eb0a2861ea8a19b62e4`，Python/unzip两次独立恢复各1910/1910 SHA及1715/1715定向QA。R152真实同源not-run，完整历史QA not-run；原始T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T04正式迁移未完成；缺R10–12/R35和R12 20SVG，高清许可/逐笔/真机/读屏未完成。 [证据](./evidence/v036-round152-t04-independent-raw-source-binding.md)。
 
