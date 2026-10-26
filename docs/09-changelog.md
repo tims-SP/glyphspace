@@ -1,5 +1,9 @@
 # 09 · 历史演化与变更记录
 
+## V0.36 R149（隔离）
+
+- Root T04：把R148严格旧v16重复键门禁原始5944字节接入授权真实Chromium临时原点双标签WebCrypto/Web Locks/localStorage回归；CI run 40384582893结果待确认。本地同源blocked，旧定向1628/1628。父R148 1875/1875 SHA继承，新累计1881文件，Python/unzip两套独立恢复各1881/1881 SHA及1628/1628 QA；T00–T11仍0/12 Accepted，冻结生产入口不动。
+
 ## 第148轮 · Root T04 重复JSON来源键缺陷复现与失败关闭
 
 R148 Root T04（关联T00/T02）实际复现R147旧v16来源JSON重复G键被JSON.parse静默覆盖、即使raw SHA匹配仍被接纳；隔离增加重复对象键（含转义等价键）失败关闭扫描、冻结25键156槽默认值SHA、部分键/原始raw/来源签名门禁。父R147 ZIP1865/1865逐文件SHA继承；新R148累计1875文件，ZIP SHA `9b9c58ecd97cc1f68960ff4c70086148f197d1ec30704b9d4c8d0d6e490d35fa`，Python zipfile/unzip两套独立恢复各1875/1875 SHA及1628/1628定向QA（旧1590、新Node29、Chromium about:blank仅解析9）。本地真实同源仍管理员blocked；R148远端真实同源not-run、真机/读屏0、完整历史QA not-run。缺R10–12/R35和R12 20SVG、高清许可/逐笔；T00–T11 0/12 Accepted，T01 0/25、正式永久ID0、T04生产迁移未完成，冻结入口/176编码/用户存储未改。 [证据](./evidence/v036-round148-t04-strict-legacy-v16-source-duplicate-key-gate.md)
