@@ -1,5 +1,9 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+## 第149轮 · Root T04 严格v16来源真实同源预检（隔离，非验收）
+
+R149把**原始R148 5944字节、SHA256 93095d5ef4ef85d8238b90b51f6fbc2e8968e6c5a51498e7503dccfe26b27fed**的只读严格JSON重复键门禁接入GitHub Actions授权Chromium双标签真实127.0.0.1原点QA（WebCrypto/Web Locks/localStorage/跨标签storage/独占锁竞争/拒绝非法来源）；运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)在取得最终结果前记**pending**，不计通过。本地真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR=blocked；R142–R148定向1628/1628通过。父R148 ZIP1875/1875 SHA继承，新R149累计1881文件ZIP SHA `a8f88dfbf54380e848c6610525d3272e9aeda69745f07247c707fe5635256259`，Python/unzip两套独立恢复各1881/1881 SHA、1628/1628定向QA，QA后SHA不变；完整历史全量QA not-run。原始T00–T11 0/12 Accepted、T01 0/25、正式永久ID0、T04生产迁移未完成；缺R10–12/R35 ZIP及R12 20SVG、合法高清许可/逐笔/真机/读屏。冻结HTML/JPEG/176编码/正式SVG/用户存储未改。[证据](./evidence/v036-round149-t04-strict-real-origin-shadow-preflight.md)
+
 ## 第148轮 · Root T04 旧v16重复来源键失败关闭（隔离、非验收）
 
 R148 Root T04（关联T00/T02）实际复现R147旧v16来源JSON重复G键被JSON.parse静默覆盖、即使raw SHA匹配仍被接纳；隔离增加重复对象键（含转义等价键）失败关闭扫描、冻结25键156槽默认值SHA、部分键/原始raw/来源签名门禁。父R147 ZIP1865/1865逐文件SHA继承；新R148累计1875文件，ZIP SHA `9b9c58ecd97cc1f68960ff4c70086148f197d1ec30704b9d4c8d0d6e490d35fa`，Python zipfile/unzip两套独立恢复各1875/1875 SHA及1628/1628定向QA（旧1590、新Node29、Chromium about:blank仅解析9）。本地真实同源仍管理员blocked；R148远端真实同源not-run、真机/读屏0、完整历史QA not-run。缺R10–12/R35和R12 20SVG、高清许可/逐笔；T00–T11 0/12 Accepted，T01 0/25、正式永久ID0、T04生产迁移未完成，冻结入口/176编码/用户存储未改。 [证据](./evidence/v036-round148-t04-strict-legacy-v16-source-duplicate-key-gate.md)
