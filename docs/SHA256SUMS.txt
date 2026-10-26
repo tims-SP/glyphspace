@@ -70,7 +70,7 @@ ae45460dae8950725dd4eb456d9da25ca5873c2e3a7e62e3f8434deb1de40989  docs/evidence/
 16a6e92f4db658f16f5b72576c35193b4812aae549a65cf5b82929ab8195b5c6  docs/evidence/v036-round144-t01-t02-keywise-source-review-queue.md
 250d5381277d54c75bf0181138a79a249c3a57ceaf4be7cc660184b886c78ced  docs/evidence/v036-round145-t01-t02-observation-review-coverage.md
 afe020ac626c90667dc45b17cdf01e863a12cd9d9171e9a3ace81f1ad47c97ac  docs/evidence/v036-round146-t02-170-source-151-draft-uid-crosswalk.md
-dd5335ffaca8754b26d3e349285baa7a72c847ef9faacbd78df2918854ef9339  docs/evidence/v036-round147-t04-real-origin-v16-partial-shadow.md
+99ce7bac1ed92a14119699e5107da442abdffb08199660f92457edfae5f04a6c  docs/evidence/v036-round147-t04-real-origin-v16-partial-shadow.md
 b5c01d59f945f806e3a7f6e86b4d736f3b6ddb1562ac1dd4cb15dbd3a1443d2b  docs/evidence/v036-round62-t03-safe-optical-gate.md
 d38a42d4972570a1d9e0fad5c51974d5c585dc320e26ab8a638ffbb5c065ceb3  docs/evidence/v036-round65-t03-browser-stroke-geometry.md
 1700125fba55a84c2ef877a4904ce86a7665567d87610027a2d105ad220c7501  docs/evidence/v036-round66-t03-source-bound-renderer.md

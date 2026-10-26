@@ -8,7 +8,7 @@
 
 ## 实际测试
 
-- GitHub Actions授权临时原点真实Chromium双标签：**33/33通过**，含此前Web Locks/localStorage/回滚与本轮冻结v16部分来源影子预检。url工作流运行https://github.com/tims-SP/glyphspace/actions/runs/40365890296（commit `0ced66a61e2dfa17363fbf6f0b8e9fa0c42c0068`）。静态仓库完整性run `40365890764` success。
+- GitHub Actions授权临时原点真实Chromium双标签：**33/33通过**，含此前Web Locks/localStorage/回滚与本轮冻结v16部分来源影子预检。[GitHub Actions真实原点运行](https://github.com/tims-SP/glyphspace/actions/runs/40365890296)（commit `0ced66a61e2dfa17363fbf6f0b8e9fa0c42c0068`）。静态仓库完整性run `40365890764` success。
 - 初次提交 `cde6fd3ed9ba8ed1b1c02ec62ab784d17029c27a` 的Python正则误转义导致CI失败；后续修复后成功，**不得把首次失败计为通过**。
 - 本地真实临时原点：`ERR_BLOCKED_BY_ADMINISTRATOR`，标记**blocked**，不计pass。
 - 新Node WebCrypto/FakeStore独立14/14；实际重跑R142–R146来源定向QA 1576/1576，完整历史全量QA not-run。
