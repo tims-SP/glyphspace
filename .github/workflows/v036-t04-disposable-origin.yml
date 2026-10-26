@@ -7,6 +7,8 @@ on:
     paths:
       - '.github/workflows/v036-t04-disposable-origin.yml'
       - 'scripts/qa_v036_t04_disposable_origin.py'
+      - 'scripts/qa_v036_t04_r149_strict_origin.py'
+      - 'scripts/v036_r148_strict_shadow.js'
 
 permissions:
   contents: read
