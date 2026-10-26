@@ -1,6 +1,6 @@
 # 11 · 任务—源码—证据—验收追踪
 
-**R151 Root T04（非验收）：**R150 影子计划可被调用者重新计算 SHA 后伪造，R151 采用私有 WeakMap 仅允许同 realm 原始签发对象通过 verifyPlan；Node 35/35、继承 1653/1653；本地真实同源 blocked，R151 远端真实同源 CI 40402103656 22/22 pass，仍非正式迁移。生产迁移/永久 ID 未通过，T00–T11 仍 0/12 Accepted。详见 [证据](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
+**R151 Root T04（非验收）：**累计 ZIP SHA `f7770b71a7f0aa52eaff20c4afee5481624e6ac7796c4eabf9b5a139d82a78aa`；父1892/1892继承、双独立恢复各1902/1902 SHA及1688/1688定向QA（完整历史全量not-run）。R150 影子计划可被调用者重新计算 SHA 后伪造，R151 采用私有 WeakMap 仅允许同 realm 原始签发对象通过 verifyPlan；Node 35/35、继承 1653/1653；本地真实同源 blocked，R151 远端真实同源 CI 40402103656 22/22 pass，仍非正式迁移。生产迁移/永久 ID 未通过，T00–T11 仍 0/12 Accepted。详见 [证据](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
 
 
 ## R150 原始T04追踪（隔离，非验收）

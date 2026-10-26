@@ -9,3 +9,7 @@
 - R151 本地 Chromium：file:// 与 localhost 被 `ERR_BLOCKED_BY_ADMINISTRATOR` 阻断；本地真实同源 **blocked**。新增 R151 授权真实同源 Chromium CI [40402103656](https://github.com/tims-SP/glyphspace/actions/runs/40402103656) **22/22 pass**；artifact SHA256 `dba4bf50741c95633b055f4028cce883682479cb8c2eba3358b68033c5826d11` 已下载并逐项读取；仅合成数据预检，不是生产迁移。
 - 历史 R10–12/R35 ZIP、R12 20SVG 仍缺；高清合法来源、逐笔来源认证、Android/iOS 真机、真实读屏、完整历史全量 QA 均未完成。
 - 原始 T00–T11 **0/12 Accepted**；T01 **0/25**，正式永久 ID **0**，T04 正式迁移 **not-run**，T05 正式补图未完成；冻结 HTML/JPEG/176 编码/正式 SVG/用户存储不变。
+
+## 累计恢复包最终复验
+R151 累计 ZIP：**1902 文件**，SHA256 `f7770b71a7f0aa52eaff20c4afee5481624e6ac7796c4eabf9b5a139d82a78aa`；父 R150 **1892/1892 SHA** 继承；Python zipfile 与系统 unzip 双独立解压，各 **1902/1902 SHA**、**1688/1688 定向 QA**，QA 后 SHA 均不变。完整历史全量 QA 仍 not-run。
+冻结 V0.35 HTML 和 2008 JPEG SHA 与原始规范一致；仅新增隔离审计资产，不包含第10–12、35轮历史缺包及第12轮20 SVG。T00–T11 仍 0/12 Accepted。

@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+R151 累计 ZIP：**1902 文件**，SHA256 `f7770b71a7f0aa52eaff20c4afee5481624e6ac7796c4eabf9b5a139d82a78aa`；父 R150 **1892/1892 SHA** 继承；Python zipfile 与系统 unzip 双独立解压，各 **1902/1902 SHA**、**1688/1688 定向 QA**，QA 后 SHA 均不变。完整历史全量 QA 仍 not-run。
+
 ## 第151轮 · Root T04 已签发对象校验（隔离、非正式验收）
 R150 的 verifyPlan 仅校验调用者自算的 SHA 与顶层冻结状态；实际复现修改 sourceSlots=999、重新计算摘要并冻结后仍被接受。R151 新增私有 WeakMap 签发登记，verifyPlan 只接受本 JS realm 的 planReadOnly 原样返回对象；克隆、重序列化、外部自签计划一律拒绝。**这不是跨进程数字签名，不能代替可信来源/正式永久 ID 或生产迁移。**冻结 V0.35 与 2008 JPEG、176 编码、正式 SVG、用户存储均未修改。Node WebCrypto+FakeStore 新 35/35、继承 R142–R150 定向 1653/1653；本地 Chromium file:// 与 localhost 被策略阻断。R150 真实授权 Chromium CI run 40393427271 已成功（33/33、27/27、16/16），R151 远端真实同源 CI run 40402103656 已完成 success：新增签发门禁 22/22，继承 33/33、27/27、16/16；独立下载并复验 artifact SHA256 `dba4bf50741c95633b055f4028cce883682479cb8c2eba3358b68033c5826d11`。仅为隔离合成数据预检，不是生产迁移或正式验收。R10–12/R35 ZIP 和 R12 20SVG 仍缺，高清许可/逐笔/真机/读屏/完整历史 QA 均未通过；T00–T11 **0/12 Accepted**，T01 0/25，正式永久 ID 0，T04 生产迁移未完成。证据见 [R151](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
 
