@@ -48,7 +48,7 @@ def main():
                         b.wait_for_function('r153events.length===1',timeout=5000)
                         check('cross-tab-storage-event',b.evaluate('r153events.length')==1)
                         args={'defaults':defaults,'sourceSHA':sha,'origin':origin}
-                        expr="""async arg=>GlyphSpaceR153.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks})"""
+                        expr="""async arg=>GlyphSpaceR152.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks})"""
                         pa=a.evaluate(expr,args);pb=b.evaluate(expr,args)
                         check('cross-tab-plan-equality',pa==pb)
                         check('source-sha-pinned',pa['sourceSHA']==sha)
@@ -56,7 +56,7 @@ def main():
                         check('three-edits',sorted(x['alias'] for x in pa['explicitEdits'])==['G:0','K:2','X:0'])
                         check('alias-count-unique',len(pa['sourceSlotAliases'])==pa['sourceSlots'] and len(set(pa['sourceSlotAliases']))==pa['sourceSlots'])
                         check('no-approved-ids-no-migration',pa['approvedPermanentIds']==0 and pa['writes']==0 and pa['productionMigration']=='not-run')
-                        check('verify-plan',a.evaluate("async arg=>GlyphSpaceR153.verifyPlan(await GlyphSpaceR153.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks}),crypto)",args))
+                        check('verify-plan',a.evaluate("async arg=>GlyphSpaceR152.verifyPlan(await GlyphSpaceR152.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks}),crypto)",args))
                         # R153: R150 accepted self-rehashed forged frozen plans.
                         audit=a.evaluate("""async arg=>{
                           const opts={strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,
@@ -84,9 +84,9 @@ def main():
                         for label,value in audit.items():check('r153-'+label,value)
                         check('raw-source-preserved',a.evaluate("localStorage.getItem('wubi06-root-coordinate-overrides-v16-svg')")==raw)
                         check('unrelated-sentinel-preserved',a.evaluate("localStorage.getItem('r153-sentinel')")=='keep')
-                        bad=a.evaluate("""async arg=>{try{await GlyphSpaceR153.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks,permanentIds:{'G:0':'draft'}});return false}catch(e){return String(e).includes('formal_ids_not_approved')}}""",args)
+                        bad=a.evaluate("""async arg=>{try{await GlyphSpaceR152.planReadOnly({strictReader:GlyphSpaceR148,store:localStorage,cryptoAPI:crypto,defaults:arg.defaults,expectedSourceSHA:arg.sourceSHA,origin:location.origin,expectedOrigin:arg.origin,lockManager:navigator.locks,permanentIds:{'G:0':'draft'}});return false}catch(e){return String(e).includes('formal_ids_not_approved')}}""",args)
                         check('reject-premature-id-binding',bad)
-                        check('no-apply-or-commit',a.evaluate("typeof GlyphSpaceR153.apply==='undefined'&&typeof GlyphSpaceR153.commit==='undefined'"))
+                        check('no-apply-or-commit',a.evaluate("typeof GlyphSpaceR152.apply==='undefined'&&typeof GlyphSpaceR152.commit==='undefined'"))
                     finally:context.close();browser.close()
             finally:server.shutdown()
 if __name__=='__main__':
