@@ -1,5 +1,9 @@
 # 08 · 设计决策记录（ADR索引）
 
+## ADR-R136 · 禁止在受控SHA验证入口旁保留可绕过的旧公开API（2026-10-26）
+
+**Root T03隔离，未生产集成。** R135深冻结仅保护R135受控入口，R134旧公开API仍可直接接受可变manifest。决定把R132–R135源字节封装在词法私有对象中，仅公开R136 `mountVerified(raw,sha,view,ids)`，遇已加载旧公开API则失败关闭。Chromium 453 SVG唯一命名空间、新20/20、继承57/57，两套1768文件恢复各77/77 QA。此隔离模块不是宿主DOM安全沙箱、原图认证、正式永久ID或生产发布批准。回滚删除R136隔离文件及证据，不修改冻结V0.35。[证据](./evidence/v036-round136-t03-private-verified-renderer.md)
+
 ## ADR-R135 · SHA验证后的字形数据必须深冻结，stroke需真实paint验收（2026-10-26）
 
 **Root T03隔离，未生产集成。** R134已验证manifest嵌套路径仍可篡改；R135新增深冻结受控入口，阻断strokeWidth和ox后置修改，H:7三视图9组paint边界与解析式stroke-inclusive inkBBox在量化容差内一致。旧R134 API仍可绕过；不批准来源逐笔、永久ID、T03正式集成或T11发布。[证据](./evidence/v036-round135-t03-immutable-manifest-and-h7-stroke-paint.md)。
