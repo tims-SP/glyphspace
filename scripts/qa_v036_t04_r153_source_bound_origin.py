@@ -95,7 +95,7 @@ if __name__=='__main__':
     except Exception as e:
         status='blocked' if 'ERR_BLOCKED_BY_ADMINISTRATOR' in str(e) or "Executable doesn't exist" in str(e) else 'fail'
         checks.append({'testId':'execution-error','result':status,'detail':repr(e)})
-    report={'round':151,'taskId':'T04','result':status,'passed':sum(x['result']=='pass' for x in checks),'checks':checks,'environment':'two real Chromium tabs, disposable loopback origin' if status=='pass' else 'blocked/not-run','formalAcceptance':False,'userStorageTouched':False,'productionMigration':'not-run'}
+    report={'round':153,'taskId':'T04','result':status,'passed':sum(x['result']=='pass' for x in checks),'checks':checks,'environment':'two real Chromium tabs, disposable loopback origin' if status=='pass' else 'blocked/not-run','formalAcceptance':False,'userStorageTouched':False,'productionMigration':'not-run'}
     out=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else pathlib.Path('t04_r153_source_bound_origin_results.json')
     out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
     print('R153 real-origin',status,report['passed'],'/',len(checks),flush=True)
