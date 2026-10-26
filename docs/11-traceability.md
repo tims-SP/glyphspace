@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R151 Root T04（非验收）：**R150 影子计划可被调用者重新计算 SHA 后伪造，R151 采用私有 WeakMap 仅允许同 realm 原始签发对象通过 verifyPlan；Node 35/35、继承 1653/1653；本地真实同源 blocked，R151 远端待确认。生产迁移/永久 ID 未通过，T00–T11 仍 0/12 Accepted。详见 [证据](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
+
+
 ## R150 原始T04追踪（隔离，非验收）
 
 R149授权Chromium严格来源27/27及旧同源33/33真实CI已复核artifact；R150新增严格v16来源→旧槽别名影子计划，SHA绑定、不可变、缺席键保留、拒绝正式ID提前绑定；Node25/25、继承1628/1628，父1881/1881 SHA继承，新1892文件累计ZIP SHA `51396c322a4a4ac7bd47b3aefb3b8bdcf8c7797b72dc353c1b9763f4a0d31d09`，Python/unzip各1892/1892 SHA及1653/1653 QA。R150本地同源blocked、远端CI pending；完整历史QA not-run。正式T00–T11仍0/12 Accepted，T04生产迁移未完成，缺历史原件和许可/逐笔/真机/读屏。[证据](./evidence/v036-round150-t04-immutable-legacy-alias-shadow-plan.md)

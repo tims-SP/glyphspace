@@ -1,5 +1,9 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+## 第151轮 · Root T04 已签发对象校验（隔离、非正式验收）
+R150 的 verifyPlan 仅校验调用者自算的 SHA 与顶层冻结状态；实际复现修改 sourceSlots=999、重新计算摘要并冻结后仍被接受。R151 新增私有 WeakMap 签发登记，verifyPlan 只接受本 JS realm 的 planReadOnly 原样返回对象；克隆、重序列化、外部自签计划一律拒绝。**这不是跨进程数字签名，不能代替可信来源/正式永久 ID 或生产迁移。**冻结 V0.35 与 2008 JPEG、176 编码、正式 SVG、用户存储均未修改。Node WebCrypto+FakeStore 新 35/35、继承 R142–R150 定向 1653/1653；本地 Chromium file:// 与 localhost 被策略阻断。R150 真实授权 Chromium CI run 40393427271 已成功（33/33、27/27、16/16），R151 远端真实同源测试在提交时待运行。R10–12/R35 ZIP 和 R12 20SVG 仍缺，高清许可/逐笔/真机/读屏/完整历史 QA 均未通过；T00–T11 **0/12 Accepted**，T01 0/25，正式永久 ID 0，T04 生产迁移未完成。证据见 [R151](./evidence/v036-round151-t04-issuer-bound-alias-plan.md)。
+
+
 ## 第150轮 · Root T04 来源别名只读影子计划（隔离、非验收）
 
 R149真实同源CI run 40384582893 已从独立artifact确认：33/33旧同源、27/27严格v16 pass；R150新增SHA绑定且深冻结的旧槽别名影子计划，25/25 Node FakeStore QA，明确拒绝未经批准永久ID及任何生产写入。R149父1881/1881 SHA继承，R150累计1892文件ZIP SHA `51396c322a4a4ac7bd47b3aefb3b8bdcf8c7797b72dc353c1b9763f4a0d31d09`；Python/unzip双独立恢复各1892/1892 SHA及1653/1653定向QA，完整历史全量QA not-run。R150本地真实同源blocked，R150远端CI待确认；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T04生产迁移未完成；R10–12/R35及R12 20SVG仍缺，高清许可/逐笔/真机/读屏未完成。冻结入口、176编码、用户存储未动。[证据](./evidence/v036-round150-t04-immutable-legacy-alias-shadow-plan.md)
