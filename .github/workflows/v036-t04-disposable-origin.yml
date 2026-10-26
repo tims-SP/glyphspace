@@ -26,11 +26,15 @@ jobs:
           python -m playwright install --with-deps chromium
       - name: Real Web Locks, localStorage, and fail-closed rollback on disposable origin
         run: python scripts/qa_v036_t04_disposable_origin.py
+      - name: R149 strict legacy v16 source reader on disposable real origin
+        run: python scripts/qa_v036_t04_r149_strict_origin.py
       - name: Preserve disposable-origin QA result
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: v036-t04-disposable-origin-results
-          path: t04_disposable_origin_results.json
+          path: |
+            t04_disposable_origin_results.json
+            t04_r149_strict_origin_results.json
           if-no-files-found: warn
           retention-days: 14
