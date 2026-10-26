@@ -1,5 +1,10 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+## 第150轮 · Root T04 来源别名只读影子计划（隔离、非验收）
+
+R149真实同源CI run 40384582893 已从独立artifact确认：33/33旧同源、27/27严格v16 pass；R150新增SHA绑定且深冻结的旧槽别名影子计划，25/25 Node FakeStore QA，明确拒绝未经批准永久ID及任何生产写入。R149父1881/1881 SHA继承，R150累计1892文件ZIP SHA `51396c322a4a4ac7bd47b3aefb3b8bdcf8c7797b72dc353c1b9763f4a0d31d09`；Python/unzip双独立恢复各1892/1892 SHA及1653/1653定向QA，完整历史全量QA not-run。R150本地真实同源blocked，R150远端CI待确认；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T04生产迁移未完成；R10–12/R35及R12 20SVG仍缺，高清许可/逐笔/真机/读屏未完成。冻结入口、176编码、用户存储未动。[证据](./evidence/v036-round150-t04-immutable-legacy-alias-shadow-plan.md)
+
+
 ## 第149轮 · Root T04 严格v16来源真实同源预检（隔离，非验收）
 
 R149把**原始R148 5944字节、SHA256 93095d5ef4ef85d8238b90b51f6fbc2e8968e6c5a51498e7503dccfe26b27fed**的只读严格JSON重复键门禁接入GitHub Actions授权Chromium双标签真实127.0.0.1原点QA（WebCrypto/Web Locks/localStorage/跨标签storage/独占锁竞争/拒绝非法来源）；运行 [40384582893](https://github.com/tims-SP/glyphspace/actions/runs/40384582893)在取得最终结果前记**pending**，不计通过。本地真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR=blocked；R142–R148定向1628/1628通过。父R148 ZIP1875/1875 SHA继承，新R149累计1881文件ZIP SHA `a8f88dfbf54380e848c6610525d3272e9aeda69745f07247c707fe5635256259`，Python/unzip两套独立恢复各1881/1881 SHA、1628/1628定向QA，QA后SHA不变；完整历史全量QA not-run。原始T00–T11 0/12 Accepted、T01 0/25、正式永久ID0、T04生产迁移未完成；缺R10–12/R35 ZIP及R12 20SVG、合法高清许可/逐笔/真机/读屏。冻结HTML/JPEG/176编码/正式SVG/用户存储未改。[证据](./evidence/v036-round149-t04-strict-real-origin-shadow-preflight.md)
