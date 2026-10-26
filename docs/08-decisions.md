@@ -1,5 +1,10 @@
 # 08 · 设计决策记录（ADR索引）
 
+## ADR-R134 · 三视图共享SHA绑定几何，挂载正确性不等于来源认证（2026-10-26）
+
+**状态：Root T03隔离技术验证，非正式验收。** R125解析式墨迹与光学矩阵是唯一草案几何，R132/R133保证符号依赖闭包与命名空间，full/mini/focus共用instanceId和100×100坐标。about:blank无WebCrypto时用纯JS SHA-256核验manifest字节；453实例真实挂载、450个fill-only几何通过，H:7 stroke仍需paint验证。SHA、几何和三视图挂载不批准原图、永久ID、正式T03集成或T11发布。回滚删除R134隔离文件。[证据](./evidence/v036-round134-t03-sha-bound-three-view-mount.md)。
+
+
 ## ADR-R133 · 多个独立SVG必须拥有互不冲突的挂载命名空间（2026-10-26）
 
 **状态：Root T03隔离验证，未生产集成/未正式验收。** R132只保证单个SVG内部闭包，却复现两个SVG同挂DOM时相同默认symbol ID导致第二字根引用第一字根（宽80误变10）。决定每次隔离分配唯一命名空间、重写内部ID及ARIA IDREF，并对重复/未解析引用失败关闭。真实Chromium同DOM 151/151旧可视根几何一致，新增12/12、继承153/153。该决定不批准来源、永久ID、碰撞或生产发布；回滚仅删除R133隔离文件。[证据](./evidence/v036-round133-t03-cross-svg-mount-namespace-collision.md)。
