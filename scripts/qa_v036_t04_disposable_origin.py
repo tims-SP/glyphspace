@@ -177,7 +177,7 @@ def run():
                     # R147 actual frozen V0.35 coordinate schema, synthetic partial legacy data.
                     frozen=pathlib.Path(__file__).resolve().parents[1].joinpath('index.html').read_bytes()
                     check('r147-frozen-v035-source-sha',hashlib.sha256(frozen).hexdigest()=='fd7b9bdada44ab2d7452d71f99e77cfd7a7fe82eb9b29e3f0b41ab32fb758ddc')
-                    defaults=json.loads(re.search(rb'const ROOT_COORDS=(\\{[^\\n]+\\});',frozen).group(1))
+                    defaults=json.loads(re.search(rb'const ROOT_COORDS=(\{[^\n]+\});',frozen).group(1))
                     check('r147-frozen-25keys-156slots',len(defaults)==25 and sum(map(len,defaults.values()))==156)
                     fixture={k:copy.deepcopy(defaults[k]) for k in ('G','K','X')}
                     fixture['G'][0][0]+=1;fixture['K'][2][1]+=1;fixture['X'][0][2]+=1
