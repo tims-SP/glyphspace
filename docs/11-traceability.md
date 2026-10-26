@@ -1,5 +1,10 @@
 # 11 · 任务—源码—证据—验收追踪
 
+## 第140轮 · Root T01/T02 候选对来源归属门禁（隔离）
+
+- R140 Root T01/T02（关联T05）发现R96七个来源微形候选之间的两组**此前未单列**ROI交叠：V-vis-06/07原生57像素（灰度≤160/192/224分别2/3/6暗像素），X-vis-02/03原生32像素（0/0/0）。此为来源审阅候选对，不证明笔画归属或独立字根。R139父1793/1793逐文件SHA继承，R140累计1803文件ZIP SHA `3128d7d725071ef7904bd88bf0d56f73998c3e993a08c1739177b725ecb4c204`；Python zipfile/unzip双独立恢复各1803/1803 SHA、各新25+旧489=514/514定向QA；QA产生2个__pycache__文件均清理后SHA一致。T00–T11仍0/12 Accepted、T01 0/25、正式永久ID0、T05未完成；R10–12/R35及20SVG仍缺、许可未核、真实同源/真机/读屏/完整历史QA未验收；冻结入口、176编码及用户存储不变。 [证据](./evidence/v036-round140-t01-microform-pair-native-overlap.md)
+
+
 ## 第139轮 · Root T03 挂载后DOM完整性证据（隔离）
 
 - R139 Root T03：R138仅在提交前后查重，后续宿主脚本仍可修改symbol/Path或搬移已挂载节点。本轮隔离新增私有R138包装的`GlyphSpaceR139.mountWatched`、MutationObserver和同步`assertIntact`/`dispose`；临时属性改写、外部同名ID插入再移除、SVG几何改写、节点搬移均被失效检测，普通无冲突DOM变更仍可保留。Chromium 144 `about:blank`新24/24、R132–R138旧120/120定向QA；父R138 1784/1784逐项SHA继承，R139累计1793文件ZIP SHA `344f5adfbb307de298a27e19d8dcfb890fe0bd839800f22ee507c1904c24db72`，Python/unzip双独立恢复各144/144 QA及QA后1793/1793 SHA一致。非恶意脚本沙箱、非生产集成、非来源认证；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T05未完成，R10–12/R35及R12 20 SVG缺失；真同源迁移blocked，真机/读屏/完整历史QA not-run；冻结入口、176编码、用户存储不变。 [证据](./evidence/v036-round139-t03-postcommit-dom-integrity-watch.md)
