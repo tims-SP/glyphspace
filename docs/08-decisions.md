@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R163（2026-10-27，Root T03/T09前置）：** 三视图不得维护三份SVG Path或局部几何；从同一SHA绑定151草案绘制计划输出detached DOM fragment，full/mini/focus只改变外部显示尺寸。通过真实Chromium DPR1/2验证内部BBox与栅格，严格拒绝getter/重复ID/伪认证。此为T03隔离预集成，不是UI-track验收、正式ID/原图逐笔或生产T09。[R163证据](./evidence/v036-round163-t03-three-view-source-bound-dom-renderer.md)。
+
 **ADR-R162（2026-10-27，Root T03）：** 冻结SVG真实浏览器绘制验证须绑定来源原始字节与151 Path身份，使用DOM createElementNS及真实DPR2/3像素核验。stroke getBBox不能当笔宽边界，H:7另以alpha墨迹验证。渲染一致不等于2008原图逐笔认证；正式入口不动。[R162证据](./evidence/v036-round162-t03-chromium-source-bound-svg-paint.md)。
 
 **ADR-R161（2026-10-27，Root T03/T08）**：以冻结Path SHA、真实解析式inkBBox、坐标/锚点/光学校正共同构成逐实例内容摘要，重排稳定、单项修改只使该项旧审阅见证过期；只作为隔离校准前置证据，不将SHA或151草案ID当正式身份、来源认证或可迁移生产签名。缺失历史/高清许可/逐笔阻断保持。[R161证据](./evidence/v036-round161-t03-draft-geometry-change-witness.md)。
