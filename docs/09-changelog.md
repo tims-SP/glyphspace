@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R167（Root T00/T01/T02）**：原始R10历史快照与累计R8/R9存在6项同名异字节、41项缺路径；R10原始8条旧SVG Path来源可验证但不认证。新39+选定旧249 QA、2075文件双独立恢复各288 QA；正式0/12 Accepted。[证据](./evidence/v036-round167-t00-t01-original-r10-fork-lineage.md)。
+
 - **2026-10-27 R166（Root T01/T02，关联T05）**：复核V/X R10→R96扩框后89个共享原生像素的旧裁框归属：V 57全部来自V06旧框，X 32各来自两旧框16；新增108+继承2250 QA，2066文件双独立恢复各2358 QA；非笔画认证，正式0/12 Accepted。[证据](./evidence/v036-round166-t01-t02-r10-r96-overlap-provenance-partition.md)。
 
 - **2026-10-27 R165（Root T01/T02，关联T05）**：真读原始R10及R96，发现7个同标签裁框0/7完全一致、R10均严格包含于R96，R96多338像素，V新增7暗像素且V两框共有4暗像素；62新+2188旧选定QA，2057文件双独立恢复各2250 QA；正式0/12 Accepted。[证据](./evidence/v036-round165-t01-r10-r96-native-pixel-crop-lineage.md)。
