@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R164（Root T00/T01/T02，历史来源恢复）**：从Library真正恢复原始R10 ZIP 184文件；对照R163有137相同/6冲突/41此前缺失，隔离保存不覆盖；R10 15候选、R96七微形交叉核验；45新+2143继承，2048文件双独立恢复各2188 QA；正式0/12 Accepted，R11/R12/R35及20SVG仍缺。[证据](./evidence/v036-round164-t01-original-r10-archive-recovered.md)。
+
 - **2026-10-27 R163（Root T03，隔离）**：新增来源绑定151草案SVG的full/mini/focus共用DOM绘制适配器；真实Chromium DPR1/2六组、900项DOM BBox与156项栅格采样，Node20、继承2117、2039文件双独立恢复各2143 QA；正式0/12 Accepted。[证据](./evidence/v036-round163-t03-three-view-source-bound-dom-renderer.md)。
 
 - **2026-10-27 R162（Root T03，隔离）**：151个来源绑定SVG绘制描述符，Chromium DPR2/3各151实际墨迹+150 DOM bbox通过；Node14、继承2101、浏览器2组，2028文件双独立恢复各2117/2117定向QA，正式0/12 Accepted。[证据](./evidence/v036-round162-t03-chromium-source-bound-svg-paint.md)。
