@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R156 非验收证据：** 170条来源观察对应161个不同原生JPEG裁框，8组精确同框别名共9条多余观察；这是来源证据等价，不能自动合并形态/UID或推断缺根数。新增42/42、继承1859/1859定向QA，Python/unzip双恢复各1951/1951 SHA及1901/1901 QA。T01 0/25、正式ID0、T00–T11 0/12 Accepted；历史全量QA、真机、读屏均not-run。[R156证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
+
+
 **R155 非验收门禁：** 170/170原生RGB来源核验、18条ROI重叠审计、双独立1942/1942 SHA及各1859/1859选定QA通过，只证明来源归属冲突被显式隔离；不得把ROI重叠推断为共享笔画或独立字根。T01 0/25、正式ID0、T00–T11 0/12 Accepted。完整历史全量QA/真机/读屏not-run。详见[证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
 
 
