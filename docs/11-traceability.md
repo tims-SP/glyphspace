@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R156 Root T02来源证据身份（非验收）：** 170来源观察→161原生裁框证据，8组精确同框、9条别名；sourceCropId与evidenceObservationId仅为可复算来源证据，不是referenceShapeId/assetId/instanceId。M/K/E同框不合并字形，V/X部分交叠不传递等价。新42/42+旧1859/1859；双恢复各1951/1951 SHA、1901/1901定向QA。T00–T11 0/12 Accepted，T01 0/25，正式永久ID0。 [R156证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
+
+
 **R155 Root T01/T02（隔离、非验收）：** 冻结2008 JPEG原生170/170裁框RGB SHA独立复验；25键建立18条同键ROI重叠边（2旧槽重复：E:1/E:8、K:2/K:3；8同框别名：K4/M4；6旧槽局部重叠；2未绑定物理观察互相重叠：V57像素/X32像素），跨键0。像素相交不等于笔画归属或字根认证；正式0/25键、永久ID0、缺根数未知。父R154 1931/1931 SHA继承，新累计ZIP1942文件SHA `99f0c1315800dccceec75331cf01eba86989be01abf788e602e660a0a8c69125`，Python/unzip双独立恢复各1942/1942 SHA及1859/1859选定QA（旧1730+新129），QA后SHA不变；完整历史全量QA not-run。R10–12/R35及20SVG仍缺，合法高清许可/逐笔/真机/读屏未完成；冻结入口/用户存储不变，T00–T11 0/12 Accepted。 [证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
 
 
