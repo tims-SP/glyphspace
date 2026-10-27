@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R157（2026-10-27，Root T02）：** 来源裁框→旧槽映射不是双射：151旧可视槽只有149不同来源裁框（E/K各一组旧槽碰撞），另12个不同来源裁框没有旧槽精确绑定。无精确绑定、局部ROI相交、同框别名均不得自动转为正式referenceShapeId/assetId/instanceId、缺根数或迁移映射。先独立逐笔、语义和许可仲裁，保持所有旧槽不动。 [R157证据](./evidence/v036-round157-t02-legacy-source-binding-ambiguity.md)。
+
+
 **R156设计决策（2026-10-27，Root T02，隔离）：** 物理来源观察与内容寻址裁框证据是不同实体。允许多个sourceObservationId引用同一sourceCropId，但精确同框不意味着同一语义/笔画/永久instanceId；重叠矩形更不能做传递身份合并。任何正式ID、字根形态或缺根数必须独立原图逐笔认证与许可门禁，R156的161裁框不能当字根总数。 [证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
 
 
