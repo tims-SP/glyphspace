@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R177验收边界：** 256/384px实际Canvas alpha交集检查409对/分辨率均无重叠，只证明R176未认证草案在当前条件下无墨迹交集；T06→T07依赖未满足，T03未生产集成，正式T00–T11仍0/12 Accepted。递归旧QA超时不计pass。[证据](./evidence/v036-round177-t03-real-ink-alpha-collision-preflight.md)。
+
 **R176验收边界（Root T03，T07仅预检）：** 独立键帽宿主50组Chromium DOM检查700/700、来源13/13与选定旧2107/2107通过，证明标签带与SVG组几何矩形在隔离页面不交叠；不证明逐像素墨迹/stroke无碰撞，不满足T06→T07正式依赖，亦不证明生产集成、file://、真同源、真机或读屏。T00–T11保持0/12 Accepted。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
 
 
