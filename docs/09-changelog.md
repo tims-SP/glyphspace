@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R163（Root T03，隔离）**：新增来源绑定151草案SVG的full/mini/focus共用DOM绘制适配器；真实Chromium DPR1/2六组、900项DOM BBox与156项栅格采样，Node20、继承2117、2039文件双独立恢复各2143 QA；正式0/12 Accepted。[证据](./evidence/v036-round163-t03-three-view-source-bound-dom-renderer.md)。
+
 - **2026-10-27 R162（Root T03，隔离）**：151个来源绑定SVG绘制描述符，Chromium DPR2/3各151实际墨迹+150 DOM bbox通过；Node14、继承2101、浏览器2组，2028文件双独立恢复各2117/2117定向QA，正式0/12 Accepted。[证据](./evidence/v036-round162-t03-chromium-source-bound-svg-paint.md)。
 
 - **2026-10-27 R161（Root T03，T08隔离预检）**：151个来源绑定草案几何逐实例SHA与变更影响清单，18新+2083旧选定QA、2016文件双独立恢复各2101 QA；正式0/12 Accepted。[证据](./evidence/v036-round161-t03-draft-geometry-change-witness.md)。
