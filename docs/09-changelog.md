@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R170（Root T01/T05）**：发现06wb高分辨率候选ZIP并通过GitHub连接实际读取中央目录（359250字节、1个JPEG、blob 542ee206...），但JPEG字节/许可未核实；M4未绑定观察中1项归属阻断、3项低清像素掩码SVG仅研究不入生产。新23+选定旧333 QA，2106文件双独立恢复各356 QA，正式0/12 Accepted。[证据](./evidence/v036-round170-t01-t05-official-source-candidate-and-m-mask.md)。
+
 - **2026-10-27 R169（Root T03）**：新增固定SHA来源签发三视图适配器及同步原始字节快照，阻断伪造计划/异步输入变异；17新+316选定旧QA，2094文件双独立恢复各333 QA；真实localhost管理员阻断，正式0/12 Accepted。[证据](./evidence/v036-round169-t03-source-issued-three-view-boundary.md)。
 
 - **2026-10-27 R168（Root T00/T01/T02/T03）**：从原始R10嵌套R8资产与R50独立比对151个SVG Path/坐标/旧槽全部一致，149个普通Path SHA重算一致，2个H部件特殊来源单列，5关联项隔离；新28+选定旧288 QA、2083文件双独立恢复各316 QA，正式0/12 Accepted。[证据](./evidence/v036-round168-t00-t03-original-r8-r50-source-lineage.md)。
