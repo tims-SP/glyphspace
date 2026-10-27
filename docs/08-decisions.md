@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R161（2026-10-27，Root T03/T08）**：以冻结Path SHA、真实解析式inkBBox、坐标/锚点/光学校正共同构成逐实例内容摘要，重排稳定、单项修改只使该项旧审阅见证过期；只作为隔离校准前置证据，不将SHA或151草案ID当正式身份、来源认证或可迁移生产签名。缺失历史/高清许可/逐笔阻断保持。[R161证据](./evidence/v036-round161-t03-draft-geometry-change-witness.md)。
+
 **ADR-R160（2026-10-27，Root T03）：** 不允许直接以调用者提交的inkBBox作为可信正式几何；隔离预集成只接受R125 SHA绑定的真实冻结Path解析式边界与151草案ID及Path SHA完整匹配。拒绝getter/继承字段、身份增删和未经批准的认证/发布标记。仍不代表源图逐笔、正式永久ID或生产集成。[R160证据](./evidence/v036-round160-t03-source-bound-151-vector-snapshot.md)。
 
 
