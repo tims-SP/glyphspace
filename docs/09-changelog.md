@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R160（Root T03，隔离）**：R125真实冻结Path矢量证据与R159安全快照完整绑定151草案；30新+2053旧选定QA、2007文件双独立恢复各2083 QA；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round160-t03-source-bound-151-vector-snapshot.md)。
+
 - **2026-10-27 R159（Root T03，隔离）**：复现R154 getter重复读取导致实例身份校验/写入不一致，新增只读字段快照门禁；35新+2018旧选定QA，1997文件双独立恢复各2053 QA，正式0/12 Accepted。[证据](./evidence/v036-round159-t03-accessor-snapshot-identity.md)。
 
 
