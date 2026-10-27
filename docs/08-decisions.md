@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R165（2026-10-27，Root T01/T02）：** R10与R96的7条历史标签相同，但裁框0/7相同；应保存两套原生坐标与SHA并单列严格包含/暗像素/跨框所有权，不能将R10 7/7标签一致升级为形态同一或逐笔认证。V两个R96框共用4个阈值暗像素，归属保持未定。冻结入口和用户存储不动。[证据](./evidence/v036-round165-t01-r10-r96-native-pixel-crop-lineage.md)。
+
 **ADR-R164（2026-10-27，Root T00/T01/T02）：** 恢复的R10原始ZIP必须按原始字节SHA锁定，和后期累计包同名文件出现6项历史分歧时不得覆盖；以嵌套不可变原始ZIP保留184成员，单列41缺项和6冲突。R10的7未映射与R96七微形标签相符，只是来源谱系一致，不构成正式字根/永久ID/逐笔认证。原R10验证脚本因硬编码路径本轮未原样执行；R164独立只读复核45项。R11/R12/R35及R12 20SVG仍缺。[R164证据](./evidence/v036-round164-t01-original-r10-archive-recovered.md)。
 
 **ADR-R163（2026-10-27，Root T03/T09前置）：** 三视图不得维护三份SVG Path或局部几何；从同一SHA绑定151草案绘制计划输出detached DOM fragment，full/mini/focus只改变外部显示尺寸。通过真实Chromium DPR1/2验证内部BBox与栅格，严格拒绝getter/重复ID/伪认证。此为T03隔离预集成，不是UI-track验收、正式ID/原图逐笔或生产T09。[R163证据](./evidence/v036-round163-t03-three-view-source-bound-dom-renderer.md)。
