@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R176验收边界（Root T03，T07仅预检）：** 独立键帽宿主50组Chromium DOM检查700/700、来源13/13与选定旧2107/2107通过，证明标签带与SVG组几何矩形在隔离页面不交叠；不证明逐像素墨迹/stroke无碰撞，不满足T06→T07正式依赖，亦不证明生产集成、file://、真同源、真机或读屏。T00–T11保持0/12 Accepted。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
+
+
 > R175隔离T03补充证据：25键单SVG/151组/153 Path在Node19/19、Chromium about:blank DPR1/2/3×三视图99/99通过，选定继承1989/1989；**仍非正式T03 Accepted**。源图逐笔、正式ID、生产集成、真同源、真机/读屏及历史全量QA均未满足。见[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
 
 
