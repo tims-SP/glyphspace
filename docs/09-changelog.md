@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-27 R165（Root T01/T02，关联T05）**：真读原始R10及R96，发现7个同标签裁框0/7完全一致、R10均严格包含于R96，R96多338像素，V新增7暗像素且V两框共有4暗像素；62新+2188旧选定QA，2057文件双独立恢复各2250 QA；正式0/12 Accepted。[证据](./evidence/v036-round165-t01-r10-r96-native-pixel-crop-lineage.md)。
+
 - **2026-10-27 R164（Root T00/T01/T02，历史来源恢复）**：从Library真正恢复原始R10 ZIP 184文件；对照R163有137相同/6冲突/41此前缺失，隔离保存不覆盖；R10 15候选、R96七微形交叉核验；45新+2143继承，2048文件双独立恢复各2188 QA；正式0/12 Accepted，R11/R12/R35及20SVG仍缺。[证据](./evidence/v036-round164-t01-original-r10-archive-recovered.md)。
 
 - **2026-10-27 R163（Root T03，隔离）**：新增来源绑定151草案SVG的full/mini/focus共用DOM绘制适配器；真实Chromium DPR1/2六组、900项DOM BBox与156项栅格采样，Node20、继承2117、2039文件双独立恢复各2143 QA；正式0/12 Accepted。[证据](./evidence/v036-round163-t03-three-view-source-bound-dom-renderer.md)。
