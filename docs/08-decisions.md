@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R169（2026-10-27，Root T03）：** 三视图DOM绘制的入口必须通过R125固定SHA的R50/R54/R53原始字节签发，不能由调用方自造R162形状相似的plan；输入必须在首个异步await前复制成私有Uint8Array，避免验证与解析间的输入变异。当前仍为隔离草案，不替代参考图逐笔认证或生产集成。[R169证据](./evidence/v036-round169-t03-source-issued-three-view-boundary.md)。
+
 **ADR-R168（2026-10-27，Root T00/T01/T02/T03）：** 仅从原始R10 ZIP读取R8/R9来源，和R50按151个实例ID逐项比对，确保Path、坐标和别名在历史链中未漂移；149个普通Path SHA可直接重算，H:6/H:7部件来源哈希不得冒充单个Path SHA。历史来源连续性不等于参考图认证，正式身份/生产入口仍冻结。[R168证据](./evidence/v036-round168-t00-t03-original-r8-r50-source-lineage.md)。
 
 
