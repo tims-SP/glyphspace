@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R156设计决策（2026-10-27，Root T02，隔离）：** 物理来源观察与内容寻址裁框证据是不同实体。允许多个sourceObservationId引用同一sourceCropId，但精确同框不意味着同一语义/笔画/永久instanceId；重叠矩形更不能做传递身份合并。任何正式ID、字根形态或缺根数必须独立原图逐笔认证与许可门禁，R156的161裁框不能当字根总数。 [证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
+
+
 ## ADR-R155 · 物理采框重叠必须显式仲裁（2026-10-27）
 
 同源JPEG裁框可能完全重复或局部相交。决定建立原生RGB SHA绑定的逐对ROI重叠图，并将E/K重复旧槽、M/K来源同框别名及V/X未绑定来源互相重叠单独隔离；不得将重叠像素、RGB变化、候选UID或已有旧SVG自动转换为逐笔认证、永久ID或正式缺根数。R155新增129/129、继承1730/1730选定QA；T00–T11仍0/12。详见[证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
