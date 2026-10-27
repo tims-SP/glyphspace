@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+> R175隔离T03补充证据：25键单SVG/151组/153 Path在Node19/19、Chromium about:blank DPR1/2/3×三视图99/99通过，选定继承1989/1989；**仍非正式T03 Accepted**。源图逐笔、正式ID、生产集成、真同源、真机/读屏及历史全量QA均未满足。见[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
+
+
 **R174审阅工具不构成验收：** 41对/16键来源双框工作台允许在隔离环境记录笔画疑点，不提供批准接口；冻结低清ROI 82次SHA重算和1989项选定QA通过仅证明证据工具/继承稳定性。正式逐笔来源、第三方许可、25键认证、T02永久ID、T05补图、真实同源迁移、真机/读屏均未验收；T00–T11保持0/12 Accepted。[证据](./evidence/v036-round174-t01-t02-frozen-native-41-pair-review-workbench.md)。
 
 
