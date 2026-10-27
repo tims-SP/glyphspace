@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R176 Root T03（关联T07仅隔离前置预检，非验收）：** R175来源签发25键/151草案实例/153旧Path完整复用，新增字母/区号独立标签带与单HTML真实DOM宿主、full/mini及聚焦同源克隆。首次844×390纵向溢出120px，新增横屏左右分栏后8视口×DPR1/2/3×双模式零纵横滚动；Chromium about:blank真实DOM 50组×14=700/700，来源静态13/13，实际重跑R175选定旧2107/2107，合计2820/2820。父ZIP2165/2165 SHA继承；新累计2181文件SHA `c687d56e8674632735fd03143cc2aa15450c6439224f27e9917cdee41cf15d55`，Python/BusyBox双独立恢复各2181/2181 SHA与2820/2820 QA，QA后SHA不变。file://管理员阻断；真同源/真机/读屏/完整历史全量not-run。组BBox标签无交叠≠真实墨迹/stroke认证，T03未生产集成、T07未达依赖；正式0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35与R12 20SVG仍缺，许可/逐笔未完成，冻结入口/用户存储未动。[R176证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
+
+
 **R175 Root T03（来源签发25键局部SVG组合器，隔离非验收）：** 实际复验R174父ZIP2151文件、2151/2151 SHA继承；R169 SHA签发151草案实例重新组合为25个100×100 SVG、151独立g、153原始Path，full/mini/focus三视图共用矩阵/路径/ID，拒绝跨键/重复/非法选择。新增Node19/19、Chromium about:blank实际SVG绘制DPR1/2/3×3视图99/99，重跑R174选定旧1989/1989，合计2107/2107；累计ZIP2165文件SHA `99efbb2097a587a19defe47f3c3ee710d7890c03523324ce7815141c68a5265d`，Python/unzip双独立恢复各2165/2165 SHA及2107/2107 QA，QA后SHA一致。浏览器验证为序列化SVG绘制，非真实同源/真机/读屏或生产ESM执行；历史全量not-run。正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35及R12 20SVG缺失，高清许可/逐笔认证未完成，冻结入口/用户存储未动。[R175证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
 
 
