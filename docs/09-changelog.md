@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R173（Root T01/T02，关联T05）**：真实GitHub Actions读取SHA锁定3508×2480 JPEG，分析R172的41对审阅ROI：10对同几何、20对p95余量新增；灰度<160有34对共享暗像素/12对8连通桥接候选，新增20对中13/10；不是笔画/身份认证。父2126 SHA继承、累计2138双独立恢复各1753 QA；正式0/12 Accepted。[证据](./evidence/v036-round173-t01-highres-41-overlap-pixel-topology.md)。
+
 - **2026-10-28 R172（Root T01/T02，关联T05）**：R119仿射p95残差换算3高清像素审阅余量，170项25键ROI同键交叠由21对增至41对，新增20对必须分别审阅；非逐笔认证。新399+继承1231 QA，2126文件双独立恢复各1630 QA；正式0/12 Accepted。[证据](./evidence/v036-round172-t01-t02-highres-uncertainty-roi-envelope.md)。
 
 
