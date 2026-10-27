@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R157 Root T02（隔离、非验收）：** 151旧可视槽→149不同原生裁框，E:1/E:8、K:2/K:3两组旧槽同框歧义；161个来源裁框中12个无旧槽精确绑定（M4/K1/B1/J1/R1/V2/X2），其中5个与旧槽局部ROI相交、7个不相交；这**不是12个已确认缺根**，不合并旧槽或批准永久ID。新36/36、继承选定1901/1901；父R156 1951/1951 SHA继承，新ZIP1961文件SHA `1c9d625892f1ae1fe3e761392862d793e574f51b02904c6bfba5b542e30ea070`，Python/unzip两套恢复各1961/1961 SHA、1937/1937选定QA且QA后SHA不变。完整历史全量QA、真机/读屏/真实同源本轮not-run；T00–T11仍0/12 Accepted，T01 0/25，正式ID0，历史缺包和许可/逐笔阻断不变。[R157证据](./evidence/v036-round157-t02-legacy-source-binding-ambiguity.md)。
+
+
 **R156 Root T02来源证据身份（非验收）：** 170来源观察→161原生裁框证据，8组精确同框、9条别名；sourceCropId与evidenceObservationId仅为可复算来源证据，不是referenceShapeId/assetId/instanceId。M/K/E同框不合并字形，V/X部分交叠不传递等价。新42/42+旧1859/1859；双恢复各1951/1951 SHA、1901/1901定向QA。T00–T11 0/12 Accepted，T01 0/25，正式永久ID0。 [R156证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
 
 
