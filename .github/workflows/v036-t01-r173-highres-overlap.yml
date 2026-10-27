@@ -1,0 +1,25 @@
+name: V0.36 T01 R173 pinned highres 41-pair pixel review (no image output)
+on:
+  push:
+    paths:
+      - '.github/workflows/v036-t01-r173-highres-overlap.yml'
+      - 'scripts/v036_t01_r173_overlap_pixels.py'
+      - 'scripts/v036_r173_41_overlap_rois.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  highres-overlap:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify SHA-pinned highres bytes and 41 review-only overlap regions
+        shell: bash
+        env:
+          PYTHONDONTWRITEBYTECODE: '1'
+          PYTHONUNBUFFERED: '1'
+        run: |
+          python3 -m pip install --quiet pillow numpy opencv-python-headless
+          python3 scripts/v036_t01_r173_overlap_pixels.py
+          # The external ZIP and JPEG are never saved or uploaded.
