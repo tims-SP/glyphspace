@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R175（Root T03）**：新增SHA来源签发的25键局部100×100 SVG组合器，151组/153 Path跨full/mini/focus一致；Node19+Chromium about:blank99+继承选定1989=2107 QA，R174父2151继承、累计2165双独立恢复各2107 QA；不代表原图认证/生产集成，正式0/12 Accepted。[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
+
+
 - **2026-10-28 R174（Root T01/T02，关联T05）**：新增41对/16键原生双框离线审阅HTML、来源联系图及82次低清ROI RGB SHA复核；E/K历史阻断保持，记录仅导出未批准笔记。新236+选定旧1753 QA，R173父2138继承、累计2151文件双独立恢复各1989 QA；非高清重新逐笔认证，正式0/12 Accepted。[证据](./evidence/v036-round174-t01-t02-frozen-native-41-pair-review-workbench.md)。
 
 
