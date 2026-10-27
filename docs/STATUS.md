@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R157 Root T02（隔离、非验收）：** 151旧可视槽→149不同原生裁框，E:1/E:8、K:2/K:3两组旧槽同框歧义；161个来源裁框中12个无旧槽精确绑定（M4/K1/B1/J1/R1/V2/X2），其中5个与旧槽局部ROI相交、7个不相交；这**不是12个已确认缺根**，不合并旧槽或批准永久ID。新36/36、继承选定1901/1901；父R156 1951/1951 SHA继承，新ZIP1961文件SHA `1c9d625892f1ae1fe3e761392862d793e574f51b02904c6bfba5b542e30ea070`，Python/unzip两套恢复各1961/1961 SHA、1937/1937选定QA且QA后SHA不变。完整历史全量QA、真机/读屏/真实同源本轮not-run；T00–T11仍0/12 Accepted，T01 0/25，正式ID0，历史缺包和许可/逐笔阻断不变。[R157证据](./evidence/v036-round157-t02-legacy-source-binding-ambiguity.md)。
+
+
 **R156 Root T02（隔离、非验收）：** 冻结2008 JPEG 170/170原生RGB裁框复核；170来源观察仅对应161个不同原生裁框，8组精确同框证据别名、9条额外观察别名（E1/K3/M4组）。新增内容寻址sourceCropId与独立evidenceObservationId，不把同框等价当成字形/永久ID等价；151旧UID仍草案，15未绑定仍隔离。新42/42、旧1859/1859选定QA；父R155 1942/1942 SHA继承，新ZIP1951文件SHA `082e9c5f03400337205c60fec98323bf66b4fa0559776da38271ac5a19696ac0`；Python/unzip双恢复各1951/1951 SHA、1901/1901 QA且QA后SHA不变。完整历史全量QA not-run，正式0/25键、永久ID0、T00–T11 0/12 Accepted。缺R10–12/R35与20SVG，高清许可/逐笔/真机/读屏未完成，冻结入口及用户存储不变。[证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
 
 
