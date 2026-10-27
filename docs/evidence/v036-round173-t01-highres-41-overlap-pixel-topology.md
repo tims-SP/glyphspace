@@ -63,3 +63,7 @@ Ten pairs have **identical geometric review envelopes** (aliases/overlays, not t
 ## Limits / follow-up
 
 An 8-connected dark component is only a pixel-topology observation. No semantic stroke segmentation, same-source proof, authorization for redistribution, permanent identity adjudication or formal SVG promotion was performed. The p95 review envelope is not a maximum-error guarantee. M/K/E/B/J/R/X/V remain under independent identity and contour review. R11/R12/R35 original ZIPs and R12's 20 SVGs remain missing. Real same-origin Web Locks/localStorage migration, Android/iOS devices, real screen reader QA and full historical QA remain blocked/not-run. Frozen V0.35 HTML, 2008 reference JPEG, 176 legacy encodings, historical formal SVG and user storage were not changed.
+
+## R173 cumulative recovery and local QA
+
+R172 parent ZIP: 2126 members, SHA256 `c5534e9c0eabb3be3ca79e3aac8873646e5327017b83b7a43b570633373e2e9b`; inherited SHA 2126/2126. R173 isolated cumulative ZIP: **2138 files**, SHA256 `00051c8856b1d73338a2e41cdecba892f22c8d90ffcfb76d7e39c0752490c103`; local 65 synthetic QA + 58 CI evidence consistency QA + 1630 selected inherited QA = **1753/1753**. Python zipfile and system unzip independent restores each verified 2138/2138 SHA, ran 1753/1753 QA and verified 2138/2138 SHA again after QA. Full historical QA not-run; no source certification, no real same-origin migration, no device or screen-reader QA. Parent and new ZIP include no third-party highres JPEG.
