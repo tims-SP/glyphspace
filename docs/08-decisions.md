@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R158（2026-10-27，Root T01/T02/T05）：** 对12个无旧槽精确绑定裁框与E/K两组旧槽同框冲突，建立逐张原生RGB SHA绑定的上下文无损复核卡，而不是从矩形重叠、最近邻放大或观察数量推断字根/笔画/身份。所有卡的semanticVerdict、referenceShapeId、assetId、instanceId和confirmedMissingRoot保持null；高分辨率同源字节和许可未确认前不得生产绑定。原始JPEG只留在私人隔离包，公开仓库只存文字证据。[R158证据](./evidence/v036-round158-t01-t02-native-14card-source-review.md)。
+
 **ADR-R157（2026-10-27，Root T02）：** 来源裁框→旧槽映射不是双射：151旧可视槽只有149不同来源裁框（E/K各一组旧槽碰撞），另12个不同来源裁框没有旧槽精确绑定。无精确绑定、局部ROI相交、同框别名均不得自动转为正式referenceShapeId/assetId/instanceId、缺根数或迁移映射。先独立逐笔、语义和许可仲裁，保持所有旧槽不动。 [R157证据](./evidence/v036-round157-t02-legacy-source-binding-ambiguity.md)。
 
 
