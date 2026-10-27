@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R176（2026-10-28，Root T03，T07仅前置预检）：** 将R175来源签发的每键SVG作为不可修改的键帽墨迹层，字母/区位码置于独立标签带；聚焦视图仅克隆相同Path和矩阵。首次844×390实测120px纵向溢出后改为横屏左右分栏；8视口×DPR1/2/3×两模式零滚动。DOM BBox无交叠只能视为几何预检，不能替代真实ink/stroke或原图认证。隔离HTML不接触存储/生产入口。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
+
+
 **ADR-R175（2026-10-28，Root T03）：** 将R169来源签发的每实例独立SVG组合为每键单一100×100 SVG、每个实例独立g，三视图仅改变外部显示尺寸，不重算Path、inkBBox或矩阵；不依赖数组槽推断正式ID。严格保留草案未认证状态；不允许将25键绘制成功替代T01逐笔、T02永久ID、T03生产集成或T10真机/读屏验收。独立ZIP可撤销，不动冻结入口。[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
 
 
