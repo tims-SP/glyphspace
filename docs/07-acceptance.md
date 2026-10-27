@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R155 非验收门禁：** 170/170原生RGB来源核验、18条ROI重叠审计、双独立1942/1942 SHA及各1859/1859选定QA通过，只证明来源归属冲突被显式隔离；不得把ROI重叠推断为共享笔画或独立字根。T01 0/25、正式ID0、T00–T11 0/12 Accepted。完整历史全量QA/真机/读屏not-run。详见[证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
+
+
 **R154 T03非Accepted：** 隔离注册表原型碰撞修复与151草案几何回归已验证（新24、选定旧1706、双恢复各1730），但正式ID/源图认证/生产集成/真机/读屏/历史全量均未验收；T00–T11 0/12。详见[证据](./evidence/v036-round154-t03-null-prototype-instance-registry.md)。
 
 **R153 Root T04（隔离、非验收）：** 将R152独立raw来源绑定接入授权临时127.0.0.1双标签Chromium测试；本地ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端首跑40417492203因引用错误失败，已修复并启动40417922284（最终结果待复核）；继承定向1715/1715，父R152 1910/1910 SHA，新累计ZIP1918文件SHA `106319af615d7a5afb4c122306d649435137d7c502e1a084c7de45137c5b378d`，Python/unzip两套恢复各1918/1918 SHA、1715/1715 QA。完整历史全量QA not-run，T00–T11 0/12 Accepted，T01 0/25、正式ID0、正式迁移未完成；缺R10–12/R35及20SVG，许可/逐笔/真机/读屏未完成。 [证据](./evidence/v036-round153-t04-real-origin-raw-source-binding.md)。

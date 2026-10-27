@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R155 Root T01/T02（隔离、非验收）：** 冻结2008 JPEG原生170/170裁框RGB SHA独立复验；25键建立18条同键ROI重叠边（2旧槽重复：E:1/E:8、K:2/K:3；8同框别名：K4/M4；6旧槽局部重叠；2未绑定物理观察互相重叠：V57像素/X32像素），跨键0。像素相交不等于笔画归属或字根认证；正式0/25键、永久ID0、缺根数未知。父R154 1931/1931 SHA继承，新累计ZIP1942文件SHA `99f0c1315800dccceec75331cf01eba86989be01abf788e602e660a0a8c69125`，Python/unzip双独立恢复各1942/1942 SHA及1859/1859选定QA（旧1730+新129），QA后SHA不变；完整历史全量QA not-run。R10–12/R35及20SVG仍缺，合法高清许可/逐笔/真机/读屏未完成；冻结入口/用户存储不变，T00–T11 0/12 Accepted。 [证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
+
+
 **R154 Root T03（隔离、非验收）：** 实际复现R48普通对象注册表遇`__proto__`实例ID时自有键丢失、原型被覆盖；新增零原型不可变安全注册表，151草案实例几何与旧R48逐项一致，增删/重排稳定。新Node 24/24、继承定向1706/1706；父R153 1918/1918 SHA继承，新累计1931文件ZIP SHA `ea6340b4207aa8e9b223140bbdc47436bfa9092814579fea102ca2bc0457b051`，Python/unzip两套独立恢复各1931/1931 SHA、1730/1730 QA且QA后SHA不变。R153授权Chromium CI 40418102420最终success、R153 22/22；R154真实同源not-run，完整历史全量QA not-run。正式T00–T11仍0/12 Accepted，T01 0/25、正式ID0、T03未集成；缺R10–12/R35及20SVG、高清许可/逐笔/真机/读屏未完成，冻结入口/用户存储不变。[证据](./evidence/v036-round154-t03-null-prototype-instance-registry.md)。
 
 **R153 Root T04（隔离、非验收）：** 将R152独立raw来源绑定接入授权临时127.0.0.1双标签Chromium测试；本地ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端首跑40417492203因引用错误失败，已修复并启动40417922284（最终结果待复核）；继承定向1715/1715，父R152 1910/1910 SHA，新累计ZIP1918文件SHA `106319af615d7a5afb4c122306d649435137d7c502e1a084c7de45137c5b378d`，Python/unzip两套恢复各1918/1918 SHA、1715/1715 QA。完整历史全量QA not-run，T00–T11 0/12 Accepted，T01 0/25、正式ID0、正式迁移未完成；缺R10–12/R35及20SVG，许可/逐笔/真机/读屏未完成。 [证据](./evidence/v036-round153-t04-real-origin-raw-source-binding.md)。
