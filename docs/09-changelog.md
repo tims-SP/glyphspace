@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R178（Root T04）**：复现旧只读计划签发后源存储变更仍可verify；新增SHA绑定的只读来源新鲜度门禁并拒绝异步变更/伪签发。新22+旧1075 QA、R177父2189继承、R178累计2201双独立恢复各1097 QA；真实同源blocked，正式0/12 Accepted。[证据](./evidence/v036-round178-t04-legacy-source-freshness-gate.md)。
+
+
 - **2026-10-28 R177（Root T03，关联T07隔离预检）**：新增真实Chromium SVG逐实例alpha栅格交集测试，256/384px各409对零重叠、零空白/边界裁切；R176父2181 SHA继承、R177累计2189双独立恢复各1075选定QA。递归2820项超时不计通过；正式0/12 Accepted。[证据](./evidence/v036-round177-t03-real-ink-alpha-collision-preflight.md)。
 
 - **2026-10-28 R176（Root T03，关联T07预检）**：新增R175签发25键SVG真实DOM隔离宿主，标签独立保留区、full/mini与聚焦同源；修复844×390横屏120px溢出，8视口×3DPR×双模式无滚动。新增713+继承选定2107=2820 QA，2165父SHA继承、2181累计ZIP Python/BusyBox双独立恢复；非正式碰撞/源图/生产验收，T00–T11仍0/12。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
