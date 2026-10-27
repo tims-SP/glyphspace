@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R171（Root T01/T02，关联T05）**：纠正R170简繁1479×843候选重复发现（R114已核验），复核R114/R119远端CI成功；冻结JPEG170/170来源RGB SHA重算，25键170项投影到3508×2480简体候选，新增875+继承356 QA，2116文件双独立恢复各1231 QA；许可/逐笔/正式验收仍阻断。[证据](./evidence/v036-round171-t01-t02-source-candidate-reconciliation-170-affine-rois.md)。
+
+
 - **2026-10-27 R170（Root T01/T05）**：发现06wb高分辨率候选ZIP并通过GitHub连接实际读取中央目录（359250字节、1个JPEG、blob 542ee206...），但JPEG字节/许可未核实；M4未绑定观察中1项归属阻断、3项低清像素掩码SVG仅研究不入生产。新23+选定旧333 QA，2106文件双独立恢复各356 QA，正式0/12 Accepted。[证据](./evidence/v036-round170-t01-t05-official-source-candidate-and-m-mask.md)。
 
 - **2026-10-27 R169（Root T03）**：新增固定SHA来源签发三视图适配器及同步原始字节快照，阻断伪造计划/异步输入变异；17新+316选定旧QA，2094文件双独立恢复各333 QA；真实localhost管理员阻断，正式0/12 Accepted。[证据](./evidence/v036-round169-t03-source-issued-three-view-boundary.md)。
