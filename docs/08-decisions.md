@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R171（2026-10-28，Root T01/T02，关联T05）：** 来源候选必须跨轮以Git blob、ZIP SHA、JPEG SHA、尺寸和独立CI证据去重；R170简繁1479×843候选早在R114完成远端原始字节核验，不能重复宣称首次发现。逐笔审核优先R114已校验的3508×2480简体候选，使用R119真实仿射配准和R171 170条低清ROI来源SHA锁定投影框；无高清原始字节/版权许可/逐笔归属时只能生成review-only坐标，禁止发布图像、正式ID、补图或Accepted。[R171证据](./evidence/v036-round171-t01-t02-source-candidate-reconciliation-170-affine-rois.md)。
+
+
 **ADR-R170（2026-10-27，Root T01/T05）：** 06wb教程ZIP仅作为待核实的高分辨率来源候选；未落地解压/像素比对/许可验证前不得发布或认定同源。M-vis-04来源墨迹归属不明禁止自动矢量化；M-vis-06/07/08低清JPEG像素游程SVG仅供隔离研究，禁止当作正式补图/轮廓/永久ID。[R170证据](./evidence/v036-round170-t01-t05-official-source-candidate-and-m-mask.md)。
 
 **ADR-R169（2026-10-27，Root T03）：** 三视图DOM绘制的入口必须通过R125固定SHA的R50/R54/R53原始字节签发，不能由调用方自造R162形状相似的plan；输入必须在首个异步await前复制成私有Uint8Array，避免验证与解析间的输入变异。当前仍为隔离草案，不替代参考图逐笔认证或生产集成。[R169证据](./evidence/v036-round169-t03-source-issued-three-view-boundary.md)。
