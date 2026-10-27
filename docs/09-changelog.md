@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-27 · R156（Root T02，隔离）**：新增来源裁框内容寻址证据ID，170观察/161裁框/8同框别名组/9条额外观察别名；42项新QA与1859项继承定向QA双独立恢复通过，1951文件ZIP SHA `082e9c5f03400337205c60fec98323bf66b4fa0559776da38271ac5a19696ac0`。不生成正式字形ID、不修改冻结入口，正式0/12 Accepted。[证据](./evidence/v036-round156-t02-content-addressed-source-evidence-identity.md)。
+
+
 ## 2026-10-27 · R155 Root T01/T02（隔离）
 **R155 Root T01/T02（隔离、非验收）：** 冻结2008 JPEG原生170/170裁框RGB SHA独立复验；25键建立18条同键ROI重叠边（2旧槽重复：E:1/E:8、K:2/K:3；8同框别名：K4/M4；6旧槽局部重叠；2未绑定物理观察互相重叠：V57像素/X32像素），跨键0。像素相交不等于笔画归属或字根认证；正式0/25键、永久ID0、缺根数未知。父R154 1931/1931 SHA继承，新累计ZIP1942文件SHA `99f0c1315800dccceec75331cf01eba86989be01abf788e602e660a0a8c69125`，Python/unzip双独立恢复各1942/1942 SHA及1859/1859选定QA（旧1730+新129），QA后SHA不变；完整历史全量QA not-run。R10–12/R35及20SVG仍缺，合法高清许可/逐笔/真机/读屏未完成；冻结入口/用户存储不变，T00–T11 0/12 Accepted。 [证据](./evidence/v036-round155-t01-t02-native-pixel-ownership-graph.md)。
 
