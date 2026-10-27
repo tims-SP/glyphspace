@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R160（2026-10-27，Root T03）：** 不允许直接以调用者提交的inkBBox作为可信正式几何；隔离预集成只接受R125 SHA绑定的真实冻结Path解析式边界与151草案ID及Path SHA完整匹配。拒绝getter/继承字段、身份增删和未经批准的认证/发布标记。仍不代表源图逐笔、正式永久ID或生产集成。[R160证据](./evidence/v036-round160-t03-source-bound-151-vector-snapshot.md)。
+
+
 **ADR-R159（2026-10-27，Root T03）：** 实例ID只做own-property检查仍不足：可变getter可在校验与写入之间返回不同字符串。隔离注册表改为先读取自有数据描述符、建立geometry/inkBBox只读快照，拒绝getter及继承字段；不改变R48/R154或冻结生产入口。代理对象不在保证范围，正式ID/源图/集成仍阻断。[R159证据](./evidence/v036-round159-t03-accessor-snapshot-identity.md)。
 
 
