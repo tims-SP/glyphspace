@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R178 Root T04（只读来源快照过期防护，非验收）：** 复现R152已签发计划在旧v16存储K:2被修改后仍通过旧verifyPlan；新增R178独立只读门禁，在协作Web Lock内重新核对真实源SHA，拒绝过期、异步竞态、克隆计划及假issuer。Node22新增22/22、实跑R177选定旧1075/1075；R177父2189/2189 SHA继承，R178累计2201文件SHA `4cb47c565f2fa6f3e1763cf1abf8ff8dcce6b2c51313dc5a5fb9cfc61fb5044e`，Python/unzip双独立恢复各2201/2201 SHA、1097/1097 QA，QA后SHA一致。真实loopback Chromium仍ERR_BLOCKED_BY_ADMINISTRATOR，真同源blocked；完整历史/真机/读屏not-run，生产迁移not-run。正式T00–T11仍0/12 Accepted，T01 0/25、永久ID0、缺根未知，R11/R12/R35与20SVG仍缺，冻结入口/用户存储未动。[R178证据](./evidence/v036-round178-t04-legacy-source-freshness-gate.md)。
+
+
 **R177 Root T03（关联T07仅墨迹隔离预检，非验收）：** 真实Chromium about:blank分别渲染151草案实例至256/384px透明Canvas，25键每分辨率409对同键alpha交集检查，0墨迹重叠、0空白/边界裁切、0对3px内近接；仅草案/两分辨率，不等于原图/stroke/正式T07。R176父ZIP2181/2181 SHA继承，R177累计2189文件SHA `b44a6720aeb7b27d4303affb4aa681cd93fbaf7030aad17534468da9eb82ecab`，Python/unzip双恢复各2189/2189 SHA、1075/1075选定QA，QA后SHA不变。R176递归2820项尝试超时不计pass，历史全量/真同源/真机/读屏not-run。正式0/12 Accepted，T01 0/25、正式ID0、缺根未知，R11/R12/R35与20SVG缺、许可/逐笔未完成，冻结入口/用户存储未动。[R177证据](./evidence/v036-round177-t03-real-ink-alpha-collision-preflight.md)。
 
 **R176 Root T03（关联T07仅隔离前置预检，非验收）：** R175来源签发25键/151草案实例/153旧Path完整复用，新增字母/区号独立标签带与单HTML真实DOM宿主、full/mini及聚焦同源克隆。首次844×390纵向溢出120px，新增横屏左右分栏后8视口×DPR1/2/3×双模式零纵横滚动；Chromium about:blank真实DOM 50组×14=700/700，来源静态13/13，实际重跑R175选定旧2107/2107，合计2820/2820。父ZIP2165/2165 SHA继承；新累计2181文件SHA `c687d56e8674632735fd03143cc2aa15450c6439224f27e9917cdee41cf15d55`，Python/BusyBox双独立恢复各2181/2181 SHA与2820/2820 QA，QA后SHA不变。file://管理员阻断；真同源/真机/读屏/完整历史全量not-run。组BBox标签无交叠≠真实墨迹/stroke认证，T03未生产集成、T07未达依赖；正式0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35与R12 20SVG仍缺，许可/逐笔未完成，冻结入口/用户存储未动。[R176证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
