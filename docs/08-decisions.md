@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R175（2026-10-28，Root T03）：** 将R169来源签发的每实例独立SVG组合为每键单一100×100 SVG、每个实例独立g，三视图仅改变外部显示尺寸，不重算Path、inkBBox或矩阵；不依赖数组槽推断正式ID。严格保留草案未认证状态；不允许将25键绘制成功替代T01逐笔、T02永久ID、T03生产集成或T10真机/读屏验收。独立ZIP可撤销，不动冻结入口。[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
+
+
 **ADR-R174（2026-10-28，Root T01/T02，关联T05）：** 在第三方高清图许可与逐笔语义仍未解决时，使用冻结2008低清JPEG、SHA绑定的41对来源双框及R173高清数值生成**无认证入口**的离线审阅工作台；所有笔画归属仍unknown，人工笔记仅内存导出`approved=false`。E:1/E:8、K:2/K:3旧否定/阻断不能被R173暗像素重新批准；任何观察ID不得自动成为永久ID。工具属于来源审阅，不替代T08正式校准闭环。[证据](./evidence/v036-round174-t01-t02-frozen-native-41-pair-review-workbench.md)。
 
 
