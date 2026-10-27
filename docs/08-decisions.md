@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R172（2026-10-28，Root T01/T02，关联T05）：** 高低清仿射投影裁框必须明确统计配准残差：R119的p95低清误差0.9552px乘最大线性尺度向上取整为3高清px审阅余量；170观察的同键交叠由21对变为41对。该余量仅用于扩大审阅视野，p95不构成笔画完整性保证；交叠不构成根身份、缺根或正式T07碰撞认证。高清原图未取得合法授权/本地像素未读前，继续阻断正式SVG、永久ID、Accepted。[R172证据](./evidence/v036-round172-t01-t02-highres-uncertainty-roi-envelope.md)。
+
+
 **ADR-R171（2026-10-28，Root T01/T02，关联T05）：** 来源候选必须跨轮以Git blob、ZIP SHA、JPEG SHA、尺寸和独立CI证据去重；R170简繁1479×843候选早在R114完成远端原始字节核验，不能重复宣称首次发现。逐笔审核优先R114已校验的3508×2480简体候选，使用R119真实仿射配准和R171 170条低清ROI来源SHA锁定投影框；无高清原始字节/版权许可/逐笔归属时只能生成review-only坐标，禁止发布图像、正式ID、补图或Accepted。[R171证据](./evidence/v036-round171-t01-t02-source-candidate-reconciliation-170-affine-rois.md)。
 
 
