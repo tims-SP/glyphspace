@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R177（2026-10-28，Root T03，T07仅预检）：** 从R176 DOM组BBox进一步使用Chromium逐实例SVG alpha掩码测试真实墨迹交集；两种分辨率各409对零交集不替代来源逐笔、动态stroke/滤镜、正式inkBBox/光学锚点、生产集成或T07验收。保持所有实例草案状态，隔离运行且不访问用户存储。[证据](./evidence/v036-round177-t03-real-ink-alpha-collision-preflight.md)。
+
 **ADR-R176（2026-10-28，Root T03，T07仅前置预检）：** 将R175来源签发的每键SVG作为不可修改的键帽墨迹层，字母/区位码置于独立标签带；聚焦视图仅克隆相同Path和矩阵。首次844×390实测120px纵向溢出后改为横屏左右分栏；8视口×DPR1/2/3×两模式零滚动。DOM BBox无交叠只能视为几何预检，不能替代真实ink/stroke或原图认证。隔离HTML不接触存储/生产入口。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
 
 
