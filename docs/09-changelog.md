@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R176（Root T03，关联T07预检）**：新增R175签发25键SVG真实DOM隔离宿主，标签独立保留区、full/mini与聚焦同源；修复844×390横屏120px溢出，8视口×3DPR×双模式无滚动。新增713+继承选定2107=2820 QA，2165父SHA继承、2181累计ZIP Python/BusyBox双独立恢复；非正式碰撞/源图/生产验收，T00–T11仍0/12。[证据](./evidence/v036-round176-t03-keycap-host-real-dom-preflight.md)。
+
+
 - **2026-10-28 R175（Root T03）**：新增SHA来源签发的25键局部100×100 SVG组合器，151组/153 Path跨full/mini/focus一致；Node19+Chromium about:blank99+继承选定1989=2107 QA，R174父2151继承、累计2165双独立恢复各2107 QA；不代表原图认证/生产集成，正式0/12 Accepted。[证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
 
 
