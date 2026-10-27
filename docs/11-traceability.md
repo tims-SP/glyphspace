@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R175 Root T03（来源签发25键局部SVG组合器，隔离非验收）：** 实际复验R174父ZIP2151文件、2151/2151 SHA继承；R169 SHA签发151草案实例重新组合为25个100×100 SVG、151独立g、153原始Path，full/mini/focus三视图共用矩阵/路径/ID，拒绝跨键/重复/非法选择。新增Node19/19、Chromium about:blank实际SVG绘制DPR1/2/3×3视图99/99，重跑R174选定旧1989/1989，合计2107/2107；累计ZIP2165文件SHA `99efbb2097a587a19defe47f3c3ee710d7890c03523324ce7815141c68a5265d`，Python/unzip双独立恢复各2165/2165 SHA及2107/2107 QA，QA后SHA一致。浏览器验证为序列化SVG绘制，非真实同源/真机/读屏或生产ESM执行；历史全量not-run。正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35及R12 20SVG缺失，高清许可/逐笔认证未完成，冻结入口/用户存储未动。[R175证据](./evidence/v036-round175-t03-key-local-source-issued-compositor.md)。
+
+
 **R174 Root T01/T02（关联T05，41对来源双框离线逐笔审阅工作台，非验收）：** 实际读取R173父ZIP2138项并逐文件2138/2138 SHA继承；以冻结2008 JPEG和R171 170观察、R172 41对审阅框、R173高清像素历史证据建立41对/16键原生双框来源注册表，82次原生ROI RGB SHA重算一致；新增独立单HTML可交互人工审阅（仅内存笔记/导出未批准JSON，无localStorage、网络或正式审批入口）和41格低清来源联系图。E:1/E:8旧否定、K:2/K:3阻断不解除；未重新读取高清JPEG，许可未确认。新增静态138+Chromium about:blank 98=236/236，实际重跑R173选定继承1753/1753；累计ZIP2151文件SHA `65ce8d4305e8212e6638dd60fe7995bc85f042ead7f985014bc8f6363355e71d`，Python/unzip双独立恢复各2151/2151 SHA、1989/1989 QA，QA后SHA一致。历史全量/真同源/真机/读屏not-run；T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35及R12 20SVG仍缺，冻结入口/用户存储未动。[R174证据](./evidence/v036-round174-t01-t02-frozen-native-41-pair-review-workbench.md)。
 
 
