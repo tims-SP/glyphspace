@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R200验收边界：** 真实Chromium `about:blank` 906组含描边保守inkBBox与解析式最大差0.000003706074；选定旧1001+新浏览器18+静态18=1037/1037，累计2520双独立恢复。仍非来源逐笔认证、永久ID、正式T03生产集成、同源Storage/真机/读屏/历史全量；原始T00–T11仍0/12 Accepted。[证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
+
+
 **R199验收边界：** R198来源签发的三视图SVG在真实Chromium about:blank进行83/83几何检查，证明151草案实例的Path与矩阵局部性及stroke-inclusive/geometry-only差异，不证明原图逐笔来源、正式永久ID或生产集成。选定旧901+新83+静态17=1001/1001、累计2508双独立恢复；真实同源Storage/真机/读屏/历史全量not-run，正式T00–T11仍0/12 Accepted。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
 
 
