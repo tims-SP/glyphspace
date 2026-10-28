@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R181追踪补充（原始T04，非验收）：** 独立同源浏览器Web Locks/storage事件/WebCrypto验证脚本与CI工作流已入仓；本地真实浏览器被管理员阻断，远端结果未核实；静态12+选定旧1181=1193/1193，R180父2224/2224 SHA、R181累计2234双独立恢复各1193 QA；不替代真实生产迁移。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round181-t04-real-same-origin-browser-infrastructure.md)。
+
 **R180 Root T04（私有Map隔离影子与崩溃回滚，非验收）：** 真实读取R179父ZIP2213文件、逐文件2213/2213 SHA继承；新增Node-only内存隔离影子事务：复用R148/R152/R178来源签发与SHA验证，支持v16别名/编辑快照、幂等重放、失败回滚、模拟崩溃后重启恢复及来源更新后只回滚影子不覆盖v16源；无永久ID、无浏览器localStorage写入。新增Node48/48+实跑R179选定旧1133/1133=1181/1181；累计2224文件ZIP SHA `5155e490d3ec295d6f1cf6868ca0dc92397525123262f9058237c41fb44bce5f`，Python/unzip双独立恢复各2224/2224 SHA、1181/1181 QA，QA后SHA一致。模拟锁/模拟原点不是真同源；R179管理员阻断，本轮真同源not-run；历史全量/真机/读屏/正式迁移not-run。原始T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知，R11/R12/R35及20SVG仍缺；冻结入口和用户存储未动。[R180证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
 
 **R179 Root T04（浏览器realm真实原点绑定，隔离只读非验收）：** Node VM复现R178接受调用方伪造loopback原点/存储并给出正面来源见证；新增R179浏览器realm绑定入口，在读取localStorage前拒绝非127.0.0.1安全原点，只从当前realm取得单键只读存储/Web Locks/WebCrypto。新35/35+真实Chromium about:blank拒绝1/1+实跑R178选定旧1097/1097=1133/1133；R178父2201/2201 SHA继承，R179累计2213文件SHA `87fddbac1512ab8f4b87f4f6fd59291ef88ad5a7c1aac13feaaebb5100be350f`，Python/unzip双独立恢复各2213/2213 SHA、1133/1133 QA，QA后SHA一致。真实loopback仍ERR_BLOCKED_BY_ADMINISTRATOR=blocked/not-run，历史全量/真机/读屏/正式迁移not-run；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、缺根未知，R11/R12/R35与20SVG仍缺，冻结入口/用户存储未动。[R179证据](./evidence/v036-round179-t04-browser-realm-origin-binding.md)。
