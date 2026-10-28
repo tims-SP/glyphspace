@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R193 Root T04（真实Chromium幂等快路径竞态，隔离非验收）：** 独立核实此前R190真实浏览器15/15与R192 Node13/13的原始CI artifact；新增同一R192 ESM在127.0.0.1双标签Web Locks/localStorage/WebCrypto的异步来源变化回归，远端真实Chromium 15/15 success（run 40703055405，artifact SHA `0c8dc9e0a5cba157a4365aa34c153d9d624704b07ceb462a2343620792fe6592`）。R192父ZIP2402/2402逐SHA继承，R193累计2417文件ZIP SHA `88d7258d80cc83aed15b17fa8c97482202dd6d113b49454c610b15896003e6d7`，Python/unzip双独立恢复各2417 SHA、600/600选定新旧QA且QA后SHA不变。本地真实Chromium管理员阻断；浏览器仅合成签发，不是完整R148/R152/R178/R179或正式迁移。T00–T11仍0/12 Accepted，T01 0/25，永久ID0，缺根未知，R11/R12/R35与20SVG缺失；生产入口及用户Storage未动。[证据](./evidence/v036-round193-t04-real-chromium-stale-idempotent.md)。
+
 **R192原始T04追踪（非验收）：** **R192 Root T04（幂等快路径来源过期拒绝，隔离非验收）：** 实际R189旧ESM复现buildPayload异步期间来源变化后仍返回idempotent；R192候选核心二次来源SHA+原始字节读回并检查shadow/journal。R191父ZIP2390/2390逐SHA继承；新Node36/36+CI等价烟测13/13+静态18/18、选定旧521/521，总计588/588；累计2402文件ZIP SHA `7e844d4126ed6b830088e9346f288509d317646d3d5eaa729cf91e0dfdb014c9`，Python/unzip双独立恢复各2402/2402 SHA及588/588 QA，QA后SHA不变。本地真实Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端R190/R192 CI未独立核实；正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知，R11/R12/R35与R12 20SVG缺，冻结生产入口及用户Storage未动。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
 
 
