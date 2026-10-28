@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R202（Root T01/T02）：** 任何来源观察的nativeRect与RGB SHA必须独立回读冻结JPEG原始字节，并与sourceCrops注册表的成员集合、键位和矩形一致；不允许仅依赖观察表自身摘要或总JPEG SHA。隔离守卫失败关闭，禁止把低清一致性误提升为字根身份/来源许可/永久ID批准。[证据](./evidence/v036-round202-t01-t02-native-crop-ledger-integrity.md)。
+
 **R201来源身份图谱决策（Root T01/T02，隔离）：** 只把同源裁框严格相等标记为来源等价；原生矩形相交和历史高清审阅包络相交只建立审阅边，所有连通分组均禁止自动合并或分配正式永久ID。以V五观察簇、M四未绑定、K/E同源冲突为优先审阅队列；高分辨率原始字节和许可未核实时不准提升来源认证。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
 
 **R200设计决定（隔离，非正式升级）：** 对SVG `getBBox()`不含stroke的情形，使用浏览器路径几何与CTM加保守圆头描边包围盒，并对不支持的paint/CSS/非均匀变换失败关闭；不把该几何当作原图逐笔认证，T03正式生产集成与永久ID依赖不变。[证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。

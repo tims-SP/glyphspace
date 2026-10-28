@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R202 Root T01/T02（来源裁框原生像素与注册表互证，非认证）：** 复现R201接受伪造legacy:J:4观察坐标+真实像素SHA的证据链缺陷；R202新增失败关闭守卫，直接复核冻结JPEG 170观察+161裁框原生RGB与161组成员关系，M/V/K/E/B/J/R/X高风险单列。父R201 2535/2535逐SHA继承；旧199+新41=240/240选定QA，累计2547文件ZIP SHA `b02c6b499e4f29ae557880f22970a016bcd978286df7b8ce428b0baab72d02d2`，Python/unzip双独立恢复各2547 SHA与240 QA，QA后SHA不变。真实Chromium旧套件超时not-run，真同源/真机/读屏/历史全量not-run；T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；生产入口/用户Storage未动。[证据](./evidence/v036-round202-t01-t02-native-crop-ledger-integrity.md)。
+
 **R201（Root T01/T02，未验收）：** 170来源观察→161裁框→151旧可视别名；36旧未匹配、12无旧别名、2同裁框冲突、6原生矩形交叠、41历史高清审阅边分别分型；133个审阅分组（28个多观察）只作逐笔审阅队列，非身份合并。R200父2520/2520逐SHA继承、R201累计2535双独立恢复各300/300选定QA；递归1037超时不计通过；正式T01 0/25、T02永久ID0、全部T00–T11 0/12 Accepted。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
 
 **R200 原始T03（真实Chromium含描边inkBBox隔离模块，非验收）：** 真读R199父ZIP2508/2508 SHA继承；真实浏览器 `about:blank` 对151草案实例×三视图×编辑前后共906组/918 Path按圆头stroke计算保守inkBBox，修正H:7 `getBBox()`忽略描边的0.90434345差异，最大解析式/真实DOM差0.000003706074；6种非法paint/CSS改动拒绝。实跑旧1001+新Chromium18+静态18=1037/1037；累计2520文件ZIP SHA `2940c4c28686599858acffb5c19fda47ce25605a8175fdfc7b4ed0c63beaba9d`，Python/unzip双独立恢复各2520 SHA与1037 QA。完整历史全量、真同源Storage、真机、真实读屏not-run；T00–T11 0/12 Accepted、T01 0/25、永久ID0、T03未生产集成、缺根未知，R11/R12/R35及R12 20SVG缺。冻结入口/用户Storage未动。 [证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
