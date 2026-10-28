@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 · R191 Root T04：** 新增同步Web Storage写入异常注入29项回滚/重试检查，选定旧474+新47=521/521，累计2390双独立恢复；真实浏览器blocked，正式0/12 Accepted。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
+
+
 - **2026-10-28 · R190 Root T04：** 新增R189同一ESM真实Chromium异步来源SHA跨标签竞态测试及独立CI；本地浏览器blocked、远端结果unverified。父ZIP2360/2360 SHA继承，累计2379双独立恢复，选定旧456+新静态18=474/474；正式0/12 Accepted。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
 
 
