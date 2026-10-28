@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R195（2026-10-29，原始T04）：** 在T01逐笔认证和T02永久ID批准前，只扩大旧v16来源**覆盖面**（全25键156槽+M稀疏键），不得把索引别名当永久ID，也不得将模拟锁/私有Map视为真实同源迁移。使用原R148/R152/R178/R179/R192不改生产入口，保留sourceSHA、原始来源字节、隔离影子和失败回滚证据。全25键真实Chromium和正式用户迁移仍未验收。[证据](./evidence/v036-round195-t04-full25-v16-source-rehearsal.md)。
+
 **ADR-R194（2026-10-28，原始T04）：** 在原有R189适配层中仅替换R192候选核心并独立命名R194隔离命名空间；保留R148/R152/R178/R179原始来源模块，使用独立127.0.0.1双标签真实浏览器验证，不触碰生产入口/用户Storage。真实签发链CI 30/30通过不等于正式迁移，Web Storage无原子CAS，T02/T03依赖仍未满足。[证据](./evidence/v036-round194-t04-real-issuer-r192-chromium.md)。
 
 **R192 T04隔离决策（2026-10-28）：** 事务幂等成功不得跳过异步buildPayload后的来源新鲜度、shadow和journal读回。采用独立R192候选核心，原R189和生产入口不动；Web Storage无原子CAS，真实同源和正式迁移尚未验收。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
