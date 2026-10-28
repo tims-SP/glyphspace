@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R186验收边界：** v2日志before/next SHA与非协作shadow冲突检测通过Node新81/81+静态20/20及选定旧169/169，双独立2310 SHA恢复；真实浏览器管理员阻断、远端CI未运行，正式迁移/生产集成未完成。全部T00–T11仍0/12 Accepted。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。
+
 **R185验收边界：** 实际R148/R152/R178/R179签发模块+R183事务核心在Node私有Map 40/40，通过隔离原点、来源过期、真实故障分支和回滚；本地Chromium管理员阻断、远端CI未运行，**不能视为真实同源通过或正式V0.35迁移**。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
 
 **R184 Root T04验收边界：** 同一ESM真实Chromium故障分支修复后25/25，artifact SHA独立复核；只证明隔离fixture的rollback和跨文档恢复，不证明正式V0.35迁移、永久ID或生产集成。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round184-t04-real-browser-fault-branch-fix.md)。

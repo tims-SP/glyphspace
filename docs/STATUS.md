@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R186 Root T04（非协作影子写入冲突防护，隔离非验收）：** R185父ZIP2289/2289 SHA继承；新增v2 before/next双SHA日志与回滚/恢复冲突拒绝，外部写入不被静默覆盖。Node真实签发65/65+异步竞态16/16+静态20/20+选定旧169/169=270/270；累计2310文件ZIP SHA `0897ac244652dd7fa93038c5717967e8d8a47b61599abf11015ef85ba289b456`，Python/unzip双独立恢复各2310 SHA、270 QA，QA后SHA一致。本地真实Chromium管理员阻断，远端CI/历史全量/真机/读屏not-run；T00–T11仍0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG缺，冻结入口与用户存储未动。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。
+
+
 **R185 Root T04（真实来源签发隔离事务桥接，非验收）：** 实际读取R184父ZIP2271文件并逐项2271/2271 SHA继承；连接原样R148/R152/R178/R179签发与R183共享ESM事务核心，旧v16源只读、隔离影子日志可回滚、127.0.0.1原点先于Storage校验。新增Node40/40+静态21/21+选定旧215/215=276/276；R185累计2289文件SHA `18450dde7b141cb58888f1f2608c76cd0d3dcd71ce97e32aa088a09872fb8b38`，Python/unzip双独立恢复各2289 SHA及276 QA、QA后SHA不变。本地真实Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端真实CI not-run；正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知，R11/R12/R35及20SVG缺；生产入口/用户Storage未动。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
 
 **R184 Root T04（真实浏览器故障分支QA修复，非验收）：** R183真实同源CI 40630751605失败：测试复用相同payload走幂等分支，未触发故障；修复后CI 40635880938成功，实际Chromium同一ESM双标签25/25，原始artifact 12793257183 SHA独立核验。R183父ZIP2257/2257 SHA继承，R184累计2271文件ZIP SHA `1404f851ae798a32c5e5698448755c4ddc838421c4920fee85b11f13b3ad23fa`，本地选定旧170+新21+静态24=215/215，Python/unzip双独立恢复各2271 SHA与215 QA。真实迁移/来源认证/真机/读屏/历史全量仍未验收，T00–T11保持0/12 Accepted、T01 0/25、永久ID0、缺根未知；冻结生产入口及用户存储未动。[证据](./evidence/v036-round184-t04-real-browser-fault-branch-fix.md)。
