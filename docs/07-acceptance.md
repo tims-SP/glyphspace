@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R182 T04验收边界：** 远端真实同源浏览器原语R181 16/16与隔离事务fixture R182 24/24经GitHub Actions成功及原始artifact SHA复验；仅证明独立临时profile的存储/锁/回滚/模拟崩溃恢复行为，**不证明R180代码直接浏览器运行或正式迁移**。本地localhost管理员阻断、真机/真实读屏/完整历史全量QA not-run；原始T00–T11仍0/12 Accepted。[证据](./evidence/v036-round182-t04-real-same-origin-disposable-quarantine.md)。
+
+
 **R181验收边界（原始T04）：** 临时loopback新浏览器context的16项真实浏览器检查已编码，但本地Chromium导航被管理员阻断，实际0项浏览器通过；远端GitHub Actions CI待核实。静态合同12/12与选定旧1181/1181、双独立2234 SHA仅验证代码/档案稳定性，不构成真同源或正式迁移验收。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round181-t04-real-same-origin-browser-infrastructure.md)。
 
 **R180验收边界（Root T04）：** Node私有Map模拟v16隔离影子事务、失败回滚与重启恢复，48项新增及1133项选定旧QA通过；不是真实同源Web Locks/localStorage、持久化恢复、正式ID或生产迁移。原始T00–T11保持0/12 Accepted。[证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
