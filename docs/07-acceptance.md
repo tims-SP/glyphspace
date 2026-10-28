@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R195验收边界：** 原始T04冻结25键156旧坐标槽全量v16来源隔离预演，真实R148/R152/R178/R179签发+R192候选核心在Node私有Map 46/46、静态22/22、选定旧671/671，共739/739；父2447 SHA继承、累计2457双独立恢复。**R195真实同源浏览器blocked/not-run**，R194真实Chromium30/30只覆盖G/K/X合成来源，不能外推全25键正式迁移。原始T00–T11仍0/12 Accepted，真机/读屏/历史全量not-run。[证据](./evidence/v036-round195-t04-full25-v16-source-rehearsal.md)。
+
 **R194验收边界：** 真实授权Chromium双标签30/30执行完整R148/R152/R178/R179+R192候选链，但仅合成v16三键覆盖/隔离shadow，不是正式用户迁移；双独立2447文件SHA及671/671选定QA；原始T00–T11仍0/12 Accepted，真实读屏/真机/历史全量not-run。[证据](./evidence/v036-round194-t04-real-issuer-r192-chromium.md)。
 
 **R193验收边界：** 真实Chromium 15/15仅为R192候选核心的合成签发幂等来源竞态；本地600/600选定QA、累计2417双独立恢复；正式T04迁移/真实签发链/读屏/真机/历史全量not-run，全部T00–T11仍0/12 Accepted。[证据](./evidence/v036-round193-t04-real-chromium-stale-idempotent.md)。
