@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R200（Root T03）：** 新增真实Chromium stroke-inclusive保守inkBBox隔离模块，906组最大解析式差0.000003706074；旧1001+新36=1037/1037，累计2520双独立恢复，正式0/12 Accepted。 [证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
+
+
 - **2026-10-29 · R199 Root T03：** R198来源绑定三视图光学校正首次在真实Chromium about:blank执行83/83 getBBox/getScreenCTM校验，150 SVG/906组/918 Path，M/V两矩阵变、149不变；H:7笔画stroke几何口径差异单列。父2495逐SHA继承，旧901+新83+静态17=1001/1001，累计2508文件双独立恢复；真同源/真机/读屏/完整历史not-run，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
 
 
