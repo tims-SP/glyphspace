@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R200 原始T03（真实Chromium含描边inkBBox隔离模块，非验收）：** 真读R199父ZIP2508/2508 SHA继承；真实浏览器 `about:blank` 对151草案实例×三视图×编辑前后共906组/918 Path按圆头stroke计算保守inkBBox，修正H:7 `getBBox()`忽略描边的0.90434345差异，最大解析式/真实DOM差0.000003706074；6种非法paint/CSS改动拒绝。实跑旧1001+新Chromium18+静态18=1037/1037；累计2520文件ZIP SHA `2940c4c28686599858acffb5c19fda47ce25605a8175fdfc7b4ed0c63beaba9d`，Python/unzip双独立恢复各2520 SHA与1037 QA。完整历史全量、真同源Storage、真机、真实读屏not-run；T00–T11 0/12 Accepted、T01 0/25、永久ID0、T03未生产集成、缺根未知，R11/R12/R35及R12 20SVG缺。冻结入口/用户Storage未动。 [证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
+
+
 **R199 Root T03（真实Chromium SVG DOM几何预验，非验收）：** 真读R198父ZIP2495/2495 SHA继承；直接渲染R198签发的三视图×编辑前后150 SVG/906实例组/918 Path，about:blank Chromium getBBox/getScreenCTM 83/83；M/V两矩阵变化、149不变，H:7 stroke-inclusive与浏览器geometry-only差异0.90434345已解释。旧901+新浏览器83+静态17=1001/1001；R199累计2508文件ZIP SHA `8b0987baef9181773b01a3189e24effbc1842b7eb570bbd48e20e569bb584ff7`，Python/unzip双独立恢复各2508 SHA及1001 QA。T00–T11仍0/12 Accepted，T01 0/25、永久ID0、T03未生产集成、缺根未知；真同源Storage/真机/读屏/历史全量not-run，R11/R12/R35及R12 20SVG缺；冻结入口和用户Storage未动。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
 
 
