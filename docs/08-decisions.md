@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R187（2026-10-28，Root T04）：** localStorage不存在的null与存在的空字符串必须用类型化状态摘要区分，禁止以`before ?? ''`折叠；R187 v3日志不自动接受旧v2，冲突时保留影子和日志。仅隔离事务安全修复，localStorage无原子CAS，不能承诺完全无竞态。[证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
+
 **ADR-R186（2026-10-28，Root T04）：** 对忽略Web Locks的同源写入采取fail-closed：隔离恢复日志记录before/next SHA，若shadow已被外部写入，则保留外部数据和日志并拒绝恢复；旧v1日志不自动升级。localStorage缺少原子CAS，因此这只是冲突检测而非无竞态的正式迁移。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。
 
 **ADR-R185（2026-10-28，Root T04）：** 在临时127.0.0.1隔离profile中，用真实R148/R152/R178/R179签发与新鲜度验证作为R183共享事务核心的门禁，不允许调用方注入伪原点或任意Storage，写入仅限隔离影子/日志；本地真实浏览器blocked时不能将Node FakeStore结果冒充真实同源。此适配器不具备生产迁移资格。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
