@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-29 · R196 Root T01/T02：** 独立从冻结2008 JPEG复验170/170原生RGB ROI、14张审阅卡原生上下文/PNG SHA，跨R4/R44/R156/R157/R158/R174调和36旧槽未匹配、12未绑定来源、2共享裁框及41审阅边，另记录6原生矩形交叠；M/V/K/E优先。父R195 2457/2457 SHA继承、累计R196 2469文件双独立恢复与791/791选定新旧QA；高清字节/许可/逐笔未认证，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round196-t01-t02-exact-source-review-frontier.md)。
+
 - **2026-10-29 · R195 Root T04：** 将原R148/R152/R178/R179签发链与R192事务核心从R194 G/K/X三键合成来源扩展至冻结V0.35全25键156槽预演，Node46+静态22+选定旧671=739/739；父2447 SHA继承，累计2457双独立恢复。仅Node私有Map，真实同源本轮blocked，正式0/12 Accepted。[证据](./evidence/v036-round195-t04-full25-v16-source-rehearsal.md)。
 
 - **2026-10-28 · R194 Root T04：** 实际R148/R152/R178/R179来源签发链与R192 typed-slot核心在真实Chromium双标签30/30通过（run 40712389404，原始artifact独立核验）；父2417/2417 SHA继承，累计2447文件双独立恢复、671/671选定QA。仅隔离合成来源，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round194-t04-real-issuer-r192-chromium.md)。
