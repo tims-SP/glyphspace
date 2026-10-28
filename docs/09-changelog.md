@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- 2026-10-28 R193（Root T04隔离候选）：R190真实Chromium15/15、R192 Node13/13远端CI artifact独立核实；新增R192同一ESM双标签真实Chromium来源过期幂等拒绝15/15；父R192 2402/2402 SHA，R193累计2417 SHA双独立恢复、本地选定600/600；原始任务0/12 Accepted，生产入口未动。见 `docs/evidence/v036-round193-t04-real-chromium-stale-idempotent.md`。
+
 **R192 / 2026-10-28 / 原始T04：** 修复R189幂等快路径来源过期误报（隔离候选），旧缺陷复现、Node36/36+烟测13/13+静态18/18+旧521/521=588/588；累计2402文件双独立恢复；真实同源blocked、远端CI unverified、正式0/12 Accepted。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
 
 
