@@ -1,0 +1,27 @@
+name: R182 T04 real same-origin disposable quarantine
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/qa_r182_real_quarantine.py
+      - .github/workflows/r182-t04-real-quarantine.yml
+permissions:
+  contents: read
+jobs:
+  disposable-quarantine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install playwright==1.55.0
+      - name: Verify real browser quarantine and rollback
+        run: python scripts/qa_r182_real_quarantine.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r182-real-disposable-quarantine
+          path: R182_real_quarantine_CI_QA.json
+          if-no-files-found: ignore
