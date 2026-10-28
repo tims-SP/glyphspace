@@ -1,0 +1,32 @@
+name: R192 T04 stale idempotent source regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/r189_source_readback_transaction_core.mjs'
+      - 'scripts/r192_idempotent_freshness_core.mjs'
+      - 'scripts/r192_idempotent_freshness_smoke.mjs'
+      - '.github/workflows/r192-t04-idempotent-source.yml'
+  workflow_dispatch:
+jobs:
+  isolated-node:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Reproduce inherited R189 stale success and verify R192 rejection
+        run: |
+          mkdir -p /tmp/glyphspace-r192
+          node scripts/r192_idempotent_freshness_smoke.mjs | tee /tmp/glyphspace-r192/R192_smoke_QA.json
+          node -e "const r=require('/tmp/glyphspace-r192/R192_smoke_QA.json');if(r.passed!==13||!r.allPassed||r.formalAccepted!==false)process.exit(1)"
+          sha256sum scripts/r189_source_readback_transaction_core.mjs scripts/r192_idempotent_freshness_core.mjs scripts/r192_idempotent_freshness_smoke.mjs > /tmp/glyphspace-r192/SHA256SUMS.txt
+      - name: Upload exact CI evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r192-idempotent-freshness-node
+          path: /tmp/glyphspace-r192/
+          if-no-files-found: warn
