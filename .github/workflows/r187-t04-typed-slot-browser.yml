@@ -1,0 +1,36 @@
+name: R187 T04 typed storage slot real Chromium regression
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/r187_typed_slot_transaction_core.mjs'
+      - 'scripts/r187_typed_slot_browser.py'
+      - '.github/workflows/r187-t04-typed-slot-browser.yml'
+  workflow_dispatch:
+jobs:
+  real-loopback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install fresh browser runtime
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Execute same R187 ESM core in isolated real Chromium
+        run: |
+          mkdir -p /tmp/glyphspace-r187
+          cp scripts/r187_typed_slot_transaction_core.mjs /tmp/glyphspace-r187/
+          cp scripts/r187_typed_slot_browser.py /tmp/glyphspace-r187/
+          printf '<!doctype html><meta charset="utf-8"><title>R187 isolated</title>' > /tmp/glyphspace-r187/index.html
+          python /tmp/glyphspace-r187/r187_typed_slot_browser.py
+      - name: Upload actual QA evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r187-real-typed-slot
+          path: /tmp/glyphspace-r187/R187_typed_slot_browser_QA.json
+          if-no-files-found: warn
