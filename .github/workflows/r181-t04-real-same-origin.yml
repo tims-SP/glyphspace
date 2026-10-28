@@ -1,0 +1,29 @@
+name: R181 T04 real same-origin disposable browser QA
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/qa_r181_real_same_origin.py
+      - .github/workflows/r181-t04-real-same-origin.yml
+permissions:
+  contents: read
+jobs:
+  isolated-real-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install browser driver
+        run: python -m pip install playwright==1.55.0
+      - name: Verify isolated loopback Web Locks and storage events
+        run: python scripts/qa_r181_real_same_origin.py
+      - name: Upload disposable browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r181-real-same-origin-browser-qa
+          path: R181_real_same_origin_CI_QA.json
+          if-no-files-found: ignore
