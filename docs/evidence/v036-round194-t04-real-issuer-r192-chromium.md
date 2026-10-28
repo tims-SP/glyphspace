@@ -7,7 +7,7 @@
 - 读取R193父累计ZIP，确认SHA256 `88d7258d80cc83aed15b17fa8c97482202dd6d113b49454c610b15896003e6d7`、2417成员，全部2417/2417原始成员逐文件SHA继承。
 - 将R148严格v16读取、R152真实计划签发、R178来源新鲜度门禁、R179浏览器realm原点绑定，与**原样R192 typed-slot事务核心**连接；新增独立R194适配器，冻结旧生产入口不变。
 - 使用冻结156项ROOT_COORDS及G/K/X三键合成v16覆盖，在**全新127.0.0.1双标签真实Chromium**中验证来源签发、计划不可克隆、暂存、幂等、跨标签崩溃恢复、null与空字符串的非协作写入冲突、来源过期拒绝、无关键保护、隔离context和清理。
-- 远端CI **30/30 success**：urlR194 GitHub Actions runhttps://github.com/tims-SP/glyphspace/actions/runs/40712389404（head `bb4336364a80932838d96434d9d272a288ac7401`）。原始artifact id `12827280941`，ZIP SHA256 `56fb43276363bcd023fcf9f128f7b6e0650ac77ab7633b58b54c741eec3de42f`，已实际下载、解压并独立核对30项JSON。
+- 远端CI **30/30 success**：[R194 GitHub Actions run](https://github.com/tims-SP/glyphspace/actions/runs/40712389404)（head `bb4336364a80932838d96434d9d272a288ac7401`）。原始artifact id `12827280941`，ZIP SHA256 `56fb43276363bcd023fcf9f128f7b6e0650ac77ab7633b58b54c741eec3de42f`，已实际下载、解压并独立核对30项JSON。
 - 本地真实Chromium访问临时127.0.0.1仍返回`ERR_BLOCKED_BY_ADMINISTRATOR`，状态**blocked/not-run**，未计入本地通过。
 - 本地选定继承QA 600/600（R192 588 + R193 12）；R194真实签发Node 47/47、静态来源检查24/24；合计**671/671**。累计ZIP **2447文件**（继承2417，新增30），ZIP SHA256 `35eeaf4d0f9bf6b350dc915269ad46f1428d829594cfe8c3bf1894cd51734839`；Python zipfile与系统unzip两套独立恢复，各2447/2447 SHA、671/671 QA、QA后SHA未变。
 - 原始R148/R152/R178/R179模块与冻结坐标的SHA由独立测试锁定；生产HTML、176条编码、正式SVG、用户原有localStorage均未修改。
