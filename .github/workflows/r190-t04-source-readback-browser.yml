@@ -1,0 +1,36 @@
+name: R190 T04 real Chromium source readback race
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/r189_source_readback_transaction_core.mjs'
+      - 'scripts/r190_source_readback_browser.py'
+      - '.github/workflows/r190-t04-source-readback-browser.yml'
+  workflow_dispatch:
+jobs:
+  real-loopback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated Chromium runtime
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test R189 ESM with real Web Locks and storage
+        run: |
+          mkdir -p /tmp/glyphspace-r190
+          cp scripts/r189_source_readback_transaction_core.mjs /tmp/glyphspace-r190/
+          cp scripts/r190_source_readback_browser.py /tmp/glyphspace-r190/
+          printf '<!doctype html><meta charset="utf-8"><title>R190 isolated</title>' > /tmp/glyphspace-r190/index.html
+          python /tmp/glyphspace-r190/r190_source_readback_browser.py
+      - name: Upload original browser QA JSON
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r190-real-source-readback
+          path: /tmp/glyphspace-r190/R190_core_browser_QA.json
+          if-no-files-found: warn
