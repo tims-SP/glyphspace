@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R197 Root T03（来源绑定151旧Path光学校正桥接，隔离非验收）：** R196父ZIP2469/2469逐SHA继承，R125/R160真实冻结矢量inkBBox绑定100×100光学编辑、M/V独立示例、来源/基线双SHA及非规范/越界/ID冲突拒绝；选定旧791+新Node35+静态18=844/844，累计R197 2482文件ZIP SHA `ce2c14605f9febdecff64243692db962b9c43247ac1c3dad23eedb2cb09b3769`，Python/unzip双独立恢复各2482 SHA和844 QA，QA后SHA不变。正式T03未生产集成，T01 0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/完整历史not-run，R11/R12/R35和20SVG仍缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
+
+
 **R196 Root T01/T02（原生来源证据交叉审阅，非验收）：** 真实复验R195父ZIP2457/2457逐SHA继承；冻结2008 JPEG上170/170原生RGB证据、14/14审阅卡PNG/上下文SHA、41/41高分辨率审阅边的低清端点复核；36旧槽未匹配、12未绑定来源裁框、2旧槽共享裁框和6原生矩形交叠独立分账。M/V/K/E优先，不把几何交叠当笔画归属；新34+静态18+实跑旧739=791/791，R196累计2469文件ZIP SHA `ac99a7e7f36a9af57b3bc0ca2c120d7e6dc6ccb460913eaaf1efc9e85dc7a024`，Python/unzip双独立恢复各2469 SHA和791 QA。高清原始字节/许可/逐笔认证、真机/读屏/完整历史QA not-run，T01 0/25、永久ID0、真实缺根未知、T00–T11仍0/12 Accepted；缺R11/R12/R35及R12 20SVG；冻结入口和用户Storage未动。[证据](./evidence/v036-round196-t01-t02-exact-source-review-frontier.md)。
 
 **R195 Root T04（25键/156旧槽全量v16来源隔离预演，非验收）：** 实际复验R194父ZIP2447/2447逐文件SHA，使用原R148/R152/R178/R179与R192事务核心，对冻结V0.35 25键156坐标槽全部作合规1单位编辑，签发156别名/156编辑；另测M键局部覆盖、来源不变、幂等、崩溃恢复、克隆/过期/非法来源拒绝。Node私有Map+模拟锁46/46、静态22/22、实跑选定旧671/671，共739/739；R195累计2457文件ZIP SHA `6ba77588da4a7e19b2622d9da722474e3b4be910cbd2b727ee6ac663fbe2895c`，Python/unzip双独立恢复各2457/2457 SHA和739/739 QA。真实浏览器本地管理员阻断，本轮真实浏览器not-run；正式迁移/真机/读屏/历史全量not-run，T00–T11仍0/12 Accepted，T01 0/25，永久ID0，缺根未知；R11/R12/R35与R12 20SVG缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round195-t04-full25-v16-source-rehearsal.md)。
