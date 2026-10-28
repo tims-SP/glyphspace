@@ -27,6 +27,8 @@ jobs:
           cp scripts/r183_shared_core_browser.py /tmp/glyphspace-r183-disposable/qa_shared_core_browser.py
           printf '<!doctype html><meta charset="utf-8"><title>R183 disposable</title>' > /tmp/glyphspace-r183-disposable/index.html
           python /tmp/glyphspace-r183-disposable/qa_shared_core_browser.py
+      - name: R184 non-idempotent fault branch regression (Node private Map)
+        run: node scripts/r184_fault_branch_regression.mjs --no-write
       - name: Upload actual browser QA JSON
         if: always()
         uses: actions/upload-artifact@v4
