@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R183 T04验收边界：** 同一隔离ESM事务核心已通过Node私有Map44/44、实际R148/R152/R178签发桥接17/17及选定旧109/109；本地真实浏览器管理员阻断，远端新工作流尚未核实。即使远端真实浏览器成功，也仅证明临时profile的隔离事务，不是正式迁移或T04 Accepted。完整历史、真机、读屏not-run；T00–T11仍0/12。[证据](./evidence/v036-round183-t04-shared-disposable-transaction-core.md)。
+
 **R182 T04验收边界：** 远端真实同源浏览器原语R181 16/16与隔离事务fixture R182 24/24经GitHub Actions成功及原始artifact SHA复验；仅证明独立临时profile的存储/锁/回滚/模拟崩溃恢复行为，**不证明R180代码直接浏览器运行或正式迁移**。本地localhost管理员阻断、真机/真实读屏/完整历史全量QA not-run；原始T00–T11仍0/12 Accepted。[证据](./evidence/v036-round182-t04-real-same-origin-disposable-quarantine.md)。
 
 
