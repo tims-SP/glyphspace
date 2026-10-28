@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-29 · R199 Root T03：** R198来源绑定三视图光学校正首次在真实Chromium about:blank执行83/83 getBBox/getScreenCTM校验，150 SVG/906组/918 Path，M/V两矩阵变、149不变；H:7笔画stroke几何口径差异单列。父2495逐SHA继承，旧901+新83+静态17=1001/1001，累计2508文件双独立恢复；真同源/真机/读屏/完整历史not-run，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
+
+
 - **2026-10-29 · R198 Root T03：** 实现R197来源绑定光学编辑→R175 25键三视图SVG隔离桥接，M/V仅2个实例矩阵变化、其他149及153个Path保持原样；父R197 2482/2482继承、R198累计2495文件双独立恢复各901/901选定新旧QA。真同源/真机/读屏/完整历史未执行，正式T03未集成，全部T00–T11仍0/12 Accepted。[证据](./evidence/v036-round198-t03-source-bound-optical-three-view.md)。
 
 - **2026-10-29 · R197 Root T03：** 新增真实冻结151旧Path解析式inkBBox的来源/基线双SHA绑定光学校正预演、M/V两实例示例及全量事务式验证；父R196 2469/2469继承，累计2482双独立恢复各844/844选定QA；生产集成/来源认证/真机读屏/完整历史未完成，T00–T11 0/12 Accepted。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
