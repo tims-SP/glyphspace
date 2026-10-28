@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R201（Root T01/T02，未验收）：** 170来源观察→161裁框→151旧可视别名；36旧未匹配、12无旧别名、2同裁框冲突、6原生矩形交叠、41历史高清审阅边分别分型；133个审阅分组（28个多观察）只作逐笔审阅队列，非身份合并。R200父2520/2520逐SHA继承、R201累计2535双独立恢复各300/300选定QA；递归1037超时不计通过；正式T01 0/25、T02永久ID0、全部T00–T11 0/12 Accepted。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
+
 **R200 原始T03（真实Chromium含描边inkBBox隔离模块，非验收）：** 真读R199父ZIP2508/2508 SHA继承；真实浏览器 `about:blank` 对151草案实例×三视图×编辑前后共906组/918 Path按圆头stroke计算保守inkBBox，修正H:7 `getBBox()`忽略描边的0.90434345差异，最大解析式/真实DOM差0.000003706074；6种非法paint/CSS改动拒绝。实跑旧1001+新Chromium18+静态18=1037/1037；累计2520文件ZIP SHA `2940c4c28686599858acffb5c19fda47ce25605a8175fdfc7b4ed0c63beaba9d`，Python/unzip双独立恢复各2520 SHA与1037 QA。完整历史全量、真同源Storage、真机、真实读屏not-run；T00–T11 0/12 Accepted、T01 0/25、永久ID0、T03未生产集成、缺根未知，R11/R12/R35及R12 20SVG缺。冻结入口/用户Storage未动。 [证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
 
 

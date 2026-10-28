@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R201 Root T01/T02（隔离）：** 新增来源身份类型化冲突图及25键审阅队列，170观察/133分组（28多观察），55对抗测试+16静态、选定旧229=300/300；R200递归1037超时不计；R200父2520逐SHA继承、R201累计2535双独立恢复。正式0/12 Accepted、T01 0/25、永久ID0；无生产入口/存储修改。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
+
 **2026-10-29 · R200（Root T03）：** 新增真实Chromium stroke-inclusive保守inkBBox隔离模块，906组最大解析式差0.000003706074；旧1001+新36=1037/1037，累计2520双独立恢复，正式0/12 Accepted。 [证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
 
 
