@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R187 Root T04追踪（非验收）：** R187 Root T04（typed-slot v3隔离恢复，非验收）：复现R186 `before??''`将不存在的shadow与空字符串视为同一SHA，导致非协作空字符串被回滚覆盖；新v3 typed-slot SHA拒绝该冲突，旧v2日志失败关闭。R186父ZIP2310/2310 SHA继承；R187累计2325文件SHA `6f35d9e783986ab16245fcdca7e567808bcab3411cc299aa4252c99361b22ae3`，Python/unzip双独立恢复各2325 SHA、305/305选定新旧QA、QA后SHA一致；本地旧270+新Node18+静态17=305/305。远端真实Chromium同一ESM双标签17/17（CI 40654063434，artifact SHA `cebf673d75c26e179860574bf6bf80e99f0c39efe31558ff962e6d6efa091ff3`），但使用合成来源计划，非R148真实签发浏览器验证；本地浏览器管理员阻断。完整历史、真机、读屏、生产迁移not-run；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、缺根未知；R11/R12/R35和20SVG仍缺，冻结入口及用户Storage未动。 [证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
+
 **R186 Root T04（非协作影子写入冲突防护，隔离非验收）：** R185父ZIP2289/2289 SHA继承；新增v2 before/next双SHA日志与回滚/恢复冲突拒绝，外部写入不被静默覆盖。Node真实签发65/65+异步竞态16/16+静态20/20+选定旧169/169=270/270；累计2310文件ZIP SHA `0897ac244652dd7fa93038c5717967e8d8a47b61599abf11015ef85ba289b456`，Python/unzip双独立恢复各2310 SHA、270 QA，QA后SHA一致。本地真实Chromium管理员阻断，远端CI/历史全量/真机/读屏not-run；T00–T11仍0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG缺，冻结入口与用户存储未动。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。
 
 
