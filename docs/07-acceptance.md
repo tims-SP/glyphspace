@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R193验收边界：** 真实Chromium 15/15仅为R192候选核心的合成签发幂等来源竞态；本地600/600选定QA、累计2417双独立恢复；正式T04迁移/真实签发链/读屏/真机/历史全量not-run，全部T00–T11仍0/12 Accepted。[证据](./evidence/v036-round193-t04-real-chromium-stale-idempotent.md)。
+
 **R192验收边界：** R189旧核心幂等来源过期误报已复现，R192隔离候选修复；本地588/588选定QA、2402/2402双独立恢复；真实同源blocked、远端CI unverified、正式迁移/来源认证/真机/读屏/历史全量not-run；原始T00–T11仍0/12 Accepted。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
 
 
