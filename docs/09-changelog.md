@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R182 / Root T04：** R181真同源CI16/16核实，新增R182远端真实浏览器隔离事务24/24，双artifact原始ZIP SHA验证；累计ZIP2247文件、继承2234/2234、双独立恢复各109/109本地选定QA。生产迁移、永久ID、正式T04验收均未完成。
+
+
 - **2026-10-28 R181（Root T04）**：新增真实同源Chromium隔离双标签Web Locks/localStorage/storage事件/WebCrypto测试与GitHub Actions工作流；本地浏览器管理员阻断，远端CI尚未核实。R180父2224逐文件SHA继承、R181累计2234双独立恢复各1193选定QA（新静态12+旧1181）；真同源/生产迁移未验收，正式0/12 Accepted。[证据](./evidence/v036-round181-t04-real-same-origin-browser-infrastructure.md)。
 
 - **2026-10-28 R180（Root T04）**：新增Node私有Map的v16隔离影子与回滚日志，覆盖幂等、失败、模拟崩溃/重启、旧影子恢复及源变更不覆盖。新48+选定旧1133=1181 QA；R179父2213逐文件SHA继承，R180累计2224文件双独立恢复各1181 QA；真实同源/真机/读屏/生产迁移not-run，正式0/12 Accepted。[证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
