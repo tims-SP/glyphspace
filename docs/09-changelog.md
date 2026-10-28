@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R192 / 2026-10-28 / 原始T04：** 修复R189幂等快路径来源过期误报（隔离候选），旧缺陷复现、Node36/36+烟测13/13+静态18/18+旧521/521=588/588；累计2402文件双独立恢复；真实同源blocked、远端CI unverified、正式0/12 Accepted。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
+
+
 - **2026-10-28 · R191 Root T04：** 新增同步Web Storage写入异常注入29项回滚/重试检查，选定旧474+新47=521/521，累计2390双独立恢复；真实浏览器blocked，正式0/12 Accepted。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
 
 
