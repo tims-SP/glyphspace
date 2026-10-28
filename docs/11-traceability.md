@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R182 Root T04（真实同源隔离暂存与回滚，非验收）：** 重新核实R181远端真实浏览器原语CI 16/16（run 40619051747），新增R182远端真实127.0.0.1 Chromium独立隔离暂存/回滚/崩溃重载/过期来源/损坏journal QA 24/24（run 40624848783），两份CI原始artifact ZIP SHA与内部JSON均独立校验；R181父ZIP2234/2234 SHA继承，R182累计2247文件SHA `0d44faa8e833f67eea49cc314c92559e4224055780dc9b9f25b6e729ae1e5b23`，Python/unzip双独立恢复各2247/2247 SHA及109/109本地选定QA。R180递归1181旧QA超时不计通过，完整历史全量not-run。本地真实浏览器仍管理员阻断，R182额外26项本地浏览器草案未运行。**远端fixture不是R180生产迁移代码的直接执行**；无正式永久ID、无用户存储写入，T00–T11仍0/12 Accepted，T01 0/25，缺根未知，R11/R12/R35及R12 20SVG仍缺。[证据](./evidence/v036-round182-t04-real-same-origin-disposable-quarantine.md)。
+
+
 **R181追踪补充（原始T04，非验收）：** 独立同源浏览器Web Locks/storage事件/WebCrypto验证脚本与CI工作流已入仓；本地真实浏览器被管理员阻断，远端结果未核实；静态12+选定旧1181=1193/1193，R180父2224/2224 SHA、R181累计2234双独立恢复各1193 QA；不替代真实生产迁移。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round181-t04-real-same-origin-browser-infrastructure.md)。
 
 **R180 Root T04（私有Map隔离影子与崩溃回滚，非验收）：** 真实读取R179父ZIP2213文件、逐文件2213/2213 SHA继承；新增Node-only内存隔离影子事务：复用R148/R152/R178来源签发与SHA验证，支持v16别名/编辑快照、幂等重放、失败回滚、模拟崩溃后重启恢复及来源更新后只回滚影子不覆盖v16源；无永久ID、无浏览器localStorage写入。新增Node48/48+实跑R179选定旧1133/1133=1181/1181；累计2224文件ZIP SHA `5155e490d3ec295d6f1cf6868ca0dc92397525123262f9058237c41fb44bce5f`，Python/unzip双独立恢复各2224/2224 SHA、1181/1181 QA，QA后SHA一致。模拟锁/模拟原点不是真同源；R179管理员阻断，本轮真同源not-run；历史全量/真机/读屏/正式迁移not-run。原始T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知，R11/R12/R35及20SVG仍缺；冻结入口和用户存储未动。[R180证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
