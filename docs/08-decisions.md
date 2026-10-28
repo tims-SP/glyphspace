@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**2026-10-28 R182 · T04隔离事务验收边界：** 将真实浏览器原语测试（R181）、独立浏览器隔离事务fixture（R182）和正式候选迁移实现分为三个不同层级。即使真实同源fixture 24/24通过，也不得自动将R180 Node Map实现或生产迁移标为通过；后续必须让相同的迁移核心在独立授权浏览器profile中执行并复验真实回滚。
+
+
 **ADR-R181（2026-10-28，Root T04）：** 将浏览器原语的真实同源验证独立于Node模拟迁移；只允许新建非持久Chromium context、临时127.0.0.1服务器、临时fixture，验证双标签Web Locks、storage事件、WebCrypto摘要与context隔离。管理员策略阻断必须记blocked，不得以静态或Node结果冒充。即使远端CI通过，也仅解除浏览器基础设施疑问，生产迁移/用户存储仍禁止触碰。[证据](./evidence/v036-round181-t04-real-same-origin-browser-infrastructure.md)。
 
 **ADR-R180（2026-10-28，Root T04）：** 在T02正式身份批准与真实同源浏览器验证之前，仅允许Node私有Map隔离区验证v16别名/编辑快照、写前日志、错误回滚、模拟崩溃恢复和幂等重放；崩溃后v16源变化时不得回滚用户源，只能回滚隔离影子。不得把模拟锁/伪原点称为真实浏览器迁移，也不提供永久ID映射或生产入口。[证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
