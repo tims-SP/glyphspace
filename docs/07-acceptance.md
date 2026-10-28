@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R198验收边界：** R197 SHA绑定的151历史草案Path光学校正已在隔离R175三视图SVG组合器验证，Node mock DOM各视图25键/151实例/153 Path，M/V独立光学偏移且149其他实例不变；旧844+新57=901/901、累计2495双独立恢复。但没有正式永久ID、原图逐笔认证、生产集成、真实浏览器同源、真机、读屏或完整历史全量QA；不能判T03 Accepted，Root T00–T11仍0/12。[证据](./evidence/v036-round198-t03-source-bound-optical-three-view.md)。
+
 **R197验收边界：** R125/R160真实冻结151旧Path解析式inkBBox上的T03光学校正候选（非生产集成），Node35/35、静态18/18、选定旧791/791，累计2482双独立恢复。正式T01 0/25、T02永久ID0、T03未集成、全部T00–T11 0/12 Accepted；真实同源/真机/读屏/历史全量not-run。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
 
 
