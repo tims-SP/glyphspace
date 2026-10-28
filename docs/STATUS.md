@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R192 Root T04（幂等快路径来源过期拒绝，隔离非验收）：** 实际R189旧ESM复现buildPayload异步期间来源变化后仍返回idempotent；R192候选核心二次来源SHA+原始字节读回并检查shadow/journal。R191父ZIP2390/2390逐SHA继承；新Node36/36+CI等价烟测13/13+静态18/18、选定旧521/521，总计588/588；累计2402文件ZIP SHA `7e844d4126ed6b830088e9346f288509d317646d3d5eaa729cf91e0dfdb014c9`，Python/unzip双独立恢复各2402/2402 SHA及588/588 QA，QA后SHA不变。本地真实Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked，远端R190/R192 CI未独立核实；正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知，R11/R12/R35与R12 20SVG缺，冻结生产入口及用户Storage未动。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
+
+
 **R191 Root T04（Storage同步异常回滚，隔离非验收）：** 父R190 ZIP2379/2379 SHA继承；Node私有Map写入故障29/29、静态18/18、选定旧474/474，共521/521；累计2390文件ZIP SHA `d2d8b2b400daa5ba83011b9df007348927fa2a55c612af6fc69f616dc325453b`，Python/unzip双独立恢复各2390/2390 SHA与521/521 QA，QA后SHA不变。真实Chromium临时127.0.0.1仍ERR_BLOCKED_BY_ADMINISTRATOR=blocked/not-run，R190远端CI unverified。正式T00–T11 0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35与R12 20SVG缺，冻结入口及用户Storage未动。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
 
 
