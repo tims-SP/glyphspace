@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R190 Root T04（真实同源SHA异步竞态CI基础设施，隔离非验收）：** R189父ZIP2360/2360成员SHA继承，新增19成员，累计2379文件ZIP SHA `ee13e558617a268763fd6a5869532bf13ad851e6a6b15091b50fdb110babe1c0`；Python/unzip双独立恢复各2379/2379 SHA及474/474选定新旧QA（旧456+新静态18），QA后SHA一致。新增同一R189 ESM真实Chromium双标签Web Locks/localStorage/WebCrypto第三次来源SHA延迟竞态测试与CI工作流；**本地Chromium管理员阻断、远端CI结果未独立核实，浏览器0项计pass**；完整真实R148/R152/R178/R179签发链浏览器测试not-run。正式T00–T11仍0/12 Accepted，T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG仍缺，冻结入口与用户Storage未动。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
+
+
 **R189 Root T04（异步来源SHA读回竞态修复，隔离非验收）：** Node复现R187在第三次来源摘要计算期间外部修改旧v16来源后仍提交过期影子；R189 SHA后读回原始来源字节，变化则拒绝并回滚。R188父ZIP2342/2342 SHA继承；新Node竞态14/14+真实签发Map47/47+静态17/17，选定旧378/378，总计456/456；累计2360文件ZIP SHA `6daddf37eb4c8df9990ee750650d4e9b934f1cbe309d240538fa6a29b1d71946`，Python/unzip双独立恢复各2360 SHA及456 QA。真实同源本地blocked、远端not-run；正式0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG缺，冻结入口与用户Storage未动。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
