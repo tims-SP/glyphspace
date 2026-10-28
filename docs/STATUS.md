@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R198 Root T03（来源绑定光学校正接入25键三视图隔离组合器，非验收）：** 真读R197父ZIP2482/2482逐SHA继承；R197→R175的隔离桥接仅更新SVG组transform，25键/151实例/153旧Path在full/mini/focus共享100×100坐标，M/V两矩阵变化、其他149不变且Path属性完全一致。实跑旧844+新Node41+静态16=901/901；R198累计2495文件ZIP SHA `6e2c7460154f08c347d7e0835d5f06aa6ad4fc04e669e76f066a006391f5ebe0`，Python/unzip双独立恢复各2495 SHA和901 QA（禁用pyc缓存后无变动）。正式T03未生产集成、T01 0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/历史全量not-run，R11/R12/R35及R12 20SVG仍缺，冻结入口和用户Storage未动。[证据](./evidence/v036-round198-t03-source-bound-optical-three-view.md)。
+
 **R197 Root T03（来源绑定151旧Path光学校正桥接，隔离非验收）：** R196父ZIP2469/2469逐SHA继承，R125/R160真实冻结矢量inkBBox绑定100×100光学编辑、M/V独立示例、来源/基线双SHA及非规范/越界/ID冲突拒绝；选定旧791+新Node35+静态18=844/844，累计R197 2482文件ZIP SHA `ce2c14605f9febdecff64243692db962b9c43247ac1c3dad23eedb2cb09b3769`，Python/unzip双独立恢复各2482 SHA和844 QA，QA后SHA不变。正式T03未生产集成，T01 0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/完整历史not-run，R11/R12/R35和20SVG仍缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
 
 
