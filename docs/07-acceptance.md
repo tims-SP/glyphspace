@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R190验收边界：** R189同一ESM真实同源浏览器竞态测试与GitHub Actions工作流已提交，远端结果unverified、本地ERR_BLOCKED_BY_ADMINISTRATOR blocked；474/474为选定旧456与新静态18，不含真实浏览器通过项。R189父2360/2360继承、累计2379双独立恢复；真实签发链浏览器/正式迁移/真机/读屏/完整历史not-run，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
+
+
 **R189验收边界：** 新Node14+47+静态17+选定旧378=456/456，双独立2360 SHA恢复；真实同源blocked/not-run，T04及全部T00–T11未验收。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
