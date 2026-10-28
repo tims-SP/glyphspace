@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R185（2026-10-28，Root T04）：** 在临时127.0.0.1隔离profile中，用真实R148/R152/R178/R179签发与新鲜度验证作为R183共享事务核心的门禁，不允许调用方注入伪原点或任意Storage，写入仅限隔离影子/日志；本地真实浏览器blocked时不能将Node FakeStore结果冒充真实同源。此适配器不具备生产迁移资格。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
+
 **R184 / Root T04 测试决定（2026-10-28）：** 故障注入测试必须使用不同于已暂存状态的隔离payload，断言故障确实触发且旧shadow字节恢复；相同payload返回idempotent属于预期行为，不得计为回滚通过。只改隔离测试，不触及生产迁移。[证据](./evidence/v036-round184-t04-real-browser-fault-branch-fix.md)。
 
 **ADR-R183（2026-10-28，Root T04）：** 抽出不依赖全局Storage的跨Node/浏览器隔离事务ESM核心，以注入适配器连接真实R148/R152/R178签发计划和未来独立真实浏览器profile。写入范围仅允许两项`__glyphspace_disposable_`隔离键，旧v16源键只读，失败回滚日志与崩溃恢复不得清除或覆盖用户旧源。浏览器CI未实际核实前记not-run；正式永久ID和生产迁移继续禁止。[证据](./evidence/v036-round183-t04-shared-disposable-transaction-core.md)。

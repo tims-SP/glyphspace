@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R185验收边界：** 实际R148/R152/R178/R179签发模块+R183事务核心在Node私有Map 40/40，通过隔离原点、来源过期、真实故障分支和回滚；本地Chromium管理员阻断、远端CI未运行，**不能视为真实同源通过或正式V0.35迁移**。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
+
 **R184 Root T04验收边界：** 同一ESM真实Chromium故障分支修复后25/25，artifact SHA独立复核；只证明隔离fixture的rollback和跨文档恢复，不证明正式V0.35迁移、永久ID或生产集成。T00–T11仍0/12 Accepted。[证据](./evidence/v036-round184-t04-real-browser-fault-branch-fix.md)。
 
 **R183 T04验收边界：** 同一隔离ESM事务核心已通过Node私有Map44/44、实际R148/R152/R178签发桥接17/17及选定旧109/109；本地真实浏览器管理员阻断，远端新工作流尚未核实。即使远端真实浏览器成功，也仅证明临时profile的隔离事务，不是正式迁移或T04 Accepted。完整历史、真机、读屏not-run；T00–T11仍0/12。[证据](./evidence/v036-round183-t04-shared-disposable-transaction-core.md)。

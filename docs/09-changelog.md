@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 · R185 Root T04：** 新增真实R148/R152/R178/R179签发→R183共享隔离事务核心适配器；本地Node40+静态21+选定旧215=276/276；父2271/2271 SHA继承，累计2289双独立恢复各276 QA。真实浏览器本地blocked、远端not-run；正式0/12 Accepted。[证据](./evidence/v036-round185-t04-actual-source-issued-disposable-bridge.md)。
+
 - **2026-10-28 · R184 Root T04**：修复R183真实浏览器故障注入被幂等路径绕过的QA缺陷；远端Chromium 25/25，artifact SHA核验；本地215/215、父2257/2257 SHA、累计2271双独立恢复；正式0/12 Accepted。
 
 - **2026-10-28 R183 / Root T04：** 新增纯ESM共享隔离事务核心、真实R148/R152/R178签发桥接及独立真实浏览器同源QA工作流；本地Node新61+选定旧109=170/170，R182父2247/2247 SHA继承，R183累计2257文件双独立恢复各170 QA。真实浏览器本地管理员阻断、远端CI未核实；正式0/12 Accepted。[证据](./evidence/v036-round183-t04-shared-disposable-transaction-core.md)。
