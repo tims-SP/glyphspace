@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R180（2026-10-28，Root T04）：** 在T02正式身份批准与真实同源浏览器验证之前，仅允许Node私有Map隔离区验证v16别名/编辑快照、写前日志、错误回滚、模拟崩溃恢复和幂等重放；崩溃后v16源变化时不得回滚用户源，只能回滚隔离影子。不得把模拟锁/伪原点称为真实浏览器迁移，也不提供永久ID映射或生产入口。[证据](./evidence/v036-round180-t04-disposable-quarantine-rollback.md)。
+
 **ADR-R179（2026-10-28，Root T04）：** 只读来源新鲜度见证必须绑定执行浏览器realm，不允许调用方伪造origin、store、Web Locks或WebCrypto；只允许独立loopback profile，在触碰存储前拒绝非loopback原点，仅暴露旧v16单键只读facade。Node VM验证与about:blank拒绝不替代真实同源多标签测试；不提供正式迁移提交/回滚，不批准永久ID。[证据](./evidence/v036-round179-t04-browser-realm-origin-binding.md)。
 
 
