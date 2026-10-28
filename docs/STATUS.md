@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R191 Root T04（Storage同步异常回滚，隔离非验收）：** 父R190 ZIP2379/2379 SHA继承；Node私有Map写入故障29/29、静态18/18、选定旧474/474，共521/521；累计2390文件ZIP SHA `d2d8b2b400daa5ba83011b9df007348927fa2a55c612af6fc69f616dc325453b`，Python/unzip双独立恢复各2390/2390 SHA与521/521 QA，QA后SHA不变。真实Chromium临时127.0.0.1仍ERR_BLOCKED_BY_ADMINISTRATOR=blocked/not-run，R190远端CI unverified。正式T00–T11 0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35与R12 20SVG缺，冻结入口及用户Storage未动。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
+
+
 **R190 Root T04（真实同源SHA异步竞态CI基础设施，隔离非验收）：** R189父ZIP2360/2360成员SHA继承，新增19成员，累计2379文件ZIP SHA `ee13e558617a268763fd6a5869532bf13ad851e6a6b15091b50fdb110babe1c0`；Python/unzip双独立恢复各2379/2379 SHA及474/474选定新旧QA（旧456+新静态18），QA后SHA一致。新增同一R189 ESM真实Chromium双标签Web Locks/localStorage/WebCrypto第三次来源SHA延迟竞态测试与CI工作流；**本地Chromium管理员阻断、远端CI结果未独立核实，浏览器0项计pass**；完整真实R148/R152/R178/R179签发链浏览器测试not-run。正式T00–T11仍0/12 Accepted，T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG仍缺，冻结入口与用户Storage未动。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
 
 
