@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R192 T04隔离决策（2026-10-28）：** 事务幂等成功不得跳过异步buildPayload后的来源新鲜度、shadow和journal读回。采用独立R192候选核心，原R189和生产入口不动；Web Storage无原子CAS，真实同源和正式迁移尚未验收。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
+
+
 **ADR-R191（2026-10-28，Root T04）：** 用隔离Node Map分别注入journal、shadow写入和删除时的同步Storage异常；错误必须可回滚/恢复且不得写旧版来源。此模拟不等于真实浏览器QuotaExceededError，也不提供原子CAS。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
 
 
