@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R199（2026-10-29，原始T03）：** 采用真实Chromium SVG getBBox/getScreenCTM作为R198隔离三视图矩阵的浏览器预验，不以Node DOM模拟替代。解析式inkBBox计入stroke而浏览器getBBox默认不计stroke，H/legacy-07差异0.90434345按stroke-width=7×0.92×0.14042597单列，禁止误判为来源认证或自动修正正式Path。只在about:blank隔离运行，不触碰用户Storage；T01/T02身份依赖及生产集成未满足，Root仍0/12 Accepted。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
+
+
 **ADR-R198（2026-10-29，原始T03）：** 在来源形态/永久ID尚未认证时，隔离三视图只能消费R197不可变光学校正计划并复用R175原有SVG Path；仅改各实例组矩阵，三视图共享100×100与源Path属性，所有渲染输出明确标注draft-unapproved。禁止以Node mock DOM或M/V示例取代真机、真实读屏、正式T03生产集成或T01/T02认证。Root仍0/12 Accepted。[证据](./evidence/v036-round198-t03-source-bound-optical-three-view.md)。
 
 **ADR-R197（2026-10-29，原始T03）：** 在T01来源形态认证及T02永久ID批准前，仅对R125/R160 SHA绑定的151个历史草案实例实现不可变、全量验证的光学编辑预演；编辑导入同时绑定来源三SHA、151项基线摘要与每条Path SHA，拒绝非规范或来源过期。不得将草案instanceId、可见墨迹几何或通过的Node QA提升为正式SVG/永久ID/生产集成。正式0/12 Accepted。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
