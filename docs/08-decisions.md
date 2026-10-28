@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R179（2026-10-28，Root T04）：** 只读来源新鲜度见证必须绑定执行浏览器realm，不允许调用方伪造origin、store、Web Locks或WebCrypto；只允许独立loopback profile，在触碰存储前拒绝非loopback原点，仅暴露旧v16单键只读facade。Node VM验证与about:blank拒绝不替代真实同源多标签测试；不提供正式迁移提交/回滚，不批准永久ID。[证据](./evidence/v036-round179-t04-browser-realm-origin-binding.md)。
+
+
 **ADR-R178（2026-10-28，Root T04）：** 已签发只读迁移计划只能证明历史快照，不能作为未来提交前的最新来源保证。增加R178在协作Web Lock内的实时v16原始字节SHA校验和异步前后重读；签发器必须模块加载时固定，不能由调用方注入。返回的观察见证只在检查瞬间有效，不允许由此开启正式写入或分配永久ID；真实同源仍blocked。[证据](./evidence/v036-round178-t04-legacy-source-freshness-gate.md)。
 
 

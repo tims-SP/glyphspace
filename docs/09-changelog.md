@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 R179（Root T04）**：复现R178调用方伪造loopback原点的只读见证来源缺口；新增浏览器realm绑定的只读入口与存储单键facade，Node35+Chromium about:blank1+选定旧1097=1133 QA，R178父2201 SHA继承、R179累计2213文件双独立恢复各1133 QA。真实同源blocked，正式0/12 Accepted。[证据](./evidence/v036-round179-t04-browser-realm-origin-binding.md)。
+
+
 - **2026-10-28 R178（Root T04）**：复现旧只读计划签发后源存储变更仍可verify；新增SHA绑定的只读来源新鲜度门禁并拒绝异步变更/伪签发。新22+旧1075 QA、R177父2189继承、R178累计2201双独立恢复各1097 QA；真实同源blocked，正式0/12 Accepted。[证据](./evidence/v036-round178-t04-legacy-source-freshness-gate.md)。
 
 
