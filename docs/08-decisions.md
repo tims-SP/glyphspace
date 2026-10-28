@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R191（2026-10-28，Root T04）：** 用隔离Node Map分别注入journal、shadow写入和删除时的同步Storage异常；错误必须可回滚/恢复且不得写旧版来源。此模拟不等于真实浏览器QuotaExceededError，也不提供原子CAS。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
+
+
 **ADR-R190（2026-10-28，Root T04）：** 将异步来源SHA的跨标签改写测试移至临时授权Chromium CI环境，使用同一R189 ESM、真实Web Locks/localStorage/WebCrypto并在第三次摘要时受控暂停；合成计划测试与真实R148签发链浏览器验收严格分开。未核实CI原始产物前不记pass，不修改生产入口与用户存储。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
 
 
