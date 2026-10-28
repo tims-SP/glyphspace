@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R199 Root T03（真实Chromium SVG DOM几何预验，非验收）：** 真读R198父ZIP2495/2495 SHA继承；直接渲染R198签发的三视图×编辑前后150 SVG/906实例组/918 Path，about:blank Chromium getBBox/getScreenCTM 83/83；M/V两矩阵变化、149不变，H:7 stroke-inclusive与浏览器geometry-only差异0.90434345已解释。旧901+新浏览器83+静态17=1001/1001；R199累计2508文件ZIP SHA `8b0987baef9181773b01a3189e24effbc1842b7eb570bbd48e20e569bb584ff7`，Python/unzip双独立恢复各2508 SHA及1001 QA。T00–T11仍0/12 Accepted，T01 0/25、永久ID0、T03未生产集成、缺根未知；真同源Storage/真机/读屏/历史全量not-run，R11/R12/R35及R12 20SVG缺；冻结入口和用户Storage未动。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
+
+
 **R198 Root T03（来源绑定光学校正接入25键三视图隔离组合器，非验收）：** 真读R197父ZIP2482/2482逐SHA继承；R197→R175的隔离桥接仅更新SVG组transform，25键/151实例/153旧Path在full/mini/focus共享100×100坐标，M/V两矩阵变化、其他149不变且Path属性完全一致。实跑旧844+新Node41+静态16=901/901；R198累计2495文件ZIP SHA `6e2c7460154f08c347d7e0835d5f06aa6ad4fc04e669e76f066a006391f5ebe0`，Python/unzip双独立恢复各2495 SHA和901 QA（禁用pyc缓存后无变动）。正式T03未生产集成、T01 0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/历史全量not-run，R11/R12/R35及R12 20SVG仍缺，冻结入口和用户Storage未动。[证据](./evidence/v036-round198-t03-source-bound-optical-three-view.md)。
 
 **R197 Root T03（来源绑定151旧Path光学校正桥接，隔离非验收）：** R196父ZIP2469/2469逐SHA继承，R125/R160真实冻结矢量inkBBox绑定100×100光学编辑、M/V独立示例、来源/基线双SHA及非规范/越界/ID冲突拒绝；选定旧791+新Node35+静态18=844/844，累计R197 2482文件ZIP SHA `ce2c14605f9febdecff64243692db962b9c43247ac1c3dad23eedb2cb09b3769`，Python/unzip双独立恢复各2482 SHA和844 QA，QA后SHA不变。正式T03未生产集成，T01 0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/完整历史not-run，R11/R12/R35和20SVG仍缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round197-t03-source-bound-optical-preview.md)。
