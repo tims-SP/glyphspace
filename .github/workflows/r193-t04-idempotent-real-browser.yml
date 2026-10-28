@@ -1,0 +1,36 @@
+name: R193 T04 real Chromium stale-idempotent source
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/r193_idempotent_real_browser.py'
+      - 'scripts/r192_idempotent_freshness_core.mjs'
+      - '.github/workflows/r193-t04-idempotent-real-browser.yml'
+  workflow_dispatch:
+jobs:
+  real-loopback:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated Chromium
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test actual R192 ESM on fresh two-tab origin
+        run: |
+          mkdir -p /tmp/glyphspace-r193
+          cp scripts/r192_idempotent_freshness_core.mjs /tmp/glyphspace-r193/
+          cp scripts/r193_idempotent_real_browser.py /tmp/glyphspace-r193/
+          printf '<!doctype html><meta charset="utf-8"><title>R193 isolated</title>' > /tmp/glyphspace-r193/index.html
+          python /tmp/glyphspace-r193/r193_idempotent_real_browser.py
+      - name: Upload original real-browser QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r193-real-idempotent-browser
+          path: /tmp/glyphspace-r193/R193_real_browser_QA.json
+          if-no-files-found: warn
