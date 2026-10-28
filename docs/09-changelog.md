@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-29 · R195 Root T04：** 将原R148/R152/R178/R179签发链与R192事务核心从R194 G/K/X三键合成来源扩展至冻结V0.35全25键156槽预演，Node46+静态22+选定旧671=739/739；父2447 SHA继承，累计2457双独立恢复。仅Node私有Map，真实同源本轮blocked，正式0/12 Accepted。[证据](./evidence/v036-round195-t04-full25-v16-source-rehearsal.md)。
+
 - **2026-10-28 · R194 Root T04：** 实际R148/R152/R178/R179来源签发链与R192 typed-slot核心在真实Chromium双标签30/30通过（run 40712389404，原始artifact独立核验）；父2417/2417 SHA继承，累计2447文件双独立恢复、671/671选定QA。仅隔离合成来源，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round194-t04-real-issuer-r192-chromium.md)。
 
 - 2026-10-28 R193（Root T04隔离候选）：R190真实Chromium15/15、R192 Node13/13远端CI artifact独立核实；新增R192同一ESM双标签真实Chromium来源过期幂等拒绝15/15；父R192 2402/2402 SHA，R193累计2417 SHA双独立恢复、本地选定600/600；原始任务0/12 Accepted，生产入口未动。见 `docs/evidence/v036-round193-t04-real-chromium-stale-idempotent.md`。
