@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R192验收边界：** R189旧核心幂等来源过期误报已复现，R192隔离候选修复；本地588/588选定QA、2402/2402双独立恢复；真实同源blocked、远端CI unverified、正式迁移/来源认证/真机/读屏/历史全量not-run；原始T00–T11仍0/12 Accepted。[证据](./evidence/v036-round192-t04-stale-idempotent-source.md)。
+
+
 **R191验收边界：** Node私有Map写入异常29/29+静态18/18+选定旧474/474=521/521，父2379 SHA继承，累计2390双独立恢复；真实浏览器blocked、远端R190 unverified、正式迁移not-run，全部T00–T11 0/12 Accepted。[证据](./evidence/v036-round191-t04-storage-quota-fault-matrix.md)
 
 
