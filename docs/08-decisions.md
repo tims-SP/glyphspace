@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R200设计决定（隔离，非正式升级）：** 对SVG `getBBox()`不含stroke的情形，使用浏览器路径几何与CTM加保守圆头描边包围盒，并对不支持的paint/CSS/非均匀变换失败关闭；不把该几何当作原图逐笔认证，T03正式生产集成与永久ID依赖不变。[证据](./evidence/v036-round200-t03-real-stroke-inclusive-dom.md)。
+
+
 **ADR-R199（2026-10-29，原始T03）：** 采用真实Chromium SVG getBBox/getScreenCTM作为R198隔离三视图矩阵的浏览器预验，不以Node DOM模拟替代。解析式inkBBox计入stroke而浏览器getBBox默认不计stroke，H/legacy-07差异0.90434345按stroke-width=7×0.92×0.14042597单列，禁止误判为来源认证或自动修正正式Path。只在about:blank隔离运行，不触碰用户Storage；T01/T02身份依赖及生产集成未满足，Root仍0/12 Accepted。[证据](./evidence/v036-round199-t03-real-chromium-svg-geometry.md)。
 
 
