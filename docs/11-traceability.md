@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R183 Root T04（跨Node/浏览器同一ESM隔离事务核心，非验收）：** 新增可注入存储/锁/SHA/签发验证的纯ESM隔离核心及真实R148/R152/R178签发桥接；Node新44/44+真实旧签发17/17，实际重跑选定旧109/109=170/170。R182父ZIP2247/2247逐文件SHA继承，R183累计2257文件ZIP SHA `65526b6e12e03f8fd6a83f9a458e5a492180fe6fd23e4134575c561395ccd185`，Python/unzip双独立恢复各2257/2257 SHA、170/170 QA，QA后SHA不变。本地真实127.0.0.1 Chromium管理员阻断，真实浏览器not-run；远端同一ESM CI工作流已提交，结果尚未核实。历史全量/真机/读屏not-run；正式T00–T11仍0/12 Accepted、T01 0/25、正式ID0、缺根未知；R11/R12/R35和R12 20SVG仍缺，生产入口/用户存储未动。[证据](./evidence/v036-round183-t04-shared-disposable-transaction-core.md)。
+
 **R182 Root T04（真实同源隔离暂存与回滚，非验收）：** 重新核实R181远端真实浏览器原语CI 16/16（run 40619051747），新增R182远端真实127.0.0.1 Chromium独立隔离暂存/回滚/崩溃重载/过期来源/损坏journal QA 24/24（run 40624848783），两份CI原始artifact ZIP SHA与内部JSON均独立校验；R181父ZIP2234/2234 SHA继承，R182累计2247文件SHA `0d44faa8e833f67eea49cc314c92559e4224055780dc9b9f25b6e729ae1e5b23`，Python/unzip双独立恢复各2247/2247 SHA及109/109本地选定QA。R180递归1181旧QA超时不计通过，完整历史全量not-run。本地真实浏览器仍管理员阻断，R182额外26项本地浏览器草案未运行。**远端fixture不是R180生产迁移代码的直接执行**；无正式永久ID、无用户存储写入，T00–T11仍0/12 Accepted，T01 0/25，缺根未知，R11/R12/R35及R12 20SVG仍缺。[证据](./evidence/v036-round182-t04-real-same-origin-disposable-quarantine.md)。
 
 
