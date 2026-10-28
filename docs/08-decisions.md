@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R190（2026-10-28，Root T04）：** 将异步来源SHA的跨标签改写测试移至临时授权Chromium CI环境，使用同一R189 ESM、真实Web Locks/localStorage/WebCrypto并在第三次摘要时受控暂停；合成计划测试与真实R148签发链浏览器验收严格分开。未核实CI原始产物前不记pass，不修改生产入口与用户存储。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
+
+
 **ADR-R189（2026-10-28，Root T04）：** 异步来源SHA返回后必须读回原始来源字节，发现变更则拒绝并回滚隔离影子。localStorage无原子CAS，不能承诺完全无竞态或生产迁移验收。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
