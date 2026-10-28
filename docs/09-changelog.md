@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 · R189 Root T04：** 复现R187异步SHA期间旧来源变更仍提交竞态，R189读回拒绝并回滚；旧378+新78=456/456，父2342继承，累计2360双独立恢复。真同源blocked/not-run，正式0/12 Accepted。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
+
+
 - **2026-10-28 · R188 Root T04：** 实际R148/R152/R178/R179签发接入R187 typed-slot v3，Node47+静态26+旧305=378/378；父2325继承、累计2342双独立恢复；真实浏览器R188 blocked/not-run，正式0/12 Accepted。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
 
 

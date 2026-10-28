@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R189（2026-10-28，Root T04）：** 异步来源SHA返回后必须读回原始来源字节，发现变更则拒绝并回滚隔离影子。localStorage无原子CAS，不能承诺完全无竞态或生产迁移验收。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
+
+
 **ADR-R188（2026-10-28，Root T04）：** 将真实R148/R152/R178/R179签发链桥接到R187 typed-slot v3，以类型化SHA防止null/empty外部写入冲突；只允许隔离影子/日志键，禁止生产迁移。Node联合验证不等于真实同源Web Locks/localStorage，后续需独立授权profile证据。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
 
 

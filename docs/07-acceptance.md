@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R189验收边界：** 新Node14+47+静态17+选定旧378=456/456，双独立2360 SHA恢复；真实同源blocked/not-run，T04及全部T00–T11未验收。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
+
+
 **R188验收边界：** 实际来源签发与R187 typed-slot v3在Node私有Map 47/47、静态26/26及选定旧305/305通过，双独立2342 SHA与378 QA；R188真实同源联合验证本地blocked、远端not-run，正式T04未验收，T00–T11仍0/12。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
 
 
