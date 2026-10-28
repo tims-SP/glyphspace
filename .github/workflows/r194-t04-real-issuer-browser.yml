@@ -1,0 +1,48 @@
+name: R194 T04 actual issuer chain real Chromium
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/v036_r148_strict_shadow.js'
+      - 'scripts/v036_r152_source_bound_plan.js'
+      - 'scripts/r194_r178_freshness.js'
+      - 'scripts/r194_r179_realm.js'
+      - 'scripts/r194_frozen_root_coords.json'
+      - 'scripts/r194_real_issuer_r192_bridge.mjs'
+      - 'scripts/r194_real_issuer_browser.py'
+      - 'scripts/r192_idempotent_freshness_core.mjs'
+      - '.github/workflows/r194-t04-real-issuer-browser.yml'
+  workflow_dispatch:
+jobs:
+  real-issuer-chain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install isolated Chromium
+        run: |
+          python -m pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Test actual issuer and R192 core on fresh origin
+        run: |
+          mkdir -p /tmp/glyphspace-r194
+          cp scripts/v036_r148_strict_shadow.js /tmp/glyphspace-r194/
+          cp scripts/v036_r152_source_bound_plan.js /tmp/glyphspace-r194/
+          cp scripts/r194_r178_freshness.js /tmp/glyphspace-r194/
+          cp scripts/r194_r179_realm.js /tmp/glyphspace-r194/
+          cp scripts/r194_frozen_root_coords.json /tmp/glyphspace-r194/
+          cp scripts/r194_real_issuer_r192_bridge.mjs /tmp/glyphspace-r194/
+          cp scripts/r192_idempotent_freshness_core.mjs /tmp/glyphspace-r194/
+          cp scripts/r194_real_issuer_browser.py /tmp/glyphspace-r194/
+          printf '<!doctype html><meta charset="utf-8"><title>R194 isolated</title>' > /tmp/glyphspace-r194/index.html
+          python /tmp/glyphspace-r194/r194_real_issuer_browser.py
+      - name: Upload actual issuer browser QA
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: r194-actual-issuer-real-browser
+          path: /tmp/glyphspace-r194/R194_real_browser_QA.json
+          if-no-files-found: warn
