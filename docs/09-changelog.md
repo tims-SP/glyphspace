@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 · R190 Root T04：** 新增R189同一ESM真实Chromium异步来源SHA跨标签竞态测试及独立CI；本地浏览器blocked、远端结果unverified。父ZIP2360/2360 SHA继承，累计2379双独立恢复，选定旧456+新静态18=474/474；正式0/12 Accepted。[证据](./evidence/v036-round190-t04-real-browser-async-readback-infrastructure.md)。
+
+
 - **2026-10-28 · R189 Root T04：** 复现R187异步SHA期间旧来源变更仍提交竞态，R189读回拒绝并回滚；旧378+新78=456/456，父2342继承，累计2360双独立恢复。真同源blocked/not-run，正式0/12 Accepted。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
