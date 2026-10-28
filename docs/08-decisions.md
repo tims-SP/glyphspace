@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R188（2026-10-28，Root T04）：** 将真实R148/R152/R178/R179签发链桥接到R187 typed-slot v3，以类型化SHA防止null/empty外部写入冲突；只允许隔离影子/日志键，禁止生产迁移。Node联合验证不等于真实同源Web Locks/localStorage，后续需独立授权profile证据。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
+
+
 **ADR-R187（2026-10-28，Root T04）：** localStorage不存在的null与存在的空字符串必须用类型化状态摘要区分，禁止以`before ?? ''`折叠；R187 v3日志不自动接受旧v2，冲突时保留影子和日志。仅隔离事务安全修复，localStorage无原子CAS，不能承诺完全无竞态。[证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
 
 **ADR-R186（2026-10-28，Root T04）：** 对忽略Web Locks的同源写入采取fail-closed：隔离恢复日志记录before/next SHA，若shadow已被外部写入，则保留外部数据和日志并拒绝恢复；旧v1日志不自动升级。localStorage缺少原子CAS，因此这只是冲突检测而非无竞态的正式迁移。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。

@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R188验收边界：** 实际来源签发与R187 typed-slot v3在Node私有Map 47/47、静态26/26及选定旧305/305通过，双独立2342 SHA与378 QA；R188真实同源联合验证本地blocked、远端not-run，正式T04未验收，T00–T11仍0/12。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
+
+
 **R187验收边界：** R186 null/empty影子冲突已由R187 typed-slot v3修复，Node18/18+静态17/17+选定旧270/270、双独立2325 SHA恢复；远端真实Chromium同一ESM 17/17但合成签发fixture，真实R148签发与正式迁移未验证。历史全量/真机/读屏not-run；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
 
 **R186验收边界：** v2日志before/next SHA与非协作shadow冲突检测通过Node新81/81+静态20/20及选定旧169/169，双独立2310 SHA恢复；真实浏览器管理员阻断、远端CI未运行，正式迁移/生产集成未完成。全部T00–T11仍0/12 Accepted。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。

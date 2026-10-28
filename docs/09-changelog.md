@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **2026-10-28 · R188 Root T04：** 实际R148/R152/R178/R179签发接入R187 typed-slot v3，Node47+静态26+旧305=378/378；父2325继承、累计2342双独立恢复；真实浏览器R188 blocked/not-run，正式0/12 Accepted。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
+
+
 - **2026-10-28 · R187 Root T04：** 复现并修复R186 null/empty影子SHA别名导致的外部写入覆盖；typed-slot v3、旧v2日志拒绝。选定旧270+新35=305/305，父2310 SHA继承，累计2325双独立恢复；远端真实Chromium同一ESM 17/17（合成签发fixture），正式0/12 Accepted。[证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
 
 - **2026-10-28 · R186 Root T04：** 新增v2隔离事务双SHA日志与非协作shadow冲突保护；新101+选定旧169=270/270，父2289 SHA继承，累计2310双独立恢复；真实浏览器blocked、远端not-run，正式0/12 Accepted。[证据](./evidence/v036-round186-t04-noncooperative-shadow-conflict.md)。
