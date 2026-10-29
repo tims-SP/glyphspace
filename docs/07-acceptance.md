@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R206验收边界：** 50条review-*只是证据工作票据（12未绑定、36旧未匹配、2同裁框冲突），不是referenceShapeId/assetId/instanceId，也没有完成五维审阅。旧359+新49+静态16=424/424、累计2600双独立SHA/QA恢复。没有合法同源高清原始字节/许可、逐笔认证、生产集成、真同源、真机/读屏或历史全量QA；T01 0/25、永久ID0、Root 0/12 Accepted。[R206证据](./evidence/v036-round206-t01-t02-semantic-arbitration-tickets.md)。
+
+
 **R205验收边界：** 冻结原生JPEG 12未绑定裁框的逐像素矩形覆盖审计，3626逐框像素中2908在同键旧矩形之外；这不代表独立笔画、缺根数量或字根身份。旧306+新53=359/359，累计2586成员双独立SHA与QA恢复。T01 0/25、T02批准ID0、全部Root T00–T11 0/12 Accepted；同源Chromium管理员阻断、真机/读屏/历史全量not-run，未取得同源高清/许可。[证据](./evidence/v036-round205-t01-t02-native-pixel-coverage.md)。
 
 **R204验收边界：** 五类执行代码/审计字节篡改实际绕过R203，R204隔离守卫五类均拒绝；父2558/2558继承、旧268+新38=306/306，累计2569双独立SHA/QA恢复。未获高清原始字节/许可/逐笔/永久ID/生产集成；真同源/真机/读屏/历史全量not-run；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round204-t01-t02-execution-and-audit-byte-anchor.md)。
