@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R218决策（Root T01/T02，非验收）：** 166个draft-only候选必须经过来源原始字节、明确许可、逐笔形态、语义类别、referenceShape/asset/instance分离及独立复核，E/K同裁框异SVG另需仲裁。所有门禁仅生成`blocked`或`needs-independent-signoff`，不得自动生成正式ID或发布字形；M四未绑定裁框优先。详情[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
+
+
 **ADR-R217（2026-10-29，Root T03隔离）：** 指针校准不能只比较根SVG CTM：子g变换、Path几何和CSS笔画变化可使拖动中旧坐标失效。R217在来源绑定光学提案前后增加子组CTM、子树标记、BBox及祖先/后代计算样式稳定性检查；遇动画或歧义失败关闭，令牌一次性消耗。保守拒绝可能覆盖合法动画，不可宣称精确墨迹/生产集成。回滚删除R217隔离目录及包，冻结入口和用户Storage不动。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
 
 **R216 / Root T03 决策（2026-10-29）：** 校准指针输入统一从真实SVG `getScreenCTM()`逆变换到100×100局部单位；仅对冻结来源SHA绑定的151草案实例产生R197光学编辑提案。拖动期间CTM变化、跨键、非三视图、非草案来源或墨迹越界必须失败关闭，不静默夹取；Chrome SVGMatrix缺`is2D`属性，不能用严格`===true`判断2D。该隔离模块不写DOM或用户Storage，不进入正式发布或T08验收。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
