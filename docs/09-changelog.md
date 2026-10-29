@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R220 Root T01/T02：** 冻结2008 JPEG 161/161原生裁框RGB SHA重新验证；边缘暗像素风险76/100/122（阈值60/100/140）、8对B/J/V/X框几何重叠、M四微框极少原生暗像素，新增R119经验残差3px高清候选留白。父2762 SHA、旧588+新40=628 QA、累计2773双独立恢复；正式来源0/25、ID0、0/12 Accepted。 [证据](./evidence/v036-round220-t01-t02-native-crop-boundary-risk.md)。
+
 **2026-10-29 · R219 Root T01/T02：** 新增25键161独立裁框/170观察的高清候选坐标交叉表，M四微框及E/K共享裁框冲突保持独立；R119五组数值互证，父2751 SHA、选定588 QA、累计2762双恢复通过。高清原始字节本地未落地/许可未确认，0/12 Accepted。 [证据](./evidence/v036-round219-t01-t02-25key-highres-coordinate-crosswalk.md)。
 
 **2026-10-29 · R218 Root T01/T02：** 新增来源/身份晋级证据缺口机器检查与25键M优先采集CSV，166草案全部blocked、两组E/K冲突不合并；父2740 SHA、选定518 QA、累计2751双恢复通过；非正式验收。详见[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
