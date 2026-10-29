@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R218验收边界：** 166草案身份的证据就绪门禁及25键来源采集队列是隔离T01/T02准备工作，非原图逐笔认证、非永久ID签发。R217父2740/2740 SHA，选定QA518/518，累计R218 2751文件Python/unzip双恢复各2751 SHA和518 QA；来源高清合法原始字节/许可、真同源/真机/真实读屏/历史全量未验收。T01正式0/25、永久ID0、缺根未知、Root T00–T11仍0/12 Accepted。[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
+
+
 **R217验收边界：** Root T03子组几何漂移守卫只在隔离包，真实Chromium旧3例错误接受、新8例拒绝；选定QA2667/2667，2740文件双独立恢复通过。未取得同源高清原始字节或正式来源认证，未集成生产内核，真实同源存储/真机/读屏未运行，递归历史QA超时未计pass。Root T00–T11仍0/12 Accepted、T01正式0/25、T02批准永久ID0、缺根数未知。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
 
 **R216边界：** Root T03仅新增隔离指针→100×100光学校准提案，真实Chromium about:blank 1510个坐标断言及12个异常拒绝、Node42、静态24、继承311，合计选定1899/1899；双独立2727成员SHA/QA通过。未完成生产集成、原图逐笔/永久ID、真同源存储、真实读屏、真机或完整历史QA。**T00–T11仍0/12 Accepted，T01正式0/25，T02正式ID0。** [证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
