@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- **R217 / Root T03（2026-10-29）：** 修复R216未检测子组transform/Path d/CSS笔画漂移的缺陷（Chromium旧错误接受3/3）；新增只读几何指纹及来源绑定守卫，选定旧1696+新971=2667/2667，父2727逐SHA，累计2740文件双独立SHA/QA，0文件变化。递归历史QA超时未计pass，Root 0/12 Accepted，生产入口/Storage未动。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
+
 - **R216 / Root T03（2026-10-29）：** 增加源SHA绑定的指针client→SVG 100×100逆CTM校准桥接，实际Chromium 1510正常坐标+12异常、Node42、静态24、旧311=1899/1899；父2713逐SHA，累计2727文件ZIP `90b25d9800939d9b182998d1dc94c7f81694ff8e90cc38c7ad22a37dda5f310c`，双独立恢复通过。仍为隔离草案，Root 0/12 Accepted。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
 
 **2026-10-29 · R215 Root T03（隔离）：** 真实Chromium复现R214 CSS独立rotate裁剪误接受，40个实际黑像素落在错误上界之外；新增CSS独立变换及SVG根transform守卫，选定旧261+新Chromium31+静态19=311/311；父2701逐SHA继承，累计2713双独立SHA/QA恢复，0文件变化。Root 0/12 Accepted，生产入口/用户Storage未动。[R215证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
