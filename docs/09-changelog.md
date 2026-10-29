@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R224 Root T03：** 新增151旧Path三视图真实DOM原位光学校准事务，验证第三视图故障回滚与Path不可变；父2812 SHA继承、累计2821文件双恢复、5433选定断言。仍非正式来源认证/生产集成；原始0/12 Accepted。[证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
+
 - **R223 / Root T01,T02 / 隔离：** 25键161裁框原生覆盖与36未匹配交叉审计，M四微框独立，1701选定QA、2812成员双恢复，正式0/12 Accepted。[证据](./evidence/v036-round223-t01-t02-25key-native-source-coverage.md)
 
 

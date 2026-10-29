@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R224 Root T03（隔离DOM光学校准事务，非验收）：** R223父ZIP2812/2812逐SHA继承；R198 SHA绑定151旧Path草案在真实Chromium about:blank挂载25键×三视图=75 SVG/453 g/459 path，M/V两实例原位更新6组transform，453节点/Path及焦点不变；第三视图注入失败回滚、Path篡改/墨迹越界拒绝。旧1701+浏览器7场景3718断言+静态14=5433/5433选定断言，R224累计2821文件ZIP SHA `a325e9beed8ea8e678f4057589168e8ece0596134845ff0f60201328ac353e72`，Python/unzip双独立各2821 SHA与5433 QA，QA后0变化。about:blank SHA委托Python hashlib，真实同源仍管理员阻断；来源0/25、ID0、缺根未知、Root 0/12 Accepted，真机/读屏/历史全量not-run；冻结入口及用户存储未动。[R224证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
+
 **R223 Root T01/T02（全25键原生来源裁框覆盖审阅，隔离非验收）：** 真读R222父ZIP2800/2800逐SHA继承；锁定R2 25键参考矩形、R219 161来源裁框、R207 36旧未匹配票据、R209 166草案身份与冻结2008 JPEG。原生键框337809像素、裁框并集83678、框外254131（背景/标签/边框，非缺根）、多框覆盖741；M四个未绑定微框独立且不签发ID。旧1016+新668+静态17=1701/1701选定QA，R223累计2812文件ZIP SHA `066942bc8b32f55f9c4f76d8445ff8527b2c8ce1297597b7defacabdb98f767b`，Python/unzip双独立各2812 SHA和1701 QA、QA后0变化。真实独立loopback Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked；高清许可/原始字节/逐笔、真机、读屏、历史全量not-run。正式T01 0/25、T02批准ID0、缺根未知、Root 0/12 Accepted；冻结入口/用户Storage未动。[R223证据](./evidence/v036-round223-t01-t02-25key-native-source-coverage.md)。
 
 

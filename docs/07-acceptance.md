@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R224 Root T03（隔离DOM光学校准事务，非验收）：** R223父ZIP2812/2812逐SHA继承；R198 SHA绑定151旧Path草案在真实Chromium about:blank挂载25键×三视图=75 SVG/453 g/459 path，M/V两实例原位更新6组transform，453节点/Path及焦点不变；第三视图注入失败回滚、Path篡改/墨迹越界拒绝。旧1701+浏览器7场景3718断言+静态14=5433/5433选定断言，R224累计2821文件ZIP SHA `a325e9beed8ea8e678f4057589168e8ece0596134845ff0f60201328ac353e72`，Python/unzip双独立各2821 SHA与5433 QA，QA后0变化。about:blank SHA委托Python hashlib，真实同源仍管理员阻断；来源0/25、ID0、缺根未知、Root 0/12 Accepted，真机/读屏/历史全量not-run；冻结入口及用户存储未动。[R224证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
+
 **R223验收边界：** 全25键参考矩形和161来源裁框的原生覆盖、36未匹配票据、M四独立未绑定裁框只属来源审阅，不代表真实缺根、笔画归属、正式ID或SVG生产集成。1701/1701选定QA、2812累计成员双独立恢复通过；真实同源blocked，许可/高清逐笔/真机/读屏/完整历史not-run；T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0。
 
 
