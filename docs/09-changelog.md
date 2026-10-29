@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R208 Root T01/T02（T05依赖，隔离）：** 从冻结V0.35 HTML重算151旧SVG Path SHA，联读R156 JPEG与R207旧槽，证明36/36未匹配旧槽仍有JPEG观察和旧SVG；15无别名观察=12纯无别名裁框+3 K混合裁框观察；E舟/用及K川/丨同JPEG裁框但不同旧SVG Path SHA，阻断自动合并。父2613逐SHA继承、旧487+新67=554/554、累计2628双独立SHA/QA恢复。正式0/12 Accepted，冻结生产入口/用户Storage未动。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
+
+
 **2026-10-29 · R207 Root T01/T02（隔离）：** 纠正R206 36“旧未匹配”票据易被误读为无来源的证据歧义：R156 36/36各有原生来源观察；新增156旧槽与36来源CSV，151可视+5关联、M四槽双观察和E共享裁框分别记录。旧424+新63=487/487，父2600逐SHA继承、累计2613双恢复。正式0/12 Accepted，冻结生产入口/用户Storage未动。[R207证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
 
 
