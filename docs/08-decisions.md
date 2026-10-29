@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R210 ADR（T03隔离墨迹有效绘制）：** R200几何墨迹BBox不能代表祖先opacity/clip/mask/filter后的实际可见墨迹；新增有效computed-style祖先/Path失败关闭守卫，保留R200源代码与全部正常几何。无法量测的绘制效果拒绝，不降级为“几何通过”或原图认证。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
+
+
 **R209 ADR（仅隔离T02草案身份，不改变正式数据模型）：** 以R50冻结旧SVG Path、R156来源观察、R206原票据、R208三向证据形成`draft-only/`内容绑定UID，151旧可视+12来源独立+3 K混合各有独立草案身份。保留50票据ID、E/K同裁框两旧Path不得合并、K三条混合观察不得被旧槽吞并。草案UID不是正式referenceShapeId/assetId/instanceId；来源许可、逐笔、语义和独立审核前不允许签发正式身份或生产绑定。详见[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
 
 
