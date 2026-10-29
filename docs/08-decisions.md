@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R213（Root T03，隔离）：** R212在CSS transform scale<1下直接用未缩放border扣除屏幕rect，实际丢失可见像素，不能称为保守上界。R213用subpixel CSS border-box估算轴对齐屏幕缩放，并拒绝旋转、负缩放、透视与不确定盒子；保留原inkBBox，裁剪上界仅供隔离QA，禁止替代逐笔、精确墨迹或生产集成。父2675逐SHA继承、双恢复2688、选定QA203/203，Root 0/12 Accepted。
+
 **ADR-R212（Root T03，隔离）：** R211保守拒绝所有HTML overflow会排除合法滚动/裁剪键帽；R212允许轴对齐矩形padding-box裁剪，返回单独的可见墨迹保守上界，不将相交矩形伪装成真实笔画边界。旋转、mask、透明等继续失败关闭；SVG内裁剪、圆角精确像素、真机及正式生产集成仍未解决。回滚删除R212隔离目录；原R200/R210/R211、冻结HTML、用户Storage均未改。[R212证据](./evidence/v036-round212-t03-rectangular-overflow-upper-bound.md)。
 **ADR-R211（Root T03，隔离）：** R210的SVG内部祖先可见性检查不等于HTML外层可见墨迹；外层opacity/clip/mask等必须参与失败关闭。新模块检查SVG外部直到documentElement，拒绝无法准确计算的裁剪/overflow/contain等效果，不将几何BBox当真实可见笔画，也不在缺裁剪感知内核时生产集成；不修改R200/R210、正式SVG和用户存储。回滚：删除R211隔离模块/恢复包即可。[R211证据](./evidence/v036-round211-t03-outer-html-ancestor-paint-gate.md)。
 
