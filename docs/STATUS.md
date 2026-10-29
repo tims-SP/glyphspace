@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R210 Root T03（有效绘制墨迹边界守卫，隔离非验收）：** 真实Chromium复现R200祖先opacity=0/全裁剪仍报告非空inkBBox，截图黑像素正常3200→不可见0；新增computed-style祖先/Path失败关闭守卫，906旧SVG组新旧正常几何一致、14/14对抗拒绝。父R209 2640/2640逐SHA继承；选定旧620+新Chromium12+静态12=644/644，R210累计2651文件ZIP SHA `12e329603696bd85991666c222e14f68124c920a8fb9effa2331661923433449`，Python/unzip双独立恢复各2651 SHA与644 QA、QA后不变。T03未生产集成，原始0/12 Accepted，来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户存储未动。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
+
+
 **R209 Root T01/T02（类型化草案身份桥接，T05仅关联，非验收）：** 真读R208累计ZIP 2628/2628 SHA继承；151旧SVG可视槽+12无旧别名裁框+3 K混合观察形成166个`draft-only/`非正式候选，50条R206票据原ID连接52条边，E/K同裁框异Path继续独立；R50冻结Path交叉验证阻断内存Path伪造。旧554+新51+静态15=620/620；R209累计2640文件ZIP SHA `89c8eed7d8dfbf85b29d68565e33c1d577d79d82be73584534944c5c9c0d81df`，Python/unzip双独立恢复各2640 SHA及620 QA。T01正式0/25、永久ID0、缺根未知、Root 0/12 Accepted；同源blocked、真机/读屏/历史全量not-run；冻结入口及用户Storage未动。[R209证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
 
 
