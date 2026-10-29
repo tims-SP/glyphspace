@@ -34,7 +34,7 @@ c0cfec5a03457077fe260f0f04c15d997750a7a642b108e55b45fb69b05d59fa  docs/07-accept
 96259a50ebc4e4c3d655dd1ea2502b6af6a191ce1cf66d167eb7a7212c0bf605  docs/13-asset-provenance.md
 14fd8678254b4ca58eb15e5999f9df810edfb5497f8d80ffff24119d979bbfc7  docs/14-ui-change-control.md
 e3fabd8a7b4e2dfbe37ad7c4de426d0a04ef9699d53ecfe7fe55a859ae785b6e  docs/README.md
-3b1e7c06faa363d48b178e5775c552ace289bdb8862c6a574cb5634939157ad0  docs/STATUS.md
+4a63c0efbce0912a906c16da55fceeee6c854d4fb4321df98a2ef1ab44889dac  docs/STATUS.md
 5d0db0b8fa2a252011bf769872ea98a4fe2870790c22632892764e7487d77559  docs/evidence/v036-round100-archive-chain-m-provenance.md
 dad996f16600fa3e320e333b4168c364b8975129dfba253444e6ea17a660cc00  docs/evidence/v036-round101-m-native-source-ownership.md
 0211afc28c2b0102ed4f08e4f5e5321a34b494155e477d1623faec4277674abb  docs/evidence/v036-round102-m-native-overlap-topology.md
@@ -140,7 +140,7 @@ b73e188dbf47a1de8ff87dfdbac78317c75dfb9530a7523ee961f9a1a8f4d9a8  docs/evidence/
 3ab89d758bdfa1dbb64112a2f1008895e596700017f50bc676b0efb79dbf665e  docs/evidence/v036-round202-t01-t02-native-crop-ledger-integrity.md
 c03464e53015c75a9236279bd4a69bfa6cc44bbe42a793b00698e2f271ba721d  docs/evidence/v036-round203-t01-t02-coordinated-ledger-provenance-gate.md
 f95e9818fc70e60118b3b932de4255d304b4df4ac166b03aab2042b7165f364a  docs/evidence/v036-round204-t01-t02-execution-and-audit-byte-anchor.md
-88609ee29b6fcd3411bdebeea62056c20467354b50b3715e6e3078171a954ce7  docs/evidence/v036-round205-t01-t02-native-pixel-coverage.md
+ac9fb0d6fb8eae070fc8dec17b53c6341c397ef2632358ce77ef1a53640eed8b  docs/evidence/v036-round205-t01-t02-native-pixel-coverage.md
 b5c01d59f945f806e3a7f6e86b4d736f3b6ddb1562ac1dd4cb15dbd3a1443d2b  docs/evidence/v036-round62-t03-safe-optical-gate.md
 d38a42d4972570a1d9e0fad5c51974d5c585dc320e26ab8a638ffbb5c065ceb3  docs/evidence/v036-round65-t03-browser-stroke-geometry.md
 1700125fba55a84c2ef877a4904ce86a7665567d87610027a2d105ad220c7501  docs/evidence/v036-round66-t03-source-bound-renderer.md
