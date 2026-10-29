@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R218 Root T01/T02：** 新增来源/身份晋级证据缺口机器检查与25键M优先采集CSV，166草案全部blocked、两组E/K冲突不合并；父2740 SHA、选定518 QA、累计2751双恢复通过；非正式验收。详见[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
+
+
 - **R217 / Root T03（2026-10-29）：** 修复R216未检测子组transform/Path d/CSS笔画漂移的缺陷（Chromium旧错误接受3/3）；新增只读几何指纹及来源绑定守卫，选定旧1696+新971=2667/2667，父2727逐SHA，累计2740文件双独立SHA/QA，0文件变化。递归历史QA超时未计pass，Root 0/12 Accepted，生产入口/Storage未动。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
 
 - **R216 / Root T03（2026-10-29）：** 增加源SHA绑定的指针client→SVG 100×100逆CTM校准桥接，实际Chromium 1510正常坐标+12异常、Node42、静态24、旧311=1899/1899；父2713逐SHA，累计2727文件ZIP `90b25d9800939d9b182998d1dc94c7f81694ff8e90cc38c7ad22a37dda5f310c`，双独立恢复通过。仍为隔离草案，Root 0/12 Accepted。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
