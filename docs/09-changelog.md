@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R226 Root T03：** 新增隔离CSS计算样式守卫，真实Chromium复现并修复7类R225外部样式表静默变更；R225父2834 SHA继承、累计2849双独立恢复、各11933选定QA，真实同源blocked。生产入口未动，正式0/12 Accepted。[证据](./evidence/v036-round226-t03-computed-css-style-drift-guard.md)。
+
 **2026-10-30 · R225 Root T03：** 真实Chromium复现R224五类DOM拓扑/属性漂移错误接受，新增隔离快照与异步计划后重检；父2821 SHA继承、累计2834双独立恢复、8169选定QA。生产入口未动，正式0/12 Accepted。[证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。
 
 **2026-10-30 · R224 Root T03：** 新增151旧Path三视图真实DOM原位光学校准事务，验证第三视图故障回滚与Path不可变；父2812 SHA继承、累计2821文件双恢复、5433选定断言。仍非正式来源认证/生产集成；原始0/12 Accepted。[证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
