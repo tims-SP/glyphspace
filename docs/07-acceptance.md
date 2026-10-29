@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R207验收边界：** 36/36旧未匹配槽在R156已有原生JPEG观察/裁框，但未获正式referenceShape匹配、逐笔或语义认证；R206顶层sourceCropId=null不能解释为没有原图来源。新增156槽证据映射与36条来源交叉表，旧424+新63=487/487，父2600 SHA继承、累计2613双独立恢复。正式来源0/25、永久ID0、缺根数未知、T00–T11仍0/12 Accepted；真同源blocked，真机/读屏/历史全量not-run。[证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
+
+
 **R206验收边界：** 50条review-*只是证据工作票据（12未绑定、36旧未匹配、2同裁框冲突），不是referenceShapeId/assetId/instanceId，也没有完成五维审阅。旧359+新49+静态16=424/424、累计2600双独立SHA/QA恢复。没有合法同源高清原始字节/许可、逐笔认证、生产集成、真同源、真机/读屏或历史全量QA；T01 0/25、永久ID0、Root 0/12 Accepted。[R206证据](./evidence/v036-round206-t01-t02-semantic-arbitration-tickets.md)。
 
 
