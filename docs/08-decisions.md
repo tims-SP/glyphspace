@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R225（2026-10-30，Root T03，隔离）：** 三视图光学事务不能只冻结已知组的Path与transform；必须同时冻结每个SVG的子组成员与顺序、section的SVG成员与顺序、SVG/section及group除transform外的属性，并在异步计划完成后重新检查，防止R224五种DOM漂移被错误接受。仅修改独立R225模块，R224原始模块、生产入口及用户存储不动；不以about:blank证明真实同源。回滚删除R225隔离文件/累计ZIP。[证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。
+
 **ADR-R224（2026-10-30，Root T03，隔离）：** 选择在R198来源SHA绑定的151旧Path三视图DOM中，仅事务性修改各实例的SVG transform；保留节点与Path身份，先校验全部453节点/459路径及三视图一致性，再提交，异常全量回滚。不以重新渲染替代事务以免丢失焦点或中断输入；拒绝将about:blank及Python SHA桥接当作真实同源存储或来源认证。回滚仅删除R224隔离模块和累计ZIP，不修改冻结入口。[证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
 
 **R223决定：** 25键来源裁框并集与补集仅用于来源覆盖审阅；框外原生像素不能被当作漏根数。36旧未匹配与M四无旧别名保持独立候选，正式ID和生产SVG仍阻断；原图高清授权待核实。见[R223证据](./evidence/v036-round223-t01-t02-25key-native-source-coverage.md)。
