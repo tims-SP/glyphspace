@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R221 Root T01/T02（冻结JPEG原生裁框重叠像素归属，隔离非验收）：** 父R220累计ZIP2773/2773逐SHA继承；重新验证161/161原生裁框RGB与R219索引全字节SHA，B/J/V/X共8对裁框重叠，阈值100下6对有低清暗像素、按键去重B10/J8/V17/X1共36；V多框覆盖377像素且最多三重。V一对57px及X一对32px交集阈值140无暗像素，均不证明无真实笔画重叠或身份归属。旧628+新57=685/685选定QA，R221累计2785文件ZIP SHA `6ee6599610f3ade340bed5eb4345defc894eeaac097ba2a1f08706338b50e3ef`，Python/unzip双独立2785 SHA及685 QA、QA后0变更。高清原始字节/许可/逐笔未完成；正式T01 0/25、T02 ID0、缺根未知、Root 0/12 Accepted；真同源/真机/读屏/历史全量not-run。 [R221证据](./evidence/v036-round221-t01-t02-native-overlap-pixel-ownership.md)。
+
 **R220原始Root T01/T02追踪（T05来源前置，非验收）：** 冻结2008 JPEG与R219 161原生裁框逐RGB SHA一致，M四未绑定来源独立；100阈值边缘深色100/161、B/J/V/X低清框几何交集8对，均只用于人工逐笔复核优先级，不能认证笔画或独立身份。R119 p95经验残差换算3高清像素启发式留白，不保证全覆盖。父R219 2762 SHA继承，选定旧588+新40=628 QA，R220累计2773文件双独立SHA/QA恢复。T01 0/25、ID0、缺根未知、Root 0/12 Accepted。 [证据](./evidence/v036-round220-t01-t02-native-crop-boundary-risk.md)。
 
 **R219 Root T01/T02（25键高清候选坐标索引，隔离非验收）：** 基于R119真实ORB仿射与R156来源账本，新增25键170观察/161独立裁框的3508×2480候选坐标交叉表（原生RGB SHA、四角投影、整数包络、R209草案UID）。R119五组风险框误差<0.005高清像素；M四独立未绑定框及E/K同裁框异旧SVG身份仍隔离。R114/R119远端CI作业success已复核，但高清原始字节未落地本地、许可未确认、逐笔not-run。父R218 2751/2751 SHA，选定旧518+新70=588/588；R219累计2762成员ZIP SHA `5df9e395400857888a150791eb2c0e7db1ad0357e085a988bb8e075489fe6f0d`，Python/unzip双独立恢复各2762 SHA及588 QA。正式T01 0/25、永久ID0、缺根未知、Root 0/12 Accepted；真同源/真机/读屏/历史全量not-run。 [R219证据](./evidence/v036-round219-t01-t02-25key-highres-coordinate-crosswalk.md)。
