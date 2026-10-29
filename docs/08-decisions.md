@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R226（2026-10-30，Root T03，隔离）：** R225仅校验DOM属性/拓扑不能捕获外部样式表对现有SVG笔画与祖先布局的静默变更；R226在隔离三视图事务中对host、section、SVG、group、path计算样式建立快照，并在异步提案后、写transform前复验。真实Chromium七种R225错误接受均由R226拒绝。原R225模块、冻结生产入口、用户存储不动。此严格快照不代表生产响应式适配或真实同源认证。回滚删除R226隔离文件。[证据](./evidence/v036-round226-t03-computed-css-style-drift-guard.md)。
+
 **ADR-R225（2026-10-30，Root T03，隔离）：** 三视图光学事务不能只冻结已知组的Path与transform；必须同时冻结每个SVG的子组成员与顺序、section的SVG成员与顺序、SVG/section及group除transform外的属性，并在异步计划完成后重新检查，防止R224五种DOM漂移被错误接受。仅修改独立R225模块，R224原始模块、生产入口及用户存储不动；不以about:blank证明真实同源。回滚删除R225隔离文件/累计ZIP。[证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。
 
 **ADR-R224（2026-10-30，Root T03，隔离）：** 选择在R198来源SHA绑定的151旧Path三视图DOM中，仅事务性修改各实例的SVG transform；保留节点与Path身份，先校验全部453节点/459路径及三视图一致性，再提交，异常全量回滚。不以重新渲染替代事务以免丢失焦点或中断输入；拒绝将about:blank及Python SHA桥接当作真实同源存储或来源认证。回滚仅删除R224隔离模块和累计ZIP，不修改冻结入口。[证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
