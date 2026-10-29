@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R206原始T01/T02追踪（非验收）：** 以R96/R156/R157/R196/R205原生来源建立12未绑定+36旧未匹配+2共享裁框冲突的50条非发布票据；K圈注/根身份分离待审、M四微框独立、E/K冲突不合并。R205父2586 SHA继承、累计2600双恢复424/424选定QA；没有永久ID批准或正式SVG、来源认证仍0/25，Root 0/12 Accepted；真同源blocked、真机/读屏/历史全量not-run。[R206证据](./evidence/v036-round206-t01-t02-semantic-arbitration-tickets.md)。
+
+
 **R205 Root T01/T02追踪（非验收）：** 父R204 2569 SHA继承，原生JPEG 12未绑定裁框逐像素覆盖、6重叠区域RGB SHA、2同裁框冲突保留；旧306+新53=359/359、累计2586双独立恢复。来源0/25、正式ID0、缺根未知、Root 0/12 Accepted；无生产/Storage修改，真同源blocked、真机/读屏/历史全量not-run。[证据](./evidence/v036-round205-t01-t02-native-pixel-coverage.md)。
 
 **R204 Root T01/T02（执行源码与历史审计字节锚，隔离非认证）：** 实际复现R203对R201/R202/R203可执行代码和R202历史审计/父清单共5类字节篡改仍误接受；新增父R203可信档案SHA绑定、执行前后失败关闭。父R203 2558/2558逐SHA继承，旧268+新增对抗26+静态12=306/306；累计2569文件ZIP SHA `a55b4b6a8e797e210496e45bf446b011913e394f06051863a3c39c874cb35c1b`，Python/unzip双独立恢复各2569 SHA和306 QA、QA后不变。T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/完整历史not-run，生产入口及用户Storage未动。[证据](./evidence/v036-round204-t01-t02-execution-and-audit-byte-anchor.md)。
