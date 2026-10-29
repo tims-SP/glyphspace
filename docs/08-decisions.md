@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R209 ADR（仅隔离T02草案身份，不改变正式数据模型）：** 以R50冻结旧SVG Path、R156来源观察、R206原票据、R208三向证据形成`draft-only/`内容绑定UID，151旧可视+12来源独立+3 K混合各有独立草案身份。保留50票据ID、E/K同裁框两旧Path不得合并、K三条混合观察不得被旧槽吞并。草案UID不是正式referenceShapeId/assetId/instanceId；来源许可、逐笔、语义和独立审核前不允许签发正式身份或生产绑定。详见[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
+
+
 **ADR-R208（Root T01/T02，T05依赖）：** 明确区分“参考形态未匹配”“冻结JPEG来源观察存在”“冻结旧SVG Path存在”三种事实；36旧未匹配槽同时具有后两者，不可称作缺旧SVG。15无旧别名观察中3条与K旧别名共用裁框，不能据此宣称15新根。E:1舟/E:8用及K:2川/K:3丨各共用原图裁框但旧SVG Path SHA不同，禁止自动合并、签发永久ID或撤销E旧空白框否定。保留12无旧别名独立裁框、K混合来源与高清/许可/逐笔阻断；隔离审计可删除回滚。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
 
 
