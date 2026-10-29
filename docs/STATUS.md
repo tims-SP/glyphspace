@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R207 Root T01/T02（156旧槽与R156来源观察纠错，隔离非认证）：** 真实联读T00冻结156槽、R113坐标、R156 170观察/161裁框与R206 50票据，发现36/36“未匹配旧槽”实际上各有冻结JPEG来源观察（未匹配≠无来源，更不等于已认证）；新增156槽映射与36条证据交叉表，保留R206 ticketId，5关联槽隔离、M:0–M:3双观察保留、E:1/E:8同裁框不合并。父R206 2600/2600 SHA继承，旧424+新48+静态15=487/487，累计2613文件ZIP SHA `1b69983adafb0d4b972a9411ef2b3f849add4279fa1626505daae9ec5ce76e2a`，Python/unzip双恢复各2613 SHA及487 QA。T01正式0/25、永久ID0、缺根未知、Root 0/12 Accepted；真同源blocked、真机/读屏/历史全量not-run；冻结入口与用户Storage未动。[R207证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
+
+
 **R206 Root T01/T02（50条来源语义仲裁票据，隔离非认证）：** R205父2586/2586逐SHA继承；12无旧别名裁框、36旧槽未匹配、2组E/K同裁框冲突建立50条review-*票据（非永久ID），K圈注待审、M四微框分立；R157宽松邻接与R205精确原生矩形交叠口径不同，R206独立重算并拒绝伪造。选定旧359+新49+静态16=424/424；累计2600文件ZIP SHA `0b3edc0d8241278a1bb8ffd023638622a41d9d09c94811b4e972859c6460bcae`，Python/unzip双独立恢复各2600 SHA及424 QA、QA后不变。T01 0/25、永久ID0、缺根未知、Root 0/12 Accepted；真同源blocked、真机/读屏/历史全量not-run；R11/R12/R35与R12 20SVG仍缺。[R206证据](./evidence/v036-round206-t01-t02-semantic-arbitration-tickets.md)。
 
 
