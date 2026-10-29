@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R214正式验收边界：** 根SVG overflow视口的保守裁剪上界已在真实Chromium复核（新增40+静态18、选定旧203，合计261/261），2701成员累计包双独立SHA/QA恢复；但不代表精确墨迹、来源逐笔、永久ID或正式T03生产集成。Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真同源blocked，真机/读屏/历史全量not-run。[证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
+
 **R213 Root T03（缩放祖先overflow上界修复，隔离非验收）：** 真实Chromium发现R212在scale(.5)时屏幕可见500黑像素却报告仅10×15上界，漏掉真实墨迹；R213改用CSS subpixel border-box与屏幕缩放比率，scale(.5)修正为20×25，scale(2)为80×100，906旧SVG几何不变，旋转/透视等失败关闭。父R212 2675/2675 SHA继承，选定旧159+新44=203/203；累计2688文件ZIP SHA `5907af02850e0084528b3082f6524e9fd8750d20a88ecbcf9eeae7fb5aee7089`，Python/unzip双独立恢复各2688 SHA及203 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户Storage未动。[R213证据](./evidence/v036-round213-t03-scaled-overflow-border-fix.md)。
 
 **R212 Root T03（HTML overflow裁剪保守包络，隔离非验收）：** 修复R211一律拒绝合法overflow:hidden/clip/scroll祖先；新增真实Chromium矩形裁剪上界（保留原inkBBox，完全裁剪null），906旧SVG几何不变，截图黑像素10000→2000→0；父R211 2663/2663逐SHA继承，选定旧126+新33=159/159；累计2675文件ZIP SHA `4f4fd0283aa87dba0f95224c5e6afc5a11ca67b048ab8c263be5e79ce9e296ae`，Python/unzip双独立恢复各2675 SHA及159 QA、QA后0变化。R211递归670套件超时不计pass，完整历史全量not-run。T03未生产集成，Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏not-run；冻结入口/用户Storage未动。[R212证据](./evidence/v036-round212-t03-rectangular-overflow-upper-bound.md)。

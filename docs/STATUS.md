@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R214 Root T03（SVG根视口裁剪保守上界，隔离非验收）：** R213未处理SVG根自身overflow，新增独立SVG viewport屏幕交集，保留原inkBBox，支持缩放及HTML+SVG双层裁剪；真实Chromium黑像素10000/19600/2500/0/200/4200案例，906旧SVG原始几何不变。父R213 2688/2688逐SHA继承，选定旧203+新Chromium40+静态18=261/261；累计2701文件ZIP SHA `d06b8400bece34bf9e6fb36ac1c88f7ff33df5e2ada15d2a04902d8de4a6c1da`，Python/unzip双独立恢复各2701 SHA与261 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真实同源blocked，真机/读屏/历史全量not-run，冻结入口/Storage未动。[R214证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
+
 **R213 Root T03（缩放祖先overflow上界修复，隔离非验收）：** 真实Chromium发现R212在scale(.5)时屏幕可见500黑像素却报告仅10×15上界，漏掉真实墨迹；R213改用CSS subpixel border-box与屏幕缩放比率，scale(.5)修正为20×25，scale(2)为80×100，906旧SVG几何不变，旋转/透视等失败关闭。父R212 2675/2675 SHA继承，选定旧159+新44=203/203；累计2688文件ZIP SHA `5907af02850e0084528b3082f6524e9fd8750d20a88ecbcf9eeae7fb5aee7089`，Python/unzip双独立恢复各2688 SHA及203 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户Storage未动。[R213证据](./evidence/v036-round213-t03-scaled-overflow-border-fix.md)。
 
 **R212 Root T03（HTML overflow裁剪保守包络，隔离非验收）：** 修复R211一律拒绝合法overflow:hidden/clip/scroll祖先；新增真实Chromium矩形裁剪上界（保留原inkBBox，完全裁剪null），906旧SVG几何不变，截图黑像素10000→2000→0；父R211 2663/2663逐SHA继承，选定旧126+新33=159/159；累计2675文件ZIP SHA `4f4fd0283aa87dba0f95224c5e6afc5a11ca67b048ab8c263be5e79ce9e296ae`，Python/unzip双独立恢复各2675 SHA及159 QA、QA后0变化。R211递归670套件超时不计pass，完整历史全量not-run。T03未生产集成，Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏not-run；冻结入口/用户Storage未动。[R212证据](./evidence/v036-round212-t03-rectangular-overflow-upper-bound.md)。
