@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R210 Root T03（有效绘制墨迹边界守卫，隔离非验收）：** 真实Chromium复现R200祖先opacity=0/全裁剪仍报告非空inkBBox，截图黑像素正常3200→不可见0；新增computed-style祖先/Path失败关闭守卫，906旧SVG组新旧正常几何一致、14/14对抗拒绝。父R209 2640/2640逐SHA继承；选定旧620+新Chromium12+静态12=644/644，R210累计2651文件ZIP SHA `12e329603696bd85991666c222e14f68124c920a8fb9effa2331661923433449`，Python/unzip双独立恢复各2651 SHA与644 QA、QA后不变。T03未生产集成，原始0/12 Accepted，来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户存储未动。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
+
+
 **R209验收边界：** 166个`draft-only/`候选与50票据的52条类型化链接只证明历史审阅身份可独立追踪，不能作为referenceShapeId、assetId、永久instanceId或已认证字根；E/K同裁框异SVG仍阻断。旧554+新66=620/620选定QA，2640累计成员双独立SHA/QA恢复。来源0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；合法高清原图/许可/逐笔、真实同源、真机、读屏、历史全量仍blocked/not-run。[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
 
 
