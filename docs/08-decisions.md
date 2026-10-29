@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R208（Root T01/T02，T05依赖）：** 明确区分“参考形态未匹配”“冻结JPEG来源观察存在”“冻结旧SVG Path存在”三种事实；36旧未匹配槽同时具有后两者，不可称作缺旧SVG。15无旧别名观察中3条与K旧别名共用裁框，不能据此宣称15新根。E:1舟/E:8用及K:2川/K:3丨各共用原图裁框但旧SVG Path SHA不同，禁止自动合并、签发永久ID或撤销E旧空白框否定。保留12无旧别名独立裁框、K混合来源与高清/许可/逐笔阻断；隔离审计可删除回滚。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
+
+
 **ADR-R207（Root T01/T02）：** “旧槽未匹配参考形态”与“没有来源观察”是不同概念。36个R206未匹配票据均可追到R156冻结JPEG来源观察，故在隔离交叉表增加独立legacySourceEvidence，而保留原sourceCropId=null语义及50票据ID；严禁将来源观察直接视作referenceShape匹配、正式永久ID或新增字根。T00五个关联槽不参与151可视来源绑定，M四旧槽各有双观察、E:1/E:8同裁框不合并。[证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
 
 
