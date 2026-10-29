@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R210 Root T03（隔离）：** 真实Chromium复现祖先隐藏/裁剪墨迹误报，新增有效绘制守卫，906组正常几何一致、14反例拒绝；父2640逐SHA继承、644/644选定QA、累计2651双独立SHA/QA恢复。正式0/12 Accepted，冻结入口/Storage未动。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
+
+
 **2026-10-29 · R209（Root T01/T02，T05仅关联）：** 166类型化非正式草案候选、50票据/52链接、E/K共享裁框不合并；父R208 2628 SHA继承，旧554+新66=620/620，累计2640双恢复；正式T00–T11 0/12 Accepted，生产入口及用户Storage未动。[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
 
 
