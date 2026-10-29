@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R205 Root T01/T02追踪（非验收）：** 父R204 2569 SHA继承，原生JPEG 12未绑定裁框逐像素覆盖、6重叠区域RGB SHA、2同裁框冲突保留；旧306+新53=359/359、累计2586双独立恢复。来源0/25、正式ID0、缺根未知、Root 0/12 Accepted；无生产/Storage修改，真同源blocked、真机/读屏/历史全量not-run。[证据](./evidence/v036-round205-t01-t02-native-pixel-coverage.md)。
+
 **R204 Root T01/T02（执行源码与历史审计字节锚，隔离非认证）：** 实际复现R203对R201/R202/R203可执行代码和R202历史审计/父清单共5类字节篡改仍误接受；新增父R203可信档案SHA绑定、执行前后失败关闭。父R203 2558/2558逐SHA继承，旧268+新增对抗26+静态12=306/306；累计2569文件ZIP SHA `a55b4b6a8e797e210496e45bf446b011913e394f06051863a3c39c874cb35c1b`，Python/unzip双独立恢复各2569 SHA和306 QA、QA后不变。T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/完整历史not-run，生产入口及用户Storage未动。[证据](./evidence/v036-round204-t01-t02-execution-and-audit-byte-anchor.md)。
 
 **R203 Root T01/T02（协同伪造来源账本的SHA前置守卫，隔离非认证）：** 真实复现R202观察与裁框同时改用另一真实JPEG ROI并重算双SHA仍错误接受；R203将R156/R157/R174/R4/R196/R201及冻结JPEG/HTML共8个来源文件绑定已验证父档案SHA，先验后执行R202像素守卫与R201图重建，拒绝协同篡改及跨账本漂移。父R202 2547/2547逐SHA继承，旧240+新28=268/268，累计2558文件ZIP SHA `26058a5312341f0b6bc3dd1ca98fc72ea6a641be1477aa1de38200a0161457c3`，Python/unzip双独立恢复各2558 SHA和268 QA、QA后不变。T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/历史全量not-run，生产入口及用户Storage未动。[证据](./evidence/v036-round203-t01-t02-coordinated-ledger-provenance-gate.md)。
