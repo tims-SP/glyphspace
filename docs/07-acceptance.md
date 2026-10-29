@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R208验收边界：** 151旧SVG实例/153 Path、36个未匹配旧槽同时有JPEG观察+旧SVG、K三条无别名混合裁框观察、E/K两组同裁框异SVG Path SHA仅属来源完整性与冲突定位；不证明高清原图逐笔、形态、正式缺根、永久ID、T05补图或生产集成。选定旧487+新50+静态17=554/554，累计2628双恢复SHA/QA；历史全量、真同源、真机、真实读屏not-run/blocked。T01 0/25、永久ID0、Root 0/12 Accepted。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
+
+
 **R207验收边界：** 36/36旧未匹配槽在R156已有原生JPEG观察/裁框，但未获正式referenceShape匹配、逐笔或语义认证；R206顶层sourceCropId=null不能解释为没有原图来源。新增156槽证据映射与36条来源交叉表，旧424+新63=487/487，父2600 SHA继承、累计2613双独立恢复。正式来源0/25、永久ID0、缺根数未知、T00–T11仍0/12 Accepted；真同源blocked，真机/读屏/历史全量not-run。[证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
 
 
