@@ -1,5 +1,6 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R203 Root T01/T02（协同伪造来源账本的SHA前置守卫，隔离非认证）：** 真实复现R202观察与裁框同时改用另一真实JPEG ROI并重算双SHA仍错误接受；R203将R156/R157/R174/R4/R196/R201及冻结JPEG/HTML共8个来源文件绑定已验证父档案SHA，先验后执行R202像素守卫与R201图重建，拒绝协同篡改及跨账本漂移。父R202 2547/2547逐SHA继承，旧240+新28=268/268，累计2558文件ZIP SHA `26058a5312341f0b6bc3dd1ca98fc72ea6a641be1477aa1de38200a0161457c3`，Python/unzip双独立恢复各2558 SHA和268 QA、QA后不变。T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/历史全量not-run，生产入口及用户Storage未动。[证据](./evidence/v036-round203-t01-t02-coordinated-ledger-provenance-gate.md)。
 **R202 Root T01/T02（来源裁框原生像素与注册表互证，非认证）：** 复现R201接受伪造legacy:J:4观察坐标+真实像素SHA的证据链缺陷；R202新增失败关闭守卫，直接复核冻结JPEG 170观察+161裁框原生RGB与161组成员关系，M/V/K/E/B/J/R/X高风险单列。父R201 2535/2535逐SHA继承；旧199+新41=240/240选定QA，累计2547文件ZIP SHA `b02c6b499e4f29ae557880f22970a016bcd978286df7b8ce428b0baab72d02d2`，Python/unzip双独立恢复各2547 SHA与240 QA，QA后SHA不变。真实Chromium旧套件超时not-run，真同源/真机/读屏/历史全量not-run；T01 0/25、正式ID0、缺根未知、T00–T11 0/12 Accepted；生产入口/用户Storage未动。[证据](./evidence/v036-round202-t01-t02-native-crop-ledger-integrity.md)。
 
 **R201（Root T01/T02，未验收）：** 170来源观察→161裁框→151旧可视别名；36旧未匹配、12无旧别名、2同裁框冲突、6原生矩形交叠、41历史高清审阅边分别分型；133个审阅分组（28个多观察）只作逐笔审阅队列，非身份合并。R200父2520/2520逐SHA继承、R201累计2535双独立恢复各300/300选定QA；递归1037超时不计通过；正式T01 0/25、T02永久ID0、全部T00–T11 0/12 Accepted。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
