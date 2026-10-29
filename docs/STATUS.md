@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R219 Root T01/T02（25键高清候选坐标索引，隔离非验收）：** 基于R119真实ORB仿射与R156来源账本，新增25键170观察/161独立裁框的3508×2480候选坐标交叉表（原生RGB SHA、四角投影、整数包络、R209草案UID）。R119五组风险框误差<0.005高清像素；M四独立未绑定框及E/K同裁框异旧SVG身份仍隔离。R114/R119远端CI作业success已复核，但高清原始字节未落地本地、许可未确认、逐笔not-run。父R218 2751/2751 SHA，选定旧518+新70=588/588；R219累计2762成员ZIP SHA `5df9e395400857888a150791eb2c0e7db1ad0357e085a988bb8e075489fe6f0d`，Python/unzip双独立恢复各2762 SHA及588 QA。正式T01 0/25、永久ID0、缺根未知、Root 0/12 Accepted；真同源/真机/读屏/历史全量not-run。 [R219证据](./evidence/v036-round219-t01-t02-25key-highres-coordinate-crosswalk.md)。
+
 **R218 Root T01/T02（来源证据→独立身份晋级前置检查，隔离非验收）：** R217累计ZIP 2740/2740逐SHA继承；基于R209 166草案身份及R206 50票据/52链接，新增逐候选缺失证据门禁、25键M优先来源采集队列和12类身份篡改/3份来源字节篡改拒绝；166/166仍blocked、M四无旧别名、E/K两组同裁框异SVG分离。选定旧229+新289=518/518，R218累计2751文件ZIP SHA `f4766f9b7760f3bf2df7c3383f4ec24bd3cead0ab4b6b9a008e00a106969b3d0`，Python/unzip双独立恢复各2751 SHA与518 QA、QA后0变化。T01 0/25、永久ID0、缺根未知、Root 0/12 Accepted；合法同源高清原始字节/许可未取得；真实同源/真机/读屏/历史全量not-run，冻结入口与用户Storage未动。[R218证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
 
 
