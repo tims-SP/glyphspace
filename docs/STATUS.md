@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R209 Root T01/T02（类型化草案身份桥接，T05仅关联，非验收）：** 真读R208累计ZIP 2628/2628 SHA继承；151旧SVG可视槽+12无旧别名裁框+3 K混合观察形成166个`draft-only/`非正式候选，50条R206票据原ID连接52条边，E/K同裁框异Path继续独立；R50冻结Path交叉验证阻断内存Path伪造。旧554+新51+静态15=620/620；R209累计2640文件ZIP SHA `89c8eed7d8dfbf85b29d68565e33c1d577d79d82be73584534944c5c9c0d81df`，Python/unzip双独立恢复各2640 SHA及620 QA。T01正式0/25、永久ID0、缺根未知、Root 0/12 Accepted；同源blocked、真机/读屏/历史全量not-run；冻结入口及用户Storage未动。[R209证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
+
+
 **R208 Root T01/T02（T05依赖三向来源审计，隔离非认证）：** 实际从冻结HTML重新抽取151旧SVG实例/153 Path并重算151 Path SHA，联合R156 JPEG 170观察/161裁框与R207 156旧槽匹配状态：36/36未匹配旧槽同时有JPEG观察及旧SVG（未匹配≠缺SVG）；15无旧别名观察=12个纯无别名裁框+3条共享旧槽K裁框的观察，不能推断15新增根；E:1舟/E:8用及K:2川/K:3丨各共用一JPEG裁框却对应不同旧SVG Path SHA，继续阻断。父R207 2613逐SHA继承，选定旧487+新50+静态17=554/554；R208累计2628文件ZIP SHA `200db5147697b9686bee3fd1073464707105bd060f821c24eda815364a02dc46`，Python/unzip双恢复各2628 SHA与554 QA。T01认证0/25、永久ID0、缺根未知、Root 0/12 Accepted；同源blocked、真机/读屏/历史全量not-run；生产入口/用户Storage未动。[R208证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
 
 
