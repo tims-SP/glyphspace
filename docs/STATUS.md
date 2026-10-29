@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R216 Root T03（真实指针坐标→100×100光学校准隔离桥接，非验收）：** 实际继承R215 2713/2713 SHA并重跑旧311/311；新增真实Chromium `getScreenCTM()` 逆映射，覆盖151旧草案实例×5种CSS变换×DPR1/2=1510次坐标断言及12次异常拒绝，Node来源绑定42/42、静态24/24，合计选定1899/1899。首次发现SVGMatrix无`is2D`属性并修复；R197→R160→R125绑定的草案光学移动不写DOM/Storage。R216累计2727文件ZIP SHA `90b25d9800939d9b182998d1dc94c7f81694ff8e90cc38c7ad22a37dda5f310c`，Python/unzip双独立恢复各2727 SHA与1899 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、T01来源0/25、T02永久ID0、缺根未知；R10历史原包R164已恢复，R11/R12/R35和R12 20SVG仍缺，真同源/真机/读屏/完整历史not-run；冻结入口/用户Storage未动。[R216证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
+
 **R215 Root T03（CSS独立变换真实像素漏包修复，隔离非验收）：** 真实Chromium复现R214在rotate:45deg+内层反向旋转+不对称边框的HTML裁剪下错误接受，40个黑像素位于宣称上界之外；新增独立CSS rotate/scale/translate失败关闭守卫，允许已验证正轴对齐缩放/2D平移。父R214 2701/2701 SHA继承，选定旧261+新Chromium31+静态19=311/311；累计2713成员ZIP SHA `bd5dd91f5b9f34e8ab7729aefa96b933aa6112b6ebe3d7395c4143e3d54e9625`，Python/unzip双独立恢复各2713 SHA和311 QA，QA后0变化。合并双恢复任务中途超时，第二套单独重跑通过。Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真同源blocked、真机/读屏/历史全量not-run，冻结入口/Storage未动。[R215证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
 
 
