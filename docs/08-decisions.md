@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R216 / Root T03 决策（2026-10-29）：** 校准指针输入统一从真实SVG `getScreenCTM()`逆变换到100×100局部单位；仅对冻结来源SHA绑定的151草案实例产生R197光学编辑提案。拖动期间CTM变化、跨键、非三视图、非草案来源或墨迹越界必须失败关闭，不静默夹取；Chrome SVGMatrix缺`is2D`属性，不能用严格`===true`判断2D。该隔离模块不写DOM或用户Storage，不进入正式发布或T08验收。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
+
 **ADR-R215（原始Root T03，隔离）：** CSS独立`rotate`不会并入computed `transform`，即使SVG CTM被反向旋转恢复轴对齐，旋转HTML裁剪盒仍不能按轴对齐border扣除。R214实际漏包40个已绘制像素；R215在保守上界计算前对SVG/HTML祖先独立rotate、负/零/3D scale、3D translate及SVG根非轴对齐transform失败关闭，正轴对齐缩放与2D平移经真实Chromium验证保留。该上界不替代精确墨迹/来源认证，回滚只需删除R215隔离目录，冻结入口及用户存储不变。[证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
 
 
