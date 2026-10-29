@@ -1,5 +1,6 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R203（Root T01/T02）：** R202像素与裁框互证不能抵御两者来自同一可变账本的协同伪造。后续审阅图使用前必须以独立归档父SHA为信任锚校验冻结JPEG/HTML及R156/R157/R174/R4/R196/R201八输入，再执行R202像素守卫与R201重建图对照；来源漂移失败关闭。此机制不防代码和信任锚同时被修改，也不构成字根身份、许可或永久ID认证。[证据](./evidence/v036-round203-t01-t02-coordinated-ledger-provenance-gate.md)。
 **ADR-R202（Root T01/T02）：** 任何来源观察的nativeRect与RGB SHA必须独立回读冻结JPEG原始字节，并与sourceCrops注册表的成员集合、键位和矩形一致；不允许仅依赖观察表自身摘要或总JPEG SHA。隔离守卫失败关闭，禁止把低清一致性误提升为字根身份/来源许可/永久ID批准。[证据](./evidence/v036-round202-t01-t02-native-crop-ledger-integrity.md)。
 
 **R201来源身份图谱决策（Root T01/T02，隔离）：** 只把同源裁框严格相等标记为来源等价；原生矩形相交和历史高清审阅包络相交只建立审阅边，所有连通分组均禁止自动合并或分配正式永久ID。以V五观察簇、M四未绑定、K/E同源冲突为优先审阅队列；高分辨率原始字节和许可未核实时不准提升来源认证。[证据](./evidence/v036-round201-t01-t02-source-identity-conflict-components.md)。
