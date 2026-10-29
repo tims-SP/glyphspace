@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R215 Root T03（隔离）：** 真实Chromium复现R214 CSS独立rotate裁剪误接受，40个实际黑像素落在错误上界之外；新增CSS独立变换及SVG根transform守卫，选定旧261+新Chromium31+静态19=311/311；父2701逐SHA继承，累计2713双独立SHA/QA恢复，0文件变化。Root 0/12 Accepted，生产入口/用户Storage未动。[R215证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
+
+
 **2026-10-29 · R214 Root T03（隔离）：** 补根SVG自身overflow裁剪保守上界，真实Chromium新40/40+静态18/18、选定旧203/203，906旧SVG inkBBox不变；父2688 SHA继承、累计2701双独立SHA/QA，正式0/12 Accepted、生产入口/Storage未动。[R214证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
 
 **2026-10-29 · R213 Root T03（隔离）：** 修复R212缩放HTML裁剪祖先的border坐标单位错误；真实Chromium scale(.5)漏包500黑像素，R213更正并对906组旧SVG保持几何一致。选定旧159+新44=203/203，父2675逐SHA继承、累计2688双独立SHA/QA，T00–T11仍0/12 Accepted，生产入口/用户Storage未动。
