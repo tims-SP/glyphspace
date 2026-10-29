@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R209验收边界：** 166个`draft-only/`候选与50票据的52条类型化链接只证明历史审阅身份可独立追踪，不能作为referenceShapeId、assetId、永久instanceId或已认证字根；E/K同裁框异SVG仍阻断。旧554+新66=620/620选定QA，2640累计成员双独立SHA/QA恢复。来源0/25、永久ID0、缺根未知、T00–T11 0/12 Accepted；合法高清原图/许可/逐笔、真实同源、真机、读屏、历史全量仍blocked/not-run。[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
+
+
 **R208验收边界：** 151旧SVG实例/153 Path、36个未匹配旧槽同时有JPEG观察+旧SVG、K三条无别名混合裁框观察、E/K两组同裁框异SVG Path SHA仅属来源完整性与冲突定位；不证明高清原图逐笔、形态、正式缺根、永久ID、T05补图或生产集成。选定旧487+新50+静态17=554/554，累计2628双恢复SHA/QA；历史全量、真同源、真机、真实读屏not-run/blocked。T01 0/25、永久ID0、Root 0/12 Accepted。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
 
 
