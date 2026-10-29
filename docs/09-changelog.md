@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R209（Root T01/T02，T05仅关联）：** 166类型化非正式草案候选、50票据/52链接、E/K共享裁框不合并；父R208 2628 SHA继承，旧554+新66=620/620，累计2640双恢复；正式T00–T11 0/12 Accepted，生产入口及用户Storage未动。[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
+
+
 **2026-10-29 · R208 Root T01/T02（T05依赖，隔离）：** 从冻结V0.35 HTML重算151旧SVG Path SHA，联读R156 JPEG与R207旧槽，证明36/36未匹配旧槽仍有JPEG观察和旧SVG；15无别名观察=12纯无别名裁框+3 K混合裁框观察；E舟/用及K川/丨同JPEG裁框但不同旧SVG Path SHA，阻断自动合并。父2613逐SHA继承、旧487+新67=554/554、累计2628双独立SHA/QA恢复。正式0/12 Accepted，冻结生产入口/用户Storage未动。[证据](./evidence/v036-round208-t01-t02-t05-three-way-source-vector.md)。
 
 
