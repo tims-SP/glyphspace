@@ -1,5 +1,6 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-29 · R212 Root T03（隔离）：** 新增真实Chromium矩形overflow裁剪保守上界，解决R211对合法滚动/隐藏溢出容器全部拒绝；906旧SVG保持几何，旧126+新33=159/159，父2663逐SHA继承、累计2675双独立SHA及QA恢复。原始0/12 Accepted，生产入口/Storage未动。[R212证据](./evidence/v036-round212-t03-rectangular-overflow-upper-bound.md)。
 **2026-10-29 · R211 Root T03（隔离）：** 修复R210漏查SVG外层HTML祖先导致不可见墨迹仍返回inkBBox；Chromium 906组正常几何一致、11个HTML祖先反例拒绝，旧644+新26=670/670；父2651逐SHA继承，累计2663双独立SHA/QA恢复。T03未生产集成、Root 0/12 Accepted，冻结入口/Storage未动。[R211证据](./evidence/v036-round211-t03-outer-html-ancestor-paint-gate.md)。
 
 **2026-10-29 · R210 Root T03（隔离）：** 真实Chromium复现祖先隐藏/裁剪墨迹误报，新增有效绘制守卫，906组正常几何一致、14反例拒绝；父2640逐SHA继承、644/644选定QA、累计2651双独立SHA/QA恢复。正式0/12 Accepted，冻结入口/Storage未动。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
