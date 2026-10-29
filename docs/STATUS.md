@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R215 Root T03（CSS独立变换真实像素漏包修复，隔离非验收）：** 真实Chromium复现R214在rotate:45deg+内层反向旋转+不对称边框的HTML裁剪下错误接受，40个黑像素位于宣称上界之外；新增独立CSS rotate/scale/translate失败关闭守卫，允许已验证正轴对齐缩放/2D平移。父R214 2701/2701 SHA继承，选定旧261+新Chromium31+静态19=311/311；累计2713成员ZIP SHA `bd5dd91f5b9f34e8ab7729aefa96b933aa6112b6ebe3d7395c4143e3d54e9625`，Python/unzip双独立恢复各2713 SHA和311 QA，QA后0变化。合并双恢复任务中途超时，第二套单独重跑通过。Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真同源blocked、真机/读屏/历史全量not-run，冻结入口/Storage未动。[R215证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
+
+
 **R214 Root T03（SVG根视口裁剪保守上界，隔离非验收）：** R213未处理SVG根自身overflow，新增独立SVG viewport屏幕交集，保留原inkBBox，支持缩放及HTML+SVG双层裁剪；真实Chromium黑像素10000/19600/2500/0/200/4200案例，906旧SVG原始几何不变。父R213 2688/2688逐SHA继承，选定旧203+新Chromium40+静态18=261/261；累计2701文件ZIP SHA `d06b8400bece34bf9e6fb36ac1c88f7ff33df5e2ada15d2a04902d8de4a6c1da`，Python/unzip双独立恢复各2701 SHA与261 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真实同源blocked，真机/读屏/历史全量not-run，冻结入口/Storage未动。[R214证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
 
 **R213 Root T03（缩放祖先overflow上界修复，隔离非验收）：** 真实Chromium发现R212在scale(.5)时屏幕可见500黑像素却报告仅10×15上界，漏掉真实墨迹；R213改用CSS subpixel border-box与屏幕缩放比率，scale(.5)修正为20×25，scale(2)为80×100，906旧SVG几何不变，旋转/透视等失败关闭。父R212 2675/2675 SHA继承，选定旧159+新44=203/203；累计2688文件ZIP SHA `5907af02850e0084528b3082f6524e9fd8750d20a88ecbcf9eeae7fb5aee7089`，Python/unzip双独立恢复各2688 SHA及203 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户Storage未动。[R213证据](./evidence/v036-round213-t03-scaled-overflow-border-fix.md)。
