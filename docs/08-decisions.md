@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R215（原始Root T03，隔离）：** CSS独立`rotate`不会并入computed `transform`，即使SVG CTM被反向旋转恢复轴对齐，旋转HTML裁剪盒仍不能按轴对齐border扣除。R214实际漏包40个已绘制像素；R215在保守上界计算前对SVG/HTML祖先独立rotate、负/零/3D scale、3D translate及SVG根非轴对齐transform失败关闭，正轴对齐缩放与2D平移经真实Chromium验证保留。该上界不替代精确墨迹/来源认证，回滚只需删除R215隔离目录，冻结入口及用户存储不变。[证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
+
+
 **ADR-R214（Root T03，隔离）：** R213仅处理HTML overflow，根SVG viewport仍可能将外溢笔画计入可见上界。R214增加独立SVG视口屏幕矩形交集、反投影与边框/padding失败关闭，保留原inkBBox，不能用上界冒充逐像素轮廓或T07认证；无来源认证和生产集成。回滚仅删除R214隔离模块与累计包，不修改正式HTML、SVG或用户Storage。[证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
 
 **ADR-R213（Root T03，隔离）：** R212在CSS transform scale<1下直接用未缩放border扣除屏幕rect，实际丢失可见像素，不能称为保守上界。R213用subpixel CSS border-box估算轴对齐屏幕缩放，并拒绝旋转、负缩放、透视与不确定盒子；保留原inkBBox，裁剪上界仅供隔离QA，禁止替代逐笔、精确墨迹或生产集成。父2675逐SHA继承、双恢复2688、选定QA203/203，Root 0/12 Accepted。
