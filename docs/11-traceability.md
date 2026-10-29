@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R210 Root T03（有效绘制墨迹边界守卫，隔离非验收）：** 真实Chromium复现R200祖先opacity=0/全裁剪仍报告非空inkBBox，截图黑像素正常3200→不可见0；新增computed-style祖先/Path失败关闭守卫，906旧SVG组新旧正常几何一致、14/14对抗拒绝。父R209 2640/2640逐SHA继承；选定旧620+新Chromium12+静态12=644/644，R210累计2651文件ZIP SHA `12e329603696bd85991666c222e14f68124c920a8fb9effa2331661923433449`，Python/unzip双独立恢复各2651 SHA与644 QA、QA后不变。T03未生产集成，原始0/12 Accepted，来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户存储未动。[R210证据](./evidence/v036-round210-t03-effective-ancestor-paint-guard.md)。
+
+
 **R209原始T01/T02追踪（T05依赖，非验收）：** R206 50票据→R208来源/旧SVG三向证据，166个独立草案候选（151旧可视+12无别名裁框+3 K混合），52条链接；E/K共享裁框各保留两旧Path身份，5关联槽排除，正式ID0。父2628/2628 SHA继承，选定旧554+新66=620/620，累计2640双独立SHA/QA；来源0/25、缺根未知、Root 0/12 Accepted。真同源blocked、真机/读屏/历史全量not-run。[证据](./evidence/v036-round209-t01-t02-typed-draft-identity-bridge.md)。
 
 
