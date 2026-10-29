@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R225 Root T03（隔离DOM拓扑/属性漂移修复，非验收）：** 真实Chromium复现R224对伪造SVG组、group opacity、SVG缩放、section隐藏、组重排五类错误接受；R225冻结组/视图DOM拓扑和非transform属性、异步计划后再次校验，五类均拒绝，旧三视图3718断言回归通过。父R224 2821/2821逐SHA继承；R225累计2834文件ZIP SHA `07ac163dd8dedb93b2c8520b5fbdd98642f7beb97c1ed203c895f5b195a63f72`，Python/unzip双独立各2834 SHA与8169/8169选定QA，QA后0变化；递归R224套件尝试超时不计pass、历史全量not-run。仍是about:blank+Python SHA桥接，真同源blocked/not-run、真机/读屏not-run，T01 0/25、正式ID0、缺根未知、Root T00–T11 0/12 Accepted；冻结入口及用户存储未动。[R225证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。
+
 **R224 Root T03（隔离DOM光学校准事务，非验收）：** R223父ZIP2812/2812逐SHA继承；R198 SHA绑定151旧Path草案在真实Chromium about:blank挂载25键×三视图=75 SVG/453 g/459 path，M/V两实例原位更新6组transform，453节点/Path及焦点不变；第三视图注入失败回滚、Path篡改/墨迹越界拒绝。旧1701+浏览器7场景3718断言+静态14=5433/5433选定断言，R224累计2821文件ZIP SHA `a325e9beed8ea8e678f4057589168e8ece0596134845ff0f60201328ac353e72`，Python/unzip双独立各2821 SHA与5433 QA，QA后0变化。about:blank SHA委托Python hashlib，真实同源仍管理员阻断；来源0/25、ID0、缺根未知、Root 0/12 Accepted，真机/读屏/历史全量not-run；冻结入口及用户存储未动。[R224证据](./evidence/v036-round224-t03-live-svg-optical-transaction.md)。
 
 **R223验收边界：** 全25键参考矩形和161来源裁框的原生覆盖、36未匹配票据、M四独立未绑定裁框只属来源审阅，不代表真实缺根、笔画归属、正式ID或SVG生产集成。1701/1701选定QA、2812累计成员双独立恢复通过；真实同源blocked，许可/高清逐笔/真机/读屏/完整历史not-run；T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0。
