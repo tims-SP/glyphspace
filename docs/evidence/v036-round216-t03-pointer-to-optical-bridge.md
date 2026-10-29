@@ -1,0 +1,13 @@
+# V0.36 R216 · Root T03 — source-bound pointer-to-optical geometry (isolated, NOT Accepted)
+
+- **Task:** Original T03 (100×100 SVG coordinates, inkBBox/anchor/optical adjustment); T08 only receives a draft input adapter. This is not UI-03 and does not complete T03.
+- **Parent R215:** cumulative ZIP SHA256 `bd5dd91f5b9f34e8ab7729aefa96b933aa6112b6ebe3d7395c4143e3d54e9625`, actual 2713/2713 inherited file SHA256 matched. Re-ran selected R215 QA 311/311.
+- **New code (cumulative ZIP only):** `v036_round216/pointer_screen_to_local.mjs` and `v036_round216/bound_pointer_optical_bridge.mjs`. Real SVG `getScreenCTM()` inverse maps client drag into 100×100 local units; one-shot drag token, CTM-staleness rejection, cross-key and three-view checks. R197→R160→R125 SHA-pinned 151 historical draft vector registry produces isolated optical proposal. It never writes DOM, user storage, or production source.
+- **Actual browser defect fixed:** Chromium `SVGMatrix` returned by `getScreenCTM()` lacks `is2D`. Initial new implementation wrongly rejected valid SVG matrices; changed to reject only explicit `is2D === false`, then re-ran the browser tests.
+- **New tests:** Node source-bound 42/42 (25 keys and 151 registry identities); actual Chromium `about:blank` 1510/1510 pointer-delta checks (151 identities × 5 transforms × DPR1/2) plus 12/12 negative/cancellation cases; static 24/24. Combined selected old/new **1899/1899**. Not complete historical QA.
+- **R216 cumulative ZIP:** SHA256 `90b25d9800939d9b182998d1dc94c7f81694ff8e90cc38c7ad22a37dda5f310c`; 2727 files. Python extraction and system unzip independent restores each 2727/2727 SHA256 and 1899/1899 QA; no post-QA member drift.
+- **Freeze:** V0.35 HTML SHA256 `fd7b9bdada44ab2d7452d71f99e77cfd7a7fe82eb9b29e3f0b41ab32fb758ddc`, 2008 JPEG SHA256 `df5eb1a8678eea5ae27b3bfbc6bcef17af8b8ef558696834214dcdffa86dcd49`; historical 176 codes, formal SVG, production entry, and user storage untouched.
+- **Formal boundaries:** T00–T11 **0/12 Accepted**; T01 certified 0/25 keys, T02 approved permanent IDs 0, real missing root count unknown; T03 not production-integrated. R10 original ZIP was recovered at R164; R11/R12/R35 original ZIPs and R12 20 SVGs remain missing. Licensed high-resolution source bytes, stroke-by-stroke certification, real shared-origin storage, real devices, real screen readers and full historical QA remain **not-run/blocked** as applicable.
+- **Source:** R216 cumulative ZIP includes execution report, frozen SHA audit, selected QA, browser/Node/static tests, and independent restoration instructions. No original third-party high-resolution image redistributed.
+
+**This evidence does not authorize promoting any draft identity or replacing the frozen production `index.html`.**
