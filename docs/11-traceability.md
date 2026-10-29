@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R216原始T03（T08仅隔离输入前置）：** 新增真实浏览器指针client坐标到SVG 100×100局部坐标的逆CTM校准桥接，绑定R125/R160/R197的151历史草案路径SHA。25键Node42/42、Chromium about:blank 1510正向+12异常、静态24/24、继承311/311=1899/1899选定QA；2727成员双独立SHA/QA复验。仅草案光学校准，不是生产T03、正式T08或来源认证；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
+
 **R215 原始T03追踪（非验收）：** R214真实Chromium 40个已绘制黑像素落在CSS独立rotate裁剪的错误上界之外；R215隔离CSS个别变换守卫失败关闭。父2701 SHA继承、累计2713双独立SHA及311/311选定QA；非精确墨迹、非正式生产内核，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
 
 
