@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R219（Root T01/T02，2026-10-29）：** 将R119独立真实高低清ORB仿射映射推广到R156全部161裁框，生成供未来许可明确的高清原图逐笔复核使用的只读坐标索引。采用完整四角投影而非单纯宽高比例；低清RGB SHA和草案身份关联保持可追溯；不将坐标精度、矩形包络、R114/R119历史CI下载成功当作来源许可、笔画或正式ID。回滚仅删除R219隔离目录/档案，不触碰冻结入口和用户存储。 [证据](./evidence/v036-round219-t01-t02-25key-highres-coordinate-crosswalk.md)。
+
 **R218决策（Root T01/T02，非验收）：** 166个draft-only候选必须经过来源原始字节、明确许可、逐笔形态、语义类别、referenceShape/asset/instance分离及独立复核，E/K同裁框异SVG另需仲裁。所有门禁仅生成`blocked`或`needs-independent-signoff`，不得自动生成正式ID或发布字形；M四未绑定裁框优先。详情[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
 
 
