@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R223 Root T01/T02（全25键原生来源裁框覆盖审阅，隔离非验收）：** 真读R222父ZIP2800/2800逐SHA继承；锁定R2 25键参考矩形、R219 161来源裁框、R207 36旧未匹配票据、R209 166草案身份与冻结2008 JPEG。原生键框337809像素、裁框并集83678、框外254131（背景/标签/边框，非缺根）、多框覆盖741；M四个未绑定微框独立且不签发ID。旧1016+新668+静态17=1701/1701选定QA，R223累计2812文件ZIP SHA `3a3940c48bf13766c87ca6fc902bcbaf672d779aab06461f4fa26206b59b2b56`，Python/unzip双独立各2812 SHA和1701 QA、QA后0变化。真实独立loopback Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked；高清许可/原始字节/逐笔、真机、读屏、历史全量not-run。正式T01 0/25、T02批准ID0、缺根未知、Root 0/12 Accepted；冻结入口/用户Storage未动。[R223证据](./evidence/v036-round223-t01-t02-25key-native-source-coverage.md)。
+
+
 **R222 Root T01/T02（原生裁框精确互斥覆盖分区，隔离非验收）：** 真读R221父ZIP2785/2785 SHA；冻结JPEG与R219索引全字节SHA，B/J/V/X共29个裁框逐RGB复验。按原生整数像素的sourceCropId覆盖集合建立38个互斥成员组、741个多框覆盖像素（B198/J66/V377/X100），V三框共同覆盖33像素；新增四张仅供审阅的原图叠框卡，不把覆盖推断为笔画或身份。选定旧685+新331=1016/1016，R222累计2800文件ZIP SHA `7be01c7962097b5972f8ba6555de578432d42fd94874963d5aeb2f128419eef4`，Python/unzip双独立各2800 SHA与1016 QA，QA后0变化。高清原始字节/许可/逐笔未完成；正式T01 0/25、T02批准ID0、缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run。 [R222证据](./evidence/v036-round222-t01-t02-disjoint-native-crop-membership.md)。
 
 **R221 Root T01/T02（冻结JPEG原生裁框重叠像素归属，隔离非验收）：** 父R220累计ZIP2773/2773逐SHA继承；重新验证161/161原生裁框RGB与R219索引全字节SHA，B/J/V/X共8对裁框重叠，阈值100下6对有低清暗像素、按键去重B10/J8/V17/X1共36；V多框覆盖377像素且最多三重。V一对57px及X一对32px交集阈值140无暗像素，均不证明无真实笔画重叠或身份归属。旧628+新57=685/685选定QA，R221累计2785文件ZIP SHA `6ee6599610f3ade340bed5eb4345defc894eeaac097ba2a1f08706338b50e3ef`，Python/unzip双独立2785 SHA及685 QA、QA后0变更。高清原始字节/许可/逐笔未完成；正式T01 0/25、T02 ID0、缺根未知、Root 0/12 Accepted；真同源/真机/读屏/历史全量not-run。 [R221证据](./evidence/v036-round221-t01-t02-native-overlap-pixel-ownership.md)。
