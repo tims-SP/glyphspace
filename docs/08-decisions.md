@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R207（Root T01/T02）：** “旧槽未匹配参考形态”与“没有来源观察”是不同概念。36个R206未匹配票据均可追到R156冻结JPEG来源观察，故在隔离交叉表增加独立legacySourceEvidence，而保留原sourceCropId=null语义及50票据ID；严禁将来源观察直接视作referenceShape匹配、正式永久ID或新增字根。T00五个关联槽不参与151可视来源绑定，M四旧槽各有双观察、E:1/E:8同裁框不合并。[证据](./evidence/v036-round207-t01-t02-legacy-source-reconciliation.md)。
+
+
 **ADR-R206（Root T01/T02）：** 旧槽未匹配、无旧别名原图裁框、共享来源裁框是不同问题，只生成稳定的review-*工作票据，不生成永久ID或自动合并。R157宽松候选邻接不等于R205精确原生矩形交叠；后者必须由R156矩形重算。K上方圈注单列语义争议、M四微框各自独立；五维审阅未完成，禁止源图/许可未认证前签发SVG或生产数据。[R206证据](./evidence/v036-round206-t01-t02-semantic-arbitration-tickets.md)。
 
 
