@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R215 原始T03追踪（非验收）：** R214真实Chromium 40个已绘制黑像素落在CSS独立rotate裁剪的错误上界之外；R215隔离CSS个别变换守卫失败关闭。父2701 SHA继承、累计2713双独立SHA及311/311选定QA；非精确墨迹、非正式生产内核，T00–T11仍0/12 Accepted。[证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
+
+
 **R214 Root T03（SVG根视口裁剪保守上界，隔离非验收）：** R213未处理SVG根自身overflow，新增独立SVG viewport屏幕交集，保留原inkBBox，支持缩放及HTML+SVG双层裁剪；真实Chromium黑像素10000/19600/2500/0/200/4200案例，906旧SVG原始几何不变。父R213 2688/2688逐SHA继承，选定旧203+新Chromium40+静态18=261/261；累计2701文件ZIP SHA `d06b8400bece34bf9e6fb36ac1c88f7ff33df5e2ada15d2a04902d8de4a6c1da`，Python/unzip双独立恢复各2701 SHA与261 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；真实同源blocked，真机/读屏/历史全量not-run，冻结入口/Storage未动。[R214证据](./evidence/v036-round214-t03-svg-viewport-clipping.md)。
 
 **R213 Root T03（缩放祖先overflow上界修复，隔离非验收）：** 真实Chromium发现R212在scale(.5)时屏幕可见500黑像素却报告仅10×15上界，漏掉真实墨迹；R213改用CSS subpixel border-box与屏幕缩放比率，scale(.5)修正为20×25，scale(2)为80×100，906旧SVG几何不变，旋转/透视等失败关闭。父R212 2675/2675 SHA继承，选定旧159+新44=203/203；累计2688文件ZIP SHA `5907af02850e0084528b3082f6524e9fd8750d20a88ecbcf9eeae7fb5aee7089`，Python/unzip双独立恢复各2688 SHA及203 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、来源0/25、永久ID0、缺根未知；同源blocked、真机/读屏/历史全量not-run；冻结入口/用户Storage未动。[R213证据](./evidence/v036-round213-t03-scaled-overflow-border-fix.md)。
