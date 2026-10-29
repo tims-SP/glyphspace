@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R217验收边界：** Root T03子组几何漂移守卫只在隔离包，真实Chromium旧3例错误接受、新8例拒绝；选定QA2667/2667，2740文件双独立恢复通过。未取得同源高清原始字节或正式来源认证，未集成生产内核，真实同源存储/真机/读屏未运行，递归历史QA超时未计pass。Root T00–T11仍0/12 Accepted、T01正式0/25、T02批准永久ID0、缺根数未知。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
+
 **R216边界：** Root T03仅新增隔离指针→100×100光学校准提案，真实Chromium about:blank 1510个坐标断言及12个异常拒绝、Node42、静态24、继承311，合计选定1899/1899；双独立2727成员SHA/QA通过。未完成生产集成、原图逐笔/永久ID、真同源存储、真实读屏、真机或完整历史QA。**T00–T11仍0/12 Accepted，T01正式0/25，T02正式ID0。** [证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
 
 **R215验收边界：** 独立CSS rotate/scale/translate裁剪守卫在真实Chromium复现R214漏包40黑像素，R215拒绝未验证变换；旧261+新31+静态19=311/311，2713成员双独立SHA/QA恢复。仅隔离上界修复，不等于T03生产集成、精确墨迹、原图逐笔或永久ID；Root 0/12 Accepted、来源0/25、ID0、缺根未知；同源blocked，真机/读屏/历史全量not-run。[证据](./evidence/v036-round215-t03-css-individual-transform-guard.md)。
