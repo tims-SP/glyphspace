@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R218原始Root T01/T02追踪（非验收）：** R209 166个草案身份+R206 50票据/52关联建立可执行来源/许可/逐笔/语义/独立复核缺口门禁；25键M优先采集CSV、E/K两组同裁框异SVG冲突保持分离，166/166阻断且0正式ID。父R217 2740 SHA继承，选定旧229+新289=518/518，累计R218 2751成员双独立SHA/QA恢复。T01正式0/25、Root 0/12 Accepted，真同源/真机/读屏/完整历史not-run。[证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
+
+
 **R217原始Root T03（非验收）：** R216根SVG CTM无法发现子组变换、Path d及CSS笔画变化；真实Chromium重现3个旧错误接受。新增只读子组几何指纹守卫，拖动前后验证组CTM/DOM/getBBox/计算样式，漂移取消令牌。父2727逐SHA，旧1696+新971=2667/2667；2740累计文件双独立SHA/QA复验。T03仍隔离、T00–T11 0/12 Accepted。[证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
 
 **R216原始T03（T08仅隔离输入前置）：** 新增真实浏览器指针client坐标到SVG 100×100局部坐标的逆CTM校准桥接，绑定R125/R160/R197的151历史草案路径SHA。25键Node42/42、Chromium about:blank 1510正向+12异常、静态24/24、继承311/311=1899/1899选定QA；2727成员双独立SHA/QA复验。仅草案光学校准，不是生产T03、正式T08或来源认证；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
