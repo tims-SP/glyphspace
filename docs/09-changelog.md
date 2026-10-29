@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- **R223 / Root T01,T02 / 隔离：** 25键161裁框原生覆盖与36未匹配交叉审计，M四微框独立，1701选定QA、2812成员双恢复，正式0/12 Accepted。[证据](./evidence/v036-round223-t01-t02-25key-native-source-coverage.md)
+
+
 **2026-10-30 · R222 Root T01/T02：** 新增B/J/V/X 29个冻结原生裁框的精确像素覆盖成员分区（38互斥组，741多框像素，V三重33），原生坐标/RGB SHA及4邻域组件，4张仅审阅叠框卡；不采用阈值推断笔画。父R221 2785逐SHA，选定旧685+新331=1016/1016，累计2800文件双独立SHA/QA；来源0/25、ID0、Root 0/12 Accepted。[证据](./evidence/v036-round222-t01-t02-disjoint-native-crop-membership.md)。
 
 **2026-10-30 · R221 Root T01/T02：** 新增冻结JPEG 8对B/J/V/X重叠裁框原生RGB交集SHA与暗像素归属审计；阈值100下6对含暗像素、按键去重36像素，V键三重覆盖风险保持独立身份。父R220 2773逐SHA，旧628+新57=685 QA，累计2785双独立SHA/QA恢复；来源0/25、ID0、Root 0/12 Accepted。[证据](./evidence/v036-round221-t01-t02-native-overlap-pixel-ownership.md)。
