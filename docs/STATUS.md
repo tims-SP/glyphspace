@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R218 Root T01/T02（来源证据→独立身份晋级前置检查，隔离非验收）：** R217累计ZIP 2740/2740逐SHA继承；基于R209 166草案身份及R206 50票据/52链接，新增逐候选缺失证据门禁、25键M优先来源采集队列和12类身份篡改/3份来源字节篡改拒绝；166/166仍blocked、M四无旧别名、E/K两组同裁框异SVG分离。选定旧229+新289=518/518，R218累计2751文件ZIP SHA `f4766f9b7760f3bf2df7c3383f4ec24bd3cead0ab4b6b9a008e00a106969b3d0`，Python/unzip双独立恢复各2751 SHA与518 QA、QA后0变化。T01 0/25、永久ID0、缺根未知、Root 0/12 Accepted；合法同源高清原始字节/许可未取得；真实同源/真机/读屏/历史全量not-run，冻结入口与用户Storage未动。[R218证据](./evidence/v036-round218-t01-t02-source-identity-readiness.md)。
+
+
 **R217 Root T03（子组几何漂移失败关闭，隔离非验收）：** 真实Chromium复现R216在子g transform、Path d及stroke-width变化时错误接受3/3次拖动；新增子组CTM、SVG子树、getBBox、computed style和动画拒绝守卫。父R216 2727/2727逐SHA继承；选定旧1696/1696+新971/971=2667/2667；累计2740文件ZIP SHA `6bb1302e283a41a17c6390ce5e9229efc8f4f5008b0a8748784540ba4166728d`，Python/unzip双独立恢复各2740 SHA及2667 QA，QA后0变化。R216递归套件超时不计pass；完整历史QA not-run。T03未生产集成、Root 0/12 Accepted、T01 0/25、T02批准ID0、缺根未知；真同源/读屏/真机not-run，冻结入口/Storage未动。[R217证据](./evidence/v036-round217-t03-pointer-group-geometry-drift.md)。
 
 **R216 Root T03（真实指针坐标→100×100光学校准隔离桥接，非验收）：** 实际继承R215 2713/2713 SHA并重跑旧311/311；新增真实Chromium `getScreenCTM()` 逆映射，覆盖151旧草案实例×5种CSS变换×DPR1/2=1510次坐标断言及12次异常拒绝，Node来源绑定42/42、静态24/24，合计选定1899/1899。首次发现SVGMatrix无`is2D`属性并修复；R197→R160→R125绑定的草案光学移动不写DOM/Storage。R216累计2727文件ZIP SHA `90b25d9800939d9b182998d1dc94c7f81694ff8e90cc38c7ad22a37dda5f310c`，Python/unzip双独立恢复各2727 SHA与1899 QA、QA后0变化。T03未生产集成、Root 0/12 Accepted、T01来源0/25、T02永久ID0、缺根未知；R10历史原包R164已恢复，R11/R12/R35和R12 20SVG仍缺，真同源/真机/读屏/完整历史not-run；冻结入口/用户Storage未动。[R216证据](./evidence/v036-round216-t03-pointer-to-optical-bridge.md)。
