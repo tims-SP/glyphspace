@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
+
+
 **R245F4来源证据异步导入决策（Root T01/T02，非正式验收）：** 任何在来源验证状态下启动、跨`await`继续的证据写入都必须捕获来源epoch，等待结束后和提交前复核；来源被撤销或同字节重验均使旧操作过期，拒绝而不破坏旧草案。此规则只用于隔离审阅工作台，不代表来源形态认证或正式迁移。见[技术证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
 
 
