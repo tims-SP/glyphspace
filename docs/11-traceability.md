@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R231 Root T03（真实指针事件隔离接入，非验收）：** 复现R230只有JS beginDrag/finishDrag API而V0.35 .rootglyph禁用pointer-events，新增显式arm的真实Chromium pointerdown/up捕获与full/focus/mini光学事务，Escape/blur/cancel/越界失败关闭、disarm恢复普通输入；桌面DPR1/手机视口模拟DPR2真实page.mouse 50/50、新静态28/28、继承旧4020/4020，共4098/4098选定QA。父R230 2900/2900逐SHA继承，R231累计2912文件ZIP SHA `f283ee92bf297a1e99e402cfba34502c25a9ceb9aa7a50e61a36cc15b1abac82`，Python/unzip双独立各2912 SHA及4098 QA、QA后0变化。about:blank非真同源，正式T03生产未集成；T01 0/25、T02永久ID0、T05缺根未知、T00–T11 0/12 Accepted；真同源blocked/not-run、真机/读屏/高清逐笔/历史全量not-run，冻结入口及用户Storage未动。[R231证据](./evidence/v036-round231-t03-real-pointer-events.md)。
+
+
 **R230 Root T03（冻结V0.35真实三视图指针→100×100/inkBBox光学校准，隔离非验收）：** R229父2888/2888逐SHA继承；真实Chromium 1280×800 DPR1及390×844 DPR2验证151旧可视实例inkBBox/ink-center、full/focus/mini指针逆CTM、事务同步、折叠重绘与失败拒绝；折叠full SVG隐藏导致空BBox的真实缺陷已修复。旧3949+新71=4020/4020选定QA，累计2900文件ZIP SHA `7930431d36db4f28cab00fb0444b6eb203ce28f6b66ebef2ad798505ba39c6aa`，Python/unzip双独立各2900 SHA与4020 QA、QA后0变化。真实同源blocked/not-run；T01 0/25、T02正式ID0、T05缺根未知，T00–T11 0/12 Accepted；生产/高清逐笔/真机/读屏/历史全量未验收，冻结入口及用户Storage未动。[R230证据](./evidence/v036-round230-t03-real-v035-pointer-inkbbox.md)。
 
 

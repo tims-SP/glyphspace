@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R231（2026-10-30，Root T03隔离）：** 真实鼠标光学校准仅在显式arm的派生V0.35预览中启用，绘制字根临时允许pointer hit-test；真实pointer capture、取消和训练点击隔离。disarm必须恢复普通输入；绝不写用户Storage或改正式SVG。R230 API/冻结生产入口不动，来源/永久ID/生产验收不升级。[证据](./evidence/v036-round231-t03-real-pointer-events.md)。
+
+
 **R230隔离决定（2026-10-30）：** 指针校准只在冻结V0.35派生预览接入真实三视图，100×100/getScreenCTM/inkBBox/ink-center仅作浏览器几何和光学偏移；不把旧索引签发永久ID，不修改正式SVG、编码、生产入口或用户Storage；隐藏视图空BBox跳过绘制检测、恢复可见后再检。正式Root T03仍未验收。
 
 

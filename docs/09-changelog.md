@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R231（Root T03隔离）：** 将R230三视图指针API绑定真实浏览器pointerdown/up，显式arm与捕获/取消、disarm恢复输入；50/50真实Chromium鼠标+28静态+4020继承选定QA，2912累计ZIP双独立恢复各4098 QA；正式0/12 Accepted。[证据](./evidence/v036-round231-t03-real-pointer-events.md)。
+
+
 **2026-10-30 · R230（Root T03隔离）：** 真实V0.35三视图指针逆CTM+151 SVG inkBBox/锚点、折叠隐藏视图修复；旧新4020/4020选定QA，2900累计ZIP双独立SHA/QA；正式0/12 Accepted、真实同源blocked、真机/读屏/原图逐笔not-run。
 
 
