@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R238 Root T04（并发冲突隔离，非验收）：** 真读R237父ZIP SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，2976/2976逐成员继承；实际25键156槽签发+R192事务内核的Node私有Map双实例并发、崩溃日志、非协作写入冲突及恢复拒绝新增17/17，继承旧835/835，共852/852选定QA。R238累计2984文件SHA `28ea55adeb80a8309bb9d66ee077a4d559f9b7f8c54cfa76d0eb1698bf506580`，Python/unzip双恢复各2984 SHA及852 QA、QA后0漂移。本地真实同源仍blocked，R238真实浏览器not-run；生产迁移、高清逐笔、真机/读屏、历史全量not-run。T04未Accepted，Root 0/12，T01 0/25、T02 ID0、缺根未知；冻结入口及用户Storage未动。[证据](./evidence/v036-round238-t04-concurrent-recovery-conflict.md)。
+
+
 **R237 Root T04（全25键156旧槽真实同源预集成，非验收）：** 真读R236父ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，2965/2965逐成员SHA继承；真实R148/R152/R178/R179签发+R192核心由R194的3个G/K/X合成编辑扩展至25键156槽，Node FakeStore新增26/26、继承旧809/809；GitHub Actions真实临时127.0.0.1 Chromium双标签Web Locks/localStorage/WebCrypto **24/24 success**（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地独立Chromium仍`ERR_BLOCKED_BY_ADMINISTRATOR`。R237累计ZIP **2976文件** SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，Python/unzip两套恢复各2976/2976 SHA、835/835选定QA及QA后0漂移。合成全槽不是用户生产迁移；T04依赖T02/T03未Accepted，Root 0/12 Accepted、T01 0/25、正式ID0、缺根未知；真机/读屏/高清逐笔/历史全量not-run，冻结入口与用户存储未动。[R237证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
 
 
