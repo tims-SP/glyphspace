@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
+
+
 **R245 Root T01/T02（M四项来源案件身份绑定修复，非认证）：** 实际读取R244累计ZIP SHA `33e45a7924f10292e5e0794535e8a240b2cfebd913e55462b010c38844847d82`，3034/3034成员继承。真实Chromium复现R244把M shadow-04案件错误关联M-vis-01笔画且导出/导入仍接受；根因是4个shadow案件evidence原始ID与R144来源观察前缀不一致，且描记工具没有验证案件证据成员关系。R245只为M04/06/07/08建立显式别名，所有52案件描记与导入强制证据绑定、错误同键来源拒绝且保留旧草案。旧选定1299+新Chromium88=**1387/1387**；R245累计3044文件ZIP SHA `ae9b2181f8279db4e2fdebadc24f23da828193c0a6d6ebd806c06e44ce24626f`，Python/unzip双独立恢复各3044/3044 SHA及1387/1387 QA、QA后0漂移。仅隔离about:blank、非合法高清逐笔/正式SVG/真实读屏或真机；完整历史not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245证据](./evidence/v036-round245-t01-t02-M-shadow-case-binding.md)。
 
 
