@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R237 / T04隔离迁移验证决策（2026-10-30）：** 扩大实际来源签发+事务内核的合成覆盖范围至25键156旧槽，在独立GitHub Actions授权原点验证真实Web Locks/localStorage/WebCrypto；禁止把该合成全槽成功提升为生产迁移或T04 Accepted。冻结原有v16源键只读，影子/日志仅写测试临时原点；真实用户Storage永不用于实验。远端24/24，本地blocked，T02/T03依赖未Accepted。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+
+
 **ADR-R236（2026-10-30，Root T01/T02隔离）：** 高清坐标索引的裁框数量正确不代表投影与来源未漂移。R235只核对R219数量，未钉crosswalk SHA，真实放过三类伪造。采用R119真实配准+R156/R209/R218冻结证据的独立重算，逐条比较161裁框及161 CSV行，全部失败关闭；仍不据此认定字根轮廓、同源高清或许可已认证。[证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
 
 
