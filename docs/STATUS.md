@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F4 Root T01/T02（异步导入TOCTOU修复，隔离分叉非认证）：** 真实Chromium复现R245F3在`File.text()`等待期间来源被撤销仍导入1条待审意见；新增`evidenceEpoch`并在await后及提交前复核，来源撤销/同SHA重新验证均拒绝过期导入，保留既有草案。R245F3父ZIP3073/3073 SHA继承；R245F4累计3083文件SHA `35e42f74ec7db39a96a96d5c7b0bb9fe3c8fba8a1227aeada19d21491c317b6b`；旧2084+新21=2105/2105选定QA，Python/unzip双独立恢复各3083 SHA、2105 QA、0漂移。`main`仍R246，缺其累计ZIP原始字节，本轮仅F3分叉，不冒充R247；历史全量、真同源/真机/读屏/高清逐笔not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，冻结入口/用户存储未动。[R245F4证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
+
+
 **R245F3（2026-10-31，Root T01/T02隔离分叉，非认证）：** 真实Chromium复现R245F2工作台可加载已改字节JPEG/已改内嵌注册表，却仍导出冻结来源SHA；新隔离工作台验证实际JPEG字节和内嵌注册表SHA后才显示并允许描记、导入/导出，支持file://手动原图校验与便携SHA256。R245F2父ZIP3065/3065继承；旧1387+F1审计508+F2浏览器166+新增23=**2084/2084**选定QA，额外新工作台旧浏览器回归166/166；累计3073文件ZIP SHA `cbb044d5697d2769a8ae3f7098d8d86dc0ea816983cd9880c114c7f489835f74`，Python/unzip双恢复各3073/3073 SHA与2084/2084 QA、QA后0漂移。main R246原始ZIP仍未取得，**非R247连续主线**。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；合法高清逐笔/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f3-source-byte-provenance-fork.md)。
 
 
