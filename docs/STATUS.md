@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R237 Root T04（全25键156旧槽真实同源预集成，非验收）：** 真读R236父ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，2965/2965逐成员SHA继承；真实R148/R152/R178/R179签发+R192核心由R194的3个G/K/X合成编辑扩展至25键156槽，Node FakeStore新增26/26、继承旧809/809；GitHub Actions真实临时127.0.0.1 Chromium双标签Web Locks/localStorage/WebCrypto **24/24 success**（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地独立Chromium仍`ERR_BLOCKED_BY_ADMINISTRATOR`。R237累计ZIP **2976文件** SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，Python/unzip两套恢复各2976/2976 SHA、835/835选定QA及QA后0漂移。合成全槽不是用户生产迁移；T04依赖T02/T03未Accepted，Root 0/12 Accepted、T01 0/25、正式ID0、缺根未知；真机/读屏/高清逐笔/历史全量not-run，冻结入口与用户存储未动。[R237证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+
+
 **R236 Root T01/T02（高清坐标来源证据重算，非认证）：** 真实复现R235 crosswalk未钉SHA且只检查数量，篡改高清裁框四角/裁框ID/JPEG SHA仍错误接受3/3；新增R119/R156/R209/R218/R219来源字节钉值和独立重算门禁，逐字段复验161/161裁框JSON及161/161 CSV映射，旧3/3伪造新3/3拒绝。R235父ZIP2955/2955逐SHA继承，旧758+新51=809/809选定QA；R236累计2965成员ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，Python/unzip双独立各2965 SHA及809 QA、QA后0变化。仅来源投影证据完整性，非高清逐笔/许可/同源认证；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，真实同源/真机/读屏/历史全量未验收，冻结入口与用户存储未动。[R236证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
 
 
