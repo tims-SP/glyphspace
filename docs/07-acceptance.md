@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R244 Root T01/T02（原图笔画自由描记与自导出修复，非认证）：** 实际读取R243累计ZIP 3024/3024 SHA，真实Chromium复现R243允许130点描记完成但自身JSON导出无法导入（校验上限128点）；新增按住拖动的真实pointer自由描记、原生JPEG坐标连续采样、pointercancel/失焦取消、128点上限，保留点击两点再结束功能。旧选定1268+新Chromium 31=1299/1299；R244累计3034文件ZIP SHA `33e45a7924f10292e5e0794535e8a240b2cfebd913e55462b010c38844847d82`，Python与系统unzip双独立恢复各3034/3034 SHA、1299/1299选定QA，QA后0漂移。仅about:blank注入冻结JPEG，不是合法高清逐笔认证/正式SVG/真实读屏或真机；历史全量not-run，T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R244证据](./evidence/v036-round244-t01-t02-freehand-source-stroke-roundtrip.md)。
+
+
 **R243 Root T01/T02（来源像素逐笔描记工具，非认证）：** R242父累计ZIP 3015/3015逐文件SHA一致；在R240 25键/170观察/52案件工作台新增人工笔画中心线描记、原生1536×1086坐标与裁框RGB SHA绑定、完整图/键位视图不变坐标、撤销与未批准JSON导入导出；10类伪造/越界输入拒绝且保留原内存。旧选定1227+新Chromium about:blank真实鼠标41=1268/1268 QA；R243累计3024文件ZIP SHA `eafddc9d9b028a97a55628d7326e771cd2dd63b6237757450b2292a235d24964`，Python/unzip双独立恢复各3024/3024 SHA、1268/1268 QA、QA后0漂移。仅两点M键测试草案，**不代表逐笔认证/正式SVG**；合法同源高清许可、真机/读屏/历史全量not-run；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口和用户Storage未动。[R243证据](./evidence/v036-round243-t01-t02-source-pixel-stroke-tracing.md)。
 
 
