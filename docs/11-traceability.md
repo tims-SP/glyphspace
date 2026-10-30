@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R237 / 原始T04追踪补充（非验收）：** 25键156旧槽合成v16编辑经实际R148/R152/R178/R179签发+R192事务核心验证；远端真实同源Chromium 24/24（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地管理员阻断；继承809+新增26=835/835选定QA，R236父2965 SHA继承、R237累计2976双独立恢复SHA/QA。未迁移用户数据、未批准永久ID，T02/T03依赖未Accepted，T04仍`accepted=false`，全部Root 0/12。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+
+
 **R236 Root T01/T02（高清坐标来源证据重算，非认证）：** 真实复现R235 crosswalk未钉SHA且只检查数量，篡改高清裁框四角/裁框ID/JPEG SHA仍错误接受3/3；新增R119/R156/R209/R218/R219来源字节钉值和独立重算门禁，逐字段复验161/161裁框JSON及161/161 CSV映射，旧3/3伪造新3/3拒绝。R235父ZIP2955/2955逐SHA继承，旧758+新51=809/809选定QA；R236累计2965成员ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，Python/unzip双独立各2965 SHA及809 QA、QA后0变化。仅来源投影证据完整性，非高清逐笔/许可/同源认证；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，真实同源/真机/读屏/历史全量未验收，冻结入口与用户存储未动。[R236证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
 
 
