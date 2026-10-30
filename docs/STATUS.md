@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R230 Root T03（冻结V0.35真实三视图指针→100×100/inkBBox光学校准，隔离非验收）：** R229父2888/2888逐SHA继承；真实Chromium 1280×800 DPR1及390×844 DPR2验证151旧可视实例inkBBox/ink-center、full/focus/mini指针逆CTM、事务同步、折叠重绘与失败拒绝；折叠full SVG隐藏导致空BBox的真实缺陷已修复。旧3949+新71=4020/4020选定QA，累计2900文件ZIP SHA `7930431d36db4f28cab00fb0444b6eb203ce28f6b66ebef2ad798505ba39c6aa`，Python/unzip双独立各2900 SHA与4020 QA、QA后0变化。真实同源blocked/not-run；T01 0/25、T02正式ID0、T05缺根未知，T00–T11 0/12 Accepted；生产/高清逐笔/真机/读屏/历史全量未验收，冻结入口及用户Storage未动。[R230证据](./evidence/v036-round230-t03-real-v035-pointer-inkbbox.md)。
+
+
 **R229 Root T03（隔离V0.35三视图适配器安全卸载/重挂载，非验收）：** 实际Chromium复现R228 dispose后M/V偏移残留且无法再次挂载；R229先事务清除再断监听/释放标志，第三视图故障回滚并可重试。父R228 2876/2876逐SHA继承；旧选定3848+R228 58+R229新43=3949/3949定向QA，累计2888文件ZIP SHA `eaa5226d561f13343343ce2c7d8412853ab917739ccdd076f11a2b194d70cb26`，Python/unzip双独立各2888 SHA与3949 QA、QA后0变化。真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR；T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，生产/高清逐笔/真机/读屏/历史全量未验收，冻结入口及用户Storage未动。[R229证据](./evidence/v036-round229-t03-preview-lifecycle-atomic-dispose.md)。
 
 
