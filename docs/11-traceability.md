@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R228 Root T03（真实冻结V0.35应用三视图隔离光学校准接入，非验收）：** 不再只使用构造SVG演示视图；实际Chromium在冻结V0.35完整应用中验证151可视根/156旧槽，完整键盘、动态焦点、折叠迷你键盘的M/V预览偏移一致，重绘/折叠后同步；176旧编码和真实输入保持，4类非法编辑拒绝及第三视图写入故障回滚。R227父2863/2863 SHA继承，R228累计2876成员ZIP SHA `d9cd104fa5709a1a281d88bfda986e3088c0cced8e5b0383feee692e7197e1dd`，Python/unzip双独立各2876 SHA与3906/3906选定旧新QA、QA后0变化。about:blank隔离测试，真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR，正式生产未集成；T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，读屏/真机/高清逐笔/历史全量not-run，冻结入口及用户Storage未动。[R228证据](./evidence/v036-round228-t03-real-v035-runtime-preview.md)。
+
+
 **R227 Root T03（隔离SVG轮廓计算样式漂移修复，非验收）：** R226遗漏stroke-linecap/join/dash、fill/clip-rule等CSS绘制属性，真实Chromium复现旧12/12错误接受，R227增加16个计算样式指纹，12/12正确拒绝；真实SVG仅dasharray变化产生3802个截图RGB差异像素。父R226 2849/2849逐SHA继承，R227累计2863成员ZIP SHA `2a86a5fcedcc29fcb93859f54611ca91589ea042fc1407327a50a4513fb11f1d`，Python/unzip双独立各2863/2863 SHA及3848/3848选定旧新QA、QA后0变化。递归旧套件超时不计pass，历史全量not-run；真实同源临时profile `ERR_BLOCKED_BY_ADMINISTRATOR`，读屏/真机/高清逐笔not-run；Root T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，冻结入口与用户Storage未动。[R227证据](./evidence/v036-round227-t03-contour-style-guard.md)。
 
 **R226 Root T03（隔离CSS计算样式漂移守卫，非验收）：** 实际继承R225累计ZIP 2834/2834逐文件SHA；真实Chromium复现R225对7类仅通过外部CSS样式表修改的错误接受（group透明度、path笔画宽度、SVG显示、section透明度、host变换、path填色、SVG滤镜），R226新隔离模块冻结host/3 section/75 SVG/453 g/459 path的计算样式，异步计划前后重检，旧7/7错误接受、新7/7拒绝；旧8169+新3718+对抗30+静态16=11933/11933选定QA，累计2849文件ZIP SHA `473f99c16734dff9948a526ab44894caa2132057143315eff8c12ecbcbf50799`，Python/unzip两次独立恢复各2849/2849 SHA及11933/11933 QA，QA后0变更。独立临时Chromium profile的127.0.0.1真实同源仍`ERR_BLOCKED_BY_ADMINISTRATOR`；T01 0/25、批准ID0、缺根未知、T00–T11 0/12 Accepted，正式生产未集成，读屏/真机/历史全量not-run，冻结入口/用户存储未动。[R226证据](./evidence/v036-round226-t03-computed-css-style-drift-guard.md)。
