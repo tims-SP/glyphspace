@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R233（2026-10-30，Root T03隔离）：** 不能只在armed=true期间拦截click；指针在校准期间按下、disarm/dispose之后释放时浏览器仍可生成训练click。采用按指针ID匹配的短生命周期捕获守卫，先安装后取消事务，命中或超时移除，避免永久阻断正常输入。仅派生V0.35隔离预览，冻结入口/正式SVG/用户Storage不动；同源/真机/来源未验收。[证据](./evidence/v036-round233-t03-post-disarm-ghost-click-guard.md)。
+
 **ADR-R232（2026-10-30，Root T03隔离）：** 真实触屏指针事件可能被Chromium重定向至SVG父元素，且释放捕获后合成click会进入训练按钮；光学校准必须在显式arm下使用真实触点命中，并对三视图键盘host全部点击失败关闭，第二触点取消事务，disarm后恢复输入。仅独立派生预览，不改冻结V0.35/正式SVG/用户Storage；真实同源/真机未验收。[证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
 
 
