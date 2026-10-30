@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
+
+
 **R245F4 Root T01/T02（异步导入TOCTOU修复，隔离分叉非认证）：** 真实Chromium复现R245F3在`File.text()`等待期间来源被撤销仍导入1条待审意见；新增`evidenceEpoch`并在await后及提交前复核，来源撤销/同SHA重新验证均拒绝过期导入，保留既有草案。R245F3父ZIP3073/3073 SHA继承；R245F4累计3083文件SHA `35e42f74ec7db39a96a96d5c7b0bb9fe3c8fba8a1227aeada19d21491c317b6b`；旧2084+新21=2105/2105选定QA，Python/unzip双独立恢复各3083 SHA、2105 QA、0漂移。`main`仍R246，缺其累计ZIP原始字节，本轮仅F3分叉，不冒充R247；历史全量、真同源/真机/读屏/高清逐笔not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，冻结入口/用户存储未动。[R245F4证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
 
 
