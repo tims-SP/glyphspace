@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R229 Root T03（隔离V0.35三视图适配器安全卸载/重挂载，非验收）：** 实际Chromium复现R228 dispose后M/V偏移残留且无法再次挂载；R229先事务清除再断监听/释放标志，第三视图故障回滚并可重试。父R228 2876/2876逐SHA继承；旧选定3848+R228 58+R229新43=3949/3949定向QA，累计2888文件ZIP SHA `eaa5226d561f13343343ce2c7d8412853ab917739ccdd076f11a2b194d70cb26`，Python/unzip双独立各2888 SHA与3949 QA、QA后0变化。真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR；T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，生产/高清逐笔/真机/读屏/历史全量未验收，冻结入口及用户Storage未动。[R229证据](./evidence/v036-round229-t03-preview-lifecycle-atomic-dispose.md)。
+
+
 **R228 Root T03（真实冻结V0.35应用三视图隔离光学校准接入，非验收）：** 不再只使用构造SVG演示视图；实际Chromium在冻结V0.35完整应用中验证151可视根/156旧槽，完整键盘、动态焦点、折叠迷你键盘的M/V预览偏移一致，重绘/折叠后同步；176旧编码和真实输入保持，4类非法编辑拒绝及第三视图写入故障回滚。R227父2863/2863 SHA继承，R228累计2876成员ZIP SHA `d9cd104fa5709a1a281d88bfda986e3088c0cced8e5b0383feee692e7197e1dd`，Python/unzip双独立各2876 SHA与3906/3906选定旧新QA、QA后0变化。about:blank隔离测试，真实同源仍ERR_BLOCKED_BY_ADMINISTRATOR，正式生产未集成；T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，读屏/真机/高清逐笔/历史全量not-run，冻结入口及用户Storage未动。[R228证据](./evidence/v036-round228-t03-real-v035-runtime-preview.md)。
 
 
