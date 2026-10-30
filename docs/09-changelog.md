@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
+
+
 **R245F3（2026-10-31，Root T01/T02隔离分叉，非认证）：** 真实Chromium复现R245F2工作台可加载已改字节JPEG/已改内嵌注册表，却仍导出冻结来源SHA；新隔离工作台验证实际JPEG字节和内嵌注册表SHA后才显示并允许描记、导入/导出，支持file://手动原图校验与便携SHA256。R245F2父ZIP3065/3065继承；旧1387+F1审计508+F2浏览器166+新增23=**2084/2084**选定QA，额外新工作台旧浏览器回归166/166；累计3073文件ZIP SHA `cbb044d5697d2769a8ae3f7098d8d86dc0ea816983cd9880c114c7f489835f74`，Python/unzip双恢复各3073/3073 SHA与2084/2084 QA、QA后0漂移。main R246原始ZIP仍未取得，**非R247连续主线**。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；合法高清逐笔/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f3-source-byte-provenance-fork.md)。
 
 
