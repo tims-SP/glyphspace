@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R235（2026-10-30，Root T01/T02隔离）：** 同一原生来源裁框可以被不同旧SVG或物理观察候选引用，不能把裁框相等推断为形态/身份相等。R209的显式mustNotMerge覆盖E组及K:2/K:3二元对，但K另有两个未列扇入组且已列K组有第三个物理观察候选。采用独立只读图门禁对全部4组共享裁框执行禁止自动合并，不改历史R209/正式SVG/永久ID；需要合法同源高清原字节、逐笔和独立身份复核后才能解封。[证据](./evidence/v036-round235-t02-source-crop-fanin-identity-guard.md)。
+
+
 **R234 Root T01/T02（第三方3508×2480高清候选原始ZIP/JPEG独立字节复验，非认证）：** 已经GitHub连接器真实读取06wb仓库996823字节ZIP，独立SHA `fb7a9984...`、DEFLATE解出1348865字节JPEG SHA `47c5d53f...`、CRC `e90cbe82`、3508×2480均匹配R114；发现上游网页高清ZIP href全角括号与仓库实际半角括号文件名不一致。图片许可/官方来源未确认，原图字节只在连接器内存校验，未本地保存/打包/公开分发，逐笔未审。父R233 2939/2939 SHA继承；R234累计2947文件ZIP SHA `dce2085e82a92c3b75830d710d681f39e49e3df25366680244de3d537b6a5b22`，Python/unzip双独立2947/2947 SHA及来源定向旧新717/717 QA，QA后0变化；R233递归Chromium在unzip恢复超时不计入双恢复。T01正式0/25、T02永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/高清逐笔/历史全量blocked或not-run，冻结入口、176编码及用户Storage未动。[R234证据](./evidence/v036-round234-t01-highres-byte-reverification.md)。
 
 **ADR-R233（2026-10-30，Root T03隔离）：** 不能只在armed=true期间拦截click；指针在校准期间按下、disarm/dispose之后释放时浏览器仍可生成训练click。采用按指针ID匹配的短生命周期捕获守卫，先安装后取消事务，命中或超时移除，避免永久阻断正常输入。仅派生V0.35隔离预览，冻结入口/正式SVG/用户Storage不动；同源/真机/来源未验收。[证据](./evidence/v036-round233-t03-post-disarm-ghost-click-guard.md)。
