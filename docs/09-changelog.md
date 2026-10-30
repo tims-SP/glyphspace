@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R237（Root T04，隔离非验收）：** 新增25键156槽真实来源签发+类型化事务的Node 26/26及GitHub Actions真实Chromium 24/24（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)）；父R236 2965逐SHA继承，R237 2976文件双独立恢复各835/835选定QA；本地同源blocked，正式迁移未完成，Root 0/12 Accepted。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+
+
 **2026-10-30 · R236（Root T01/T02隔离）：** 复现R235高清索引三类伪造错误接受，新增全161裁框/161 CSV来源投影重算门禁，51/51新增对抗QA，继承旧758/758；累计2965文件双独立恢复SHA与809/809选定QA通过。Root仍0/12 Accepted，逐笔/同源/许可/真机/读屏/历史全量未验收。[证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
 
 
