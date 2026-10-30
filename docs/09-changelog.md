@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R233（Root T03隔离）：** 真实Chromium复现R232在校准中途disarm/dispose后的残留click误触训练；R233按已中止指针ID阻断，下一次正常输入恢复。旧新选定307/307、2939累计成员双独立SHA/QA；正式0/12 Accepted，生产/同源/真机/读屏/高清逐笔未验收。[证据](./evidence/v036-round233-t03-post-disarm-ghost-click-guard.md)。
+
 **2026-10-30 · R232（Root T03隔离）：** 复现并修复真实Chromium触屏光学校准误触训练输入2/2；新增触点精确命中、合成click隔离、多指事务取消。旧新选定220/220，2926文件累计ZIP双独立SHA/QA；生产/同源/真机/读屏/高清逐笔仍未验收，Root 0/12 Accepted。[证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
 
 
