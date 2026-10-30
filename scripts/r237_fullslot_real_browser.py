@@ -84,6 +84,6 @@ async def main():
     finally:server.shutdown();server.server_close()
     result={'round':237,'rootTask':'T04','passed':len(checks),'expected':24,'checks':checks,'allPassed':err is None and len(checks)==24,'error':err,'environment':'real Chromium fresh 127.0.0.1; actual R148/R152/R178/R179 issuer + R192 core','fixture':'25 keys / 156 synthetic legacy edits','formalAccepted':False,'productionMigration':'not-run','userStorageTouched':False}
     (ROOT/'R237_real_browser_QA.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({'passed':len(checks),'expected':25,'allPassed':result['allPassed'],'error':err},ensure_ascii=False))
+    print(json.dumps({'passed':len(checks),'expected':24,'allPassed':result['allPassed'],'error':err},ensure_ascii=False))
     if not result['allPassed']:raise SystemExit(1)
 if __name__=='__main__':asyncio.run(main())
