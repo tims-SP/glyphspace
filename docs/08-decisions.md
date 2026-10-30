@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R227 Root T03（隔离SVG轮廓计算样式漂移修复，非验收）：** R226遗漏stroke-linecap/join/dash、fill/clip-rule等CSS绘制属性，真实Chromium复现旧12/12错误接受，R227增加16个计算样式指纹，12/12正确拒绝；真实SVG仅dasharray变化产生3802个截图RGB差异像素。父R226 2849/2849逐SHA继承，R227累计2863成员ZIP SHA `2a86a5fcedcc29fcb93859f54611ca91589ea042fc1407327a50a4513fb11f1d`，Python/unzip双独立各2863/2863 SHA及3848/3848选定旧新QA、QA后0变化。递归旧套件超时不计pass，历史全量not-run；真实同源临时profile `ERR_BLOCKED_BY_ADMINISTRATOR`，读屏/真机/高清逐笔not-run；Root T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，冻结入口与用户Storage未动。[R227证据](./evidence/v036-round227-t03-contour-style-guard.md)。
+
 **ADR-R226（2026-10-30，Root T03，隔离）：** R225仅校验DOM属性/拓扑不能捕获外部样式表对现有SVG笔画与祖先布局的静默变更；R226在隔离三视图事务中对host、section、SVG、group、path计算样式建立快照，并在异步提案后、写transform前复验。真实Chromium七种R225错误接受均由R226拒绝。原R225模块、冻结生产入口、用户存储不动。此严格快照不代表生产响应式适配或真实同源认证。回滚删除R226隔离文件。[证据](./evidence/v036-round226-t03-computed-css-style-drift-guard.md)。
 
 **ADR-R225（2026-10-30，Root T03，隔离）：** 三视图光学事务不能只冻结已知组的Path与transform；必须同时冻结每个SVG的子组成员与顺序、section的SVG成员与顺序、SVG/section及group除transform外的属性，并在异步计划完成后重新检查，防止R224五种DOM漂移被错误接受。仅修改独立R225模块，R224原始模块、生产入口及用户存储不动；不以about:blank证明真实同源。回滚删除R225隔离文件/累计ZIP。[证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。

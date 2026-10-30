@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**R227 Root T03（隔离SVG轮廓计算样式漂移修复，非验收）：** R226遗漏stroke-linecap/join/dash、fill/clip-rule等CSS绘制属性，真实Chromium复现旧12/12错误接受，R227增加16个计算样式指纹，12/12正确拒绝；真实SVG仅dasharray变化产生3802个截图RGB差异像素。父R226 2849/2849逐SHA继承，R227累计2863成员ZIP SHA `2a86a5fcedcc29fcb93859f54611ca91589ea042fc1407327a50a4513fb11f1d`，Python/unzip双独立各2863/2863 SHA及3848/3848选定旧新QA、QA后0变化。递归旧套件超时不计pass，历史全量not-run；真实同源临时profile `ERR_BLOCKED_BY_ADMINISTRATOR`，读屏/真机/高清逐笔not-run；Root T00–T11 0/12 Accepted、T01 0/25、T02正式ID0、T05缺根未知，冻结入口与用户Storage未动。[R227证据](./evidence/v036-round227-t03-contour-style-guard.md)。
+
 **2026-10-30 · R226 Root T03：** 新增隔离CSS计算样式守卫，真实Chromium复现并修复7类R225外部样式表静默变更；R225父2834 SHA继承、累计2849双独立恢复、各11933选定QA，真实同源blocked。生产入口未动，正式0/12 Accepted。[证据](./evidence/v036-round226-t03-computed-css-style-drift-guard.md)。
 
 **2026-10-30 · R225 Root T03：** 真实Chromium复现R224五类DOM拓扑/属性漂移错误接受，新增隔离快照与异步计划后重检；父2821 SHA继承、累计2834双独立恢复、8169选定QA。生产入口未动，正式0/12 Accepted。[证据](./evidence/v036-round225-t03-live-svg-dom-topology-guard.md)。
