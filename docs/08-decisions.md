@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R238 Root T04（并发冲突隔离，非验收）：** 真读R237父ZIP SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，2976/2976逐成员继承；实际25键156槽签发+R192事务内核的Node私有Map双实例并发、崩溃日志、非协作写入冲突及恢复拒绝新增17/17，继承旧835/835，共852/852选定QA。R238累计2984文件SHA `28ea55adeb80a8309bb9d66ee077a4d559f9b7f8c54cfa76d0eb1698bf506580`，Python/unzip双恢复各2984 SHA及852 QA、QA后0漂移。本地真实同源仍blocked，R238真实浏览器not-run；生产迁移、高清逐笔、真机/读屏、历史全量not-run。T04未Accepted，Root 0/12，T01 0/25、T02 ID0、缺根未知；冻结入口及用户Storage未动。[证据](./evidence/v036-round238-t04-concurrent-recovery-conflict.md)。
+
+
 **R237 / T04隔离迁移验证决策（2026-10-30）：** 扩大实际来源签发+事务内核的合成覆盖范围至25键156旧槽，在独立GitHub Actions授权原点验证真实Web Locks/localStorage/WebCrypto；禁止把该合成全槽成功提升为生产迁移或T04 Accepted。冻结原有v16源键只读，影子/日志仅写测试临时原点；真实用户Storage永不用于实验。远端24/24，本地blocked，T02/T03依赖未Accepted。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
 
 
