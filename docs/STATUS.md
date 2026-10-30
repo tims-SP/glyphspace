@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R232 Root T03（真实触屏输入隔离修复，隔离非验收）：** 真实Chromium CDP touch复现R231校准模式误触触发训练输入2/2（390×844 DPR2、1280×800 DPR1）；R232按触点坐标命中字根、拦截三视图合成click、第二手指取消光学事务，显式disarm后触屏训练恢复。旧选定149+旧故障复现2+新触屏48+新静态21=220/220；R231父ZIP 2912/2912 SHA继承，R232累计2926文件ZIP SHA `b22ec8f6f711dcc651db624bbb8e1ab153babb2923ef39a2ac845cab05c0a1ca`，Python/unzip双独立各2926 SHA及220 QA、QA后0变化；unzip首次旧鼠标QA偶发失败，单独重跑及完整选定重跑通过。about:blank/CDP模拟触屏非真机；真实同源blocked/not-run，读屏/高清逐笔/历史全量not-run；T01 0/25、T02正式ID0、T03生产未集成、T05缺根未知，Root 0/12 Accepted；冻结入口、176编码及用户Storage未动。[R232证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
+
+
 **R231 Root T03（真实指针事件隔离接入，非验收）：** 复现R230只有JS beginDrag/finishDrag API而V0.35 .rootglyph禁用pointer-events，新增显式arm的真实Chromium pointerdown/up捕获与full/focus/mini光学事务，Escape/blur/cancel/越界失败关闭、disarm恢复普通输入；桌面DPR1/手机视口模拟DPR2真实page.mouse 50/50、新静态28/28、继承旧4020/4020，共4098/4098选定QA。父R230 2900/2900逐SHA继承，R231累计2912文件ZIP SHA `f283ee92bf297a1e99e402cfba34502c25a9ceb9aa7a50e61a36cc15b1abac82`，Python/unzip双独立各2912 SHA及4098 QA、QA后0变化。about:blank非真同源，正式T03生产未集成；T01 0/25、T02永久ID0、T05缺根未知、T00–T11 0/12 Accepted；真同源blocked/not-run、真机/读屏/高清逐笔/历史全量not-run，冻结入口及用户Storage未动。[R231证据](./evidence/v036-round231-t03-real-pointer-events.md)。
 
 

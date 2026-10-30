@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**2026-10-30 · R232（Root T03隔离）：** 复现并修复真实Chromium触屏光学校准误触训练输入2/2；新增触点精确命中、合成click隔离、多指事务取消。旧新选定220/220，2926文件累计ZIP双独立SHA/QA；生产/同源/真机/读屏/高清逐笔仍未验收，Root 0/12 Accepted。[证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
+
+
 **2026-10-30 · R231（Root T03隔离）：** 将R230三视图指针API绑定真实浏览器pointerdown/up，显式arm与捕获/取消、disarm恢复输入；50/50真实Chromium鼠标+28静态+4020继承选定QA，2912累计ZIP双独立恢复各4098 QA；正式0/12 Accepted。[证据](./evidence/v036-round231-t03-real-pointer-events.md)。
 
 

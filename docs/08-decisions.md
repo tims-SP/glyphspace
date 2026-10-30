@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R232（2026-10-30，Root T03隔离）：** 真实触屏指针事件可能被Chromium重定向至SVG父元素，且释放捕获后合成click会进入训练按钮；光学校准必须在显式arm下使用真实触点命中，并对三视图键盘host全部点击失败关闭，第二触点取消事务，disarm后恢复输入。仅独立派生预览，不改冻结V0.35/正式SVG/用户Storage；真实同源/真机未验收。[证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
+
+
 **ADR-R231（2026-10-30，Root T03隔离）：** 真实鼠标光学校准仅在显式arm的派生V0.35预览中启用，绘制字根临时允许pointer hit-test；真实pointer capture、取消和训练点击隔离。disarm必须恢复普通输入；绝不写用户Storage或改正式SVG。R230 API/冻结生产入口不动，来源/永久ID/生产验收不升级。[证据](./evidence/v036-round231-t03-real-pointer-events.md)。
 
 
