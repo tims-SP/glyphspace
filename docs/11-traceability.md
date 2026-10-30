@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F4 / 原始T01/T02（来源异步导入原子性，非验收）：** 真实Chromium复现R245F3的来源撤销与`File.text()`异步导入竞态；R245F4来源epoch复核阻断过期导入、同SHA重验亦阻断，保留已有草案。R245F3父3073/3073 SHA，R245F4累计3083双独立恢复SHA及2105/2105选定QA；main R246 ZIP缺字节，独立分叉未合并。T01 0/25、T02批准ID0、Root 0/12 Accepted。[证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
+
+
 **R245F3（2026-10-31，Root T01/T02隔离分叉，非认证）：** 真实Chromium复现R245F2工作台可加载已改字节JPEG/已改内嵌注册表，却仍导出冻结来源SHA；新隔离工作台验证实际JPEG字节和内嵌注册表SHA后才显示并允许描记、导入/导出，支持file://手动原图校验与便携SHA256。R245F2父ZIP3065/3065继承；旧1387+F1审计508+F2浏览器166+新增23=**2084/2084**选定QA，额外新工作台旧浏览器回归166/166；累计3073文件ZIP SHA `cbb044d5697d2769a8ae3f7098d8d86dc0ea816983cd9880c114c7f489835f74`，Python/unzip双恢复各3073/3073 SHA与2084/2084 QA、QA后0漂移。main R246原始ZIP仍未取得，**非R247连续主线**。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；合法高清逐笔/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f3-source-byte-provenance-fork.md)。
 
 
