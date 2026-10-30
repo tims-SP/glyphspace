@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R240 Root T01/T02（25键原图人工复核工作台，非认证）：** 真实继承R239父ZIP 2989/2989 SHA，复验冻结2008 JPEG及R144注册表，170/170原生RGB裁框SHA；新增独立25键170观察/52待审案件审阅HTML（M12观察/8案件、无存储、仅导出未批准意见）。旧852+新190=1042/1042选定QA，Chromium为about:blank注入原始JPEG字节，file://被管理员阻断；R240累计3000文件SHA `4e6c646f9b48f3e66a7de681fb485bb5de84912498bbe746caf803235120a208`，Python/unzip双恢复各3000 SHA及1042 QA、QA后0漂移。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12；高清许可/逐笔、真机/读屏/完整历史not-run，冻结入口与用户存储未动。[R240证据](./evidence/v036-round240-t01-t02-source-review-workbench.md)。
+
+
 **R239 Root T04（真实同源双标签并发恢复，非验收）：** 真实GitHub Actions独立127.0.0.1 Chromium Web Locks/localStorage/WebCrypto 22/22（run 41052963001），将R238 Node FakeStore并发冲突与恢复扩展至真实双标签；25键156旧槽仅合成数据。R238父ZIP 2984/2984逐SHA继承；R239累计2989文件SHA `1c00ab27ca12bb13d16b26d53e1cc3d37c1bb2c574756a1349c6d7ac08aa99c0`，Python/unzip双恢复各2989 SHA、852/852选定旧QA及QA后0漂移。本地真实同源仍管理员阻断；生产用户迁移、高清逐笔、真机/读屏/完整历史not-run。T04未Accepted，Root 0/12，T01 0/25、T02 ID0、T05缺根未知；冻结入口/176编码/用户存储未动。[R239证据](./evidence/v036-round239-t04-real-cross-tab-ci.md)。
 
 
