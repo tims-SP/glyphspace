@@ -697,3 +697,5 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 - 冻结V0.35真实Chromium about:blank测试（仅测试内存插桩）逐字核验176编码、三模式528行为案例及错误输入/重试/短码确认/四码跳转/盲打遮蔽，新增3143/3143 QA通过；继承R105/R104/R103/R77/R99定向QA通过。
 - R105父1433/1433继承，R106累计1439文件SHA256 `55e96b14b2a969e33b7e6b9e39fa132d0836062bbbb4d3fe9104d044d2de26c0`；Python/unzip双独立恢复各执行新3143+旧179+170项QA并在QA后1439/1439 SHA一致。完整历史QA not-run。
 - 不改冻结正式入口/176编码/用户存储；T00/T09仍未正式Accepted，原始T00–T11仍0/12 Accepted；真同源存储blocked/not-run、真机/读屏not-run、同源高清原图许可及缺档未解决。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
+
+- **R245F4（Root T01/T02，独立分叉）**：修复审阅意见异步读取期间来源撤销仍可导入的TOCTOU缺陷；Chromium旧版复现，新版epoch双重校验。R245F3父3073逐SHA，累计3083双独立恢复，旧新选定2105/2105；main R246 ZIP不可用未合并；正式验收0/12。详见[证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
