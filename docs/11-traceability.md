@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R238 Root T04（并发冲突隔离，非验收）：** 真读R237父ZIP SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，2976/2976逐成员继承；实际25键156槽签发+R192事务内核的Node私有Map双实例并发、崩溃日志、非协作写入冲突及恢复拒绝新增17/17，继承旧835/835，共852/852选定QA。R238累计2984文件SHA `28ea55adeb80a8309bb9d66ee077a4d559f9b7f8c54cfa76d0eb1698bf506580`，Python/unzip双恢复各2984 SHA及852 QA、QA后0漂移。本地真实同源仍blocked，R238真实浏览器not-run；生产迁移、高清逐笔、真机/读屏、历史全量not-run。T04未Accepted，Root 0/12，T01 0/25、T02 ID0、缺根未知；冻结入口及用户Storage未动。[证据](./evidence/v036-round238-t04-concurrent-recovery-conflict.md)。
+
+
 **R237 / 原始T04追踪补充（非验收）：** 25键156旧槽合成v16编辑经实际R148/R152/R178/R179签发+R192事务核心验证；远端真实同源Chromium 24/24（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地管理员阻断；继承809+新增26=835/835选定QA，R236父2965 SHA继承、R237累计2976双独立恢复SHA/QA。未迁移用户数据、未批准永久ID，T02/T03依赖未Accepted，T04仍`accepted=false`，全部Root 0/12。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
 
 
