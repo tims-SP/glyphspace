@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R233 Root T03（退出校准后的残留click隔离，非验收）：** 真实Chromium CDP复现R232在触点未释放时disarm导致训练inputIndex误前进（390×844 DPR2、1280×800 DPR1）；R233追踪键盘指针ID，在disarm/dispose前安装限时click守卫，阻断已中止指针，下一次正常输入不受影响。继承旧220+新浏览器62+静态25=307/307选定QA；父R232 ZIP 2926/2926逐SHA，R233累计2939成员ZIP SHA `f55de3d71259ea75488b1cf5f3593c420e3e55ae8179b8da07fd7a860059c4f6`，Python/unzip双独立各2939 SHA及307 QA、QA后0变化。仅about:blank/CDP非真机；真同源blocked、读屏/高清逐笔/历史全量not-run；T01 0/25、批准ID0、T03生产未集成、缺根未知，Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R233证据](./evidence/v036-round233-t03-post-disarm-ghost-click-guard.md)。
+
 **R232 Root T03（真实触屏输入隔离修复，隔离非验收）：** 真实Chromium CDP touch复现R231校准模式误触触发训练输入2/2（390×844 DPR2、1280×800 DPR1）；R232按触点坐标命中字根、拦截三视图合成click、第二手指取消光学事务，显式disarm后触屏训练恢复。旧选定149+旧故障复现2+新触屏48+新静态21=220/220；R231父ZIP 2912/2912 SHA继承，R232累计2926文件ZIP SHA `b22ec8f6f711dcc651db624bbb8e1ab153babb2923ef39a2ac845cab05c0a1ca`，Python/unzip双独立各2926 SHA及220 QA、QA后0变化；unzip首次旧鼠标QA偶发失败，单独重跑及完整选定重跑通过。about:blank/CDP模拟触屏非真机；真实同源blocked/not-run，读屏/高清逐笔/历史全量not-run；T01 0/25、T02正式ID0、T03生产未集成、T05缺根未知，Root 0/12 Accepted；冻结入口、176编码及用户Storage未动。[R232证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
 
 
