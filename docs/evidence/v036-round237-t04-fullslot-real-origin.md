@@ -11,7 +11,7 @@
 
 ## 真实浏览器证据
 
-- urlR237真实同源GitHub Actionshttps://github.com/tims-SP/glyphspace/actions/runs/41037798793：**success，24/24**，实际运行新建临时127.0.0.1原点、两个Chromium标签页、Web Locks、localStorage、WebCrypto及真实R148/R152/R178/R179+R192链。证据artifact ID `12969480375`，未在此声明独立下载复验artifact字节；已独立读取job日志的24/24输出。
+- [R237真实同源GitHub Actions](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)：**success，24/24**，实际运行新建临时127.0.0.1原点、两个Chromium标签页、Web Locks、localStorage、WebCrypto及真实R148/R152/R178/R179+R192链。证据artifact ID `12969480375`，未在此声明独立下载复验artifact字节；已独立读取job日志的24/24输出。
 - 初次run `41037555221` 因断言数量预期错误（24条实际、25条预期）失败；修复后run `41037657587` success，但日志仍显示过期的预期25；再次修复日志后run `41037798793` 显示24/24、success。早期失败没有计入通过。
 - 本地独立临时Chromium profile的127.0.0.1仍报 `ERR_BLOCKED_BY_ADMINISTRATOR`，**blocked/not-run**，不能把远端授权环境成功冒充本地环境成功。
 - 仅使用合成旧坐标，未接触用户真实localStorage，也未修改生产入口。
