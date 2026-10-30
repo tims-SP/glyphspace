@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R241 Root T01/T02（M四个未绑定微形原图裁框上下文复核，非认证）：** 真读R240父ZIP 3000/3000 SHA；对M-vis-04/06/07/08原始裁框逐RGB SHA复验，实际并排审阅精确框与±7px上下文，发现低清原框边界邻近仍有深色笔画结构，不能把裁框当完整独立字根或直接生成Path。四项保持needs_highres、无替代裁框、无ID签发。旧R239 852+R240 190+新R241 32=1074/1074选定QA；R241累计3007文件SHA `9c720309427a10c86af633e1157c8b993474df14a37bf065b3df44b0bd21d8a4`，Python/unzip双独立恢复各3007/3007 SHA及1074/1074 QA、QA后0漂移。Chromium仅about:blank注入原始JPEG字节；合法同源高清逐笔、真机/读屏/历史全量not-run。T01 0/25、T02 ID0、T05缺根未知、Root 0/12；冻结入口/用户存储未动。[R241证据](./evidence/v036-round241-t01-t02-M-microform-context.md)。
+
+
 **R240 Root T01/T02（25键原图人工复核工作台，非认证）：** 真实继承R239父ZIP 2989/2989 SHA，复验冻结2008 JPEG及R144注册表，170/170原生RGB裁框SHA；新增独立25键170观察/52待审案件审阅HTML（M12观察/8案件、无存储、仅导出未批准意见）。旧852+新190=1042/1042选定QA，Chromium为about:blank注入原始JPEG字节，file://被管理员阻断；R240累计3000文件SHA `4e6c646f9b48f3e66a7de681fb485bb5de84912498bbe746caf803235120a208`，Python/unzip双恢复各3000 SHA及1042 QA、QA后0漂移。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12；高清许可/逐笔、真机/读屏/完整历史not-run，冻结入口与用户存储未动。[R240证据](./evidence/v036-round240-t01-t02-source-review-workbench.md)。
 
 
