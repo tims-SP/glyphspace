@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245 Root T01/T02（M四项来源案件身份绑定修复，非认证）：** 实际读取R244累计ZIP SHA `33e45a7924f10292e5e0794535e8a240b2cfebd913e55462b010c38844847d82`，3034/3034成员继承。真实Chromium复现R244把M shadow-04案件错误关联M-vis-01笔画且导出/导入仍接受；根因是4个shadow案件evidence原始ID与R144来源观察前缀不一致，且描记工具没有验证案件证据成员关系。R245只为M04/06/07/08建立显式别名，所有52案件描记与导入强制证据绑定、错误同键来源拒绝且保留旧草案。旧选定1299+新Chromium88=**1387/1387**；R245累计3044文件ZIP SHA `ae9b2181f8279db4e2fdebadc24f23da828193c0a6d6ebd806c06e44ce24626f`，Python/unzip双独立恢复各3044/3044 SHA及1387/1387 QA、QA后0漂移。仅隔离about:blank、非合法高清逐笔/正式SVG/真实读屏或真机；完整历史not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245证据](./evidence/v036-round245-t01-t02-M-shadow-case-binding.md)。
+
+
 **R244 Root T01/T02（原图笔画自由描记与自导出修复，非认证）：** 实际读取R243累计ZIP 3024/3024 SHA，真实Chromium复现R243允许130点描记完成但自身JSON导出无法导入（校验上限128点）；新增按住拖动的真实pointer自由描记、原生JPEG坐标连续采样、pointercancel/失焦取消、128点上限，保留点击两点再结束功能。旧选定1268+新Chromium 31=1299/1299；R244累计3034文件ZIP SHA `33e45a7924f10292e5e0794535e8a240b2cfebd913e55462b010c38844847d82`，Python与系统unzip双独立恢复各3034/3034 SHA、1299/1299选定QA，QA后0漂移。仅about:blank注入冻结JPEG，不是合法高清逐笔认证/正式SVG/真实读屏或真机；历史全量not-run，T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R244证据](./evidence/v036-round244-t01-t02-freehand-source-stroke-roundtrip.md)。
 
 
