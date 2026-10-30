@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R234 Root T01/T02（第三方3508×2480高清候选原始ZIP/JPEG独立字节复验，非认证）：** 已经GitHub连接器真实读取06wb仓库996823字节ZIP，独立SHA `fb7a9984...`、DEFLATE解出1348865字节JPEG SHA `47c5d53f...`、CRC `e90cbe82`、3508×2480均匹配R114；发现上游网页高清ZIP href全角括号与仓库实际半角括号文件名不一致。图片许可/官方来源未确认，原图字节只在连接器内存校验，未本地保存/打包/公开分发，逐笔未审。父R233 2939/2939 SHA继承；R234累计2947文件ZIP SHA `dce2085e82a92c3b75830d710d681f39e49e3df25366680244de3d537b6a5b22`，Python/unzip双独立2947/2947 SHA及来源定向旧新717/717 QA，QA后0变化；R233递归Chromium在unzip恢复超时不计入双恢复。T01正式0/25、T02永久ID0、缺根未知、T00–T11 0/12 Accepted；真同源/真机/读屏/高清逐笔/历史全量blocked或not-run，冻结入口、176编码及用户Storage未动。[R234证据](./evidence/v036-round234-t01-highres-byte-reverification.md)。
+
 **ADR-R233（2026-10-30，Root T03隔离）：** 不能只在armed=true期间拦截click；指针在校准期间按下、disarm/dispose之后释放时浏览器仍可生成训练click。采用按指针ID匹配的短生命周期捕获守卫，先安装后取消事务，命中或超时移除，避免永久阻断正常输入。仅派生V0.35隔离预览，冻结入口/正式SVG/用户Storage不动；同源/真机/来源未验收。[证据](./evidence/v036-round233-t03-post-disarm-ghost-click-guard.md)。
 
 **ADR-R232（2026-10-30，Root T03隔离）：** 真实触屏指针事件可能被Chromium重定向至SVG父元素，且释放捕获后合成click会进入训练按钮；光学校准必须在显式arm下使用真实触点命中，并对三视图键盘host全部点击失败关闭，第二触点取消事务，disarm后恢复输入。仅独立派生预览，不改冻结V0.35/正式SVG/用户Storage；真实同源/真机未验收。[证据](./evidence/v036-round232-t03-real-touch-input-isolation.md)。
