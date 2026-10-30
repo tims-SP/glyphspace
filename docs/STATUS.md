@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R243 Root T01/T02（来源像素逐笔描记工具，非认证）：** R242父累计ZIP 3015/3015逐文件SHA一致；在R240 25键/170观察/52案件工作台新增人工笔画中心线描记、原生1536×1086坐标与裁框RGB SHA绑定、完整图/键位视图不变坐标、撤销与未批准JSON导入导出；10类伪造/越界输入拒绝且保留原内存。旧选定1227+新Chromium about:blank真实鼠标41=1268/1268 QA；R243累计3024文件ZIP SHA `eafddc9d9b028a97a55628d7326e771cd2dd63b6237757450b2292a235d24964`，Python/unzip双独立恢复各3024/3024 SHA、1268/1268 QA、QA后0漂移。仅两点M键测试草案，**不代表逐笔认证/正式SVG**；合法同源高清许可、真机/读屏/历史全量not-run；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口和用户Storage未动。[R243证据](./evidence/v036-round243-t01-t02-source-pixel-stroke-tracing.md)。
+
+
 **R242 Root T01/T02（36个旧未匹配槽的原图逐项视觉分流，非认证）：** 真读R241父ZIP 3007/3007 SHA；冻结2008 JPEG与R144来源注册表钉SHA，36/36原裁框RGB及±7px上下文独立核验。人工低清视觉初筛6个右上圈注候选（D:1/E:7/F:2/H:4/J:4/N:7）、2个同框圈注边缘否定（E:1/E:8）、28项笔画归属未决；不自动改分类、Path或ID。旧1074+新153=1227/1227选定QA；R242累计3015文件ZIP SHA `d5020f167bc5d38dc0255678361de192384841d0a061c80c6ac583e0b8241527`，Python/unzip双恢复各3015 SHA与1227 QA，QA后0漂移。高清许可/逐笔、真实读屏/真机/历史全量not-run；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口和用户Storage未动。[R242证据](./evidence/v036-round242-t01-t02-36-unmatched-triage.md)。
 
 
