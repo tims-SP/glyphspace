@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R237 Root T04验收边界：** 全25键156旧槽合成来源签发+影子事务的真实授权127.0.0.1 Chromium测试24/24（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)）；本地真实同源blocked，生产用户数据迁移/回滚及正式ID映射not-run，T02/T03依赖未Accepted，因此**T04未验收**。Node新增26+旧809=835/835选定QA；R237累计2976成员ZIP两次独立恢复各2976 SHA及835 QA，完整历史QA未运行；Root仍0/12。[证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+
+
 **R236 Root T01/T02（高清坐标来源证据重算，非认证）：** 真实复现R235 crosswalk未钉SHA且只检查数量，篡改高清裁框四角/裁框ID/JPEG SHA仍错误接受3/3；新增R119/R156/R209/R218/R219来源字节钉值和独立重算门禁，逐字段复验161/161裁框JSON及161/161 CSV映射，旧3/3伪造新3/3拒绝。R235父ZIP2955/2955逐SHA继承，旧758+新51=809/809选定QA；R236累计2965成员ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，Python/unzip双独立各2965 SHA及809 QA、QA后0变化。仅来源投影证据完整性，非高清逐笔/许可/同源认证；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，真实同源/真机/读屏/历史全量未验收，冻结入口与用户存储未动。[R236证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
 
 
