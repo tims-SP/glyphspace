@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F9 / 原始T00（冻结基线外部SHA钉值，独立分叉，非验收）：** 从R245F8真实ZIP 3119/3119逐成员SHA继承；隔离复现R2旧验证器允许同步修改V0.35 HTML和T00 JSON后仍14/14错误通过。新增独立6份冻结字节SHA钉值及Node三快照逐字节重建，旧同步伪造新版拒绝。继承582/582+新10/10=592/592选定QA；R245F9累计3128成员ZIP SHA `d3d81e594527f24703697f5626bb34f29964142ca8fe297061a5f4edbcfe0f21`，Python/unzip双恢复各3128/3128 SHA、592/592 QA、0漂移。T00仍缺真实既有Storage样本/原始设备截图来源，accepted=false；Root 0/12，T01 0/25、T02批准ID0、T05缺根未知。R246主线ZIP字节缺失；R11/R12/R35及R12 20SVG缺失。真实同源/读屏/真机/高清逐笔/完整历史not-run；冻结HTML、2008 JPEG、176编码、正式SVG、生产入口、用户Storage未动。[R245F9证据](./evidence/v036-r245f9-t00-pinned-freeze-provenance-fork.md)。
+
+
 **R245F8 / 原始T03（异步SHA字节快照竞态修复，隔离分叉，非认证）：** 真读R245F7累计ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，3110/3110逐成员SHA继承。独立Node WebCrypto重现旧门禁在digest后/JSON解析前调用者同长度改写R50/R54原始buffer，将首项`金`改为`木`仍错误接受151实例伪目录；R245F8同步快照字节后同一伪造被拒绝，合法源即使调用者异步修改也正确接受。继承定向570/570+新增12/12=582/582；3119文件累计ZIP SHA `009310ce79cb62082150d2930ab4333d137d57e54cba86138dc2ef2c89d8a77e`，Python/unzip双独立恢复各3119/3119 SHA及582/582 QA、0漂移。R245F7完整选定2167曾尝试但超时，不计通过；本地Chromium导航blocked，历史全量/真实同源/读屏/真机/合法高清逐笔not-run。R246主线ZIP仍缺；R11/R12/R35及R12 20SVG仍缺。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F8证据](./evidence/v036-r245f8-t03-atomic-byte-snapshot-fork.md)。
 
 **R245F7 Root T03设计决定（非认证）：** 任何用于正式候选目录逐字段比对的R50/R54源输入都必须先校验原始字节SHA256，不能只信任可被同步修改的JSON内部声明；目录顶层不得出现未列入白名单的批准/发布权威字段。该门禁仅用于151个旧可视SVG草案，不签发ID、不证明来源形态、不替代许可。真实Chromium受管理员策略阻断；Node17/17和继承2150/2150仅是隔离预集成证据。[R245F7证据](./evidence/v036-r245f7-t03-pinned-source-byte-fork.md)。
