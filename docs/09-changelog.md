@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+
+**R245F24 Root T01/T02（原始JPEG字节校验与M跨候选像素归属整合，非认证）：** 真读R245F23父ZIP 3285/3285逐SHA继承；真实Chromium复现旧候选仅凭1536×1086尺寸接受同像素但尾部字节篡改JPEG，并错误允许生成带冻结SHA的来源描记证据。合并R245F17便携SHA/注册表字节校验与R245F23 M四组点/线段跨裁框守卫；新27/27+继承101+88+20+379=615/615选定QA，R145内含170原生RGB复验。累计3296文件ZIP SHA `3d74464141f2046342366a223aaffae96fdfb2f8c51985e99503de92b79c206b`，Python/unzip双独立恢复各3296 SHA及615 QA、QA后0漂移。R246原始ZIP及R11/R12/R35、R12 20SVG仍缺；T01正式0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f24-t01-t02-source-byte-verified-m-ownership-fork.md)。
+
 **R245F23 Root T01/T02（M shadow跨裁框像素与线段保守隔离，非认证）：** 真读R245F22父ZIP 3273/3273逐SHA继承；真实Chromium复现R245四组M shadow跨候选精确裁框像素错误接受，新增采点/拖动/结束/导入统一拒绝，额外阻断两个合法端点之间的线段穿框；52案件来源映射不变。新101/101+R245兼容88/88+继承选定666/666=855/855；原图RGB170另计。累计3285文件ZIP SHA `d31e77245b9d5aa103d53e093820fa44df3a6034c7ed8158aa57de68a9386e44`，Python/unzip双独立恢复各3285 SHA、588/588选定QA+RGB170、QA后0漂移。R246原始ZIP未取得，本分叉不宣称连续主线或正式认证；T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f23-t01-t02-m-shadow-pixel-segment-fork.md)。
 
 
