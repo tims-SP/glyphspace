@@ -1,5 +1,11 @@
 # 09 · 历史演化与变更记录
 
+**R245F23 Root T01/T02（M shadow跨裁框像素与线段保守隔离，非认证）：** 真读R245F22父ZIP 3273/3273逐SHA继承；真实Chromium复现R245四组M shadow跨候选精确裁框像素错误接受，新增采点/拖动/结束/导入统一拒绝，额外阻断两个合法端点之间的线段穿框；52案件来源映射不变。新101/101+R245兼容88/88+继承选定666/666=855/855；原图RGB170另计。累计3285文件ZIP SHA `d31e77245b9d5aa103d53e093820fa44df3a6034c7ed8158aa57de68a9386e44`，Python/unzip双独立恢复各3285 SHA、588/588选定QA+RGB170、QA后0漂移。R246原始ZIP未取得，本分叉不宣称连续主线或正式认证；T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f23-t01-t02-m-shadow-pixel-segment-fork.md)。
+
+
+**R245F22 Root T01/T02（E/K中立描记：异步导入与本地编辑版本隔离，非认证）：** R245F21父ZIP 3260/3260逐SHA继承；真实Chromium复现等待File.text()导入覆盖用户新备注与笔画2/2，新增editRevision对备注、描记、撤销、清空、同步导入计数，旧导入在来源epoch/请求序号/编辑版本任一变化时拒绝。新增20/20 Chromium、继承定向646/646，选定666/666；原始JPEG RGB 170/170另计。3273成员累计ZIP SHA `40b3663709ef47d8cf92009d46f046f93941fac8eee082d5c76d137057d48c48`，Python/unzip双独立恢复各3273/3273 SHA与666/666 QA、QA后0漂移。R246原始累计ZIP未取得，R245F22不继承其M跨候选修复；R11/R12/R35历史缺口未补。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真实同源生产迁移、真读屏/真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f22-t01-t02-local-edit-transaction-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
