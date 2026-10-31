@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F21 Root T01/T02（E/K中立来源异步竞态修复，非认证）：** 真读R245F20父ZIP3245/3245 SHA；Chromium复现旧版过期JSON导入、较早有效JPEG覆盖最新无效选择两项竞态，新增文件选择epoch与导入epoch门禁，旧2项错误接受→新拒绝。新增22/22、候选旧57/57、继承567/567，选定646/646，原图RGB170/170；累计3260文件ZIP SHA `6b08205f565e2bd6552554c9292f5dc645cda06b8e4d9adc468f72146c2bc971`，Python/unzip双恢复各3260 SHA及646 QA、QA后0漂移。仍非高清逐笔/正式ID/生产集成；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246主线ZIP未取得，R11/R12/R35及R12 20SVG缺失，真同源/真机/读屏/历史全量not-run。冻结入口/176编码/用户Storage未动。[R245F21证据](./evidence/v036-r245f21-t01-t02-ek-source-epoch-fork.md)。
+
 **R245F20 Root T01/T02（E/K共享物理裁框中立描记，非认证）：** 真实读取R245F19父ZIP3230/3230 SHA，冻结JPEG与R144注册表重算170/170原生RGB裁框；为E/K四组共享裁框（9条竞争来源观察）新增不绑定候选ID的中立笔画工作台，E:1/E:8历史否定保留，K来源身份仍待决。真实Chromium JPEG文件选择+pointer+18类伪造导入拒绝57/57，继承选定510/510，共567/567；累计3245文件ZIP SHA `61d59cb708d845bcdb1cbbe3059e0832905e730765015613b43d9f211855f765`，Python/unzip双恢复各3245 SHA及567 QA、QA后0漂移。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246原始ZIP与R11/R12/R35历史缺档未补，高清许可逐笔/真实同源/真机/读屏/历史全量not-run；冻结入口/176编码/用户Storage未动。[R245F20证据](./evidence/v036-r245f20-t01-t02-EK-unattributed-physical-crop-fork.md)。
 
 
