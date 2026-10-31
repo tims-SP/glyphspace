@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F21（2026-10-31，Root T01/T02）：** 来源验证版本必须在用户选择JPEG文件时（而非等待文件读取后）立即推进；任何异步文件读取、JPEG解码、JSON导入只能在来源epoch和导入请求均仍为最新时提交。重新验证相同SHA的JPEG也开启新epoch；过期结果失败关闭且不得覆盖最新验证状态或已保存未批准草案。仅适用于隔离E/K来源审阅工具，不改变正式来源认证、永久ID、生产Storage或用户数据。[证据](./evidence/v036-r245f21-t01-t02-ek-source-epoch-fork.md)。
+
 **ADR-R245F20（2026-10-31，Root T01/T02）：** 对E/K完全共享物理裁框的九条来源观察，禁止为了解除“零独占像素”阻断而直接放行任何候选来源ID；改用物理裁框层的中立笔画草案，原生JPEG SHA、RGB裁框、竞争ID全部钉值，导入必须保持`claimedSourceObservationId=null`、`identityStatus=unresolved`。E:1/E:8历史否定仍有效。中立草案不得转为正式SVG、永久ID或来源认证。参见[R245F20证据](./evidence/v036-r245f20-t01-t02-EK-unattributed-physical-crop-fork.md)。
 
 
