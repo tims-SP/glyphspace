@@ -1,5 +1,7 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F10 / 原始T00（冻结V0.35实际Chromium截图及键盘基线，独立分叉，非验收）：** 从R245F9真实ZIP3128/3128逐SHA继承；独立Chromium144在about:blank加载字节冻结V0.35 HTML，桌面1280×800、手机竖屏390×844、横屏844×390，3视口各两套独立context PNG逐字节一致；26键/零文档滚动/无JS异常，真实输入EEEE完成首题「月」。旧选定582+T00钉值10+新浏览器42=**634/634**，累计3138文件ZIP SHA `1953c645c8769afb1401a9fd29fac324a0f32a109d7af6e58c6eaa92f96273e6`，Python/unzip双恢复各3138/3138 SHA、634/634 QA、0漂移。固定随机种子仅限隔离测试；不等于原始历史设备截图/真机/真实同源/读屏/高清逐笔认证，T00仍accepted=false、Root 0/12，T01 0/25、T02 ID0、T05缺根未知。R246主线ZIP原始字节仍缺，R11/R12/R35及R12 20SVG仍缺；冻结HTML/176编码/正式SVG/用户存储未动。[R245F10证据](./evidence/v036-r245f10-t00-frozen-chromium-baseline-fork.md)。
+
 **R245F9 / 原始T00（冻结基线外部SHA钉值，独立分叉，非验收）：** 从R245F8真实ZIP 3119/3119逐成员SHA继承；隔离复现R2旧验证器允许同步修改V0.35 HTML和T00 JSON后仍14/14错误通过。新增独立6份冻结字节SHA钉值及Node三快照逐字节重建，旧同步伪造新版拒绝。继承582/582+新10/10=592/592选定QA；R245F9累计3128成员ZIP SHA `d3d81e594527f24703697f5626bb34f29964142ca8fe297061a5f4edbcfe0f21`，Python/unzip双恢复各3128/3128 SHA、592/592 QA、0漂移。T00仍缺真实既有Storage样本/原始设备截图来源，accepted=false；Root 0/12，T01 0/25、T02批准ID0、T05缺根未知。R246主线ZIP字节缺失；R11/R12/R35及R12 20SVG缺失。真实同源/读屏/真机/高清逐笔/完整历史not-run；冻结HTML、2008 JPEG、176编码、正式SVG、生产入口、用户Storage未动。[R245F9证据](./evidence/v036-r245f9-t00-pinned-freeze-provenance-fork.md)。
 
 
