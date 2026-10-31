@@ -41,7 +41,7 @@ d2709d6c46a6bb2545947e4d7c7e8db309f367ce5d8e9073b2a7c5fb41507917  docs/evidence/
 7c508f9eb273305ca4cde5ef5e2202bd198b4153ded77afb0a7e804fb133b6ac  docs/evidence/v036-r245f5-external-highres-rights-gate-fork.md
 896d9d8cb604892237c4f98a6b77cf80d72c64d78ffa70c89d565c13f07fb987  docs/evidence/v036-r245f6-t03-strict-frozen-catalog-attestation-fork.md
 ff7bdff03ebdf7b5354c7c4e6323639b932d78d1e582ec784f911ee28558468d  docs/evidence/v036-r245f7-t03-pinned-source-byte-fork.md
-f718c893e73f1f07d64cdfd2d5df0cd2df2f1470a97226f01b2833100fce4d41  docs/evidence/v036-r245f8-t03-atomic-byte-snapshot-fork.md
+a7ed2ac7cf76ae06437f652e1dceeff51f4cb58193f99188e0e0196c5c6c3e37  docs/evidence/v036-r245f8-t03-atomic-byte-snapshot-fork.md
 999d76d2909000c4255734cfb8e2be17751bfd561beec9258e755ca21cf3a031  docs/evidence/v036-r245f9-t00-pinned-freeze-provenance-fork.md
 5d0db0b8fa2a252011bf769872ea98a4fe2870790c22632892764e7487d77559  docs/evidence/v036-round100-archive-chain-m-provenance.md
 dad996f16600fa3e320e333b4168c364b8975129dfba253444e6ea17a660cc00  docs/evidence/v036-round101-m-native-source-ownership.md
