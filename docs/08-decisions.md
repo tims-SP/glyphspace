@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F17 / 原始T01/T02：** 来源校验必须满足latest-wins：每个验证周期拥有不可变JPEG字节快照、独立Image与Blob URL；只允许当前epoch交换显示对象，过期结果不得更改验证标志、释放当前URL或覆盖来源。异步文件读取/fetch也要版本隔离，来源重新验证取消未提交描记。旧版并发真实Chromium超时，修复后14/14新QA；仍为非认证隔离工作台。[证据](./evidence/v036-r245f17-t01-atomic-source-verification-fork.md)。
+
+
 **ADR R245F16 / 原始T01/T02：** 来源描记与人工意见同为异步导入，必须绑定起始`evidenceEpoch`，即使相同SHA的JPEG重新校验也视为新证据周期；读入后再次校验并在写入草案前失败关闭。R245F4旧版一笔过期导入已在Chromium复现；本次仅修复隔离工作台，不批准字根形态或永久ID。[证据](./evidence/v036-r245f16-t01-source-trace-epoch-fork.md)。
 
 **ADR R245F15 / 原始T03：** 预提交inkBBox合法不等于活体DOM健康。任何坐标滑块、导入、重置必须在三视图当前DOM校验成功后才开始修改，修改完成并再次inspect通过后才允许持久化；失败回滚，不把不可信场景写入Storage。仅隔离单HTML，正式0/12 Accepted。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
