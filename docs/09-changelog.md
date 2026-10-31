@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F6 Root T03（151旧SVG目录逐字段来源绑定，隔离预集成，非认证）：** 复现R62旧auditCatalog错误接受Path替换、draft assetId替换、byKey成员顺序污染及微小transform偏移；新门禁按R50/R54冻结输入重建151实例/25键目录并逐字段核对，显式待审光学校正需重新安全推导。R245F5父ZIP3090/3090 SHA继承；新增Node25/25+旧选定2125/2125=**2150/2150**；R245F6累计3099成员SHA `be4e95ee257a6f9d61bfd11974bc69458f80b0f4fedf99556f94185d80674a5f`，Python/unzip双恢复各3099/3099 SHA与2150/2150 QA，QA后0漂移。R246原始ZIP仍缺，故为独立分叉；T03未集成正式HTML，T01认证0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；真机/读屏/同源迁移/高清许可/历史全量/仓库verify_repo not-run。[R245F6证据](./evidence/v036-r245f6-t03-strict-frozen-catalog-attestation-fork.md)。
+
+
 **R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
 
 
