@@ -1,5 +1,40 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F16 / 原始T01/T02：** 来源描记与人工意见同为异步导入，必须绑定起始`evidenceEpoch`，即使相同SHA的JPEG重新校验也视为新证据周期；读入后再次校验并在写入草案前失败关闭。R245F4旧版一笔过期导入已在Chromium复现；本次仅修复隔离工作台，不批准字根形态或永久ID。[证据](./evidence/v036-r245f16-t01-source-trace-epoch-fork.md)。
+
+**ADR R245F15 / 原始T03：** 预提交inkBBox合法不等于活体DOM健康。任何坐标滑块、导入、重置必须在三视图当前DOM校验成功后才开始修改，修改完成并再次inspect通过后才允许持久化；失败回滚，不把不可信场景写入Storage。仅隔离单HTML，正式0/12 Accepted。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
+
+
+**ADR R245F14 / 原始T03：** 校准必须先对完整151实例进行100×100 inkBBox预检，再允许旧UI写坐标、保存或导入；拒绝时保留已提交三视图和Storage。旧R245F13的M:0 X=90失效已在真实Chromium复现，R245F14新增40/40、旧772/772选定QA，3181成员双恢复通过。只在隔离候选，Root 0/12 Accepted。[证据](./evidence/v036-r245f14-t03-precommit-inkbbox-fork.md)。
+
+
+**ADR R245F13 / 原始T03：** 任何校准坐标事件先与完整/聚焦/迷你三视图DOM逐实例匹配，再提交151条CURRENT；拒绝旧事件不得污染已提交几何。父版缺陷真实Chromium复现，新增41/41及151/151实例操作回归、选定772/772、3170文件双恢复通过。仅隔离候选，不代表来源认证/生产集成/Accepted。[证据](./evidence/v036-r245f13-t03-atomic-calibration-transaction-fork.md)。
+
+
+**ADR R245F12 / 原始T03：** 解析式SVG预集成不能破坏V0.35原有校准。R245F11旧式transform覆盖缺陷经Chromium复现；R245F12仅在隔离候选中增加坐标快照桥接，逐151实例验证100×100 inkBBox后统一三视图matrix，保留重置、训练输入和私有内存Storage。新增51/51 Chromium、选定731/731 QA、3160文件双恢复通过；生产未集成、来源/ID未认证、Root 0/12 Accepted。[证据](./evidence/v036-r245f12-t03-live-calibration-bridge-fork.md)。
+
+
+**ADR R245F11 / 原始T03：** 仅在独立候选单HTML内，把R245F8原始字节钉值验证过的151个冻结Path及R54解析式inkBBox/R62光学矩阵投射到冻结V0.35实际三视图DOM；候选在应用执行前替换localStorage/sessionStorage为独立内存实现，确保不访问真实用户存储。46/46隔离Chromium与680/680选定QA、3151文件双恢复通过，但这不是永久ID、参考图认证或正式生产集成。Root T03保持未验收，0/12 Accepted。[证据](./evidence/v036-r245f11-t03-live-analytic-geometry-fork.md)。
+
+**R245F10 / 原始T00（冻结V0.35实际Chromium截图及键盘基线，独立分叉，非验收）：** 从R245F9真实ZIP3128/3128逐SHA继承；独立Chromium144在about:blank加载字节冻结V0.35 HTML，桌面1280×800、手机竖屏390×844、横屏844×390，3视口各两套独立context PNG逐字节一致；26键/零文档滚动/无JS异常，真实输入EEEE完成首题「月」。旧选定582+T00钉值10+新浏览器42=**634/634**，累计3138文件ZIP SHA `1953c645c8769afb1401a9fd29fac324a0f32a109d7af6e58c6eaa92f96273e6`，Python/unzip双恢复各3138/3138 SHA、634/634 QA、0漂移。固定随机种子仅限隔离测试；不等于原始历史设备截图/真机/真实同源/读屏/高清逐笔认证，T00仍accepted=false、Root 0/12，T01 0/25、T02 ID0、T05缺根未知。R246主线ZIP原始字节仍缺，R11/R12/R35及R12 20SVG仍缺；冻结HTML/176编码/正式SVG/用户存储未动。[R245F10证据](./evidence/v036-r245f10-t00-frozen-chromium-baseline-fork.md)。
+
+**R245F9 / 原始T00（冻结基线外部SHA钉值，独立分叉，非验收）：** 从R245F8真实ZIP 3119/3119逐成员SHA继承；隔离复现R2旧验证器允许同步修改V0.35 HTML和T00 JSON后仍14/14错误通过。新增独立6份冻结字节SHA钉值及Node三快照逐字节重建，旧同步伪造新版拒绝。继承582/582+新10/10=592/592选定QA；R245F9累计3128成员ZIP SHA `d3d81e594527f24703697f5626bb34f29964142ca8fe297061a5f4edbcfe0f21`，Python/unzip双恢复各3128/3128 SHA、592/592 QA、0漂移。T00仍缺真实既有Storage样本/原始设备截图来源，accepted=false；Root 0/12，T01 0/25、T02批准ID0、T05缺根未知。R246主线ZIP字节缺失；R11/R12/R35及R12 20SVG缺失。真实同源/读屏/真机/高清逐笔/完整历史not-run；冻结HTML、2008 JPEG、176编码、正式SVG、生产入口、用户Storage未动。[R245F9证据](./evidence/v036-r245f9-t00-pinned-freeze-provenance-fork.md)。
+
+
+**R245F8 / 原始T03（异步SHA字节快照竞态修复，隔离分叉，非认证）：** 真读R245F7累计ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，3110/3110逐成员SHA继承。独立Node WebCrypto重现旧门禁在digest后/JSON解析前调用者同长度改写R50/R54原始buffer，将首项`金`改为`木`仍错误接受151实例伪目录；R245F8同步快照字节后同一伪造被拒绝，合法源即使调用者异步修改也正确接受。继承定向570/570+新增12/12=582/582；3119文件累计ZIP SHA `009310ce79cb62082150d2930ab4333d137d57e54cba86138dc2ef2c89d8a77e`，Python/unzip双独立恢复各3119/3119 SHA及582/582 QA、0漂移。R245F7完整选定2167曾尝试但超时，不计通过；本地Chromium导航blocked，历史全量/真实同源/读屏/真机/合法高清逐笔not-run。R246主线ZIP仍缺；R11/R12/R35及R12 20SVG仍缺。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F8证据](./evidence/v036-r245f8-t03-atomic-byte-snapshot-fork.md)。
+
+**R245F7 Root T03设计决定（非认证）：** 任何用于正式候选目录逐字段比对的R50/R54源输入都必须先校验原始字节SHA256，不能只信任可被同步修改的JSON内部声明；目录顶层不得出现未列入白名单的批准/发布权威字段。该门禁仅用于151个旧可视SVG草案，不签发ID、不证明来源形态、不替代许可。真实Chromium受管理员策略阻断；Node17/17和继承2150/2150仅是隔离预集成证据。[R245F7证据](./evidence/v036-r245f7-t03-pinned-source-byte-fork.md)。
+
+
+**R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
+
+
+**R245F4来源证据异步导入决策（Root T01/T02，非正式验收）：** 任何在来源验证状态下启动、跨`await`继续的证据写入都必须捕获来源epoch，等待结束后和提交前复核；来源被撤销或同字节重验均使旧操作过期，拒绝而不破坏旧草案。此规则只用于隔离审阅工作台，不代表来源形态认证或正式迁移。见[技术证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
+
+
+**ADR-R245F2（2026-10-31，Root T01/T02）：** 几何来源交叠不能自动裁定真实笔画，但隔离审阅工具应拒绝任何跨入其他精确来源框的描记点或线段；同框历史别名暂保守隔离，直至合法同源高清人工复核。此分叉不覆盖R246主线。[证据](./evidence/v036-r245f2-allkey-cross-source-stroke-guard-fork.md)。
+
+
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
