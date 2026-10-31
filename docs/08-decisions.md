@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F14 / 原始T03：** 校准必须先对完整151实例进行100×100 inkBBox预检，再允许旧UI写坐标、保存或导入；拒绝时保留已提交三视图和Storage。旧R245F13的M:0 X=90失效已在真实Chromium复现，R245F14新增40/40、旧772/772选定QA，3181成员双恢复通过。只在隔离候选，Root 0/12 Accepted。[证据](./evidence/v036-r245f14-t03-precommit-inkbbox-fork.md)。
+
+
 **ADR R245F13 / 原始T03：** 任何校准坐标事件先与完整/聚焦/迷你三视图DOM逐实例匹配，再提交151条CURRENT；拒绝旧事件不得污染已提交几何。父版缺陷真实Chromium复现，新增41/41及151/151实例操作回归、选定772/772、3170文件双恢复通过。仅隔离候选，不代表来源认证/生产集成/Accepted。[证据](./evidence/v036-r245f13-t03-atomic-calibration-transaction-fork.md)。
 
 
