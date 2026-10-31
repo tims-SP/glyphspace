@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F19：** 同一物理裁框的候选ID与历史索引ID并非两个独立像素来源；只对白名单M四对、且坐标与RGB SHA完全一致时豁免相互排斥，保留两套ID与待审状态。E/K冲突绝不自动合并。详见R245F19证据。
+
+
 **R245F18 Root T01/T02（来源审阅意见必须先校验原始JPEG，非认证）：** 实际Chromium复现R245F17未校验JPEG时可编辑并导出带原图SHA的意见JSON；R245F18隔离候选禁止未校验编辑/保存/导出，失败撤销输入、恢复合法原图后保留已验证意见。父ZIP3213/3213 SHA继承；新Chromium19/19、旧Chromium14+63、R145 Python379，选定475/475；累计3220文件ZIP SHA `3cfbcfd15c8006a3beb7bfa9f9aacfc67501785eb0e205f356c8252463e9ff2e`，Python/unzip双独立恢复各3220 SHA及475 QA、QA后0漂移。仍是about:blank，非高清逐笔/正式ID；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246主线ZIP未取得、历史缺口未补，真同源/真机/读屏/历史全量not-run，冻结入口/用户Storage未动。[R245F18证据](./evidence/v036-r245f18-t01-source-review-note-provenance-fork.md)。
 
 
