@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F16 / 原始T01/T02：** 来源描记与人工意见同为异步导入，必须绑定起始`evidenceEpoch`，即使相同SHA的JPEG重新校验也视为新证据周期；读入后再次校验并在写入草案前失败关闭。R245F4旧版一笔过期导入已在Chromium复现；本次仅修复隔离工作台，不批准字根形态或永久ID。[证据](./evidence/v036-r245f16-t01-source-trace-epoch-fork.md)。
+
 **ADR R245F15 / 原始T03：** 预提交inkBBox合法不等于活体DOM健康。任何坐标滑块、导入、重置必须在三视图当前DOM校验成功后才开始修改，修改完成并再次inspect通过后才允许持久化；失败回滚，不把不可信场景写入Storage。仅隔离单HTML，正式0/12 Accepted。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
 
 
