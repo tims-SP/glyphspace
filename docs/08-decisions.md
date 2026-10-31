@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F15 / 原始T03：** 预提交inkBBox合法不等于活体DOM健康。任何坐标滑块、导入、重置必须在三视图当前DOM校验成功后才开始修改，修改完成并再次inspect通过后才允许持久化；失败回滚，不把不可信场景写入Storage。仅隔离单HTML，正式0/12 Accepted。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
+
+
 **ADR R245F14 / 原始T03：** 校准必须先对完整151实例进行100×100 inkBBox预检，再允许旧UI写坐标、保存或导入；拒绝时保留已提交三视图和Storage。旧R245F13的M:0 X=90失效已在真实Chromium复现，R245F14新增40/40、旧772/772选定QA，3181成员双恢复通过。只在隔离候选，Root 0/12 Accepted。[证据](./evidence/v036-r245f14-t03-precommit-inkbbox-fork.md)。
 
 
