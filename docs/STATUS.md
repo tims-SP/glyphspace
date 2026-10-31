@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F25 Root T01/T02（审阅草案异步导入本地编辑保护，非认证）：** R245F24父ZIP3296/3296逐SHA继承；真实Chromium复现延迟JSON读取覆盖用户新备注和M来源笔画2项旧数据丢失。独立来源工作台新增备注/描记editRevision与导入请求序号，过期导入拒绝、正常导入保留；新17+继承615=632/632选定QA，原图170 RGB含在R145 379项。累计3307文件ZIP SHA `d2da0599d6f72bb128394101f31107f5e94d2bbf38ae09df2a340968b40cbe1e`，Python/unzip双独立恢复各3307/3307 SHA及632/632 QA、QA后0漂移。真实同源本地管理员阻断，合法同源高清/逐笔、读屏/真机、完整历史not-run；R246原始ZIP及R11/R12/R35缺口未解。T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f25-t01-t02-atomic-local-review-import-fork.md)。
+
+
 
 **R245F24 Root T01/T02（原始JPEG字节校验与M跨候选像素归属整合，非认证）：** 真读R245F23父ZIP 3285/3285逐SHA继承；真实Chromium复现旧候选仅凭1536×1086尺寸接受同像素但尾部字节篡改JPEG，并错误允许生成带冻结SHA的来源描记证据。合并R245F17便携SHA/注册表字节校验与R245F23 M四组点/线段跨裁框守卫；新27/27+继承101+88+20+379=615/615选定QA，R145内含170原生RGB复验。累计3296文件ZIP SHA `3d74464141f2046342366a223aaffae96fdfb2f8c51985e99503de92b79c206b`，Python/unzip双独立恢复各3296 SHA及615 QA、QA后0漂移。R246原始ZIP及R11/R12/R35、R12 20SVG仍缺；T01正式0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f24-t01-t02-source-byte-verified-m-ownership-fork.md)。
 
