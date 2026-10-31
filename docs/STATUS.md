@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F15 / 原始T03（活体DOM校准预检，隔离非验收）：** 真实Chromium复现R245F14在SVG Path已被篡改后，合法M:0坐标编辑仍先写Storage再报告轮廓漂移；R245F15在滑块/JSON导入/重置前后检查full/focus/mini活体DOM，只有成功才持久化，失败回滚内存坐标且Storage不变。父R245F14 3181/3181 SHA继承；继承选定旧QA771/771、新37/37，合计**808/808**；累计3194文件ZIP SHA `abd45644160fc933bb7a1b83e9a16bb94e5932e6ba8ed012e6302785ab7b1a60`，Python/unzip双恢复各3194/3194 SHA与808/808 QA、0漂移。R245F13耗时穷举QA本轮超时不计通过，历史全量not-run。仅about:blank及隔离内存Storage，真实同源/读屏/真机/同源高清逐笔not-run；R246原始ZIP、R11/R12/R35及R12 20SVG仍缺。T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
+
+
 **R245F14 / 原始T03（隔离校准inkBBox预提交门禁，非验收）：** Chromium真实复现R245F13在M:0 X=90时先保存隔离Storage、再发生几何漂移；R245F14在滑块及部分JSON导入写入前，先以151实例100×100解析式inkBBox验证完整投影快照，非法输入保留旧DOM/坐标/Storage并提示。R245F13父ZIP3170/3170逐SHA继承，旧772+新Chromium40=**812/812**分段选定QA；累计3181文件ZIP SHA `4354ed408d6b4b10ea245504cabef8e58b84cddc93a89e372511440bed1b8be8`，Python/unzip双独立3181/3181 SHA与各812/812 QA、QA后0漂移。仅about:blank及内存Storage，历史全量/真实同源/真机/读屏/同源高清逐笔not-run；R246原始ZIP、R11/R12/R35和R12 20SVG仍缺。T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted，冻结生产入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f14-t03-precommit-inkbbox-fork.md)。
 
 
