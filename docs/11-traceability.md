@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F17 Root T01/T02（非认证）：** 旧来源校验并发Promise超时实测；私有JPEG字节/解码Image/Blob URL与latest-wins epoch修复。R245F16父3204 SHA一致；Chromium新14、来源63、旧R145 Python379，合计456/456选定QA；3213文件ZIP SHA `2c4090e7fd177a33c221190f145aa4aef886cd1228ef350d8979f468d57f68ea`，双独立恢复3213/3213 SHA和QA，0漂移。R246主线修复未继承，T01正式0/25、T02批准ID0、Root 0/12 Accepted，高清/真同源/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f17-t01-atomic-source-verification-fork.md)。
+
+
 **R245F16 / 原始T01/T02（逐笔描记异步来源epoch隔离，非认证）：** 真读R245F15父ZIP SHA `abd45644160fc933bb7a1b83e9a16bb94e5932e6ba8ed012e6302785ab7b1a60`，3194/3194逐SHA继承。真实Chromium复现R245F4挂起File.text期间重新验证**相同SHA的2008 JPEG**，仍错误导入A:5一笔旧描记；R245F16为trace导入加入evidenceEpoch前后校验，旧错误接受→新拒绝，合法导入/失效来源/错误schema及原草案保留均通过。旧R245F4 21+旧R245F15 37+新Chromium 33=**91/91**选定QA；累计3204文件ZIP SHA `bc343a657e317838bcf289ccc058bdd1a49a37e70e09f79664638acf1d8db939`，Python/unzip双恢复各3204/3204 SHA与91/91 QA，QA后0漂移。仅隔离about:blank；R246主线M跨裁框修复**未继承**，R246 ZIP原始字节未得；T01 0/25、T02正式ID0、缺根未知、Root 0/12 Accepted；高清同源许可/真同源/真机/读屏/历史全量not-run，冻结入口/176编码/用户存储未动。[R245F16证据](./evidence/v036-r245f16-t01-source-trace-epoch-fork.md)。
 
 **R245F15 / 原始T03（活体DOM校准预检，隔离非验收）：** 真实Chromium复现R245F14在SVG Path已被篡改后，合法M:0坐标编辑仍先写Storage再报告轮廓漂移；R245F15在滑块/JSON导入/重置前后检查full/focus/mini活体DOM，只有成功才持久化，失败回滚内存坐标且Storage不变。父R245F14 3181/3181 SHA继承；继承选定旧QA771/771、新37/37，合计**808/808**；累计3194文件ZIP SHA `abd45644160fc933bb7a1b83e9a16bb94e5932e6ba8ed012e6302785ab7b1a60`，Python/unzip双恢复各3194/3194 SHA与808/808 QA、0漂移。R245F13耗时穷举QA本轮超时不计通过，历史全量not-run。仅about:blank及隔离内存Storage，真实同源/读屏/真机/同源高清逐笔not-run；R246原始ZIP、R11/R12/R35及R12 20SVG仍缺。T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f15-t03-live-dom-preflight-fork.md)。
