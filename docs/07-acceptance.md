@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+
+**R245F24 Root T01/T02（原始JPEG字节校验与M跨候选像素归属整合，非认证）：** 真读R245F23父ZIP 3285/3285逐SHA继承；真实Chromium复现旧候选仅凭1536×1086尺寸接受同像素但尾部字节篡改JPEG，并错误允许生成带冻结SHA的来源描记证据。合并R245F17便携SHA/注册表字节校验与R245F23 M四组点/线段跨裁框守卫；新27/27+继承101+88+20+379=615/615选定QA，R145内含170原生RGB复验。累计3296文件ZIP SHA `3d74464141f2046342366a223aaffae96fdfb2f8c51985e99503de92b79c206b`，Python/unzip双独立恢复各3296 SHA及615 QA、QA后0漂移。R246原始ZIP及R11/R12/R35、R12 20SVG仍缺；T01正式0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f24-t01-t02-source-byte-verified-m-ownership-fork.md)。
+
 **R245F22 Root T01/T02（E/K中立描记：异步导入与本地编辑版本隔离，非认证）：** R245F21父ZIP 3260/3260逐SHA继承；真实Chromium复现等待File.text()导入覆盖用户新备注与笔画2/2，新增editRevision对备注、描记、撤销、清空、同步导入计数，旧导入在来源epoch/请求序号/编辑版本任一变化时拒绝。新增20/20 Chromium、继承定向646/646，选定666/666；原始JPEG RGB 170/170另计。3273成员累计ZIP SHA `40b3663709ef47d8cf92009d46f046f93941fac8eee082d5c76d137057d48c48`，Python/unzip双独立恢复各3273/3273 SHA与666/666 QA、QA后0漂移。R246原始累计ZIP未取得，R245F22不继承其M跨候选修复；R11/R12/R35历史缺口未补。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/许可、真实同源生产迁移、真读屏/真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f22-t01-t02-local-edit-transaction-fork.md)。
 
 
