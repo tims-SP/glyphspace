@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F20（2026-10-31，Root T01/T02）：** 对E/K完全共享物理裁框的九条来源观察，禁止为了解除“零独占像素”阻断而直接放行任何候选来源ID；改用物理裁框层的中立笔画草案，原生JPEG SHA、RGB裁框、竞争ID全部钉值，导入必须保持`claimedSourceObservationId=null`、`identityStatus=unresolved`。E:1/E:8历史否定仍有效。中立草案不得转为正式SVG、永久ID或来源认证。参见[R245F20证据](./evidence/v036-r245f20-t01-t02-EK-unattributed-physical-crop-fork.md)。
+
+
 **ADR-R245F19：** 同一物理裁框的候选ID与历史索引ID并非两个独立像素来源；只对白名单M四对、且坐标与RGB SHA完全一致时豁免相互排斥，保留两套ID与待审状态。E/K冲突绝不自动合并。详见R245F19证据。
 
 

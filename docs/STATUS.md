@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F20 Root T01/T02（E/K共享物理裁框中立描记，非认证）：** 真实读取R245F19父ZIP3230/3230 SHA，冻结JPEG与R144注册表重算170/170原生RGB裁框；为E/K四组共享裁框（9条竞争来源观察）新增不绑定候选ID的中立笔画工作台，E:1/E:8历史否定保留，K来源身份仍待决。真实Chromium JPEG文件选择+pointer+18类伪造导入拒绝57/57，继承选定510/510，共567/567；累计3245文件ZIP SHA `61d59cb708d845bcdb1cbbe3059e0832905e730765015613b43d9f211855f765`，Python/unzip双恢复各3245 SHA及567 QA、QA后0漂移。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246原始ZIP与R11/R12/R35历史缺档未补，高清许可逐笔/真实同源/真机/读屏/历史全量not-run；冻结入口/176编码/用户Storage未动。[R245F20证据](./evidence/v036-r245f20-t01-t02-EK-unattributed-physical-crop-fork.md)。
+
+
 **R245F19 Root T01/T02（M四组同物理裁框来源别名人工描记解阻，非认证）：** 真实读取R245F18父ZIP3220/3220 SHA；独立重算25键170/170原生JPEG裁框RGB SHA，发现17条零独占像素来源观察。R245F18将M四对完全同裁框的候选/旧索引别名错误互斥，旧Chromium4/4无法描记；R245F19仅对白名单四对且nativeRect/RGB SHA完全相同的M别名允许人工笔画描记，8条恢复可审阅，E/K余9条仍阻断；不合并/批准任何正式身份。新35/35、继承选定475/475，共510/510；累计3230文件ZIP SHA `b2a15a68826afbaa0f411948a4c02491755f23782df6175185e7489aa2f069ec`，Python/unzip双恢复各3230 SHA与510 QA、QA后0漂移。T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246 ZIP、历史R11/R12/R35缺失，高清许可逐笔/真同源/真机/读屏/历史全量not-run；冻结HTML/176编码/用户Storage未动。[R245F19证据](./evidence/v036-r245f19-t01-t02-M-shared-physical-crop-review-fork.md)。
 
 
