@@ -1,5 +1,41 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F13 / 原始T03（隔离校准事务提交前全视图验证，非验收）：** Chromium复现R245F12对结构合法但DOM未更新的旧事件先写151条CURRENT、后发现geometry drift，污染已提交几何。R245F13先核对full/focus/mini全部实例的来源Path、身份、DOM坐标和transform，再提交；异常回滚CURRENT。继承R245F12父ZIP3160/3160逐SHA，旧731/731+新41/41=**772/772**选定QA，另25键151实例逐项编辑还原；累计3170文件ZIP SHA `e8e02c2478215219aa1ffe96f01fe1f0b484e8cb61298c5be1307a62a3a98039`，Python/unzip双独立3170/3170 SHA与772/772 QA、0漂移。仅about:blank、内存Storage；完整历史、真实同源、读屏、真机、合法同源高清逐笔not-run。R246 ZIP原始字节及R11/R12/R35、R12 20SVG仍缺；T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f13-t03-atomic-calibration-transaction-fork.md)。
+
+
+**R245F12 / 原始T03（旧校准与解析式SVG三视图闭环修复，隔离非验收）：** Chromium复现R245F11原有X/Y/尺寸校准会将解析式SVG改写旧translate/scale导致geometry drift；隔离候选通过151实例坐标快照、100×100 inkBBox校验后同步full/focus/mini matrix，原有重置和训练输入可用。R245F11父ZIP3151/3151逐SHA继承；新增Chromium51/51、继承680/680，选定731/731；累计3160文件ZIP SHA `46092b27bcc671aa72b0276d633a83354c382a2aeb2845215ee44e1934b8973c`，Python/unzip双独立各3160/3160 SHA与731/731 QA、QA后0漂移。仅about:blank、内存Storage；T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted。R246 ZIP及R11/R12/R35、R12 20SVG仍缺；真同源/真机/读屏/历史全量not-run，冻结入口/用户Storage未动。[R245F12证据](./evidence/v036-r245f12-t03-live-calibration-bridge-fork.md)。
+
+
+**R245F11 / 原始T03（冻结V0.35真实DOM三视图解析式SVG内核隔离预集成，非验收）：** R245F10父ZIP3138/3138逐SHA继承；R50 151冻结Path + R54解析式inkBBox + R62 100×100锚点/光学矩阵，经R245F8双源原始字节钉值验证，接入独立V0.35应用副本的full/focus/mini实际DOM。隔离Chromium 1280×800、390×844、844×390新增46/46，选定旧新680/680；累计3151文件ZIP SHA `9dc745ba3d8a057af4e9dc7a98f83afec421c6afbc2e6fc52e5202536b7797fc`，Python/unzip双独立各3151/3151 SHA、680/680 QA及0漂移（unzip恢复组合wrapper超时后4套分开重跑通过）。候选使用内存Storage，不触碰用户现有存储；未替换生产入口、未认证原图/永久ID、未修改176编码。R246原始ZIP及R11/R12/R35、R12 20SVG仍缺；真实同源/真机/读屏/历史全量not-run，T03仍accepted=false，Root 0/12。[R245F11证据](./evidence/v036-r245f11-t03-live-analytic-geometry-fork.md)。
+
+**R245F10 / 原始T00（冻结V0.35实际Chromium截图及键盘基线，独立分叉，非验收）：** 从R245F9真实ZIP3128/3128逐SHA继承；独立Chromium144在about:blank加载字节冻结V0.35 HTML，桌面1280×800、手机竖屏390×844、横屏844×390，3视口各两套独立context PNG逐字节一致；26键/零文档滚动/无JS异常，真实输入EEEE完成首题「月」。旧选定582+T00钉值10+新浏览器42=**634/634**，累计3138文件ZIP SHA `1953c645c8769afb1401a9fd29fac324a0f32a109d7af6e58c6eaa92f96273e6`，Python/unzip双恢复各3138/3138 SHA、634/634 QA、0漂移。固定随机种子仅限隔离测试；不等于原始历史设备截图/真机/真实同源/读屏/高清逐笔认证，T00仍accepted=false、Root 0/12，T01 0/25、T02 ID0、T05缺根未知。R246主线ZIP原始字节仍缺，R11/R12/R35及R12 20SVG仍缺；冻结HTML/176编码/正式SVG/用户存储未动。[R245F10证据](./evidence/v036-r245f10-t00-frozen-chromium-baseline-fork.md)。
+
+**R245F9 / 原始T00（冻结基线外部SHA钉值，独立分叉，非验收）：** 从R245F8真实ZIP 3119/3119逐成员SHA继承；隔离复现R2旧验证器允许同步修改V0.35 HTML和T00 JSON后仍14/14错误通过。新增独立6份冻结字节SHA钉值及Node三快照逐字节重建，旧同步伪造新版拒绝。继承582/582+新10/10=592/592选定QA；R245F9累计3128成员ZIP SHA `d3d81e594527f24703697f5626bb34f29964142ca8fe297061a5f4edbcfe0f21`，Python/unzip双恢复各3128/3128 SHA、592/592 QA、0漂移。T00仍缺真实既有Storage样本/原始设备截图来源，accepted=false；Root 0/12，T01 0/25、T02批准ID0、T05缺根未知。R246主线ZIP字节缺失；R11/R12/R35及R12 20SVG缺失。真实同源/读屏/真机/高清逐笔/完整历史not-run；冻结HTML、2008 JPEG、176编码、正式SVG、生产入口、用户Storage未动。[R245F9证据](./evidence/v036-r245f9-t00-pinned-freeze-provenance-fork.md)。
+
+
+**R245F8 / 原始T03（异步SHA字节快照竞态修复，隔离分叉，非认证）：** 真读R245F7累计ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，3110/3110逐成员SHA继承。独立Node WebCrypto重现旧门禁在digest后/JSON解析前调用者同长度改写R50/R54原始buffer，将首项`金`改为`木`仍错误接受151实例伪目录；R245F8同步快照字节后同一伪造被拒绝，合法源即使调用者异步修改也正确接受。继承定向570/570+新增12/12=582/582；3119文件累计ZIP SHA `009310ce79cb62082150d2930ab4333d137d57e54cba86138dc2ef2c89d8a77e`，Python/unzip双独立恢复各3119/3119 SHA及582/582 QA、0漂移。R245F7完整选定2167曾尝试但超时，不计通过；本地Chromium导航blocked，历史全量/真实同源/读屏/真机/合法高清逐笔not-run。R246主线ZIP仍缺；R11/R12/R35及R12 20SVG仍缺。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F8证据](./evidence/v036-r245f8-t03-atomic-byte-snapshot-fork.md)。
+
+**R245F7 Root T03（冻结151 SVG输入原始字节钉定，独立分叉、非认证）：** 复现R245F6在source/vector/candidate三者一致被篡改时仍接受的来源自洽伪造；新增WebCrypto SHA256原始字节门禁，分别钉定R50/R54输入，并拒绝候选目录额外顶层权威字段。R245F6父ZIP3099/3099 SHA继承；旧选定2150/2150+新增Node17/17=2167/2167；R245F7累计3110成员ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，Python/unzip双恢复各3110/3110 SHA与2167/2167 QA，QA后0漂移。Chromium独立127.0.0.1因管理员策略blocked（0通过），高清同源/真机/读屏/完整历史QA/生产集成not-run；R246主线ZIP未取得，保持独立分叉；Root T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知，冻结入口/176编码/用户Storage未动。[R245F7证据](./evidence/v036-r245f7-t03-pinned-source-byte-fork.md)。
+
+
+**R245F6 Root T03（151旧SVG目录逐字段来源绑定，隔离预集成，非认证）：** 复现R62旧auditCatalog错误接受Path替换、draft assetId替换、byKey成员顺序污染及微小transform偏移；新门禁按R50/R54冻结输入重建151实例/25键目录并逐字段核对，显式待审光学校正需重新安全推导。R245F5父ZIP3090/3090 SHA继承；新增Node25/25+旧选定2125/2125=**2150/2150**；R245F6累计3099成员SHA `be4e95ee257a6f9d61bfd11974bc69458f80b0f4fedf99556f94185d80674a5f`，Python/unzip双恢复各3099/3099 SHA与2150/2150 QA，QA后0漂移。R246原始ZIP仍缺，故为独立分叉；T03未集成正式HTML，T01认证0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；真机/读屏/同源迁移/高清许可/历史全量/仓库verify_repo not-run。[R245F6证据](./evidence/v036-r245f6-t03-strict-frozen-catalog-attestation-fork.md)。
+
+
+**R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
+
+
+**R245F4 / 原始T01/T02（来源异步导入原子性，非验收）：** 真实Chromium复现R245F3的来源撤销与`File.text()`异步导入竞态；R245F4来源epoch复核阻断过期导入、同SHA重验亦阻断，保留已有草案。R245F3父3073/3073 SHA，R245F4累计3083双独立恢复SHA及2105/2105选定QA；main R246 ZIP缺字节，独立分叉未合并。T01 0/25、T02批准ID0、Root 0/12 Accepted。[证据](./evidence/v036-r245f4-source-epoch-atomic-import-fork.md)。
+
+
+**R245F3（2026-10-31，Root T01/T02隔离分叉，非认证）：** 真实Chromium复现R245F2工作台可加载已改字节JPEG/已改内嵌注册表，却仍导出冻结来源SHA；新隔离工作台验证实际JPEG字节和内嵌注册表SHA后才显示并允许描记、导入/导出，支持file://手动原图校验与便携SHA256。R245F2父ZIP3065/3065继承；旧1387+F1审计508+F2浏览器166+新增23=**2084/2084**选定QA，额外新工作台旧浏览器回归166/166；累计3073文件ZIP SHA `cbb044d5697d2769a8ae3f7098d8d86dc0ea816983cd9880c114c7f489835f74`，Python/unzip双恢复各3073/3073 SHA与2084/2084 QA、QA后0漂移。main R246原始ZIP仍未取得，**非R247连续主线**。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；合法高清逐笔/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f3-source-byte-provenance-fork.md)。
+
+
+**R245F2（2026-10-31，Root T01/T02隔离分叉，非R247、非认证）：** 从R245F1累计ZIP（3055/3055 SHA）独立继承，新增全25键来源像素/连线跨其他精确裁框失败关闭工作台；33/52跨来源风险案件逐案真实Chromium拒绝活体误描记及伪造导入，M04/06/07/08四个已知污染点拒绝，A:6端点合法但线段穿过A:2精确框时拒绝。继承旧1387+F1审计508+新增166=**2061/2061**选定QA，累计3065文件ZIP SHA `6ca8385ef8db6582f44044d6c85196f36dbe7cd4469150c48a0cbf9fcfeb0ecd`，Python/unzip双独立恢复各3065/3065 SHA、2061/2061 QA、QA后0漂移。GitHub main已有R246但原始累计ZIP未取得，**本分叉不冒充R247、不覆盖main**；同框别名暂保守拒绝描记，非笔画归属裁决。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；合法高清逐笔/真机/读屏/完整历史not-run。[证据](./evidence/v036-r245f2-allkey-cross-source-stroke-guard-fork.md)。
+
+
+**R245F1（隔离审计分叉，非R247、非认证）：** GitHub main 已有R246，但本次运行未取得R246累计ZIP，不能冒充连续继承；以实测R245父包3044/3044 SHA创建独立证据分叉。25键170来源/52案件交集审计：86对裁框接触（8不同精确框交叠、10同框历史别名、68仅±7px上下文），33/52案件可能触及未列入本案的其他来源精确框；仅几何风险，不等于笔画错误或正式认证。旧选定1387+新508=1895/1895，累计3055文件ZIP SHA 9c416c40cf0d59967e87c59c206a1cfd1ed9dc7b8e0ec1e53a4df6131d38d548，Python/unzip双恢复各3055 SHA、1895 QA、0漂移。R246四个M shadow防护未被本分叉覆盖，需先取得R246原始ZIP再移植。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真机/读屏/高清许可/历史全量not-run。[分叉证据](./evidence/v036-r245f1-cross-source-pixel-ownership-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
