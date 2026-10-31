@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F13 / 原始T03：** 任何校准坐标事件先与完整/聚焦/迷你三视图DOM逐实例匹配，再提交151条CURRENT；拒绝旧事件不得污染已提交几何。父版缺陷真实Chromium复现，新增41/41及151/151实例操作回归、选定772/772、3170文件双恢复通过。仅隔离候选，不代表来源认证/生产集成/Accepted。[证据](./evidence/v036-r245f13-t03-atomic-calibration-transaction-fork.md)。
+
+
 **ADR R245F12 / 原始T03：** 解析式SVG预集成不能破坏V0.35原有校准。R245F11旧式transform覆盖缺陷经Chromium复现；R245F12仅在隔离候选中增加坐标快照桥接，逐151实例验证100×100 inkBBox后统一三视图matrix，保留重置、训练输入和私有内存Storage。新增51/51 Chromium、选定731/731 QA、3160文件双恢复通过；生产未集成、来源/ID未认证、Root 0/12 Accepted。[证据](./evidence/v036-r245f12-t03-live-calibration-bridge-fork.md)。
 
 

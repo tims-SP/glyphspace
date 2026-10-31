@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F13 / 原始T03（隔离校准事务提交前全视图验证，非验收）：** Chromium复现R245F12对结构合法但DOM未更新的旧事件先写151条CURRENT、后发现geometry drift，污染已提交几何。R245F13先核对full/focus/mini全部实例的来源Path、身份、DOM坐标和transform，再提交；异常回滚CURRENT。继承R245F12父ZIP3160/3160逐SHA，旧731/731+新41/41=**772/772**选定QA，另25键151实例逐项编辑还原；累计3170文件ZIP SHA `e8e02c2478215219aa1ffe96f01fe1f0b484e8cb61298c5be1307a62a3a98039`，Python/unzip双独立3170/3170 SHA与772/772 QA、0漂移。仅about:blank、内存Storage；完整历史、真实同源、读屏、真机、合法同源高清逐笔not-run。R246 ZIP原始字节及R11/R12/R35、R12 20SVG仍缺；T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f13-t03-atomic-calibration-transaction-fork.md)。
+
+
 **R245F12 / 原始T03（旧校准与解析式SVG三视图闭环修复，隔离非验收）：** Chromium复现R245F11原有X/Y/尺寸校准会将解析式SVG改写旧translate/scale导致geometry drift；隔离候选通过151实例坐标快照、100×100 inkBBox校验后同步full/focus/mini matrix，原有重置和训练输入可用。R245F11父ZIP3151/3151逐SHA继承；新增Chromium51/51、继承680/680，选定731/731；累计3160文件ZIP SHA `46092b27bcc671aa72b0276d633a83354c382a2aeb2845215ee44e1934b8973c`，Python/unzip双独立各3160/3160 SHA与731/731 QA、QA后0漂移。仅about:blank、内存Storage；T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted。R246 ZIP及R11/R12/R35、R12 20SVG仍缺；真同源/真机/读屏/历史全量not-run，冻结入口/用户Storage未动。[R245F12证据](./evidence/v036-r245f12-t03-live-calibration-bridge-fork.md)。
 
 
