@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F29 独立分叉 / 原始T03（来源/变换一致性门禁，非验收）：** 实际R245F28父ZIP3340/3340 SHA继承；复现R62旧审计对5类SVG Path、inkBBox、geometry、transform、键位成员漂移错误接受，新增独立151实例/25键来源绑定门禁及光学校正事务前后检查，五类均拒绝，合法光学编辑通过。旧选定244+新Node24=268/268；累计3349成员ZIP SHA `c0fd1ec988c49828f141fa00ece673a19f1a7c4bc039d0cd983c54f585e23622`，Python/unzip双恢复各3349 SHA和268 QA，QA后0漂移。**仅隔离草案、非正式T03集成**；真实同源/读屏/真机/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246累计ZIP仍未取得、历史11/12/35及20SVG缺；冻结入口/176编码/用户Storage未动。 [R245F29证据](./evidence/v036-r245f29-t03-draft-catalog-transform-integrity-fork.md).
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
