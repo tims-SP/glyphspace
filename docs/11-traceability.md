@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F7 Root T03（冻结151 SVG输入原始字节钉定，独立分叉、非认证）：** 复现R245F6在source/vector/candidate三者一致被篡改时仍接受的来源自洽伪造；新增WebCrypto SHA256原始字节门禁，分别钉定R50/R54输入，并拒绝候选目录额外顶层权威字段。R245F6父ZIP3099/3099 SHA继承；旧选定2150/2150+新增Node17/17=2167/2167；R245F7累计3110成员ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，Python/unzip双恢复各3110/3110 SHA与2167/2167 QA，QA后0漂移。Chromium独立127.0.0.1因管理员策略blocked（0通过），高清同源/真机/读屏/完整历史QA/生产集成not-run；R246主线ZIP未取得，保持独立分叉；Root T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知，冻结入口/176编码/用户Storage未动。[R245F7证据](./evidence/v036-r245f7-t03-pinned-source-byte-fork.md)。
+
+
 **R245F6 Root T03（151旧SVG目录逐字段来源绑定，隔离预集成，非认证）：** 复现R62旧auditCatalog错误接受Path替换、draft assetId替换、byKey成员顺序污染及微小transform偏移；新门禁按R50/R54冻结输入重建151实例/25键目录并逐字段核对，显式待审光学校正需重新安全推导。R245F5父ZIP3090/3090 SHA继承；新增Node25/25+旧选定2125/2125=**2150/2150**；R245F6累计3099成员SHA `be4e95ee257a6f9d61bfd11974bc69458f80b0f4fedf99556f94185d80674a5f`，Python/unzip双恢复各3099/3099 SHA与2150/2150 QA，QA后0漂移。R246原始ZIP仍缺，故为独立分叉；T03未集成正式HTML，T01认证0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted；真机/读屏/同源迁移/高清许可/历史全量/仓库verify_repo not-run。[R245F6证据](./evidence/v036-r245f6-t03-strict-frozen-catalog-attestation-fork.md)。
 
 

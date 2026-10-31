@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F7 Root T03（冻结151 SVG输入原始字节钉定，独立分叉、非认证）：** 复现R245F6在source/vector/candidate三者一致被篡改时仍接受的来源自洽伪造；新增WebCrypto SHA256原始字节门禁，分别钉定R50/R54输入，并拒绝候选目录额外顶层权威字段。R245F6父ZIP3099/3099 SHA继承；旧选定2150/2150+新增Node17/17=2167/2167；R245F7累计3110成员ZIP SHA `a8d0c3aed1ae7c315c4a1bab742ad591bd508cb8dbb977ecce4112bcedbaa405`，Python/unzip双恢复各3110/3110 SHA与2167/2167 QA，QA后0漂移。Chromium独立127.0.0.1因管理员策略blocked（0通过），高清同源/真机/读屏/完整历史QA/生产集成not-run；R246主线ZIP未取得，保持独立分叉；Root T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知，冻结入口/176编码/用户Storage未动。[R245F7证据](./evidence/v036-r245f7-t03-pinned-source-byte-fork.md)。
+
+
 **R245F5 Root T01/T02（第三方高清候选字节取得与版权隔离，非认证）：** GitHub连接器真读 CNMan 2583×1363 JPEG 357376字节，SHA256 `ca0afcb4d3d2ee47d34bc78751b230917d0113ec58497135677265ecc449359b`；与冻结2008彩色1536×1086图不是同源高低清版，仓库声明权利归王码公司/请勿商用，禁止公开打包或签发正式SVG。真读R245F4父ZIP3083/3083 SHA，旧2105+新20=2125/2125选定QA，累计3090文件ZIP SHA `e9a08e0ac401db814bd8fafd0ae5127edf902c8dcc4e0cd7db9cde95680faca0`，Python/unzip双独立恢复各3090 SHA及2125 QA，0漂移。R246原始ZIP仍缺，故R245F5独立分叉；高清同源许可/逐笔、读屏/真机/历史全量not-run，T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f5-external-highres-rights-gate-fork.md)。
 
 
