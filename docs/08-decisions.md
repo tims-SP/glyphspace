@@ -1,5 +1,16 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F21（2026-10-31，Root T01/T02）：** 来源验证版本必须在用户选择JPEG文件时（而非等待文件读取后）立即推进；任何异步文件读取、JPEG解码、JSON导入只能在来源epoch和导入请求均仍为最新时提交。重新验证相同SHA的JPEG也开启新epoch；过期结果失败关闭且不得覆盖最新验证状态或已保存未批准草案。仅适用于隔离E/K来源审阅工具，不改变正式来源认证、永久ID、生产Storage或用户数据。[证据](./evidence/v036-r245f21-t01-t02-ek-source-epoch-fork.md)。
+
+**ADR-R245F20（2026-10-31，Root T01/T02）：** 对E/K完全共享物理裁框的九条来源观察，禁止为了解除“零独占像素”阻断而直接放行任何候选来源ID；改用物理裁框层的中立笔画草案，原生JPEG SHA、RGB裁框、竞争ID全部钉值，导入必须保持`claimedSourceObservationId=null`、`identityStatus=unresolved`。E:1/E:8历史否定仍有效。中立草案不得转为正式SVG、永久ID或来源认证。参见[R245F20证据](./evidence/v036-r245f20-t01-t02-EK-unattributed-physical-crop-fork.md)。
+
+
+**ADR-R245F19：** 同一物理裁框的候选ID与历史索引ID并非两个独立像素来源；只对白名单M四对、且坐标与RGB SHA完全一致时豁免相互排斥，保留两套ID与待审状态。E/K冲突绝不自动合并。详见R245F19证据。
+
+
+**R245F18 Root T01/T02（来源审阅意见必须先校验原始JPEG，非认证）：** 实际Chromium复现R245F17未校验JPEG时可编辑并导出带原图SHA的意见JSON；R245F18隔离候选禁止未校验编辑/保存/导出，失败撤销输入、恢复合法原图后保留已验证意见。父ZIP3213/3213 SHA继承；新Chromium19/19、旧Chromium14+63、R145 Python379，选定475/475；累计3220文件ZIP SHA `3cfbcfd15c8006a3beb7bfa9f9aacfc67501785eb0e205f356c8252463e9ff2e`，Python/unzip双独立恢复各3220 SHA及475 QA、QA后0漂移。仍是about:blank，非高清逐笔/正式ID；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246主线ZIP未取得、历史缺口未补，真同源/真机/读屏/历史全量not-run，冻结入口/用户Storage未动。[R245F18证据](./evidence/v036-r245f18-t01-source-review-note-provenance-fork.md)。
+
+
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
