@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR R245F12 / 原始T03：** 解析式SVG预集成不能破坏V0.35原有校准。R245F11旧式transform覆盖缺陷经Chromium复现；R245F12仅在隔离候选中增加坐标快照桥接，逐151实例验证100×100 inkBBox后统一三视图matrix，保留重置、训练输入和私有内存Storage。新增51/51 Chromium、选定731/731 QA、3160文件双恢复通过；生产未集成、来源/ID未认证、Root 0/12 Accepted。[证据](./evidence/v036-r245f12-t03-live-calibration-bridge-fork.md)。
+
+
 **ADR R245F11 / 原始T03：** 仅在独立候选单HTML内，把R245F8原始字节钉值验证过的151个冻结Path及R54解析式inkBBox/R62光学矩阵投射到冻结V0.35实际三视图DOM；候选在应用执行前替换localStorage/sessionStorage为独立内存实现，确保不访问真实用户存储。46/46隔离Chromium与680/680选定QA、3151文件双恢复通过，但这不是永久ID、参考图认证或正式生产集成。Root T03保持未验收，0/12 Accepted。[证据](./evidence/v036-r245f11-t03-live-analytic-geometry-fork.md)。
 
 **R245F10 / 原始T00（冻结V0.35实际Chromium截图及键盘基线，独立分叉，非验收）：** 从R245F9真实ZIP3128/3128逐SHA继承；独立Chromium144在about:blank加载字节冻结V0.35 HTML，桌面1280×800、手机竖屏390×844、横屏844×390，3视口各两套独立context PNG逐字节一致；26键/零文档滚动/无JS异常，真实输入EEEE完成首题「月」。旧选定582+T00钉值10+新浏览器42=**634/634**，累计3138文件ZIP SHA `1953c645c8769afb1401a9fd29fac324a0f32a109d7af6e58c6eaa92f96273e6`，Python/unzip双恢复各3138/3138 SHA、634/634 QA、0漂移。固定随机种子仅限隔离测试；不等于原始历史设备截图/真机/真实同源/读屏/高清逐笔认证，T00仍accepted=false、Root 0/12，T01 0/25、T02 ID0、T05缺根未知。R246主线ZIP原始字节仍缺，R11/R12/R35及R12 20SVG仍缺；冻结HTML/176编码/正式SVG/用户存储未动。[R245F10证据](./evidence/v036-r245f10-t00-frozen-chromium-baseline-fork.md)。
