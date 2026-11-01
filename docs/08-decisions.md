@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F31 decision:** T03 source attestation must reject non-pure-JSON objects (including hidden/nested toJSON hooks) before computing canonical digests, and explicit raw R50/R54 byte pins are mandatory for file ingestion. This is isolated pre-integration only; source approval, permanent IDs and production rollout remain blocked. [Evidence](./evidence/v036-r245f31-t03-pure-json-source-attestation-fork.md).
+
+
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
