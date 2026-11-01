@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F40 Root T01/T02（高清区位圈注视觉分流，非认证）：** 授权VPS真读3508×2480高清JPEG并对R219/R242的8个历史未匹配槽重新计算原生RGB SHA；D:1/E:7/F:2/H:4/J:4/N:7六项确认是右上角区位笔画圈注（13/33/12/21/22/51），E:1/E:8为同一个圈注边缘的重复无效裁框；其余28项仍未决。R245F39父ZIP3441/3441逐SHA继承，新增17/17+继承223/223=240/240选定QA，R245F40累计3449文件SHA `de727544d77a6b0e729439ae074b38ab54967e6105cb52eb718103da9a5e3859`，Python/unzip双独立恢复各3449/3449 SHA、240/240 QA、QA后0漂移。私有JPEG/裁片未公开，许可及正式逐笔认证未确认；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted，真机/读屏/同源/历史全量not-run，冻结入口与用户Storage未动。[证据](./evidence/v036-r245f40-highres-zone-annotation-review-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
