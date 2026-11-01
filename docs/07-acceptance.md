@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F33 原始T03/T07（字母与SVG墨迹真实碰撞修复，隔离预集成，非认证）：** 实际逐SHA继承R245F32父ZIP3376/3376。Chromium复现完整+迷你键盘字母与旧SVG墨迹矩形相交：1280×800 40处、390×844 51处、320×640 76处；新独立导出器为字母预留独立条带，保留151旧Path/100×100坐标/inkBBox/锚点/光学校正及R50/R54原始字节SHA。新Chromium107/107，三视口碰撞0、文档水平/垂直溢出0；继承选定QA385/385，合计492/492。累计3389成员ZIP SHA `dcbf5d1d22937e3c7e8eedba19e8f337d700b1f4090ecaa0deb4927c45885ce3`，Python/unzip双独立恢复各3389/3389 SHA，恢复后各107/107新QA与23/23旧T03 QA，QA后0漂移。完整历史not-run；仅about:blank隔离视口，非真机/读屏/真实同源/来源认证。main R246累计ZIP仍缺，R11/R12/R35及R12 20SVG仍缺；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F33证据](./evidence/v036-r245f33-t03-t07-letter-ink-collision-fork.md)。
+
+
 **R245F31 Root T03（纯JSON来源对象伪造修复，隔离预集成，非认证）：** R245F30父ZIP3357/3357逐SHA继承；复现旧门禁把隐藏/嵌套toJSON伪造Path当作冻结来源接受2/2（不计pass），新增深度纯JSON门禁与R50/R54原始JSON字节钉值，新增Node23/23、继承选定284/284，共307/307；R245F31累计3365文件ZIP SHA `736c90caa7455b7e47468eb6390afbd9e6111e347e03e1581afb52214b73dd28`，Python/unzip双独立各3365/3365 SHA及307/307 QA，QA后0漂移。仅T03隔离代码，非正式内核集成；完整历史QA、真实同源、真机、读屏not-run/blocked；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，冻结入口/176编码/用户Storage未动。[R245F31证据](./evidence/v036-r245f31-t03-pure-json-source-attestation-fork.md)。
 
 
