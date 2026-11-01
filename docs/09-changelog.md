@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F37 Fork · Root T01/T02（高清候选原始字节真实恢复，非认证）：** 在已授权VPS隔离目录独立下载并回读06wb社区镜像标注“官方”的3508×2480高清候选ZIP，ZIP 996823字节 SHA256 `fb7a9984a84be12a71d71dc86088b8859762ca97cb9a3db173b4a8adaf0b9707`，内部JPEG 1348865字节 SHA256 `47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e`，**与R144登记但未获得字节的候选SHA完全一致**。冻结低清原图与高清候选256位dHash差19、aHash差3，支持版面高度相似，非严格同源/逐笔证明。镜像仓库无LICENSE，原发布者许可/再分发未确认，候选原始图仅私有隔离保留，不进入公开仓库或累计ZIP。R245F36父ZIP3421/3421逐SHA继承，R245F37累计3428，选定旧151+新16=167/167，两种独立恢复各3428/3428 SHA及167/167 QA、0漂移；完整历史not-run。R246主线累计ZIP仍未取得；R11/R12/R35和R12 20SVG缺失。T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，冻结HTML/176编码/正式SVG/用户Storage未动。[R245F37证据](./evidence/v036-r245f37-t01-highres-candidate-original-bytes-recovered-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
