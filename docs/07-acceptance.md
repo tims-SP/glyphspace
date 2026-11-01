@@ -1,4 +1,8 @@
+**R245F52 Root T03（T02草案156身份→151旧SVG三视图只读绑定，非正式验收）：** 真实继承R245F51父ZIP3563/3563 SHA；151旧可视+5仅关联草案按键/槽/字形绑定，阻止重复、错键、伪批准、DOM缺失与身份漂移；新增Chromium about:blank 217/217，旧F51 175/175、旧F50 348/348，选定740/740；R245F52累计3575成员ZIP SHA `f3f085c1aff16d7b4cb2d26d19aa3b662343a89e071636cc4cc27934085e6db5`，Python/unzip双恢复各3575/3575 SHA、740/740 QA、零漂移。无正式referenceShapeId/assetId/inkBBox/永久ID批准，生产未集成；真实同源/读屏/真机/历史全量not-run；T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F52证据](./evidence/v036-r245f52-t03-draft-identity-binding-fork.md)。
+
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
+
+**R245F51 Root T03（旧SVG墨迹锚点隔离候选，非正式验收）：** 真读R245F50父ZIP SHA `9b605c44a3b434c582846e1435ee1c60388181eac6c5a71a7ff552d8d9036f1a`，3552/3552逐成员继承；修复实时光学校正污染paintedBBox风险，冻结151旧SVG基线，新增100×100墨迹三锚点/三视图放置及越界原子拒绝。新Chromium 175/175、旧F50回归348/348；R245F51累计3563文件ZIP SHA `3b2355a5781c6214560cc40630b4cf323529440538952d9f6e1937388d47e004`，Python/unzip双独立恢复各3563/3563 SHA及新旧QA、QA后0漂移。仅about:blank旧SVG候选，非来源认证inkBBox/永久ID/生产集成；真同源/读屏/真机/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F51证据](./evidence/v036-r245f51-t03-ink-anchor-fork.md)。
 
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
