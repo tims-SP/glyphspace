@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F32 Root T03（R245F31来源原始字节钉值→151旧SVG三视图离线导出，非认证）：** 父R245F31 ZIP 3365/3365逐SHA继承；R50/R54来源原始字节SHA门禁后生成151独立SVG定义，完整/mini各151引用、单键25键切换，全部100×100 viewBox。真实Chromium about:blank 1280/390视口新78/78、继承选定307/307，共385/385；累计3376文件ZIP SHA `ca4a830f00624a89579e6845f8246da1586b43f984ae6f79900eb96a9bf50458`，Python/unzip双独立恢复各3376/3376 SHA与385/385 QA、QA后0漂移。与此前R169/R175/R228三视图工作有重合，本轮仅新增最新字节钉值来源门禁与导出连接，**不等于原图认证或正式生产集成**。T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；R246 ZIP及R11/R12/R35历史素材仍缺，合法同源高清、真同源/真机/读屏/完整历史not-run。冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f32-t03-attested-three-view-export-fork.md)。
+
+
 **R245F31 Root T03（纯JSON来源对象伪造修复，隔离预集成，非认证）：** R245F30父ZIP3357/3357逐SHA继承；复现旧门禁把隐藏/嵌套toJSON伪造Path当作冻结来源接受2/2（不计pass），新增深度纯JSON门禁与R50/R54原始JSON字节钉值，新增Node23/23、继承选定284/284，共307/307；R245F31累计3365文件ZIP SHA `736c90caa7455b7e47468eb6390afbd9e6111e347e03e1581afb52214b73dd28`，Python/unzip双独立各3365/3365 SHA及307/307 QA，QA后0漂移。仅T03隔离代码，非正式内核集成；完整历史QA、真实同源、真机、读屏not-run/blocked；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，冻结入口/176编码/用户Storage未动。[R245F31证据](./evidence/v036-r245f31-t03-pure-json-source-attestation-fork.md)。
 
 
