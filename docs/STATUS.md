@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F53 Root T03（异步墨迹锚点放置事务修复，非正式验收）：** 真读R245F52父ZIP3575/3575逐SHA继承；真实Chromium复现旧版setPlacement等待Image解码时reset后幽灵放置重新提交，新增每实例版本+全局reset epoch与await后来源复验，旧错接受→新拒绝。新增Chromium20/20，继承F52 217/217、F51 175/175、F50 348/348，选定760/760；累计3586成员ZIP SHA `ea7bbc4827073952068c26ca7a9f34e9dba74b0eb75830bc9e774f8049587bb0`，Python/unzip双恢复各3586/3586 SHA、760/760 QA、零漂移。正式inkBBox/永久ID/生产集成未完成，真同源/读屏/真机/历史全量not-run；T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F53证据](./evidence/v036-r245f53-t03-async-placement-transaction-fork.md)。
+
 **R245F52 Root T03（T02草案156身份→151旧SVG三视图只读绑定，非正式验收）：** 真实继承R245F51父ZIP3563/3563 SHA；151旧可视+5仅关联草案按键/槽/字形绑定，阻止重复、错键、伪批准、DOM缺失与身份漂移；新增Chromium about:blank 217/217，旧F51 175/175、旧F50 348/348，选定740/740；R245F52累计3575成员ZIP SHA `f3f085c1aff16d7b4cb2d26d19aa3b662343a89e071636cc4cc27934085e6db5`，Python/unzip双恢复各3575/3575 SHA、740/740 QA、零漂移。无正式referenceShapeId/assetId/inkBBox/永久ID批准，生产未集成；真实同源/读屏/真机/历史全量not-run；T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F52证据](./evidence/v036-r245f52-t03-draft-identity-binding-fork.md)。
 
 
