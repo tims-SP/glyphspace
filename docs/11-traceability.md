@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F36 Root T01/T02（纠正R245F35重复来源风险声明，非认证）：** 真实读取R245F35累计ZIP 3411/3411逐SHA；交叉核验R221/R222原始审计与冻结JPEG，证明F35所称B/J/V/X 8对「新增」部分交叠与R221既有8对观察ID/矩形/RGB SHA完全一致，新增风险0；独立重算R222 29物理裁框共享像素741及38互斥组。继承114+新37=151/151选定QA，R245F36累计3421成员ZIP SHA `b084e80e036bf2458a9d7a6d6c32b15f0de8f3bffd7735937b7cc21fce78596d`，Python/unzip双恢复各3421 SHA及151 QA，QA后0漂移。独立profile真实同源 `ERR_BLOCKED_BY_ADMINISTRATOR`（blocked）；高清合法同源逐笔、读屏、真机、历史全量not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；主线R246原包未取得、冻结入口/176编码/用户Storage未动。[R245F36证据](./evidence/v036-r245f36-root-fork-source-overlap-reconciliation.md)。
+
+
 **R245F35 隔离分叉 · Root T01/T02（原生像素裁框交叠证据，非认证）：** 实际读取R245F34父ZIP SHA `cf2ae5731ebc322464a7b648309e9f0dd70b4c7497492442c75d1f8c918eb674`，3400/3400逐文件SHA继承。固定2008 JPEG与R144注册表，重新核验25键170/170原生RGB裁框；发现同键18对来源矩形共享像素，其中10对完全同框（E1/K5/M4）、8对部分交叠（B1/J1/V4/X2）。新增逐对原生交集RGB SHA、交叠比例、叠框人工审阅图与失败关闭身份风险标记；共享像素**不等于**相同字根、缺根或来源认证。继承选定81/81+新增33/33=114/114；R245F35累计ZIP3411文件 SHA `68b41616a841ab7f42ffeb7275b26d33e6dd289fdb4c93fd18a6a9c49ec254ad`，Python/unzip两套独立恢复各3411/3411 SHA与114/114选定QA，QA后0漂移。主线R246原始ZIP未继承，历史全量/合法同源高清逐笔/真实同源/真机/读屏not-run；T01正式0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R245F35证据](./evidence/v036-r245f35-t01-t02-native-overlap-fork.md)。
 
 
