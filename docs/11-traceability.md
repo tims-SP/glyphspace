@@ -1,5 +1,20 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F48 Root T01/T02（M/L/K 高清来源视觉身份隔离，非认证）：** R245F47父ZIP3518/3518逐SHA继承；VPS私有3508×2480 JPEG 9/9原生RGB独立路径一致。M-vis-04与旧M:3冂、L:6皿视觉结构不同，M下排三框各有独立腿/钩特征；建立8对禁止自动共用referenceShapeId的草案约束。K:2/K:3共用一个含三竖笔的黑色来源框，右上圈注三竖笔不是K:3独立来源证明。新86/86+继承选定421/421=507/507；累计3534成员ZIP SHA 438d378eeef36699c143425871288ca22c89d94b0e750e50f45286f90451c3c4，Python/unzip双恢复各3534/3534 SHA、507/507选定QA，QA后0漂移。官方同源/许可/逐笔、真实同源/真机/读屏/历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/Storage未动。[证据](./evidence/v036-r245f48-M-L-K-cross-key-source-identity-fork.md)。
+
+
+**R245F47 Root T01/T02（描记上下文切换指针事务取消，非认证）：** R245F46父ZIP3508/3508逐SHA继承；真实Chromium复现切换案件/键位后旧pointer仍active、下一案件首次pointerdown丢失，以及切换来源观察后旧草案残留；独立候选在三类切换中取消指针/释放capture/清空草案，正常完成、导出、导入保留。继承选定386+新35=421/421；累计3518文件ZIP SHA `5fbb8fe0b0123e9dfc5548f90f3a8e8e30d20faf6744eef402a58afb0d6ea039`，Python/unzip双恢复各3518 SHA、421 QA、0漂移。R246主线ZIP未恢复；高清逐笔、同源、真机、读屏、历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；生产入口/176编码/Storage未动。[证据](./evidence/v036-r245f47-source-trace-context-transaction-guard-fork.md)。
+
+
+**R245F46 Root T01/T02（M描记量化后像素归属与导入精度绕过修复，非认证）：** 真读R245F45父ZIP3497/3497 SHA；真实Chromium复现旧R245F24两个活体点四舍五入跨入相邻M候选框，及1项非规范精度伪造导入错误接受；新隔离候选3/3拒绝，正常笔画结束/未批准导出导入通过。继承选定364+新22=386/386；R245F46累计3508文件ZIP SHA `a6645a50ed9c0ffdfa99b1b2b7d461e14fb980340d8bf3e7f7d8a5cd31b530a8`，Python/unzip双独立各3508 SHA、386 QA、0漂移。R246主线原始ZIP仍未恢复，本分叉不等于R246继承；真同源/高清许可与逐笔/真机/读屏/历史全量未验收。T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f46-M-trace-quantization-boundary-guard-fork.md)。
+
+
+**R245F45 Root T01/T02（M四项高清形态语义分流，非认证）：** 私有3508×2480 JPEG真实读取并独立Pillow复核四项R245F39裁框；人工辅助观察M-vis-04上排含横向基线的复合构形，与下排06直边开口、07斜边右钩、08短左边右钩分流；四项不得自动归为冂变体/签发ID，旧M冂、关联骨及L皿待逐笔裁定。R245F44父3487/3487 SHA继承，R245F45累计3497成员SHA `3bcbef308f355cbfa673b4289a8ccf0e4c48b016b3275af7dd17d0c6e69f2318`，旧346+新18=364/364选定QA，Python/unzip双恢复各3497 SHA、364 QA、0漂移。分叉未继承R246跨候选像素隔离，不能作为生产；高清许可/同源、真实同源、真机/读屏/历史全量not-run。T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f45-M-semantic-morphology-review-fork.md)。
+
+
+**R245F44 独立分叉 Root T01/T02（B:1/V:4 高清裁框几何候选，非认证）：** 父 R245F43 ZIP 3476/3476 SHA；VPS 私有3508×2480 JPEG 原生 RGB 双路径逐像素复核，发现 B:1 耳旧框仅覆盖25/231、20/198、19/190目标墨迹且混入相邻66/50/48像素；V:4 巛旧框覆盖152/243、143/223、132/211且混入46/37/36。新候选框 B [1710,1431,1743,1463]、V [1475,1502,1513,1525]，三阈值完整覆盖目标且其他合格分量0；仅未批准物理裁框，非语义逐笔/许可/官方同源认证。旧选定310+新36=346/346；累计3487文件 ZIP SHA `226d1b8bf6919e41b2a107be5247c2eaa1a984e5d0f20ea778d4543c88366eda`，Python/unzip双恢复各3487 SHA、346 QA、0漂移。历史全量/真同源/真机/读屏not-run；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/用户Storage未动。[R245F44证据](./evidence/v036-r245f44-B1-V4-highres-source-crop-candidates-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
