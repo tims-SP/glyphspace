@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+- R245F50：Root T03，修复F49单HTML缺符号定义造成151/151字形空白；旧SVG墨迹候选与348/348浏览器QA、3552双独立恢复，非来源认证、非正式验收。[证据](./evidence/v036-r245f50-t03-visible-glyph-paint-bbox-fork.md)。
+
+
 - R245F49：Root T03，冻结151个旧可视SVG几何候选、25键三视图光学预览；新672+旧507=1179/1179，累计3544成员双独立恢复，非正式验收。[证据](./evidence/v036-r245f49-t03-151-legacy-geometry-three-view-fork.md)。
 
 
