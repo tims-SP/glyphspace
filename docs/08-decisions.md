@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F50 T03隔离决策：** 三视图单HTML必须内嵌所有被`<use>`引用的冻结SVG symbol，验收须真实验证每个字形可绘制；几何`getBBox`和旧SVG alpha-raster `paintedBBox`均不得冒充2008原图来源认证`inkBBox`或永久ID。[证据](./evidence/v036-r245f50-t03-visible-glyph-paint-bbox-fork.md)。
+
+
 **R245F49 Root T03隔离几何候选：** 151条冻结旧SVG可测几何与100×100三视图光学同步只建立候选基线；浏览器getBBox不能替代stroke/paint inkBBox，也不能以旧instanceId冒充T02正式永久ID。未经T01/T02来源与身份批准，不得合并生产入口。[证据](./evidence/v036-r245f49-t03-151-legacy-geometry-three-view-fork.md)。
 
 
