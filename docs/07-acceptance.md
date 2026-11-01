@@ -304,3 +304,7 @@ R149将R148严格重复JSON键只读门禁接入授权临时127.0.0.1真实Chrom
 ## 验收证据最低字段
 
 `taskId, testId, environment, sourceSHA, codeRevision, observed, expected, result(pass/fail/blocked/not-run), artifacts, reviewer, reviewedAt, remainingRisks`。所有统计必须带正确分母。自动测试不能替代真实逐笔或设备级证明。
+
+## R245F53 · T03 异步放置事务证据边界（2026-11-02）
+
+真实Chromium复现父R245F52重置后旧异步放置复活；R245F53隔离候选增加版本/epoch与来源DOM二次校验。两套独立恢复各3586/3586 SHA及760/760选定QA通过。**仅T03候选可靠性修复，不代表T03正式Accepted**；正式inkBBox、原图逐笔、永久ID、生产迁移、真机、真实读屏及历史全量QA仍未完成。T00–T11维持0/12 Accepted。
