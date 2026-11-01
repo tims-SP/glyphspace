@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F30 Root T03（R50/R54来源内容钉值，非验收）：** R245F29父ZIP3349/3349 SHA继承；真实Node复现旧门禁把相同伪造Path同时注入source与catalog仍错误接受，旧补丁包装器亦接受（2项复现不计通过）。新隔离门禁以R50/R54解析规范化SHA256钉住151条旧Path及矢量bbox输入，阻断协同伪造并消除补丁前动态import异步窗口。新16/16 + 继承选定268/268 = **284/284**；R245F30累计3357成员ZIP SHA `6a727d8e14df67aebe6ed3f7e6b94c4a33448918ffbe1d3dde7d3dfb1113debf`，Python/unzip双独立各3357 SHA及284 QA、QA后0漂移。仅隔离Node/Chromium about:blank；T03未正式集成、T01认证0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；合法同源高清/真实同源迁移/读屏/真机/历史全量not-run。R246主线ZIP未恢复，R11/12/35及R12 20SVG仍缺，冻结生产入口/176编码/用户Storage未动。[R245F30证据](./evidence/v036-r245f30-t03-attested-source-manifest-fork.md)。
+
+
 **R245F29 独立分叉 / 原始T03（来源/变换一致性门禁，非验收）：** 实际R245F28父ZIP3340/3340 SHA继承；复现R62旧审计对5类SVG Path、inkBBox、geometry、transform、键位成员漂移错误接受，新增独立151实例/25键来源绑定门禁及光学校正事务前后检查，五类均拒绝，合法光学编辑通过。旧选定244+新Node24=268/268；累计3349成员ZIP SHA `c0fd1ec988c49828f141fa00ece673a19f1a7c4bc039d0cd983c54f585e23622`，Python/unzip双恢复各3349 SHA和268 QA，QA后0漂移。**仅隔离草案、非正式T03集成**；真实同源/读屏/真机/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246累计ZIP仍未取得、历史11/12/35及20SVG缺；冻结入口/176编码/用户Storage未动。 **本轮不得视为T03 Accepted**：源图与正式ID、生产集成、真实同源和设备/读屏验收未完成。 [R245F29证据](./evidence/v036-r245f29-t03-draft-catalog-transform-integrity-fork.md).
 
 
