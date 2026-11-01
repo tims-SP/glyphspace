@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F49 Root T03隔离几何候选：** 151条冻结旧SVG可测几何与100×100三视图光学同步只建立候选基线；浏览器getBBox不能替代stroke/paint inkBBox，也不能以旧instanceId冒充T02正式永久ID。未经T01/T02来源与身份批准，不得合并生产入口。[证据](./evidence/v036-r245f49-t03-151-legacy-geometry-three-view-fork.md)。
+
+
 **R245F48来源视觉身份边界（草案，非正式字根判定）：** 不得因M-vis-04形似L:6皿或M:3冂而共用referenceShapeId；同一K下排三竖笔裁框的K:2/K:3旧槽不能自动推断两条独立来源实例；区位圈注不作字根。未来同一semanticRootId需合法同源逐笔证据支持。[证据](./evidence/v036-r245f48-M-L-K-cross-key-source-identity-fork.md)。
 
 **R245F47（Root T01/T02）：** 任何案件、键位、来源观察切换均须取消活跃描记指针事务及未提交草案，防止旧指针捕获和跨上下文草案污染；已完成记录保留。仅隔离审阅工具，非正式认证。
