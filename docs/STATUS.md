@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F49 Root T03（151旧SVG几何与三视图光学校正隔离候选，非验收）：** 真读R245F48父ZIP3534/3534逐SHA继承；冻结V0.35真实Chromium about:blank提取25键151个100×100旧实例getBBox几何及独立三视图光学预览，新增672/672 + 继承选定507/507 = 1179/1179 QA；累计3544文件ZIP SHA `53693fcdd1941a8fb0c6f03508ddf506ba52a73d9aa8de571fc3e3af53ce235b`，Python/unzip双恢复各3544 SHA、1179 QA、0漂移。getBBox非正式inkBBox，T02批准ID0，T03未生产集成，来源0/25、缺根未知、Root 0/12 Accepted；同源/真机/读屏/历史全量not-run。[证据](./evidence/v036-r245f49-t03-151-legacy-geometry-three-view-fork.md)。
+
+
 **R245F48 Root T01/T02（M/L/K 高清来源视觉身份隔离，非认证）：** R245F47父ZIP3518/3518逐SHA继承；VPS私有3508×2480 JPEG 9/9原生RGB独立路径一致。M-vis-04与旧M:3冂、L:6皿视觉结构不同，M下排三框各有独立腿/钩特征；建立8对禁止自动共用referenceShapeId的草案约束。K:2/K:3共用一个含三竖笔的黑色来源框，右上圈注三竖笔不是K:3独立来源证明。新86/86+继承选定421/421=507/507；累计3534成员ZIP SHA 438d378eeef36699c143425871288ca22c89d94b0e750e50f45286f90451c3c4，Python/unzip双恢复各3534/3534 SHA、507/507选定QA，QA后0漂移。官方同源/许可/逐笔、真实同源/真机/读屏/历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/Storage未动。[证据](./evidence/v036-r245f48-M-L-K-cross-key-source-identity-fork.md)。
 
 
