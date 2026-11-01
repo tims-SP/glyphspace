@@ -12,7 +12,7 @@ R245F50 rebuilds a standalone candidate by embedding the **147 wb17 + 2 wb20** s
 
 Fresh Chromium `about:blank` QA: **348/348**, including 151 geometry comparisons, 151 nonempty painted instances, 25 focus-key cases, 5 two-resolution comparisons, missing-symbol and invalid-input rejection, and three-view optical update/reset. Visual screenshot was manually inspected.
 
-Parent inherited SHA: **3544/3544**. New cumulative ZIP: **3552 members**, SHA256 `b6d31d00243f09f777ddc0858e1d6e102216de30c23849c0128c2c6c8581c79b`. Python zipfile and system unzip restored independently: **3552/3552** SHA each; each independently reran **348/348** QA; zero post-QA drift. Full historical QA **not-run**.
+Parent inherited SHA: **3544/3544**. New cumulative ZIP: **3552 members**, SHA256 `9b605c44a3b434c582846e1435ee1c60388181eac6c5a71a7ff552d8d9036f1a`. Python zipfile and system unzip restored independently: **3552/3552** SHA each; each independently reran **348/348** QA; zero post-QA drift. Full historical QA **not-run**.
 
 ## Formal boundary
 
