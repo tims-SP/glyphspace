@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F36 Root T01/T02（纠正R245F35重复来源风险声明，非认证）：** 真实读取R245F35累计ZIP 3411/3411逐SHA；交叉核验R221/R222原始审计与冻结JPEG，证明F35所称B/J/V/X 8对「新增」部分交叠与R221既有8对观察ID/矩形/RGB SHA完全一致，新增风险0；独立重算R222 29物理裁框共享像素741及38互斥组。继承114+新37=151/151选定QA，R245F36累计3421成员ZIP SHA `b084e80e036bf2458a9d7a6d6c32b15f0de8f3bffd7735937b7cc21fce78596d`，Python/unzip双恢复各3421 SHA及151 QA，QA后0漂移。独立profile真实同源 `ERR_BLOCKED_BY_ADMINISTRATOR`（blocked）；高清合法同源逐笔、读屏、真机、历史全量not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；主线R246原包未取得、冻结入口/176编码/用户Storage未动。[R245F36证据](./evidence/v036-r245f36-root-fork-source-overlap-reconciliation.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
