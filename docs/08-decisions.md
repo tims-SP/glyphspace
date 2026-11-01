@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F34（2026-11-01，Root T03）：** 派生catalog同样是不可信输入，不能仅对source/vector做纯JSON校验。正常光学校正的共享geometry引用必须去别名、重新审计并深冻结；不能用通过静态门禁替代原图、正式ID或生产集成。[证据](./evidence/v036-r245f34-t03-catalog-accessor-integrity-fork.md)。
+
+
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 

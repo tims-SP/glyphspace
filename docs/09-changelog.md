@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F34 隔离分支 · 原始T03（派生SVG目录访问器一致性修复，非正式验收）：** 真读R245F33父ZIP 3389/3389 SHA一致；复现R245F31只校验source/vector、不校验派生catalog，恶意Path getter可在审计通过后输出不同路径（旧误接受1/1，独立记录不计pass）。新增派生catalog与光学补丁参数纯JSON门禁、合法共享geometry去别名及深冻结；151旧实例、25键、三视图HTML SHA `efc75fdaa607168f0c40e1d03bb1613df0e9b35328eba24fdb0045e09779b762`与R245F33完全一致。旧选定492/492+新17/17=509/509；累计3400成员ZIP SHA `cf2ae5731ebc322464a7b648309e9f0dd70b4c7497492442c75d1f8c918eb674`，Python/unzip双独立恢复各3400/3400 SHA、选定225/225 QA、QA后0漂移。R246主线ZIP原始字节未取得，R11/12/35 ZIP与R12 20SVG缺失；来源认证0/25、正式ID0、缺根数未知、T00–T11 0/12 Accepted；真实同源/读屏/真机/完整历史全量not-run，冻结生产入口及用户Storage未动。[R245F34证据](./evidence/v036-r245f34-t03-catalog-accessor-integrity-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
