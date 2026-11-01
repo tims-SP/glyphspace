@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F48 Root T01/T02（M/L/K 高清来源视觉身份隔离，非认证）：** R245F47父ZIP3518/3518逐SHA继承；VPS私有3508×2480 JPEG 9/9原生RGB独立路径一致。M-vis-04与旧M:3冂、L:6皿视觉结构不同，M下排三框各有独立腿/钩特征；建立8对禁止自动共用referenceShapeId的草案约束。K:2/K:3共用一个含三竖笔的黑色来源框，右上圈注三竖笔不是K:3独立来源证明。新86/86+继承选定421/421=507/507；累计3534成员ZIP SHA 438d378eeef36699c143425871288ca22c89d94b0e750e50f45286f90451c3c4，Python/unzip双恢复各3534/3534 SHA、507/507选定QA，QA后0漂移。官方同源/许可/逐笔、真实同源/真机/读屏/历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/Storage未动。[证据](./evidence/v036-r245f48-M-L-K-cross-key-source-identity-fork.md)。
+
+
 **R245F47 Root T01/T02（描记上下文切换指针事务取消，非认证）：** R245F46父ZIP3508/3508逐SHA继承；真实Chromium复现切换案件/键位后旧pointer仍active、下一案件首次pointerdown丢失，以及切换来源观察后旧草案残留；独立候选在三类切换中取消指针/释放capture/清空草案，正常完成、导出、导入保留。继承选定386+新35=421/421；累计3518文件ZIP SHA `5fbb8fe0b0123e9dfc5548f90f3a8e8e30d20faf6744eef402a58afb0d6ea039`，Python/unzip双恢复各3518 SHA、421 QA、0漂移。R246主线ZIP未恢复；高清逐笔、同源、真机、读屏、历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；生产入口/176编码/Storage未动。[证据](./evidence/v036-r245f47-source-trace-context-transaction-guard-fork.md)。
 
 

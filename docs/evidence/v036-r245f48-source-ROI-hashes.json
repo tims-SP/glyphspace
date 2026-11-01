@@ -1,0 +1,155 @@
+{
+  "round": "R245F48",
+  "rootTaskIds": [
+    "T01",
+    "T02"
+  ],
+  "sourceJPEG_SHA256": "47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e",
+  "sourceDimensions": [
+    3508,
+    2480
+  ],
+  "rows": [
+    {
+      "observation": "M-vis-04",
+      "cropXYXY": [
+        2314,
+        1428,
+        2358,
+        1457
+      ],
+      "nativeRGBSHA256": "2a35d7bd9060c1a23ac288eeeba8815eeb851ad345f6860691b6b2fe4b173478"
+    },
+    {
+      "observation": "M-vis-06",
+      "cropXYXY": [
+        2305,
+        1499,
+        2335,
+        1528
+      ],
+      "nativeRGBSHA256": "a086b1b02eb70b1f081802b7399fa9b86e652c6665cbd910f1c299bf50b73973"
+    },
+    {
+      "observation": "M-vis-07",
+      "cropXYXY": [
+        2335,
+        1498,
+        2366,
+        1531
+      ],
+      "nativeRGBSHA256": "2bd7e95e76aa2d254d060b3a2f9890c3d9363bece9f8eafe0f57c70a81266f09"
+    },
+    {
+      "observation": "M-vis-08",
+      "cropXYXY": [
+        2367,
+        1498,
+        2391,
+        1533
+      ],
+      "nativeRGBSHA256": "96b8b76256889de12569d0a5b5a775f00f36ec68acd05ce7fee009d8181447d1"
+    },
+    {
+      "observation": "legacy:M:3",
+      "cropXYXY": [
+        2267,
+        1472,
+        2309,
+        1524
+      ],
+      "nativeRGBSHA256": "528da4c05625c4d26fa9c54d6749d5b5704481c361f3a1f2417a7ce2dfdcec9e"
+    },
+    {
+      "observation": "legacy:L:6",
+      "cropXYXY": [
+        2831,
+        1080,
+        2860,
+        1108
+      ],
+      "nativeRGBSHA256": "a4b886b874f1e8d9753a97684d1e429a1ad0e71980c563782ef9d17d0e82edd4"
+    },
+    {
+      "observation": "K-physical-lower-left",
+      "cropXYXY": [
+        2434,
+        1052,
+        2483,
+        1108
+      ],
+      "nativeRGBSHA256": "13417fffb1cacc2c59b43f97d1bba658cb11bee1f5f9e97ae52855f8bfc9ce6b"
+    },
+    {
+      "observation": "K-physical-lower-right",
+      "cropXYXY": [
+        2573,
+        1054,
+        2629,
+        1106
+      ],
+      "nativeRGBSHA256": "abdbfc56cb4a30be808fe58f791777f5cea7ecc0deb31b1dabb1277fa46584e8"
+    },
+    {
+      "observation": "K-physical-upper-circled",
+      "cropXYXY": [
+        2560,
+        911,
+        2627,
+        969
+      ],
+      "nativeRGBSHA256": "d7eb726d9dc955bbae46d8ce0b2f68fb0076beadec390dc7544c541e04e41b51"
+    }
+  ],
+  "nativeSourceReplay": {
+    "privateVPS": true,
+    "passed": 9,
+    "total": 9,
+    "methods": [
+      "Pillow ROI decode",
+      "independent full-image RGB row index"
+    ]
+  },
+  "crossKeyNoAutoAliasPairs": [
+    [
+      "M-vis-04",
+      "legacy:M:3"
+    ],
+    [
+      "M-vis-04",
+      "legacy:L:6"
+    ],
+    [
+      "M-vis-04",
+      "M-vis-06"
+    ],
+    [
+      "M-vis-04",
+      "M-vis-07"
+    ],
+    [
+      "M-vis-04",
+      "M-vis-08"
+    ],
+    [
+      "M-vis-06",
+      "M-vis-07"
+    ],
+    [
+      "M-vis-06",
+      "M-vis-08"
+    ],
+    [
+      "M-vis-07",
+      "M-vis-08"
+    ]
+  ],
+  "K2K3SharedNativeCrop": true,
+  "K3IndependentOccurrenceConfirmed": false,
+  "officialSameSourceProven": false,
+  "licenseVerified": false,
+  "sourceCertified": false,
+  "approvedPermanentIds": 0,
+  "formalAccepted": false,
+  "highresJPEGRedistributed": false
+}

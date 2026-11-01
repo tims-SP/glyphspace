@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+- R245F48：Root T01/T02，私有高清M/L/K九ROI来源重放与跨键视觉身份防误合并；507/507选定QA，非认证。参见[证据](./evidence/v036-r245f48-M-L-K-cross-key-source-identity-fork.md)。
+
 **R245F47 Root T01/T02（描记上下文切换指针事务取消，非认证）：** R245F46父ZIP3508/3508逐SHA继承；真实Chromium复现切换案件/键位后旧pointer仍active、下一案件首次pointerdown丢失，以及切换来源观察后旧草案残留；独立候选在三类切换中取消指针/释放capture/清空草案，正常完成、导出、导入保留。继承选定386+新35=421/421；累计3518文件ZIP SHA `5fbb8fe0b0123e9dfc5548f90f3a8e8e30d20faf6744eef402a58afb0d6ea039`，Python/unzip双恢复各3518 SHA、421 QA、0漂移。R246主线ZIP未恢复；高清逐笔、同源、真机、读屏、历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；生产入口/176编码/Storage未动。[证据](./evidence/v036-r245f47-source-trace-context-transaction-guard-fork.md)。
 
 
