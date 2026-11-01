@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F47 Root T01/T02（描记上下文切换指针事务取消，非认证）：** R245F46父ZIP3508/3508逐SHA继承；真实Chromium复现切换案件/键位后旧pointer仍active、下一案件首次pointerdown丢失，以及切换来源观察后旧草案残留；独立候选在三类切换中取消指针/释放capture/清空草案，正常完成、导出、导入保留。继承选定386+新35=421/421；累计3518文件ZIP SHA `5fbb8fe0b0123e9dfc5548f90f3a8e8e30d20faf6744eef402a58afb0d6ea039`，Python/unzip双恢复各3518 SHA、421 QA、0漂移。R246主线ZIP未恢复；高清逐笔、同源、真机、读屏、历史全量未验收。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；生产入口/176编码/Storage未动。[证据](./evidence/v036-r245f47-source-trace-context-transaction-guard-fork.md)。
+
+
 **R245F46 Root T01/T02（M描记量化后像素归属与导入精度绕过修复，非认证）：** 真读R245F45父ZIP3497/3497 SHA；真实Chromium复现旧R245F24两个活体点四舍五入跨入相邻M候选框，及1项非规范精度伪造导入错误接受；新隔离候选3/3拒绝，正常笔画结束/未批准导出导入通过。继承选定364+新22=386/386；R245F46累计3508文件ZIP SHA `a6645a50ed9c0ffdfa99b1b2b7d461e14fb980340d8bf3e7f7d8a5cd31b530a8`，Python/unzip双独立各3508 SHA、386 QA、0漂移。R246主线原始ZIP仍未恢复，本分叉不等于R246继承；真同源/高清许可与逐笔/真机/读屏/历史全量未验收。T01 0/25、T02 ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f46-M-trace-quantization-boundary-guard-fork.md)。
 
 
