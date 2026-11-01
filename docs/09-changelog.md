@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F29 独立分叉 / 原始T03（来源/变换一致性门禁，非验收）：** 实际R245F28父ZIP3340/3340 SHA继承；复现R62旧审计对5类SVG Path、inkBBox、geometry、transform、键位成员漂移错误接受，新增独立151实例/25键来源绑定门禁及光学校正事务前后检查，五类均拒绝，合法光学编辑通过。旧选定244+新Node24=268/268；累计3349成员ZIP SHA `c0fd1ec988c49828f141fa00ece673a19f1a7c4bc039d0cd983c54f585e23622`，Python/unzip双恢复各3349 SHA和268 QA，QA后0漂移。**仅隔离草案、非正式T03集成**；真实同源/读屏/真机/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；R246累计ZIP仍未取得、历史11/12/35及20SVG缺；冻结入口/176编码/用户Storage未动。 [R245F29证据](./evidence/v036-r245f29-t03-draft-catalog-transform-integrity-fork.md).
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
@@ -688,3 +691,8 @@ Root T01/T02（关联T05）：对B/J/R/X/V七个微形建立原始JPEG来源锚�
 - 冻结V0.35真实Chromium about:blank测试（仅测试内存插桩）逐字核验176编码、三模式528行为案例及错误输入/重试/短码确认/四码跳转/盲打遮蔽，新增3143/3143 QA通过；继承R105/R104/R103/R77/R99定向QA通过。
 - R105父1433/1433继承，R106累计1439文件SHA256 `55e96b14b2a969e33b7e6b9e39fa132d0836062bbbb4d3fe9104d044d2de26c0`；Python/unzip双独立恢复各执行新3143+旧179+170项QA并在QA后1439/1439 SHA一致。完整历史QA not-run。
 - 不改冻结正式入口/176编码/用户存储；T00/T09仍未正式Accepted，原始T00–T11仍0/12 Accepted；真同源存储blocked/not-run、真机/读屏not-run、同源高清原图许可及缺档未解决。[证据](./evidence/v036-round106-t00-176-browser-oracle.md)。
+
+
+## 2026-11-01 · R245F30（隔离分支，Root T03）
+
+新增R50/R54解析内容SHA256钉值门禁，阻断来源JSON与catalog同步伪造Path的旧错误接受；旧2项复现不计通过，新16/16、继承268/268，累计3357成员ZIP双独立恢复284/284。未改生产入口或正式SVG，Root仍0/12 Accepted。证据见 `docs/evidence/v036-r245f30-t03-attested-source-manifest-fork.md`。
