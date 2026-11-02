@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F68 隔离 Root T03（151条100×100墨迹几何草案导出，非正式验收）：** 真读R245F67父ZIP 3788/3788逐SHA继承；新增只读snapshot/exportAll，以旧SVG实际Chromium alpha绘制边界输出{ x,y,width,height,anchor,ox,oy }，绑定151个规划候选ID并排除5关联项，所有referenceShapeId/assetId仍null、批准ID0。两独立Chromium上下文151条JSON字节一致，SHA `b1abc3d88653b402c2fbe1f4569d41c50e85b83968482be577af44be2145de30`；并发几何修改失败关闭。父工作副本选定新旧270/270；累计3802文件ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，Python/unzip双恢复各3802/3802 SHA、266/266选定QA（T00无截图48项）、QA后0漂移。仅隔离about:blank，非同源原图inkBBox认证/正式SVG/生产集成；真实同源、读屏、真机、历史全量not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f68-t03-normalized-geometry-draft.md)。
+
+
 **R245F67 隔离 Root T03（三视图 SVG 外层属性/viewport 漂移修复，非正式验收）：** 真实 Chromium 复现 R245F56 对 mini/focus/full 的 viewBox、preserveAspectRatio、style、class、opacity、font-weight 等 12/12 外层属性篡改错误提交；新候选冻结非事务属性与 25 键 SVG 视口，异步/光学校正失败关闭，151 可视实例、156 草案身份和三视图正常放置保留。R245F66 父 ZIP 3777/3777 SHA 继承，新累计 3788 文件 ZIP SHA `25b8ee3a2d9c36ab1b113a7bc7ec4da680e8d90cf1a7387757196ca9b4ba8307`；Python/unzip 双恢复各 3788/3788 SHA、984/984 选定新旧 QA、QA 后漂移 0。仅隔离 Chromium about:blank，历史全量/真实同源/读屏/真机 not-run；T01 0/25、T02 批准 ID 0、T03 未集成、T05 缺根未知、Root 0/12 Accepted；冻结入口/176 编码/正式 SVG/用户 Storage 未动。[证据](./evidence/v036-r245f67-t03-svg-replica-attribute-guard.md)。
 
 
