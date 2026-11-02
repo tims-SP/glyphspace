@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F74 Root T03（F73修复累计恢复，非正式验收）：** 实际读取R245F72父ZIP 3869/3869 SHA；从GitHub取回F73精确源码Git blob并在真实Chromium about:blank执行M键三视图setter先变更再抛错回滚43/43，Node VM故障37/37，继承选定新旧QA合计651/651。新累计ZIP 3889文件SHA `eceb23c0162632f889a48ba82ffc4d4cb7ca45b8bcb4d1622cc78edb0e865f35`，Python/unzip双独立恢复各3889/3889 SHA、651/651 QA，QA后0漂移。真实同源/真机/读屏/历史全量not-run；T01 0/25、T02批准ID0、T03未生产集成、Root 0/12 Accepted；冻结HTML/176编码/用户Storage未动。[证据](./evidence/v036-r245f74-t03-f73-rollback-real-browser-recovery.md)。
+
+
 
 **R245F73 Root T03（隔离桥接回滚失效修复，非正式验收）：** VPS独立Node VM故障注入复现R245F72的SVG setter“先改第二实例、再抛异常”导致第二实例残留偏移；新V2桥接在调用setter前登记回滚义务，并在回滚不完整或registry已提交后失败关闭/禁止复用。旧版复现失败，新版5场景37断言通过。**本轮执行环境的本地容器不可用，虽Files可见R245F72父ZIP（3869成员、历史记录SHA a97e44a...），但未能实际读取其原始字节，因此父ZIP继承SHA、新累计ZIP及双独立解压均blocked/not-run，不能升级累计基线。** 未跑真实Chromium/同源/真机/读屏/完整历史QA。原始T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口、176编码、正式SVG、用户Storage均未改。[证据](./evidence/v036-r245f73-t03-bridge-partial-setter-rollback.md)。
 
