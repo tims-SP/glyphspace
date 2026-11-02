@@ -1,5 +1,7 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F71（2026-11-03，隔离Root T03）：** 草案几何事务必须以调用者读取的revision作为CAS前置条件；过期、缺失、未来revision均拒绝。事务preview不得提交，日志可确定性回放并校验post-state，四位小数归一化后重新执行100×100边界校验。FNV32只防偶发漂移，不可用于签发来源或永久ID。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
+
 **ADR-R245F69（2026-11-03，隔离Root T03）：** 不允许外部代码直接持有可写预览Map，所有几何修订必须经过setOptical/setPlacement并同步三视图及revision；保留get/has只读兼容门面和冻结副本。旧SVG绘制数据仍仅规划草案，不构成正式inkBBox认证。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
 
 
