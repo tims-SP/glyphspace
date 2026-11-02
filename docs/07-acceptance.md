@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
+
+
 **R245F71 Root T03验收边界：** 真实Chromium修订号冲突拒绝、确定性事务回放和归一化边界验证，433/433选定QA、3854成员双独立恢复，仅证明隔离候选的事务一致性。FNV32不等于来源认证；未批准永久ID/正式inkBBox，未完成生产三视图集成、真同源/读屏/真机或完整历史QA。Root仍0/12 Accepted。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
 
 **R245F70 Root T03 验收边界：** 真实Chromium两视口的原子几何事务、插入/删除占位、回滚仅证明隔离技术可行，不是来源逐笔/永久ID/生产三视图集成、真实同源/读屏/真机或正式验收。 [证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
