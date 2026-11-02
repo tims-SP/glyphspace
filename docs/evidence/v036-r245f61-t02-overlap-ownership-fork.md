@@ -8,9 +8,9 @@
 - R245F61新增保守重叠区域禁入：真实pointerdown/pointermove/结束提交、JSON导入/导出均拒绝共享区域或穿越该区域的线段，保留正常M草案描记；没有更改源裁框或正式SVG。
 
 ## 可复验交付
-- 完整累计ZIP：`R245F61_isolated_R245F60_fork_T02_overlap_ownership_guard.zip`，**3704成员**，SHA256 `3170c0381435644e23c92d1f149dd0f09cd04dfd7d4caf66ca601f2e6be1a28c`。
-- 新Chromium QA 49/49，继承选定QA直接运行新版HTML 117/117，共166/166。
-- Python zipfile与系统unzip在两个独立目录恢复：各3704/3704 SHA、3691/3691父成员SHA、166/166 QA，QA后0漂移。
+- 完整累计ZIP：`R245F61_isolated_R245F60_fork_T02_overlap_ownership_guard.zip`，**3704成员**，SHA256 `93bfa399703ec9df57aba54c1fc38a429a700b49f3542d0f44aa48fb136e2e48`。
+- 新Chromium QA 53/53，继承选定QA直接运行新版HTML 117/117，共170/170。
+- Python zipfile与系统unzip在两个独立目录恢复：各3704/3704 SHA、3691/3691父成员SHA、170/170 QA，QA后0漂移。
 - ZIP内 `v036_r245f61/R245F61_overlap_ownership_audit.json`、`R245F61_browser_QA.json`、`R245F61_parent_3691_member_SHA256.json`、HTML、Python QA、恢复说明可复验。
 - 这里GitHub同步**文档证据**；完整隔离HTML/QA/ZIP未提交到公开仓库。
 
