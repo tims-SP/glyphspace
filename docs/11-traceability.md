@@ -1,5 +1,41 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F74 Root T03（F73修复累计恢复，非正式验收）：** 实际读取R245F72父ZIP 3869/3869 SHA；从GitHub取回F73精确源码Git blob并在真实Chromium about:blank执行M键三视图setter先变更再抛错回滚43/43，Node VM故障37/37，继承选定新旧QA合计651/651。新累计ZIP 3889文件SHA `eceb23c0162632f889a48ba82ffc4d4cb7ca45b8bcb4d1622cc78edb0e865f35`，Python/unzip双独立恢复各3889/3889 SHA、651/651 QA，QA后0漂移。真实同源/真机/读屏/历史全量not-run；T01 0/25、T02批准ID0、T03未生产集成、Root 0/12 Accepted；冻结HTML/176编码/用户Storage未动。[证据](./evidence/v036-r245f74-t03-f73-rollback-real-browser-recovery.md)。
+
+
+
+**R245F73 Root T03（隔离桥接回滚失效修复，非正式验收）：** VPS独立Node VM故障注入复现R245F72的SVG setter“先改第二实例、再抛异常”导致第二实例残留偏移；新V2桥接在调用setter前登记回滚义务，并在回滚不完整或registry已提交后失败关闭/禁止复用。旧版复现失败，新版5场景37断言通过。**本轮执行环境的本地容器不可用，虽Files可见R245F72父ZIP（3869成员、历史记录SHA a97e44a...），但未能实际读取其原始字节，因此父ZIP继承SHA、新累计ZIP及双独立解压均blocked/not-run，不能升级累计基线。** 未跑真实Chromium/同源/真机/读屏/完整历史QA。原始T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口、176编码、正式SVG、用户Storage均未改。[证据](./evidence/v036-r245f73-t03-bridge-partial-setter-rollback.md)。
+
+**R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
+
+
+**R245F71 原始T03追踪：** `scripts/r245f71_t03_revisioned_journal_registry.js` 增加CAS修订号、无副作用preview、不可变事务日志及确定性replay；真实Chromium旧错复现，新72/72+选定旧361/361；3854成员双独立SHA/QA恢复。正式T03仍未Accepted，全部Root 0/12，T01 0/25、T02批准ID0。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
+
+**R245F70 Root T03 追踪：** 151旧可视草案几何按候选ID事务更新，M仅无资产占位；56新+305旧选定QA，3839双恢复。正式T03仍未Accepted，T00–T11 0/12。 [证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
+
+**R245F69 隔离 Root T03（只读预览状态封装，非正式验收）：** 真读R245F68累计ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，3802/3802成员逐SHA继承；真实Chromium复现公开offsets Map可绕过revision/三视图同步，R245F69改只读get/has门面与冻结getOptical。新增39/39，继承22+63+35+98+48，选定305/305；累计3821文件ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，Python/unzip双独立恢复各3821 SHA及305 QA，QA后0漂移。151条草案SHA未变；仅about:blank，**非正式来源/永久ID/生产内核认证**，真同源/读屏/真机/完整历史not-run；Root 0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
+
+
+**R245F68 隔离 Root T03（151条100×100墨迹几何草案导出，非正式验收）：** 真读R245F67父ZIP 3788/3788逐SHA继承；新增只读snapshot/exportAll，以旧SVG实际Chromium alpha绘制边界输出{ x,y,width,height,anchor,ox,oy }，绑定151个规划候选ID并排除5关联项，所有referenceShapeId/assetId仍null、批准ID0。两独立Chromium上下文151条JSON字节一致，SHA `b1abc3d88653b402c2fbe1f4569d41c50e85b83968482be577af44be2145de30`；并发几何修改失败关闭。父工作副本选定新旧270/270；累计3802文件ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，Python/unzip双恢复各3802/3802 SHA、266/266选定QA（T00无截图48项）、QA后0漂移。仅隔离about:blank，非同源原图inkBBox认证/正式SVG/生产集成；真实同源、读屏、真机、历史全量not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f68-t03-normalized-geometry-draft.md)。
+
+
+**R245F67 隔离 Root T03（三视图 SVG 外层属性/viewport 漂移修复，非正式验收）：** 真实 Chromium 复现 R245F56 对 mini/focus/full 的 viewBox、preserveAspectRatio、style、class、opacity、font-weight 等 12/12 外层属性篡改错误提交；新候选冻结非事务属性与 25 键 SVG 视口，异步/光学校正失败关闭，151 可视实例、156 草案身份和三视图正常放置保留。R245F66 父 ZIP 3777/3777 SHA 继承，新累计 3788 文件 ZIP SHA `25b8ee3a2d9c36ab1b113a7bc7ec4da680e8d90cf1a7387757196ca9b4ba8307`；Python/unzip 双恢复各 3788/3788 SHA、984/984 选定新旧 QA、QA 后漂移 0。仅隔离 Chromium about:blank，历史全量/真实同源/读屏/真机 not-run；T01 0/25、T02 批准 ID 0、T03 未集成、T05 缺根未知、Root 0/12 Accepted；冻结入口/176 编码/正式 SVG/用户 Storage 未动。[证据](./evidence/v036-r245f67-t03-svg-replica-attribute-guard.md)。
+
+
+**R245F66 Root T00（冻结V0.35基线独立重放，技术门禁通过，正式未Accepted）：** 真实读取R245F65隔离ZIP（3761/3761逐SHA继承）；新增Node VM三份冻结JSON字节重生成、Chromium 25键/156旧槽（151可视+5关联）/176编码运行态复核、4视口5截图、7文件安全恢复，新增52/52，继承443/443，R106旧176字三模式3143/3143在父工作副本通过。新累计3777文件ZIP SHA `c5a2ce9d2a11f9c361077a28321c835e8a403b39bbf081a8d3b8ec4935c5d6a5`，Python/unzip双独立恢复各3777/3777 SHA及495/495选定QA、恢复7/7，QA后0漂移。R106在恢复目录一次超时不计通过；完整历史QA not-run。仅合成旧Storage样本，V0.36正式候选全回归未做，**T00仍未正式Accepted，Root 0/12**。T01来源0/25、T02批准ID0、T05缺根未知，历史R11/R12/R35及20SVG缺失；真实同源/真机/读屏/许可未验收，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f66-t00-frozen-baseline-independent-replay.md)。
+
+
+**R245F65 隔离Root T01/T02（M05漏框与K/M独立物理分量审阅，非认证）：** VPS真实3508×2480高清候选JPEG双算法4区域×3阈值12/12一致；**新发现M-vis-05旧M:3来源框底边漏墨7/9/9像素**，M05–08在连续整区域为4个相互分离物理分量，K下左/下右各3分量；生成11个仅供人工审阅候选包络，不是正式裁框、语义根或SVG。R245F64父ZIP3750/3750 SHA继承，R245F65累计3761成员ZIP SHA `d4f866225fd1f1baa0f6a8db4d9c6ad00ea18ff17cfd6575f308681a13ee5eb7`，Python/unzip双独立各3761/3761 SHA、443/443选定QA、QA后0漂移；完整历史QA not-run。高清官方同源与许可、逐笔认证、真机/读屏、生产迁移均未验收；T01 0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted。冻结入口/176编码/用户Storage未动。[R245F65证据](./evidence/v036-r245f65-m05-native-disjoint-physical-source.md)。
+
+**R245F64 隔离Root T01/T02（K/M高清物理墨迹分量独立复核，非认证）：** 授权VPS原生3508×2480候选JPEG，K三框+M四框×70/100/130阈值，两种独立连通算法21/21一致，真实私有来源QA72/72。K下左三个物理墨迹分量，最左越界5/7/7像素；K下右三个分量且末笔带钩；M04/06/07/08主分量均越界，M07混入M08邻近分量11像素。连通分量≠语义笔画，K:2/K:3及M身份仍阻断。R245F63父3741/3741 SHA继承；新累计ZIP3750成员SHA `11ba7e812a8a9bcec7e778513bef279b038f3116abf7f97f0b500c379364192f`；Python/unzip双恢复各3750/3750 SHA，旧279+新66=345/345选定QA，QA后0漂移；完整历史QA not-run。官方同源/许可、正式逐笔、真机/读屏/生产迁移未验收；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted。冻结HTML/176编码/正式SVG/用户Storage不变。[R245F64证据](./evidence/v036-r245f64-k-m-physical-ink-components.md)。
+
+
+**R245F63 隔离分支 Root T01/T02（K/M高清裁框物理笔画边界复核，非认证）：** 真实私有3508×2480候选JPEG SHA `47c5d53f6cf57ac67c957c6510a3e2696072c3ce63e73024ed025367f31c600e`，授权VPS直接RGB/两套独立8连通分析发现K:2/K:3共享下左框左侧笔画越界3px、阈值100有7个墨迹像素在框外；K下右为带钩三笔形态，不能直接等同旧K:4「〢」。M-vis-04/06/07/08四框均截断墨迹，M07含邻近M08分量11像素；没有自动认证或签发ID。本轮私有源图QA38/38，新增静态/负向80/80，继承199/199，累计ZIP 3741文件 SHA `ba4bb92f5ca10c9771834ffc3e2d5b482f6c44b1d5f32f53d5e72be898b2ec0d`；Python/unzip双独立恢复各3741/3741 SHA及279/279本地QA，QA后0漂移。来源官方同源/许可、逐笔语义、历史全量、真机/读屏/生产迁移均未验收；T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted。父R245F62 3719/3719 SHA继承，冻结入口/176编码/用户Storage不动；与main R246分支历史不混合。 [R245F63证据](./evidence/v036-r245f63-k-m-native-highres-boundary-triage.md)。
+
+
+**R245F62 隔离分支 Root T02（异步导入过期审阅证据修复，非认证）：** R245F61父ZIP3704/3704逐SHA继承；Chromium复现旧版在来源重置、裁框往返、候选往返、筛选重建后4/4错误恢复过期笔画，新版4/4拒绝、正常导入1/1；旧170+新29=**199/199**选定QA，累计3719文件ZIP SHA `23c8822d3ccec9681e3a6d874743e5fec9cc8bcb1d10673c44afb299334ac414`，Python/unzip双独立3719/3719 SHA、各199/199 QA、QA后0漂移。仅about:blank合成来源状态，高清许可/逐笔、真同源生产迁移、真机/读屏/历史全量not-run；T01 0/25、T02批准ID0、T05缺根未知、T00–T11 0/12 Accepted；冻结入口/176编码/用户Storage未动。本隔离分支不合并main R246历史。[R245F62证据](./evidence/v036-r245f62-t02-async-import-session-fork.md)。
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 

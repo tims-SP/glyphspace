@@ -1,0 +1,24 @@
+{
+  "round": "R245F73",
+  "track": "Root",
+  "taskId": "T03",
+  "parentForkCommit": "e8bb0dd1cd3c811fd9a1b939b09e9ed04f0a87b4",
+  "sourceReproduced": true,
+  "oldBug": "setter mutates second target then throws, second target not rolled back",
+  "newQa": {
+    "runtime": "Node v24.22.2 VM",
+    "scenarios": 5,
+    "assertions": 37,
+    "passed": true
+  },
+  "parentZipRead": "blocked-container-runtime",
+  "parentMemberSha": "not-run",
+  "inheritedQa": "not-run",
+  "cumulativeZip": "not-generated",
+  "doubleRestore": "not-run",
+  "browserQa": "not-run",
+  "formalAccepted": 0,
+  "sourceCertifiedKeys": 0,
+  "approvedPermanentIds": 0,
+  "missingRoots": null
+}
