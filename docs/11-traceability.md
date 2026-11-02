@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F60 isolated Root T02（候选/案件绑定，非认证）：** 真读R245F59累计ZIP，3674/3674逐SHA继承。发现F58工作台按来源裁框导出笔画，不包含候选UID/案件ID，K共享裁框存在跨身份意见污染风险。新增53案件/161裁框只读绑定、显式选择、v2未批准JSON、跨案件/候选内存隔离及失败关闭导入。新Chromium25+静态22、旧F59 32+F57 24+F58 14，共117/117选定QA（非1044全套重跑）；累计3689成员ZIP SHA `9364a248788e5a7cff7f8f1bb4d9913d7d26378e611cac8c7d3ed2f7f1393857`，Python/unzip双独立各3689/3689 SHA及117/117 QA，QA后0漂移。来源许可/逐笔/真机/读屏/完整历史未验收；T01 0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f60-t02-case-bound-native-review-fork.md)。
+
+
 **R245F59 isolated Root T02（K物理观察案件补漏，非认证）：** 真读R245F58累计父ZIP3662/3662逐SHA；R209原50张案件漏掉K-physical-upper-left/lower-left/lower-right三个已有未决候选。新增3张blocked-review-only，53案覆盖51未决候选、旧50案不变，保留K:0/K:2/K:3/K:4共享来源阻断。新32/32、旧998+14=1012/1012，累计ZIP3674成员SHA `112c878af91e3107921c548b45abf2f7288c5282165af7420c6b330f215841ac`；Python/unzip双独立各3674/3674 SHA、1044/1044选定QA，QA后0漂移。仅审阅队列闭合，非来源逐笔/许可/正式ID/生产集成；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，完整历史/真机/读屏not-run；冻结入口、176编码、用户Storage未动。[R245F59证据](./evidence/v036-r245f59-t02-k-physical-ticket-closure-fork.md)。
 
 
