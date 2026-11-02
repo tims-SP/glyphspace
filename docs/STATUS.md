@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F55 Root T03（共享SVG符号来源异步漂移修复，隔离非验收）：** 真读R245F54父ZIP3597/3597 SHA；真实Chromium复现R245F53在Image解码期间修改共享SVG defs Path后仍错误接受放置，R245F55冻结defs并在await后复验，Path/节点/样式/提前篡改及独立measure均拒绝。新31/31，F50–F53旧套件直接在新HTML 760/760；Python/unzip双独立恢复各3616/3616 SHA及791/791选定QA、0漂移。累计ZIP SHA `28fd54a3b8ff132b4c11a6c14838c69e9f5550378aabf0e78d3db07f1c423dec`。仅about:blank，来源0/25、批准ID0、缺根未知、Root 0/12 Accepted；高清逐笔/真机/读屏/历史全量not-run，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f55-t03-shared-svg-symbol-guard-fork.md)。
+
+
 **R245F54 Root T04（真实隔离浏览器同源事务，非生产迁移）：** R245F53父ZIP3586/3586逐SHA继承；本地容器127.0.0.1被管理员策略blocked，不计pass。授权VPS Chromium 141新临时profile、随机loopback原点、两标签真实Web Locks/localStorage/StorageEvent，冻结25键/156槽合成编辑、锁竞争、崩溃日志、跨标签恢复、外部冲突、过期来源等33/33通过（独立新profile再跑33/33）；VPS实际R194模块7/7 SHA与父ZIP一致。旧选定F50–F53 Chromium 760/760；R245F54累计3597成员ZIP SHA `97013f27a78bab79492bcf30474663460ff994bc8d7d2da67eebab3dc530dd9f`，Python/unzip双独立恢复各3597/3597 SHA、3586/3586父继承、760/760旧QA、0漂移。真实同源33项在VPS执行，不是本地双恢复QA；完整历史not-run，用户真实数据迁移not-run，正式ID0、T01 0/25、T05缺根未知、T00–T11 **0/12 Accepted**。生产入口/用户Storage未动。[证据](./evidence/v036-r245f54-T04-real-origin-two-tab-156slot-fork.md)。
 
 
