@@ -1,5 +1,7 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F71 Root T03验收边界：** 真实Chromium修订号冲突拒绝、确定性事务回放和归一化边界验证，433/433选定QA、3854成员双独立恢复，仅证明隔离候选的事务一致性。FNV32不等于来源认证；未批准永久ID/正式inkBBox，未完成生产三视图集成、真同源/读屏/真机或完整历史QA。Root仍0/12 Accepted。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
+
 **R245F70 Root T03 验收边界：** 真实Chromium两视口的原子几何事务、插入/删除占位、回滚仅证明隔离技术可行，不是来源逐笔/永久ID/生产三视图集成、真实同源/读屏/真机或正式验收。 [证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
 
 **R245F69 隔离 Root T03（只读预览状态封装，非正式验收）：** 真读R245F68累计ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，3802/3802成员逐SHA继承；真实Chromium复现公开offsets Map可绕过revision/三视图同步，R245F69改只读get/has门面与冻结getOptical。新增39/39，继承22+63+35+98+48，选定305/305；累计3821文件ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，Python/unzip双独立恢复各3821 SHA及305 QA，QA后0漂移。151条草案SHA未变；仅about:blank，**非正式来源/永久ID/生产内核认证**，真同源/读屏/真机/完整历史not-run；Root 0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
