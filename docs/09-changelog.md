@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F67 隔离 Root T03（三视图 SVG 外层属性/viewport 漂移修复，非正式验收）：** 真实 Chromium 复现 R245F56 对 mini/focus/full 的 viewBox、preserveAspectRatio、style、class、opacity、font-weight 等 12/12 外层属性篡改错误提交；新候选冻结非事务属性与 25 键 SVG 视口，异步/光学校正失败关闭，151 可视实例、156 草案身份和三视图正常放置保留。R245F66 父 ZIP 3777/3777 SHA 继承，新累计 3788 文件 ZIP SHA `25b8ee3a2d9c36ab1b113a7bc7ec4da680e8d90cf1a7387757196ca9b4ba8307`；Python/unzip 双恢复各 3788/3788 SHA、984/984 选定新旧 QA、QA 后漂移 0。仅隔离 Chromium about:blank，历史全量/真实同源/读屏/真机 not-run；T01 0/25、T02 批准 ID 0、T03 未集成、T05 缺根未知、Root 0/12 Accepted；冻结入口/176 编码/正式 SVG/用户 Storage 未动。[证据](./evidence/v036-r245f67-t03-svg-replica-attribute-guard.md)。
+
+
 **R245F66 Root T00（冻结V0.35基线独立重放，技术门禁通过，正式未Accepted）：** 真实读取R245F65隔离ZIP（3761/3761逐SHA继承）；新增Node VM三份冻结JSON字节重生成、Chromium 25键/156旧槽（151可视+5关联）/176编码运行态复核、4视口5截图、7文件安全恢复，新增52/52，继承443/443，R106旧176字三模式3143/3143在父工作副本通过。新累计3777文件ZIP SHA `c5a2ce9d2a11f9c361077a28321c835e8a403b39bbf081a8d3b8ec4935c5d6a5`，Python/unzip双独立恢复各3777/3777 SHA及495/495选定QA、恢复7/7，QA后0漂移。R106在恢复目录一次超时不计通过；完整历史QA not-run。仅合成旧Storage样本，V0.36正式候选全回归未做，**T00仍未正式Accepted，Root 0/12**。T01来源0/25、T02批准ID0、T05缺根未知，历史R11/R12/R35及20SVG缺失；真实同源/真机/读屏/许可未验收，冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f66-t00-frozen-baseline-independent-replay.md)。
 
 
