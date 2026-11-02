@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F61 Root T01/T02（B/E/J/V/X重叠来源像素归属隔离，非认证）：** 实际继承R245F60隔离ZIP SHA `2ef2058f68b3b51332028c64b66b95b9b1f7e8126829209e11778b7c24bfa8f6`，3691/3691成员SHA一致。161个高清来源裁框形成10对同键重叠精确区域，旧R245F60在20/20有向重叠来源描记导入中错误接受，新R245F61全部拒绝，并阻止线段跨越重叠区域；正常M独立草案描记保留。Chromium about:blank新49/49、旧117/117，合计166/166选定QA；累计ZIP **3704文件** SHA `3170c0381435644e23c92d1f149dd0f09cd04dfd7d4caf66ca601f2e6be1a28c`，Python/unzip双独立恢复各3704/3704 SHA及166/166 QA、QA后0漂移。正式来源/许可/逐笔认证未完成，T01 0/25、T02批准永久ID0、T05缺根数未知，T00–T11仍0/12 Accepted；历史全量、真机/读屏、真实生产迁移not-run，冻结入口及用户Storage未动。[R245F61证据](./evidence/v036-r245f61-t02-overlap-ownership-fork.md)。
+
+
 **R245F60 isolated Root T02（候选/案件绑定，非认证）：** 真读R245F59累计ZIP，3674/3674逐SHA继承。发现F58工作台按来源裁框导出笔画，不包含候选UID/案件ID，K共享裁框存在跨身份意见污染风险。新增53案件/161裁框只读绑定、显式选择、v2未批准JSON、跨案件/候选内存隔离及失败关闭导入。新Chromium25+静态22、旧F59 32+F57 24+F58 14，共117/117选定QA（非1044全套重跑）；累计3691成员ZIP SHA `2ef2058f68b3b51332028c64b66b95b9b1f7e8126829209e11778b7c24bfa8f6`，Python/unzip双独立各3691/3691 SHA及117/117 QA，QA后0漂移。来源许可/逐笔/真机/读屏/完整历史未验收；T01 0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f60-t02-case-bound-native-review-fork.md)。
 
 
