@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F68（2026-11-03，隔离Root T03）：** 100×100几何草案导出只能绑定规划身份；旧SVG alpha渲染墨迹边界不能替代合法来源逐笔inkBBox认证。导出前后校验预览修订号，并发变化失败关闭；151可视实例与5关联项分离，正式ID/Asset/生产入口不变。[证据](./evidence/v036-r245f68-t03-normalized-geometry-draft.md)。
+
+
 **ADR-R245F67（2026-11-03，Root T03 隔离候选）：** 三视图 SVG 源身份不仅包含内部 path/use，还包含字形外层绘制属性和 100×100 viewport。仅允许预览事务 transform 和经草案身份映射验证的标记字段变化；异步放置前后失败关闭。不得将隔离防漂移测试当作正式 inkBBox/来源认证或生产集成。[证据](./evidence/v036-r245f67-t03-svg-replica-attribute-guard.md)。
 
 
