@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F70 隔离 Root T03（独立草案几何事务内核，非正式验收）：** 真读R245F69父ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，3821/3821逐SHA继承；新增不可变候选ID几何事务，支持原子move/reorder、无正式SVG的M占位insert/remove、失败回滚。真实Chromium新56/56+继承305/305，累计3839文件ZIP SHA `3f2092029e44545e71d38489f908183ec621ab9220e6f85729e773229c6e1e02`，Python/unzip双恢复各3839 SHA及361 QA、QA后0漂移。仅about:blank隔离，未生产集成；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted，读屏/真机/真实同源/历史全量not-run，冻结入口及用户Storage未动。[R245F70证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
+
 **R245F69 隔离 Root T03（只读预览状态封装，非正式验收）：** 真读R245F68累计ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，3802/3802成员逐SHA继承；真实Chromium复现公开offsets Map可绕过revision/三视图同步，R245F69改只读get/has门面与冻结getOptical。新增39/39，继承22+63+35+98+48，选定305/305；累计3821文件ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，Python/unzip双独立恢复各3821 SHA及305 QA，QA后0漂移。151条草案SHA未变；仅about:blank，**非正式来源/永久ID/生产内核认证**，真同源/读屏/真机/完整历史not-run；Root 0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
 
 
