@@ -1,4 +1,15 @@
+**ADR-R245F55（2026-11-02，Root T03）：** 冻结单个SVG实例innerHTML不足以证明引用的公共symbol源未变；在异步SVG墨迹测量和提交前必须同时校验共享defs原始标记，任何变更拒绝事务。仅隔离候选，不构成来源认证、永久ID或生产inkBBox批准。[证据](./evidence/v036-r245f55-t03-shared-svg-symbol-guard-fork.md)。
+
+**ADR-R245F53（2026-11-02，Root T03）：** SVG raster测量是异步事务，任何reset、清除、光学修改或同实例新放置必须使旧await结果失效；用每实例版本号和全局重置epoch拒绝幽灵放置，并在await后复验来源DOM。只修复隔离候选，不批准任何字根身份或正式inkBBox。[证据](./evidence/v036-r245f53-t03-async-placement-transaction-fork.md)。
+
+**R245F54 · T04隔离同源预检判定：** 授权VPS真实两标签/真实Web Locks/Storage合成156槽33/33可作为T04基础事务证据；不得据此认定用户旧数据迁移或正式ID映射。容器loopback管理员阻断不等于VPS阻断；两环境分别记blocked/pass。正式生产迁移仍需T02/T03前提及独立用户数据安全审计。
+
+
+**ADR-R245F52（2026-11-02，Root T03）：** 草案身份与几何只允许以SHA钉住的原始键/槽/字形/旧实例别名桥接；151可视与5关联严格分开，未知来源ID和资产ID必须为null，绝不将`planning_only`候选自动批准为永久ID。运行时先验证全部三视图DOM再写候选属性，切换与重排保持绑定稳定。正式T03仍未Accepted。[证据](./evidence/v036-r245f52-t03-draft-identity-binding-fork.md)。
+
 # 08 · 设计决策记录（ADR索引）
+
+**ADR-R245F51（2026-11-02，Root T03）：** 资产墨迹边界必须由不可变原始SVG测得，不得受当前光学校正或视图位置反向污染；锚点放置与光学校正独立合成，超界失败原子回滚。151旧SVG paintedBBox只是隔离候选，不是合法同源2008原图认证inkBBox或批准永久ID。R245F51双恢复3563文件、Chromium新175+旧348各通过，正式T03仍未Accepted。[证据](./evidence/v036-r245f51-t03-ink-anchor-fork.md)。
 
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
