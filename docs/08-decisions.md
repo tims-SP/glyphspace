@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**ADR-R245F69（2026-11-03，隔离Root T03）：** 不允许外部代码直接持有可写预览Map，所有几何修订必须经过setOptical/setPlacement并同步三视图及revision；保留get/has只读兼容门面和冻结副本。旧SVG绘制数据仍仅规划草案，不构成正式inkBBox认证。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
+
+
 **ADR-R245F68（2026-11-03，隔离Root T03）：** 100×100几何草案导出只能绑定规划身份；旧SVG alpha渲染墨迹边界不能替代合法来源逐笔inkBBox认证。导出前后校验预览修订号，并发变化失败关闭；151可视实例与5关联项分离，正式ID/Asset/生产入口不变。[证据](./evidence/v036-r245f68-t03-normalized-geometry-draft.md)。
 
 

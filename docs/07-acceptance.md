@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+**R245F69 隔离 Root T03（只读预览状态封装，非正式验收）：** 真读R245F68累计ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，3802/3802成员逐SHA继承；真实Chromium复现公开offsets Map可绕过revision/三视图同步，R245F69改只读get/has门面与冻结getOptical。新增39/39，继承22+63+35+98+48，选定305/305；累计3821文件ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，Python/unzip双独立恢复各3821 SHA及305 QA，QA后0漂移。151条草案SHA未变；仅about:blank，**非正式来源/永久ID/生产内核认证**，真同源/读屏/真机/完整历史not-run；Root 0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
+
+
 **R245F68 隔离 Root T03（151条100×100墨迹几何草案导出，非正式验收）：** 真读R245F67父ZIP 3788/3788逐SHA继承；新增只读snapshot/exportAll，以旧SVG实际Chromium alpha绘制边界输出{ x,y,width,height,anchor,ox,oy }，绑定151个规划候选ID并排除5关联项，所有referenceShapeId/assetId仍null、批准ID0。两独立Chromium上下文151条JSON字节一致，SHA `b1abc3d88653b402c2fbe1f4569d41c50e85b83968482be577af44be2145de30`；并发几何修改失败关闭。父工作副本选定新旧270/270；累计3802文件ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，Python/unzip双恢复各3802/3802 SHA、266/266选定QA（T00无截图48项）、QA后0漂移。仅隔离about:blank，非同源原图inkBBox认证/正式SVG/生产集成；真实同源、读屏、真机、历史全量not-run。T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f68-t03-normalized-geometry-draft.md)。
 
 
