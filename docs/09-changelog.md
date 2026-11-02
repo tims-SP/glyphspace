@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+
+**2026-11-02 · R245F57（Root T01/T02，T05关联）：** R245F57 Root T01/T02（T05关联，隔离非认证）：授权VPS私有3508×2480 JPEG中R219全部161物理裁框（覆盖25键）两条独立RGB读取路径161/161一致，SHA列表摘要 ae2c4cc897174d0877328eb2f2635349a52593551d727fc0998801a3668cd07e；真实Chromium临时loopback独立profile上传原始1348865字节JPEG并以WebCrypto验证SHA和尺寸。新增161裁框/36旧未匹配槽（35框）/M四未绑定/E-K共框审阅HTML，原生像素描记仅导出未批准JSON，无存储写入。父ZIP3639/3639继承，累计3653文件，Python/unzip双恢复各3653 SHA与996/996选定QA、QA后0漂移。新HTML的真实私有JPEG浏览器完整QA未运行；官方同源/许可/逐笔/永久ID未认证，Root 0/12 Accepted。
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
