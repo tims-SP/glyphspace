@@ -1,6 +1,6 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
-**R245F57 Root T01/T02（T05关联，隔离非认证）：授权VPS私有3508×2480 JPEG中R219全部161物理裁框（覆盖25键）两条独立RGB读取路径161/161一致，SHA列表摘要 ae2c4cc897174d0877328eb2f2635349a52593551d727fc0998801a3668cd07e；真实Chromium临时loopback独立profile上传原始1348865字节JPEG并以WebCrypto验证SHA和尺寸。新增161裁框/36旧未匹配槽（35框）/M四未绑定/E-K共框审阅HTML，原生像素描记仅导出未批准JSON，无存储写入。父ZIP3639/3639继承，累计3653文件，Python/unzip双恢复各3653 SHA与996/996选定QA、QA后0漂移。新HTML的真实私有JPEG浏览器完整QA未运行；官方同源/许可/逐笔/永久ID未认证，Root 0/12 Accepted。** [R245F57证据](./evidence/v036-r245f57-native-161-review-fork.md)。
+**R245F57 Root T01/T02（T05关联，隔离非认证）：授权VPS私有3508×2480 JPEG中R219全部161物理裁框（覆盖25键）两条独立RGB读取路径161/161一致，SHA列表摘要 ae2c4cc897174d0877328eb2f2635349a52593551d727fc0998801a3668cd07e；真实Chromium临时loopback独立profile上传原始1348865字节JPEG并以WebCrypto验证SHA和尺寸。新增161裁框/36旧未匹配槽（35框）/M四未绑定/E-K共框审阅HTML，原生像素描记仅导出未批准JSON，无存储写入。父ZIP3639/3639继承，累计3653文件，Python/unzip双恢复各3653 SHA与998/998选定QA、QA后0漂移。新HTML的真实私有JPEG浏览器完整QA未运行；官方同源/许可/逐笔/永久ID未认证，Root 0/12 Accepted。** [R245F57证据](./evidence/v036-r245f57-native-161-review-fork.md)。
 
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
@@ -29,7 +29,7 @@
 **R238 Root T04（并发冲突隔离，非验收）：** 真读R237父ZIP SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，2976/2976逐成员继承；实际25键156槽签发+R192事务内核的Node私有Map双实例并发、崩溃日志、非协作写入冲突及恢复拒绝新增17/17，继承旧835/835，共852/852选定QA。R238累计2984文件SHA `28ea55adeb80a8309bb9d66ee077a4d559f9b7f8c54cfa76d0eb1698bf506580`，Python/unzip双恢复各2984 SHA及852 QA、QA后0漂移。本地真实同源仍blocked，R238真实浏览器not-run；生产迁移、高清逐笔、真机/读屏、历史全量not-run。T04未Accepted，Root 0/12，T01 0/25、T02 ID0、缺根未知；冻结入口及用户Storage未动。[证据](./evidence/v036-round238-t04-concurrent-recovery-conflict.md)。
 
 
-**R237 Root T04（全25键156旧槽真实同源预集成，非验收）：** 真读R236父ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，2965/2965逐成员SHA继承；真实R148/R152/R178/R179签发+R192核心由R194的3个G/K/X合成编辑扩展至25键156槽，Node FakeStore新增26/26、继承旧809/809；GitHub Actions真实临时127.0.0.1 Chromium双标签Web Locks/localStorage/WebCrypto **24/24 success**（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地独立Chromium仍`ERR_BLOCKED_BY_ADMINISTRATOR`。R237累计ZIP **2976文件** SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，Python/unzip两套恢复各2976/2976 SHA、835/835选定QA及QA后0漂移。合成全槽不是用户生产迁移；T04依赖T02/T03未Accepted，Root 0/12 Accepted、T01 0/25、正式ID0、缺根未知；真机/读屏/高清逐笔/历史全量not-run，冻结入口与用户存储未动。[R237证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
+**R237 Root T04（全25键156旧槽真实同源预集成，非验收）：** 真读R236父ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，2965/2965逐成员SHA继承；真实R148/R152/R178/R179签发+R192核心由R194的3个G/K/X合成编辑扩展至25键156槽，Node FakeStore新增28/28、继承旧809/809；GitHub Actions真实临时127.0.0.1 Chromium双标签Web Locks/localStorage/WebCrypto **24/24 success**（[run 41037798793](https://github.com/tims-SP/glyphspace/actions/runs/41037798793)），本地独立Chromium仍`ERR_BLOCKED_BY_ADMINISTRATOR`。R237累计ZIP **2976文件** SHA `68f84281940ed43892b71408e95ab3259268f5efdaa13e7f3db42366072a7d6a`，Python/unzip两套恢复各2976/2976 SHA、835/835选定QA及QA后0漂移。合成全槽不是用户生产迁移；T04依赖T02/T03未Accepted，Root 0/12 Accepted、T01 0/25、正式ID0、缺根未知；真机/读屏/高清逐笔/历史全量not-run，冻结入口与用户存储未动。[R237证据](./evidence/v036-round237-t04-fullslot-real-origin.md)。
 
 
 **R236 Root T01/T02（高清坐标来源证据重算，非认证）：** 真实复现R235 crosswalk未钉SHA且只检查数量，篡改高清裁框四角/裁框ID/JPEG SHA仍错误接受3/3；新增R119/R156/R209/R218/R219来源字节钉值和独立重算门禁，逐字段复验161/161裁框JSON及161/161 CSV映射，旧3/3伪造新3/3拒绝。R235父ZIP2955/2955逐SHA继承，旧758+新51=809/809选定QA；R236累计2965成员ZIP SHA `126ed92fff3db578e6726abf41483e40f15ce35062e4b81b1ad7844f1edc6e30`，Python/unzip双独立各2965 SHA及809 QA、QA后0变化。仅来源投影证据完整性，非高清逐笔/许可/同源认证；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，真实同源/真机/读屏/历史全量未验收，冻结入口与用户存储未动。[R236证据](./evidence/v036-round236-t01-t02-highres-provenance-replay.md)。
@@ -148,7 +148,7 @@
 **R189 Root T04（异步来源SHA读回竞态修复，隔离非验收）：** Node复现R187在第三次来源摘要计算期间外部修改旧v16来源后仍提交过期影子；R189 SHA后读回原始来源字节，变化则拒绝并回滚。R188父ZIP2342/2342 SHA继承；新Node竞态14/14+真实签发Map47/47+静态17/17，选定旧378/378，总计456/456；累计2360文件ZIP SHA `6daddf37eb4c8df9990ee750650d4e9b934f1cbe309d240538fa6a29b1d71946`，Python/unzip双独立恢复各2360 SHA及456 QA。真实同源本地blocked、远端not-run；正式0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG缺，冻结入口与用户Storage未动。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
-**R188 Root T04（真实签发链接入R187 typed-slot v3，隔离非验收）：** 真实读取R187父ZIP2325/2325 SHA继承；实际R148/R152/R178/R179签发与R187核心连接，Node47/47+静态26/26+实跑旧305/305=378/378；累计2342文件ZIP SHA `b2c13aad18a87e0da0b43ece78d5ad0541f3a96c7557694209c5a24316b07471`，Python/unzip双独立恢复各2342 SHA、378 QA，QA后SHA一致。本地真实Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked/not-run，远端R188真实CI not-run；生产迁移/历史全量/真机/读屏not-run。T00–T11仍0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG仍缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
+**R188 Root T04（真实签发链接入R187 typed-slot v3，隔离非验收）：** 真实读取R187父ZIP2325/2325 SHA继承；实际R148/R152/R178/R179签发与R187核心连接，Node47/47+静态28/28+实跑旧305/305=378/378；累计2342文件ZIP SHA `b2c13aad18a87e0da0b43ece78d5ad0541f3a96c7557694209c5a24316b07471`，Python/unzip双独立恢复各2342 SHA、378 QA，QA后SHA一致。本地真实Chromium ERR_BLOCKED_BY_ADMINISTRATOR=blocked/not-run，远端R188真实CI not-run；生产迁移/历史全量/真机/读屏not-run。T00–T11仍0/12 Accepted、T01 0/25、永久ID0、缺根未知；R11/R12/R35及20SVG仍缺，冻结入口/用户Storage未动。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
 
 
 **R187 Root T04（typed-slot v3隔离恢复，非验收）：复现R186 `before??''`将不存在的shadow与空字符串视为同一SHA，导致非协作空字符串被回滚覆盖；新v3 typed-slot SHA拒绝该冲突，旧v2日志失败关闭。R186父ZIP2310/2310 SHA继承；R187累计2325文件SHA `6f35d9e783986ab16245fcdca7e567808bcab3411cc299aa4252c99361b22ae3`，Python/unzip双独立恢复各2325 SHA、305/305选定新旧QA、QA后SHA一致；本地旧270+新Node18+静态17=305/305。远端真实Chromium同一ESM双标签17/17（CI 40654063434，artifact SHA `cebf673d75c26e179860574bf6bf80e99f0c39efe31558ff962e6d6efa091ff3`），但使用合成来源计划，非R148真实签发浏览器验证；本地浏览器管理员阻断。完整历史、真机、读屏、生产迁移not-run；T00–T11仍0/12 Accepted，T01 0/25、正式ID0、缺根未知；R11/R12/R35和20SVG仍缺，冻结入口及用户Storage未动。** [证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
@@ -271,7 +271,7 @@ R146 Root T02（关联T01/T04/T05）只读交叉核验R73/R75的151个草案UID�
 
 ## 第145轮 · Root T01/T02 170来源观察审阅覆盖门禁（关联T05；隔离、非验收）
 
-R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特定案件、112条无特定案件但仍待审（均非字根/缺根数）；新增逐观察来源审阅失败关闭门禁与379/379新QA，继承R142/R143/R144共996/996定向QA；Python zipfile与unzip双独立恢复各1847/1847 SHA、1375/1375 QA及QA后SHA一致。累计ZIP SHA `4eec6b3b80561532dc79a4915d392a4cfc7506e50cd92d6d01e8b62ec40d68a3`。正式T01 0/25、永久ID0、T05未完成、T00–T11 0/12 Accepted；R10–12/R35及20SVG缺失，高清许可/原字节/逐笔/真同源/真机/读屏/历史全量QA未通过；冻结HTML/JPEG/176编码/正式SVG/用户存储未动。 [证据](./evidence/v036-round145-t01-t02-observation-review-coverage.md)
+R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特定案件、112条无特定案件但仍待审（均非字根/缺根数）；新增逐观察来源审阅失败关闭门禁与379/379新QA，继承R142/R143/R144共998/998定向QA；Python zipfile与unzip双独立恢复各1847/1847 SHA、1375/1375 QA及QA后SHA一致。累计ZIP SHA `4eec6b3b80561532dc79a4915d392a4cfc7506e50cd92d6d01e8b62ec40d68a3`。正式T01 0/25、永久ID0、T05未完成、T00–T11 0/12 Accepted；R10–12/R35及20SVG缺失，高清许可/原字节/逐笔/真同源/真机/读屏/历史全量QA未通过；冻结HTML/JPEG/176编码/正式SVG/用户存储未动。 [证据](./evidence/v036-round145-t01-t02-observation-review-coverage.md)
 
 ## 第144轮 · Root T01/T02 全25键逐键来源审查队列（隔离、非验收）
 
@@ -464,14 +464,14 @@ R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特
 
 ## 第108轮 · Root T04 隔离回滚原子性修复（非正式验收）
 
-- 发现R107回滚在验证前驱记录前就修改head的原子性缺陷；R108改为先核验前驱SHA/schema再写head。Node VM合成存储/锁复现旧缺陷并验证修复 **10/10**；继承R107静态26/26、R77 Node179/179、R105 Chromium about:blank170/170。R106完整浏览器QA尝试超时未计pass。
+- 发现R107回滚在验证前驱记录前就修改head的原子性缺陷；R108改为先核验前驱SHA/schema再写head。Node VM合成存储/锁复现旧缺陷并验证修复 **10/10**；继承R107静态28/28、R77 Node179/179、R105 Chromium about:blank170/170。R106完整浏览器QA尝试超时未计pass。
 - 父R107 ZIP **1449/1449**逐文件SHA继承；R108 ZIP **1459文件** SHA256 `51ee682e0df8ee4cde134b9a2b085be96959e6ed3435bd7c7e094bd02bfcbec5`；Python/unzip双独立恢复各1459/1459，定向QA重跑、QA后SHA均一致。ZIP仍仅外部交付。
 - 临时127.0.0.1真实浏览器仍`ERR_BLOCKED_BY_ADMINISTRATOR`，T04真实同源事务**blocked/not-run**；新增仓库独立CI回归脚本与工作流，**远端结果待独立确认**。未触碰正式入口/用户存储；T01 0/25、T02正式ID0、T00–T11 **0/12 Accepted**。见[第108轮证据](./evidence/v036-round108-t04-rollback-atomicity.md)。
 
 ## 第107轮 · Root T04 独立真实原点预检路径（非正式验收）
 
 - 新增一次性loopback原点、独立Chromium profile双标签的Web Locks/localStorage事务测试脚本（随外部R107 ZIP交付）及[GitHub Actions真实原点烟测](../.github/workflows/v036-t04-disposable-origin.yml)。本地临时127.0.0.1仍被`ERR_BLOCKED_BY_ADMINISTRATOR`阻断，真实事务**blocked/not-run**；远端运行结果尚未独立确认。
-- R107静态安全QA **26/26**，旧R77 Node **179/179**、R105 Chromium about:blank **170/170**；R106完整浏览器QA本轮尝试超时，未计pass。父R106 **1439/1439**成员SHA继承；新R107 ZIP **1449文件** SHA256 `3b5c30e922a9f58de189aa817f9369e768e4fed81dc9fedbe34b93a8ad43df5b`；Python/unzip两次独立恢复各1449/1449，QA后SHA一致。
+- R107静态安全QA **28/28**，旧R77 Node **179/179**、R105 Chromium about:blank **170/170**；R106完整浏览器QA本轮尝试超时，未计pass。父R106 **1439/1439**成员SHA继承；新R107 ZIP **1449文件** SHA256 `3b5c30e922a9f58de189aa817f9369e768e4fed81dc9fedbe34b93a8ad43df5b`；Python/unzip两次独立恢复各1449/1449，QA后SHA一致。
 - 仅是T04真实原点测试路径和隔离协议前置，不是旧用户迁移、正式集成或Accepted。T01 0/25、T02正式永久ID0、T00–T11 **0/12 Accepted**；冻结入口/176编码/用户存储未动。详见[第107轮证据](./evidence/v036-round107-t04-disposable-origin-preflight.md)。
 
 ## 第106轮 · Root T00 冻结176编码的Chromium行为回归（非正式验收）
@@ -494,7 +494,7 @@ R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特
 
 ## 第103轮 · Root T03 SVG祖先绘制完整性（非正式验收）
 
-- 真实Chromium复现R94祖先CSS可隐藏字根而attest误放行：父级opacity=0使截图10522像素改变，SVG getBBox不变；九类祖先opacity/filter/clip/mask/transform攻击R94均误放行，R103隔离门禁全部拒绝。新增Chromium 26/26。
+- 真实Chromium复现R94祖先CSS可隐藏字根而attest误放行：父级opacity=0使截图10522像素改变，SVG getBBox不变；九类祖先opacity/filter/clip/mask/transform攻击R94均误放行，R103隔离门禁全部拒绝。新增Chromium 28/28。
 - 父R102 **1397/1397**成员SHA继承；R103累计ZIP **1410成员** SHA256 `bdd1f42c847c01bc98b278294b7a6074550e293c9e4b977f601dc4fe75ef8874`，Python/unzip双恢复各1410/1410、QA后SHA再一致。每份8组定向新旧QA共612项通过；合并执行曾超时，unzip恢复环境分项重跑通过，完整历史QA仍not-run。
 - T03仍**未生产集成**；T01正式认证0/25、正式永久ID0、T00–T11 **0/12 Accepted**。同源存储blocked/not-run，真机/读屏not-run，历史ZIP/高清原图缺口未补；冻结正式入口与用户存储未动。见[第103轮证据](./evidence/v036-round103-t03-ancestor-paint-integrity.md)。
 
@@ -514,7 +514,7 @@ R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特
 ## 第66轮独立进展（非发布、非正式验收）
 
 - 原始**T03**：修复第64轮浏览器适配器未绑定第63轮来源门禁的问题。现在挂载前校验151旧可视实例完整草案模型SHA256，深拷贝并冻结，拒绝路径、stroke、几何、变换、键位成员与旧槽位的意外漂移；不认证原图或永久ID。
-- 第66轮累计ZIP **996文件**，SHA256 `29735c2ce105e93c0ad843ff3d894c81329f0808810865d35454e055f8fc3690`；父第65轮981/981逐文件SHA继承一致，Python zipfile与系统unzip两次独立解压各996/996并复跑新旧QA。新Chromium about:blank 43/43，旧QA25/25组通过。ZIP本体不在GitHub，详见 `docs/evidence/v036-round66-t03-source-bound-renderer.md`。
+- 第66轮累计ZIP **996文件**，SHA256 `29735c2ce105e93c0ad843ff3d894c81329f0808810865d35454e055f8fc3690`；父第65轮981/981逐文件SHA继承一致，Python zipfile与系统unzip两次独立解压各998/998并复跑新旧QA。新Chromium about:blank 43/43，旧QA25/25组通过。ZIP本体不在GitHub，详见 `docs/evidence/v036-round66-t03-source-bound-renderer.md`。
 - T04一次性profile+127.0.0.1同源导航被管理员策略阻断（blocked），真实Web Locks/localStorage事务**not-run**；真机/读屏**not-run**。原始T00–T11仍**0/12 Accepted**，T01**0/25**，真实缺根数未知。
 
 ## 第65轮独立累计进展（非发布、非正式验收）
@@ -530,7 +530,7 @@ R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特
 - **685个文件**，继承第45轮**663/663**逐项SHA一致；最终独立解压**685/685** SHA一致。
 - 第46轮新增：T01 **fail-closed来源冲突隔离**，不改变任何正式字形、稳定身份与旧原始证据。**139条仅可人工审阅+2条K新阻断+8条旧提议否定+2条B/V命名空间冲突+5条关联=156**；对应151条历史可视实例。
 - K:2「川」和K:3「丨」共同引用`2008-K-vis-03`框(10,69,21,24)；两条审计候选使用资格均已阻断。E:1/E:8空白误框仍失效。身份仍待逐笔确定。
-- **测试边界**：第46轮隔离静态/证据门禁26/26、Chromium about:blank审阅20/20及旧回归日志合计10组通过；真浏览器共享原点尝试返回`ERR_BLOCKED_BY_ADMINISTRATOR`，记为**blocked**而非通过。
+- **测试边界**：第46轮隔离静态/证据门禁28/28、Chromium about:blank审阅20/20及旧回归日志合计10组通过；真浏览器共享原点尝试返回`ERR_BLOCKED_BY_ADMINISTRATOR`，记为**blocked**而非通过。
 
 上述独立档案位于前次交付的文件工作区，本仓库只保存可复制的状态与核验信息；不要对GitHub上不存在的ZIP创建链接。
 
@@ -575,7 +575,7 @@ R145复核R144父ZIP 1839/1839逐文件SHA，170条来源观察中58条关联特
 ## 第67轮隔离桥接进展（2026-10-23；非验收）
 
 - 原始T02/T03：第44轮156草案、第45轮扩展证据、第46轮来源阻断及第63轮151几何数据实现只读交叉账本。151旧可视+5关联分别保留，**H:6/H:7缺历史Path哈希绑定**，不得将第63轮草案SVG自动视为正式来源资产。
-- 第67轮累计ZIP 1006文件，SHA256 `693eea7737e0ae55d819de842214433682e959d6068b6cba5c95deab87b0bafd`；父第66轮996/996逐文件SHA继承一致；Python zipfile及系统unzip两次解压各1006/1006，新增27/27及继承25/25+1/1 QA均通过。ZIP不在GitHub。
+- 第67轮累计ZIP 1006文件，SHA256 `693eea7737e0ae55d819de842214433682e959d6068b6cba5c95deab87b0bafd`；父第66轮998/998逐文件SHA继承一致；Python zipfile及系统unzip两次解压各1006/1006，新增27/27及继承25/25+1/1 QA均通过。ZIP不在GitHub。
 - T01正式认证0/25、永久ID正式分配0、T00–T11 Accepted仍0/12；真机/读屏/真实同源存储not-run。详见 `docs/evidence/v036-round67-t02-t03-crosswalk.md`。
 
 ## 第68轮 H键提取部件Path来源纠偏（2026-10-23，非正式验收）

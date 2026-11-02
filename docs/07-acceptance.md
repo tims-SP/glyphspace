@@ -1,6 +1,6 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
-**R245F57证据边界：** R245F57 Root T01/T02（T05关联，隔离非认证）：授权VPS私有3508×2480 JPEG中R219全部161物理裁框（覆盖25键）两条独立RGB读取路径161/161一致，SHA列表摘要 ae2c4cc897174d0877328eb2f2635349a52593551d727fc0998801a3668cd07e；真实Chromium临时loopback独立profile上传原始1348865字节JPEG并以WebCrypto验证SHA和尺寸。新增161裁框/36旧未匹配槽（35框）/M四未绑定/E-K共框审阅HTML，原生像素描记仅导出未批准JSON，无存储写入。父ZIP3639/3639继承，累计3653文件，Python/unzip双恢复各3653 SHA与996/996选定QA、QA后0漂移。新HTML的真实私有JPEG浏览器完整QA未运行；官方同源/许可/逐笔/永久ID未认证，Root 0/12 Accepted。 原图字节一致性及待审工具不得替代官方同源许可、逐笔认证、永久身份批准或正式补图。
+**R245F57证据边界：** R245F57 Root T01/T02（T05关联，隔离非认证）：授权VPS私有3508×2480 JPEG中R219全部161物理裁框（覆盖25键）两条独立RGB读取路径161/161一致，SHA列表摘要 ae2c4cc897174d0877328eb2f2635349a52593551d727fc0998801a3668cd07e；真实Chromium临时loopback独立profile上传原始1348865字节JPEG并以WebCrypto验证SHA和尺寸。新增161裁框/36旧未匹配槽（35框）/M四未绑定/E-K共框审阅HTML，原生像素描记仅导出未批准JSON，无存储写入。父ZIP3639/3639继承，累计3653文件，Python/unzip双恢复各3653 SHA与998/998选定QA、QA后0漂移。新HTML的真实私有JPEG浏览器完整QA未运行；官方同源/许可/逐笔/永久ID未认证，Root 0/12 Accepted。 原图字节一致性及待审工具不得替代官方同源许可、逐笔认证、永久身份批准或正式补图。
 
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
@@ -148,7 +148,7 @@
 **R189验收边界：** 新Node14+47+静态17+选定旧378=456/456，双独立2360 SHA恢复；真实同源blocked/not-run，T04及全部T00–T11未验收。[证据](./evidence/v036-round189-t04-async-source-digest-readback.md)。
 
 
-**R188验收边界：** 实际来源签发与R187 typed-slot v3在Node私有Map 47/47、静态26/26及选定旧305/305通过，双独立2342 SHA与378 QA；R188真实同源联合验证本地blocked、远端not-run，正式T04未验收，T00–T11仍0/12。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
+**R188验收边界：** 实际来源签发与R187 typed-slot v3在Node私有Map 47/47、静态28/28及选定旧305/305通过，双独立2342 SHA与378 QA；R188真实同源联合验证本地blocked、远端not-run，正式T04未验收，T00–T11仍0/12。[证据](./evidence/v036-round188-t04-actual-issuer-typed-slot-bridge.md)。
 
 
 **R187验收边界：** R186 null/empty影子冲突已由R187 typed-slot v3修复，Node18/18+静态17/17+选定旧270/270、双独立2325 SHA恢复；远端真实Chromium同一ESM 17/17但合成签发fixture，真实R148签发与正式迁移未验证。历史全量/真机/读屏not-run；T00–T11仍0/12 Accepted。[证据](./evidence/v036-round187-t04-typed-storage-slot-recovery.md)。
@@ -291,7 +291,7 @@ R149将R148严格重复JSON键只读门禁接入授权临时127.0.0.1真实Chrom
 
 ## 第46轮已经核查的范围 ≠ 本章验收通过
 
-第46轮独立ZIP `32c7130983d18965676f643d9fdd5d178047f749d2f0e4676cf7e56a67d7b5ce`，685/685文件SHA一致、663/663继承一致；静态26/26、Chromium about:blank 20/20和10组回归通过，证明审计层候选冲突隔离与历史一致性。**并未完成原图逐笔、永久ID生产绑定、T03/T05集成、用户真实数据迁移、真机/读屏。**
+第46轮独立ZIP `32c7130983d18965676f643d9fdd5d178047f749d2f0e4676cf7e56a67d7b5ce`，685/685文件SHA一致、663/663继承一致；静态28/28、Chromium about:blank 20/20和10组回归通过，证明审计层候选冲突隔离与历史一致性。**并未完成原图逐笔、永久ID生产绑定、T03/T05集成、用户真实数据迁移、真机/读屏。**
 
 缺第10–12、35轮ZIP和第12轮20SVG，不能声称连续历史全部恢复。
 
