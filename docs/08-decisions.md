@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F59 ADR（只增补审阅案件，不签发身份）：** R209旧50案与51个未决候选不闭合，三个K物理来源观察被漏审。选择在隔离证据层增加3张显式阻断案件、保留旧50案及K共享来源冲突，不修改历史注册表或生产永久ID。见[证据](./evidence/v036-r245f59-t02-k-physical-ticket-closure-fork.md)。
+
+
 **R245F58 isolated Root T01/T02 (T05 related; NOT certification):** R245F57 parent cumulative ZIP 3653/3653 SHA inherited; real Chromium reproduced foreign-pointer move/up premature stroke commit and zero-length forged import, fixed pointerId isolation/multitouch abort and nonzero stroke gate. Selected inherited 998/998 + new 14/14 = 1012/1012 per Python/unzip independent 3662-member restore, plus 28/28 old browser tests directly on new HTML; post-QA drift 0. Authorized VPS fresh 127.0.0.1 Chromium profile loaded actual private 1348865-byte 3508x2480 candidate JPEG by file chooser, browser WebCrypto SHA verified without override, native-source end-to-end 14/14. ZIP SHA `a9ea3ac3b6c64a85e04640b22796f8a51288d972aa02b4f089e9b9f28c542ed8`. Official same-source/license/stroke certification unverified; 0/25 keys certified, approved IDs 0, missing roots unknown, Root 0/12 Accepted. User Storage/production HTML/176 codes untouched; historical full QA, physical devices and screen reader not-run. [Evidence](./evidence/v036-r245f58-native-browser-pointer-source-fork.md).
 
 
