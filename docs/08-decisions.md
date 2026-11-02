@@ -1,3 +1,5 @@
+**ADR-R245F55（2026-11-02，Root T03）：** 冻结单个SVG实例innerHTML不足以证明引用的公共symbol源未变；在异步SVG墨迹测量和提交前必须同时校验共享defs原始标记，任何变更拒绝事务。仅隔离候选，不构成来源认证、永久ID或生产inkBBox批准。[证据](./evidence/v036-r245f55-t03-shared-svg-symbol-guard-fork.md)。
+
 **ADR-R245F53（2026-11-02，Root T03）：** SVG raster测量是异步事务，任何reset、清除、光学修改或同实例新放置必须使旧await结果失效；用每实例版本号和全局重置epoch拒绝幽灵放置，并在await后复验来源DOM。只修复隔离候选，不批准任何字根身份或正式inkBBox。[证据](./evidence/v036-r245f53-t03-async-placement-transaction-fork.md)。
 
 **R245F54 · T04隔离同源预检判定：** 授权VPS真实两标签/真实Web Locks/Storage合成156槽33/33可作为T04基础事务证据；不得据此认定用户旧数据迁移或正式ID映射。容器loopback管理员阻断不等于VPS阻断；两环境分别记blocked/pass。正式生产迁移仍需T02/T03前提及独立用户数据安全审计。
