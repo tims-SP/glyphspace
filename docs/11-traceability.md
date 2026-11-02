@@ -1,5 +1,8 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F58 isolated Root T01/T02 (T05 related; NOT certification):** R245F57 parent cumulative ZIP 3653/3653 SHA inherited; real Chromium reproduced foreign-pointer move/up premature stroke commit and zero-length forged import, fixed pointerId isolation/multitouch abort and nonzero stroke gate. Selected inherited 998/998 + new 14/14 = 1012/1012 per Python/unzip independent 3662-member restore, plus 28/28 old browser tests directly on new HTML; post-QA drift 0. Authorized VPS fresh 127.0.0.1 Chromium profile loaded actual private 1348865-byte 3508x2480 candidate JPEG by file chooser, browser WebCrypto SHA verified without override, native-source end-to-end 14/14. ZIP SHA `a9ea3ac3b6c64a85e04640b22796f8a51288d972aa02b4f089e9b9f28c542ed8`. Official same-source/license/stroke certification unverified; 0/25 keys certified, approved IDs 0, missing roots unknown, Root 0/12 Accepted. User Storage/production HTML/176 codes untouched; historical full QA, physical devices and screen reader not-run. [Evidence](./evidence/v036-r245f58-native-browser-pointer-source-fork.md).
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
