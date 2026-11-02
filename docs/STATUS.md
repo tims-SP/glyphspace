@@ -1,5 +1,8 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
+
+
 **R245F71 隔离 Root T03（修订号CAS与可重放事务日志，非正式验收）：** R245F70父ZIP3839/3839 SHA继承；旧版同revision重复写入在两组真实Chromium视口均错误接受，V2强制expectedRevision并支持不可变日志/确定性回放及四位小数边界复验。新增72/72+继承361/361=433/433选定QA；累计3854成员ZIP SHA `b05988d0a4f7102843957968815b257170c347895f0aae63a10607dce7ae8561`，Python/unzip双恢复各3854 SHA与433 QA、QA后0漂移。仅about:blank隔离，FNV32非来源认证；T01 0/25、T02批准ID0、T03未生产集成、T05缺根未知、Root 0/12 Accepted；合法高清逐笔、真实同源、读屏、真机、历史全量not-run，冻结入口/176编码/用户Storage未动。[R245F71证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
 
 **R245F70 隔离 Root T03（独立草案几何事务内核，非正式验收）：** 真读R245F69父ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，3821/3821逐SHA继承；新增不可变候选ID几何事务，支持原子move/reorder、无正式SVG的M占位insert/remove、失败回滚。真实Chromium新56/56+继承305/305，累计3839文件ZIP SHA `3f2092029e44545e71d38489f908183ec621ab9220e6f85729e773229c6e1e02`，Python/unzip双恢复各3839 SHA及361 QA、QA后0漂移。仅about:blank隔离，未生产集成；T01 0/25、T02正式ID0、T05缺根未知、Root 0/12 Accepted，读屏/真机/真实同源/历史全量not-run，冻结入口及用户Storage未动。[R245F70证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
