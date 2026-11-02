@@ -1,5 +1,7 @@
 # 09 · 历史演化与变更记录
 
+**R245F70：** 隔离T03草案几何注册表支持原子move/reorder和M无资产占位insert/remove；361项选定QA，3839成员双恢复；未认证、未发布。 [证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
+
 **R245F69 隔离 Root T03（只读预览状态封装，非正式验收）：** 真读R245F68累计ZIP SHA `9cc7725e38ee6265270941ed4a47f0acf41564c77cadfbde70bf13ef1e1f64d3`，3802/3802成员逐SHA继承；真实Chromium复现公开offsets Map可绕过revision/三视图同步，R245F69改只读get/has门面与冻结getOptical。新增39/39，继承22+63+35+98+48，选定305/305；累计3821文件ZIP SHA `c6f0c002198299fdc7b84455ad7f354c32268dd96d32edbcdc7d42eb8f4f4321`，Python/unzip双独立恢复各3821 SHA及305 QA，QA后0漂移。151条草案SHA未变；仅about:blank，**非正式来源/永久ID/生产内核认证**，真同源/读屏/真机/完整历史not-run；Root 0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
 
 
