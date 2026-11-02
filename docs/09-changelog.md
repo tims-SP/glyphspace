@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
+
+
 **R245F71：** 隔离Root T03新增revision CAS、不可变事务日志和确定性回放，修复F70过期编辑错误接受与四位小数后几何无效；新增72、选定旧361，共433/433 QA；累计3854成员双独立SHA/QA恢复。非正式认证，Root 0/12 Accepted。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
 
 **R245F70：** 隔离T03草案几何注册表支持原子move/reorder和M无资产占位insert/remove；361项选定QA，3839成员双恢复；未认证、未发布。 [证据](./evidence/v036-r245f70-t03-draft-geometry-transactions.md)。
