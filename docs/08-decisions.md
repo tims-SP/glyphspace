@@ -1,5 +1,8 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
+
+
 **ADR-R245F71（2026-11-03，隔离Root T03）：** 草案几何事务必须以调用者读取的revision作为CAS前置条件；过期、缺失、未来revision均拒绝。事务preview不得提交，日志可确定性回放并校验post-state，四位小数归一化后重新执行100×100边界校验。FNV32只防偶发漂移，不可用于签发来源或永久ID。 [证据](./evidence/v036-r245f71-t03-revisioned-journal.md)。
 
 **ADR-R245F69（2026-11-03，隔离Root T03）：** 不允许外部代码直接持有可写预览Map，所有几何修订必须经过setOptical/setPlacement并同步三视图及revision；保留get/has只读兼容门面和冻结副本。旧SVG绘制数据仍仅规划草案，不构成正式inkBBox认证。[证据](./evidence/v036-r245f69-t03-readonly-geometry-state.md)。
