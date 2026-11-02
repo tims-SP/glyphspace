@@ -1,5 +1,14 @@
 # 08 · 设计决策记录（ADR索引）
 
+**R245F60 ADR（同一物理裁框不代表同一身份）：** K/E等共享来源裁框必须显式选择草案候选及审阅案件；笔画、备注和意见按裁框+候选+案件隔离。无歧义项可预选，多候选或多案件不自动选择；旧无身份v1 JSON拒绝自动迁移，避免错绑。此设计不批准任何永久ID或来源形态。[证据](./evidence/v036-r245f60-t02-case-bound-native-review-fork.md)。
+
+
+**R245F59 ADR（只增补审阅案件，不签发身份）：** R209旧50案与51个未决候选不闭合，三个K物理来源观察被漏审。选择在隔离证据层增加3张显式阻断案件、保留旧50案及K共享来源冲突，不修改历史注册表或生产永久ID。见[证据](./evidence/v036-r245f59-t02-k-physical-ticket-closure-fork.md)。
+
+
+**R245F58 isolated Root T01/T02 (T05 related; NOT certification):** R245F57 parent cumulative ZIP 3653/3653 SHA inherited; real Chromium reproduced foreign-pointer move/up premature stroke commit and zero-length forged import, fixed pointerId isolation/multitouch abort and nonzero stroke gate. Selected inherited 998/998 + new 14/14 = 1012/1012 per Python/unzip independent 3662-member restore, plus 28/28 old browser tests directly on new HTML; post-QA drift 0. Authorized VPS fresh 127.0.0.1 Chromium profile loaded actual private 1348865-byte 3508x2480 candidate JPEG by file chooser, browser WebCrypto SHA verified without override, native-source end-to-end 14/14. ZIP SHA `a9ea3ac3b6c64a85e04640b22796f8a51288d972aa02b4f089e9b9f28c542ed8`. Official same-source/license/stroke certification unverified; 0/25 keys certified, approved IDs 0, missing roots unknown, Root 0/12 Accepted. User Storage/production HTML/176 codes untouched; historical full QA, physical devices and screen reader not-run. [Evidence](./evidence/v036-r245f58-native-browser-pointer-source-fork.md).
+
+
 **ADR-R246（2026-10-31，Root T01/T02）：** 案件来源ID绑定并不证明±7px上下文的每个像素属于该候选。M-vis-04/06/07/08跨入相邻来源精确框时，必须拒绝活体描记和导入，等待合法同源高清逐笔仲裁；不得以几何裁框自动裁定真实笔画归属、签发ID或认定缺根。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
