@@ -1,5 +1,8 @@
 **ADR-R245F53（2026-11-02，Root T03）：** SVG raster测量是异步事务，任何reset、清除、光学修改或同实例新放置必须使旧await结果失效；用每实例版本号和全局重置epoch拒绝幽灵放置，并在await后复验来源DOM。只修复隔离候选，不批准任何字根身份或正式inkBBox。[证据](./evidence/v036-r245f53-t03-async-placement-transaction-fork.md)。
 
+**R245F54 · T04隔离同源预检判定：** 授权VPS真实两标签/真实Web Locks/Storage合成156槽33/33可作为T04基础事务证据；不得据此认定用户旧数据迁移或正式ID映射。容器loopback管理员阻断不等于VPS阻断；两环境分别记blocked/pass。正式生产迁移仍需T02/T03前提及独立用户数据安全审计。
+
+
 **ADR-R245F52（2026-11-02，Root T03）：** 草案身份与几何只允许以SHA钉住的原始键/槽/字形/旧实例别名桥接；151可视与5关联严格分开，未知来源ID和资产ID必须为null，绝不将`planning_only`候选自动批准为永久ID。运行时先验证全部三视图DOM再写候选属性，切换与重排保持绑定稳定。正式T03仍未Accepted。[证据](./evidence/v036-r245f52-t03-draft-identity-binding-fork.md)。
 
 # 08 · 设计决策记录（ADR索引）
