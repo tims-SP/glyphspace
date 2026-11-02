@@ -19,3 +19,7 @@ R245F67 在隔离 HTML 中对每个字形的非事务属性和 25 键 SVG viewpo
 - **实际候选 HTML、构建脚本、浏览器 QA 和累计 ZIP 在 R245F67 独立恢复包中**；此 GitHub 提交仅同步状态、技术证据与原始任务账本，不冒称代码已合并生产。
 
 下一步先合法高清来源逐笔裁定 K:2/K:3 和 M 微形，再签发永久身份、将几何内核与正式资产集成。重复安全防护测试不能替代来源认证。
+
+## GitHub 可复现源码
+
+隔离候选的精确重建脚本已提交到 [`scripts/r245f67_t03_svg_replica_patch.py`](../../scripts/r245f67_t03_svg_replica_patch.py)（SHA256 `21cf7d1779a2daa60d9bfd151d4a40afeeae9abe3e545441a51d9432d99407b8`）。在 R245F66 累计包解压根运行 `python scripts/r245f67_t03_svg_replica_patch.py <解压根>` 可生成与 R245F67 累计包同 SHA 的候选 HTML。正式生产入口不变。
