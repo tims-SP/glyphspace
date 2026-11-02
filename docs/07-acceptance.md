@@ -1,5 +1,8 @@
 # 07 · V0.36验收标准：原始T00–T11 + UI-track
 
+
+**R245F73 Root T03（隔离桥接回滚失效修复，非正式验收）：** VPS独立Node VM故障注入复现R245F72的SVG setter“先改第二实例、再抛异常”导致第二实例残留偏移；新V2桥接在调用setter前登记回滚义务，并在回滚不完整或registry已提交后失败关闭/禁止复用。旧版复现失败，新版5场景37断言通过。**本轮执行环境的本地容器不可用，虽Files可见R245F72父ZIP（3869成员、历史记录SHA a97e44a...），但未能实际读取其原始字节，因此父ZIP继承SHA、新累计ZIP及双独立解压均blocked/not-run，不能升级累计基线。** 未跑真实Chromium/同源/真机/读屏/完整历史QA。原始T00–T11仍0/12 Accepted，T01 0/25、T02批准ID0、T05缺根未知；冻结入口、176编码、正式SVG、用户Storage均未改。[证据](./evidence/v036-r245f73-t03-bridge-partial-setter-rollback.md)。
+
 **R245F72 Root T03（隔离事务→真实三视图桥接，非验收）：** 真实读取R245F71父ZIP 3854/3854逐SHA，新增批量CAS预演→SVG三视图更新→paintedBBox回读→日志提交及故障逆序回滚；新增Chromium about:blank 53/53、选定旧433/433，共486/486。R245F72累计3869成员ZIP SHA `a97e44a854c658166ab49e2d2295bcd67b9ae9ea6f00a3f4446fbd84aec0fcb9`，Python/unzip双独立恢复各3869/3869 SHA及486/486 QA，QA后0漂移。T03仍未正式生产集成，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；真实同源/真机/读屏/完整历史not-run，冻结入口与用户Storage未动。[R245F72证据](./evidence/v036-r245f72-t03-live-three-view-bridge.md)。
 
 
