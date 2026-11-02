@@ -1,5 +1,17 @@
 # 11 · 任务—源码—证据—验收追踪
 
+**R245F61 Root T01/T02（B/E/J/V/X重叠来源像素归属隔离，非认证）：** 实际继承R245F60隔离ZIP SHA `2ef2058f68b3b51332028c64b66b95b9b1f7e8126829209e11778b7c24bfa8f6`，3691/3691成员SHA一致。161个高清来源裁框形成10对同键重叠精确区域，旧R245F60在20/20有向重叠来源描记导入中错误接受，新R245F61全部拒绝，并阻止线段跨越重叠区域；正常M独立草案描记保留。Chromium about:blank新53/53、旧117/117，合计170/170选定QA；累计ZIP **3704文件** SHA `93bfa399703ec9df57aba54c1fc38a429a700b49f3542d0f44aa48fb136e2e48`，Python/unzip双独立恢复各3704/3704 SHA及170/170 QA、QA后0漂移。正式来源/许可/逐笔认证未完成，T01 0/25、T02批准永久ID0、T05缺根数未知，T00–T11仍0/12 Accepted；历史全量、真机/读屏、真实生产迁移not-run，冻结入口及用户Storage未动。[R245F61证据](./evidence/v036-r245f61-t02-overlap-ownership-fork.md)。
+
+
+**R245F60 isolated Root T02（候选/案件绑定，非认证）：** 真读R245F59累计ZIP，3674/3674逐SHA继承。发现F58工作台按来源裁框导出笔画，不包含候选UID/案件ID，K共享裁框存在跨身份意见污染风险。新增53案件/161裁框只读绑定、显式选择、v2未批准JSON、跨案件/候选内存隔离及失败关闭导入。新Chromium25+静态22、旧F59 32+F57 24+F58 14，共117/117选定QA（非1044全套重跑）；累计3691成员ZIP SHA `2ef2058f68b3b51332028c64b66b95b9b1f7e8126829209e11778b7c24bfa8f6`，Python/unzip双独立各3691/3691 SHA及117/117 QA，QA后0漂移。来源许可/逐笔/真机/读屏/完整历史未验收；T01 0/25、T02永久ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[证据](./evidence/v036-r245f60-t02-case-bound-native-review-fork.md)。
+
+
+**R245F59 isolated Root T02（K物理观察案件补漏，非认证）：** 真读R245F58累计父ZIP3662/3662逐SHA；R209原50张案件漏掉K-physical-upper-left/lower-left/lower-right三个已有未决候选。新增3张blocked-review-only，53案覆盖51未决候选、旧50案不变，保留K:0/K:2/K:3/K:4共享来源阻断。新32/32、旧998+14=1012/1012，累计ZIP3674成员SHA `112c878af91e3107921c548b45abf2f7288c5282165af7420c6b330f215841ac`；Python/unzip双独立各3674/3674 SHA、1044/1044选定QA，QA后0漂移。仅审阅队列闭合，非来源逐笔/许可/正式ID/生产集成；T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted，完整历史/真机/读屏not-run；冻结入口、176编码、用户Storage未动。[R245F59证据](./evidence/v036-r245f59-t02-k-physical-ticket-closure-fork.md)。
+
+
+**R245F58 isolated Root T01/T02 (T05 related; NOT certification):** R245F57 parent cumulative ZIP 3653/3653 SHA inherited; real Chromium reproduced foreign-pointer move/up premature stroke commit and zero-length forged import, fixed pointerId isolation/multitouch abort and nonzero stroke gate. Selected inherited 998/998 + new 14/14 = 1012/1012 per Python/unzip independent 3662-member restore, plus 28/28 old browser tests directly on new HTML; post-QA drift 0. Authorized VPS fresh 127.0.0.1 Chromium profile loaded actual private 1348865-byte 3508x2480 candidate JPEG by file chooser, browser WebCrypto SHA verified without override, native-source end-to-end 14/14. ZIP SHA `a9ea3ac3b6c64a85e04640b22796f8a51288d972aa02b4f089e9b9f28c542ed8`. Official same-source/license/stroke certification unverified; 0/25 keys certified, approved IDs 0, missing roots unknown, Root 0/12 Accepted. User Storage/production HTML/176 codes untouched; historical full QA, physical devices and screen reader not-run. [Evidence](./evidence/v036-r245f58-native-browser-pointer-source-fork.md).
+
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 

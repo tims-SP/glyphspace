@@ -28,7 +28,7 @@ T11 单HTML发布冻结
 - V0.35冻结`index.html` SHA256必须保持 `fd7b9bdada44ab2d7452d71f99e77cfd7a7fe82eb9b29e3f0b41ab32fb758ddc`；页面内旧版本标题不是修改它的理由。
 - 不擅改历史正式SVG与176条编码，不用训练题库样本数量代替字根数量。
 - 真实用户`localStorage`绝不可用于实验。存储迁移先FakeStore，再独立的真实共享原点浏览器profile，必要时Web Locks/storage事件和异常恢复验证。
-- 2008参考图SHA `df5eb1a8678eea5ae27b3bfbc6bcef17af8b8ef558696834214dcdffa86dcd49`，但**同源高清JPEG真实字节尚未取得**。不能把低清最近邻放大或字体路径、旧SVG、Canvas、IoU、阈值、Git SHA当字根认证。
+- 2008参考图SHA `df5eb1a8678eea5ae27b3bfbc6bcef17af8b8ef558696834214dcdffa86dcd49`；第三方3508×2480高清候选JPEG原始字节已在授权私有环境复验，但**官方同源、许可和逐笔认证尚未取得**。不能把低清最近邻放大或字体路径、旧SVG、Canvas、IoU、阈值、Git SHA当字根认证。
 - 25键原图**正式认证0/25**、真实缺根数未知；151可视/5关联/115暂定对应/36未匹配/222候选叶均不是正式根总数。
 - 第46轮K:2/K:3两条共享候选来源被阻断只是审计层隔离；E:1/E:8被否定的空白框仍无效；B/V命名空间候选仍有冲突。无一可自动恢复。
 - 第10轮原始ZIP已于R164从Library恢复（184文件、SHA256 6a1552b45cfa3512d9fea2ab06df740a6adbb4b598369cd3ea8e214fee1c0ed0）；第11–12轮、第35轮ZIP和第12轮20SVG仍缺失；不得宣称连续历史已完全恢复。
