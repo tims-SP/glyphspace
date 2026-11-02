@@ -1,0 +1,148 @@
+{
+  "round": "R245F54",
+  "taskId": "T04",
+  "sourceType": "synthetic V0.35 25 keys / 156 slots",
+  "productionMigration": "not-run",
+  "userStorageTouched": false,
+  "formalAccepted": false,
+  "approvedPermanentIds": 0,
+  "checks": [
+    {
+      "name": "module-present-v036_r148_strict_shadow.js",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-v036_r152_source_bound_plan.js",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-r194_r178_freshness.js",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-r194_r179_realm.js",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-r192_idempotent_freshness_core.mjs",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-r194_real_issuer_r192_bridge.mjs",
+      "result": "pass"
+    },
+    {
+      "name": "module-present-r194_frozen_root_coords.json",
+      "result": "pass"
+    },
+    {
+      "name": "loopback-only-server",
+      "result": "pass"
+    },
+    {
+      "name": "real-shared-origin-two-tabs",
+      "result": "pass"
+    },
+    {
+      "name": "real-Web-Locks-Crypto-Storage",
+      "result": "pass"
+    },
+    {
+      "name": "25-keys",
+      "result": "pass"
+    },
+    {
+      "name": "156-slots",
+      "result": "pass"
+    },
+    {
+      "name": "real-issued-156-edits",
+      "result": "pass"
+    },
+    {
+      "name": "cross-tab-Web-Lock-waits",
+      "result": "pass"
+    },
+    {
+      "name": "cross-tab-stage-after-release",
+      "result": "pass"
+    },
+    {
+      "name": "real-storage-event-observed",
+      "result": "pass"
+    },
+    {
+      "name": "disposable-shadow-156-no-approved-ids",
+      "result": "pass"
+    },
+    {
+      "name": "source-exact-after-stage",
+      "result": "pass"
+    },
+    {
+      "name": "unrelated-sentinel-preserved",
+      "result": "pass"
+    },
+    {
+      "name": "journal-clean-after-stage",
+      "result": "pass"
+    },
+    {
+      "name": "other-tab-idempotent",
+      "result": "pass"
+    },
+    {
+      "name": "crash-after-journal-real",
+      "result": "pass"
+    },
+    {
+      "name": "crash-journal-retained",
+      "result": "pass"
+    },
+    {
+      "name": "other-tab-rejects-pending",
+      "result": "pass"
+    },
+    {
+      "name": "foreign-writer-conflict-fails-closed",
+      "result": "pass"
+    },
+    {
+      "name": "foreign-bytes-and-journal-preserved",
+      "result": "pass"
+    },
+    {
+      "name": "other-tab-recovers",
+      "result": "pass"
+    },
+    {
+      "name": "stale-source-rejected",
+      "result": "pass"
+    },
+    {
+      "name": "stale-does-not-write-shadow",
+      "result": "pass"
+    },
+    {
+      "name": "restored-source-idempotent",
+      "result": "pass"
+    },
+    {
+      "name": "no-page-errors",
+      "result": "pass"
+    },
+    {
+      "name": "no-approved-IDs",
+      "result": "pass"
+    },
+    {
+      "name": "private-profile-deleted",
+      "result": "pass"
+    }
+  ],
+  "syntheticSourceSHA256": "fa890b6dbdbc4530ac8cf6b1f7b00b08985dad44cdc931b31f7a78406d9fd402",
+  "privateProfileRemoved": true,
+  "passed": 33,
+  "failed": 0,
+  "allPassed": true
+}
