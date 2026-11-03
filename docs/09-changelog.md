@@ -1,5 +1,8 @@
 # 09 · 历史演化与变更记录
 
+**R245F75 Root T01/T02（非认证）：** R245四个M shadow案件允许跨其他候选精确框的像素及无采样点穿越线段；F75以闭合矩形线段相交守卫在描记/结束/导入拒绝并原子隔离。父R245F74 3889/3889 SHA，累计3901文件SHA `8a5b9ef73840c74369c9f8abf0cc8911d49df3153b817d183f4864fba2dc2385`，旧739+新210=949/949选定QA，Python/unzip双独立各3901/3901 SHA与949/949 QA，0漂移；Root main R246独立，不与本父链合并。仅低清原图来源边界防串案，不代表逐笔/许可/永久ID认证；T01 0/25、T02批准ID0、Root 0/12 Accepted；真机/读屏/真同源/历史全量not-run。[证据](./evidence/v036-r245f75-t01-t02-M-shadow-segment-ownership.md)。
+
+
 **R245F74 Root T03（F73修复累计恢复，非正式验收）：** 实际读取R245F72父ZIP 3869/3869 SHA；从GitHub取回F73精确源码Git blob并在真实Chromium about:blank执行M键三视图setter先变更再抛错回滚43/43，Node VM故障37/37，继承选定新旧QA合计651/651。新累计ZIP 3889文件SHA `eceb23c0162632f889a48ba82ffc4d4cb7ca45b8bcb4d1622cc78edb0e865f35`，Python/unzip双独立恢复各3889/3889 SHA、651/651 QA，QA后0漂移。真实同源/真机/读屏/历史全量not-run；T01 0/25、T02批准ID0、T03未生产集成、Root 0/12 Accepted；冻结HTML/176编码/用户Storage未动。[证据](./evidence/v036-r245f74-t03-f73-rollback-real-browser-recovery.md)。
 
 
