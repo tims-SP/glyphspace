@@ -217,7 +217,7 @@ cca30d14bf70cf683791ff62de6f46fb4f3c3c38e09c026604d416070d4c72e3  docs/evidence/
 4a4621a936d677be2e7b4dd28a767aceb87fd406d811b6dbe2b6dfd0570b440a  docs/evidence/v036-round97-t07-transformed-svg-bbox-preflight.md
 b3fbf7b5e738633a90f5f0a68fe48ec37dec2fa9de2c29c648dba25ca8ca5a70  docs/evidence/v036-round98-t07-screen-space-stroke-header-crosskey.md
 188e42d0f25f45639addcfefe6d6d23c7b4b58618426bff49bc5f351dc80e11e  docs/evidence/v036-round99-t03-t07-raster-alpha-ink-envelope.md
-f37b175eeb0a359fbdab5ad61be906bdee884d44d977619740609113a168ce79  docs/evidence/v036-t03-isolated-geometry-20261104.md
+332736eb35dad6d82dc139ed3a44667da630f75556f5daa1c51b74f1ce1a4507  docs/evidence/v036-t03-isolated-geometry-20261104.md
 ad43fd4e6e1818db6e6bf340b3ec15bf8915151df2bbee4ded0ffb5b5a9a8d82  docs/history/README.md
 e7605c1ea19bf2c4abf48f7239327fe653a12fbe0bb498a31723fe3e12a60756  docs/history/V0.35-root-audit-original.md
 db30390baceff7e2570e3bdef08317f2f57be89bbd4c86e6723658757d68d79b  docs/history/V0.36-P0-original.md
