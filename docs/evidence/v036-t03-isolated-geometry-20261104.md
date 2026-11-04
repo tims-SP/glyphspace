@@ -10,4 +10,4 @@ R246 parent ZIP raw bytes not present on authorized VPS. Parent member SHA inher
 
 Frozen `index.html`, 176 legacy encodings, historical SVG and user localStorage remain untouched.
 
-GitHub sync: the isolated module, tests and this evidence were uploaded to this feature branch via GitHub connector; the VPS local commit `8110159` is not identical to the remote commit chain. The checksum manifest on GitHub is not yet updated for these new files; GitHub branch integrity check is pending.
+GitHub sync: the isolated module, tests and this evidence were uploaded to this feature branch via GitHub connector; the VPS local commit `8110159` is not identical to the remote commit chain. The checksum manifest is being synchronized separately. Independent remote checkout and repository integrity must pass before claiming remote verification.
