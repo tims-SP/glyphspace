@@ -1,5 +1,7 @@
 # 项目状态：GlyphSpace / 字间 V0.36
 
+**R247 T04 evidence sync (2026-11-05, isolated branch, non-acceptance):** VPS local R247 Chromium two-tab synthetic 25-key/156-slot 22/22 evidence has been mirrored to this GitHub branch and its SHA256 pinned in `docs/SHA256SUMS.txt` (`43f298b4577c4e5efb1005796c966bc64ff7524d02eead0d0f90f50cdcc69d9d`). This is prior-run evidence, not a new test execution. Production localStorage migration NOT-RUN; original Root T00–T11 0/12 Accepted. R246 cumulative ZIP 3054 files is documented but raw bytes unavailable for this verification, so parent inheritance, new cumulative ZIP and two independent extraction checks BLOCKED/NOT-RUN. Frozen V0.35 HTML, 176 codes and user storage untouched. Historical ZIP continuity incomplete.
+
 **R246 Root T01/T02（M四项来源像素跨候选污染修复，非认证）：** R245父ZIP3044/3044逐SHA继承；真实Chromium复现M-vis-04/06/07/08四项虽来源ID正确，但±7px上下文可描记其他候选精确裁框像素且导入仍接受。R246在活体描记/结束/导入三处保守隔离跨候选精确框像素，四项R245 4/4错误接受、R246 4/4拒绝，52案件映射不变；旧1387+新106=**1493/1493**选定QA。累计3054文件ZIP SHA `3f2c863af624bee7f9e2c96c3c0262fbb9af777924264612b49da2cc948da6fe`，Python/unzip双恢复各3054/3054 SHA及1493/1493 QA，QA后0漂移。仅隔离about:blank，**非来源逐笔认证**；高清许可、真实同源/真机/读屏/历史全量not-run，T01 0/25、T02批准ID0、T05缺根未知、Root 0/12 Accepted；冻结入口/176编码/用户Storage未动。[R246证据](./evidence/v036-round246-t01-t02-M-cross-crop-pixel-ownership.md)。
 
 
