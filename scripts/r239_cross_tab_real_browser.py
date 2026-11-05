@@ -2,7 +2,7 @@
 """R239 Root T04: R238 concurrency recovery on real fresh Chromium same-origin.
 Synthetic 25-key 156-slot data only; never open user profiles or existing origins.
 """
-import asyncio, http.server, json, threading, traceback
+import asyncio, http.server, json, threading, traceback, os
 from pathlib import Path
 from playwright.async_api import async_playwright
 ROOT=Path(__file__).resolve().parent
@@ -11,6 +11,16 @@ H="__glyphspace_disposable_r194_shadow"
 J="__glyphspace_disposable_r194_journal"
 class Handler(http.server.SimpleHTTPRequestHandler):
     def __init__(self,*a,**kw):super().__init__(*a,directory=str(ROOT),**kw)
+    def do_GET(self):
+        if self.path == "/index.html":
+            body=b"<!doctype html><html><meta charset=utf-8><title>Disposable T04 QA</title></html>"
+            self.send_response(200)
+            self.send_header("Content-Type", "text/html; charset=utf-8")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+            return
+        return super().do_GET()
     def log_message(self,*a):pass
     def guess_type(self,path):return "text/javascript" if path.endswith(".mjs") else super().guess_type(path)
 async def main():
@@ -22,7 +32,7 @@ async def main():
     threading.Thread(target=srv.serve_forever,daemon=True).start()
     try:
         async with async_playwright() as p:
-            browser=await p.chromium.launch(headless=True,args=["--no-sandbox"])
+            browser=await p.chromium.launch(headless=True,args=["--no-sandbox"], executable_path=os.environ.get("GLYPHSPACE_QA_CHROMIUM") or None)
             try:
                 ctx=await browser.new_context()
                 a,b=await ctx.new_page(),await ctx.new_page()
