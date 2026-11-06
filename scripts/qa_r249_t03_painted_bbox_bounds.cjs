@@ -1,5 +1,3 @@
-[Reading 18 lines from start (total: 18 lines, 0 remaining)]
-
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const window={};vm.runInNewContext(fs.readFileSync(__dirname+'/r245f70_t03_draft_geometry_registry.js','utf8'),{window,Error,Number,Math,Object,Array,Set,Map,String});
@@ -17,4 +15,11 @@ assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/rounded g
 rows[0].geometry={x:10,y:10,width:0.00003,height:20,anchor:'ink-center',ox:0,oy:0};
 assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/rounded geometry outside 100x100/);n++;
 rows[0].geometry=prior;
+// A cross-linked legacy slot is not a new asset: reject it before any registry is exposed.
+const oldLegacy=rows[0].legacyInstanceId;
+rows[0].legacyInstanceId='A-root-99';
+assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/legacy slot identity mismatch/);n++;
+rows[0].legacyInstanceId=oldLegacy;
 accept();console.log(`R249 Root T03 paintedBBox bounds: ${n}/${n} PASS (synthetic Node VM; not source certification)`);
+
+[executed on device: racknerd-cd91d33 (14f717ef-2473-48f7-b592-70729eb065b1)]
