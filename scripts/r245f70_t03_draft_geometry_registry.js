@@ -12,7 +12,7 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
  function geometry(g){
   if(!exact(g,shape))fail('geometry shape mismatch');
   if(!anchors.has(g.anchor)||!['x','y','width','height','ox','oy'].every(k=>finite(g[k])))fail('invalid geometry values');
-  if(g.width<=0||g.height<=0||g.x<0||g.y<0||g.x+g.width>100.001||g.y+g.height>100.001)fail('outside 100x100');
+  if(g.width<=0||g.height<=0||g.x<0||g.y<0||g.x+g.width>100||g.y+g.height>100)fail('outside 100x100');
   if(Math.abs(g.ox)>4||Math.abs(g.oy)>4)fail('optical correction exceeds draft bound');
   return Object.freeze(Object.fromEntries(shape.map(k=>[k,k==='anchor'?g[k]:round(g[k])])));
  }
@@ -27,7 +27,7 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
   if(placeholder){if(r.legacyInstanceId!==null||r.paintedBBox!==null)fail('draft placeholder must not claim legacy glyph or ink');}
   else if(typeof r.legacyInstanceId!=='string'||!/^[A-Z]-root-\d\d$/.test(r.legacyInstanceId)||r.legacyInstanceId[0]!==r.key)fail('invalid legacy binding');
   if(r.referenceShapeId!==null||r.assetId!==null||r.inkBBoxCertified!==false||r.sourceCertified!==false||r.permanentIdApproved!==false||r.status!=='planning_only')fail('unapproved certification or source');
-  if(!placeholder&&(!exact(r.paintedBBox,['x','y','width','height'])||!Object.values(r.paintedBBox).every(finite)||r.paintedBBox.width<=0||r.paintedBBox.height<=0||r.paintedBBox.x<0||r.paintedBBox.y<0||r.paintedBBox.x+r.paintedBBox.width>100.001||r.paintedBBox.y+r.paintedBBox.height>100.001))fail('invalid source painted bbox');
+  if(!placeholder&&(!exact(r.paintedBBox,['x','y','width','height'])||!Object.values(r.paintedBBox).every(finite)||r.paintedBBox.width<=0||r.paintedBBox.height<=0||r.paintedBBox.x<0||r.paintedBBox.y<0||r.paintedBBox.x+r.paintedBBox.width>100||r.paintedBBox.y+r.paintedBBox.height>100))fail('invalid source painted bbox');
   return Object.freeze({...r,geometry:geometry(r.geometry),paintedBBox:placeholder?null:Object.freeze({...r.paintedBBox})});
  }
  function fromCatalog(catalog){
