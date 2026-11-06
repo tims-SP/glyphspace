@@ -1,5 +1,3 @@
-[Reading 77 lines from start (total: 77 lines, 0 remaining)]
-
 /* Root T03 isolated, unapproved geometry transaction core. Never writes storage or production DOM. */
 window.GlyphSpaceT03Registry=(()=>{'use strict';
  const FAIL='T03 draft registry: ';
@@ -30,6 +28,7 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
   if(r.candidateInstanceId.split('/')[1]!==r.key)fail('candidate key mismatch');
   if(placeholder){if(r.legacyInstanceId!==null||r.paintedBBox!==null)fail('draft placeholder must not claim legacy glyph or ink');}
   else if(typeof r.legacyInstanceId!=='string'||!/^[A-Z]-root-\d\d$/.test(r.legacyInstanceId)||r.legacyInstanceId[0]!==r.key)fail('invalid legacy binding');
+  if(legacy&&r.legacyInstanceId!==`${r.key}-root-${r.candidateInstanceId.slice(-2)}`)fail('legacy slot identity mismatch');
   if(r.referenceShapeId!==null||r.assetId!==null||r.inkBBoxCertified!==false||r.sourceCertified!==false||r.permanentIdApproved!==false||r.status!=='planning_only')fail('unapproved certification or source');
   if(!placeholder&&(!exact(r.paintedBBox,['x','y','width','height'])||!Object.values(r.paintedBBox).every(finite)||r.paintedBBox.width<=0||r.paintedBBox.height<=0||r.paintedBBox.x<0||r.paintedBBox.y<0||r.paintedBBox.x+r.paintedBBox.width>100||r.paintedBBox.y+r.paintedBBox.height>100))fail('invalid source painted bbox');
   return Object.freeze({...r,geometry:geometry(r.geometry),paintedBBox:placeholder?null:Object.freeze({...r.paintedBBox})});
@@ -77,3 +76,5 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
  }
  return Object.freeze({fromCatalog});
 })();
+
+[executed on device: racknerd-cd91d33 (14f717ef-2473-48f7-b592-70729eb065b1)]
