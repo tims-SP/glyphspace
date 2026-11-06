@@ -1,3 +1,5 @@
+[Reading 18 lines from start (total: 18 lines, 0 remaining)]
+
 'use strict';
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
 const window={};vm.runInNewContext(fs.readFileSync(__dirname+'/r245f70_t03_draft_geometry_registry.js','utf8'),{window,Error,Number,Math,Object,Array,Set,Map,String});
@@ -7,6 +9,12 @@ const rows=Array.from({length:151},(_,i)=>{const key=keys[i%keys.length],slot=St
 const catalog=()=>({schemaVersion:'T03-isolated-draft-1',coordinateSystem:'0 0 100 100',sourceCertified:false,permanentIDsApproved:0,records:rows});
 let n=0;const accept=()=>{assert.equal(window.GlyphSpaceT03Registry.fromCatalog(catalog()).list().length,151);n++};
 const reject=(bbox)=>{const old=rows[0].paintedBBox;rows[0].paintedBBox=bbox;assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/invalid source painted bbox/);rows[0].paintedBBox=old;n++};
-accept();reject({x:80.0005,y:10,width:20,height:20});reject({x:10,y:80.0005,width:20,height:20});reject({x:-1,y:10,width:20,height:20});reject({x:10,y:-1,width:20,height:20});reject({x:95,y:10,width:20,height:20});reject({x:10,y:95,width:20,height:20});accept();console.log(`R249 Root T03 paintedBBox bounds: ${n}/${n} PASS (synthetic Node VM; not source certification)`);
-
-[executed on device: racknerd-cd91d33 (14f717ef-2473-48f7-b592-70729eb065b1)]
+accept();reject({x:-1,y:10,width:20,height:20});reject({x:10,y:-1,width:20,height:20});reject({x:95,y:10,width:20,height:20});reject({x:10,y:95,width:20,height:20});reject({x:80.0005,y:10,width:20,height:20});reject({x:10,y:80.0005,width:20,height:20});accept();
+// Normalization must not turn a valid pre-rounded rectangle into an invalid published geometry.
+const invalidRounded={x:99.99996,y:10,width:0.00003,height:20,anchor:'ink-center',ox:0,oy:0};
+const prior=rows[0].geometry;rows[0].geometry=invalidRounded;
+assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/rounded geometry outside 100x100/);n++;
+rows[0].geometry={x:10,y:10,width:0.00003,height:20,anchor:'ink-center',ox:0,oy:0};
+assert.throws(()=>window.GlyphSpaceT03Registry.fromCatalog(catalog()),/rounded geometry outside 100x100/);n++;
+rows[0].geometry=prior;
+accept();console.log(`R249 Root T03 paintedBBox bounds: ${n}/${n} PASS (synthetic Node VM; not source certification)`);
