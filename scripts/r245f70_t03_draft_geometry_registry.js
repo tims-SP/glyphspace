@@ -1,3 +1,5 @@
+[Reading 77 lines from start (total: 77 lines, 0 remaining)]
+
 /* Root T03 isolated, unapproved geometry transaction core. Never writes storage or production DOM. */
 window.GlyphSpaceT03Registry=(()=>{'use strict';
  const FAIL='T03 draft registry: ';
@@ -14,7 +16,9 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
   if(!anchors.has(g.anchor)||!['x','y','width','height','ox','oy'].every(k=>finite(g[k])))fail('invalid geometry values');
   if(g.width<=0||g.height<=0||g.x<0||g.y<0||g.x+g.width>100||g.y+g.height>100)fail('outside 100x100');
   if(Math.abs(g.ox)>4||Math.abs(g.oy)>4)fail('optical correction exceeds draft bound');
-  return Object.freeze(Object.fromEntries(shape.map(k=>[k,k==='anchor'?g[k]:round(g[k])])));
+  const normalized=Object.fromEntries(shape.map(k=>[k,k==='anchor'?g[k]:round(g[k])]));
+  if(normalized.width<=0||normalized.height<=0||normalized.x+normalized.width>100||normalized.y+normalized.height>100)fail('rounded geometry outside 100x100');
+  return Object.freeze(normalized);
  }
  const rowKeys=Object.freeze(['candidateInstanceId','legacyInstanceId','key','referenceShapeId','assetId','geometry','paintedBBox','inkBBoxCertified','sourceCertified','permanentIdApproved','status']);
  function record(r){
@@ -73,5 +77,3 @@ window.GlyphSpaceT03Registry=(()=>{'use strict';
  }
  return Object.freeze({fromCatalog});
 })();
-
-[executed on device: racknerd-cd91d33 (14f717ef-2473-48f7-b592-70729eb065b1)]
